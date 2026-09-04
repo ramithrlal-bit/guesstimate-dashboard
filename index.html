@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Guesstimate Dashboard — India Numbers for Case Prep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-top">
+      <div>
+        <p class="kicker">India anchor numbers, for guesstimation</p>
+        <h1 class="title">The Guesstimate <em>Ledger</em></h1>
+        <p class="dek">Every population, digital, fintech, e-commerce, EV and edtech anchor you need before a case round — built for MBA, consulting, product and VC interview prep.</p>
+      </div>
+    </div>
+
+    <div class="ledger" id="heroLedger">
+      <div class="cell"><span class="num">~8.1B</span><span class="lbl">World population</span></div>
+      <div class="cell"><span class="num">~1.48B</span><span class="lbl">India population</span></div>
+      <div class="cell"><span class="num">~300M</span><span class="lbl">India households</span></div>
+      <div class="cell"><span class="num">>1B</span><span class="lbl">Internet users (India)</span></div>
+      <div class="cell"><span class="num">~700M</span><span class="lbl">Working-age population</span></div>
+      <div class="cell"><span class="num">~750M+</span><span class="lbl">Smartphone users (India)</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="controlbar">
+  <div class="wrap control-row">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input id="searchInput" type="text" placeholder="Search any number, sector or state…">
+    </div>
+    <div class="chips" id="chipRow">
+      <button class="chip active" data-cat="all">All</button>
+      <button class="chip" data-cat="population">Population</button>
+      <button class="chip" data-cat="digital">Digital</button>
+      <button class="chip" data-cat="fintech">Fintech</button>
+      <button class="chip" data-cat="ecommerce">E-commerce</button>
+      <button class="chip" data-cat="quickcommerce">Quick Commerce</button>
+      <button class="chip" data-cat="ev">Mobility &amp; EV</button>
+      <button class="chip" data-cat="edtech">EdTech</button>
+      <button class="chip" data-cat="healthcare">Healthcare</button>
+      <button class="chip" data-cat="economy">Economy</button>
+      <button class="chip" data-cat="global">Global</button>
+      <button class="chip" data-cat="frameworks">Frameworks</button>
+      <button class="chip" data-cat="interview">Interview</button>
+      <button class="chip" data-cat="bonus">Bonus GK</button>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="wrap">
+<p class="nomatch" id="noMatch">Nothing matches that search. Try a shorter term — try “UPI”, “Bihar”, or “EV”.</p>
+
+<!-- ============ POPULATION ============ -->
+<section class="sec" id="population" data-cat="population">
+  <div class="sec-head"><span class="sec-num">01</span><h2>Population &amp; demographics</h2></div>
+  <p class="sec-note">India's five load-bearing anchors, then the full state-by-state map. Every guesstimate that starts with "assume India has..." starts here.</p>
+
+  <div class="grid">
+    <div class="card accent" data-cat="population"><span class="v">~1.48B</span><span class="l">Total population</span></div>
+    <div class="card" data-cat="population"><span class="v">36%<span class="unit">· 530M</span></span><span class="l">Urban population</span></div>
+    <div class="card" data-cat="population"><span class="v">64%<span class="unit">· 950M</span></span><span class="l">Rural population</span></div>
+    <div class="card" data-cat="population"><span class="v">68%<span class="unit">· ~1B</span></span><span class="l">Working-age (15–64)</span></div>
+    <div class="card" data-cat="population"><span class="v">~29 yrs</span><span class="l">Median age</span></div>
+    <div class="card" data-cat="population"><span class="v">~300M</span><span class="l">Households</span></div>
+    <div class="card" data-cat="population"><span class="v">~4.5</span><span class="l">Average household size</span></div>
+    <div class="card" data-cat="population"><span class="v">761M / 716M</span><span class="l">Male / female population</span></div>
+  </div>
+
+  <div class="sub-title">State-by-state population</div>
+  <p class="map-hint">Hover over a state to see its numbers, or tap it on mobile. Click a state (or a row in the list) to pin its details below.</p>
+  <div class="pop-layout">
+    <div>
+      <div class="map-box">
+        <svg id="indiaMap" viewBox="0 0 612 696" xmlns="http://www.w3.org/2000/svg" aria-label="Map of India by state population"></svg>
+        <div class="map-legend">
+          <span><span class="sw" style="background:#242c47;"></span>&lt;2M</span>
+          <span><span class="sw" style="background:#333d64;"></span>2–10M</span>
+          <span><span class="sw" style="background:#4a5588;"></span>10–35M</span>
+          <span><span class="sw" style="background:#7a6a3f;"></span>35–70M</span>
+          <span><span class="sw" style="background:#b98d2c;"></span>70–110M</span>
+          <span><span class="sw" style="background:#e0a72e;"></span>110M+</span>
+        </div>
+      </div>
+      <div class="state-panel" id="statePanel">
+        <h4 id="spName">—</h4>
+        <div class="row">
+          <div><span class="v" id="spPop">—</span><span class="l">Population, 2025 est.</span></div>
+          <div><span class="v" id="spShare">—</span><span class="l">Share of India</span></div>
+          <div><span class="v" id="spRank">—</span><span class="l">Population rank</span></div>
+          <div><span class="v" id="spGrowth">—</span><span class="l">Projected growth, 2026</span></div>
+        </div>
+        <p class="l" id="spNote" style="margin-top:10px;"></p>
+      </div>
+    </div>
+    <div>
+      <div class="state-list-controls">
+        <input id="stateSearch" type="text" placeholder="Filter states…">
+        <button id="sortPopBtn">Sort: population ↓</button>
+      </div>
+      <div class="table-wrap" style="max-height:520px; overflow-y:auto;">
+        <table class="dtable">
+          <thead><tr><th class="num">Rank</th><th>State / UT</th><th class="num">Population</th><th class="num">Share</th></tr></thead>
+          <tbody id="stateTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-title">City tiers</div>
+  <p class="sec-note" style="margin-top:0;">Tap any tier to see the individual cities inside it and their populations.</p>
+  <div class="grid cols-3" id="tierGrid">
+    <details class="card tier-card" data-cat="population">
+      <summary><span class="v">~120M</span><span class="l">Tier 1 — the 8 metros (X-class)</span><span class="plus">+</span></summary>
+      <div class="tier-body">
+        <table class="mini-table">
+          <tbody>
+            <tr><td>Delhi NCR</td><td class="num">~32M</td></tr>
+            <tr><td>Mumbai</td><td class="num">~21M</td></tr>
+            <tr><td>Kolkata</td><td class="num">~15M</td></tr>
+            <tr><td>Bengaluru</td><td class="num">~14M</td></tr>
+            <tr><td>Chennai</td><td class="num">~11.5M</td></tr>
+            <tr><td>Hyderabad</td><td class="num">~10M</td></tr>
+            <tr><td>Ahmedabad</td><td class="num">~8.4M</td></tr>
+            <tr><td>Pune</td><td class="num">~7.5M</td></tr>
+          </tbody>
+        </table>
+        <p class="tier-note">This is the complete list — only these 8 cities are officially "X-class" (Dept. of Expenditure, 7th CPC), the closest thing India has to a formal Tier-1 definition. Figures are urban-agglomeration estimates, so they vary by source.</p>
+      </div>
+    </details>
+
+    <details class="card tier-card" data-cat="population">
+      <summary><span class="v">~250M</span><span class="l">Tier 2 — Y-class cities</span><span class="plus">+</span></summary>
+      <div class="tier-body">
+        <table class="mini-table">
+          <tbody>
+            <tr><td>Surat</td><td class="num">~7.5M</td></tr>
+            <tr><td>Jaipur</td><td class="num">~4.2M</td></tr>
+            <tr><td>Lucknow</td><td class="num">~3.8M</td></tr>
+            <tr><td>Kanpur</td><td class="num">~3.2M</td></tr>
+            <tr><td>Nagpur</td><td class="num">~2.9M</td></tr>
+            <tr><td>Coimbatore</td><td class="num">~2.6M</td></tr>
+            <tr><td>Patna</td><td class="num">~2.5M</td></tr>
+            <tr><td>Indore</td><td class="num">~2.5M</td></tr>
+            <tr><td>Visakhapatnam</td><td class="num">~2.4M</td></tr>
+            <tr><td>Bhopal</td><td class="num">~2.4M</td></tr>
+            <tr><td>Vadodara</td><td class="num">~2.2M</td></tr>
+            <tr><td>Kochi</td><td class="num">~2.1M</td></tr>
+            <tr><td>Rajkot</td><td class="num">~2.0M</td></tr>
+            <tr><td>Amritsar</td><td class="num">~1.7M</td></tr>
+            <tr><td>Varanasi</td><td class="num">~1.6M</td></tr>
+            <tr><td>Ranchi</td><td class="num">~1.5M</td></tr>
+            <tr><td>Jodhpur</td><td class="num">~1.3M</td></tr>
+            <tr><td>Guwahati</td><td class="num">~1.3M</td></tr>
+            <tr><td>Mysuru</td><td class="num">~1.1M</td></tr>
+          </tbody>
+        </table>
+        <p class="tier-note">A sample of the largest — the government's "Y-class" list runs to around 90 cities and towns; all Y-class areas together are estimated to house ~250M people. Everything popularly called "Tier 2" in India — Jaipur, Kochi, Surat, Coimbatore, Vadodara and the rest — sits in this one official band, not a separate rung below it.</p>
+      </div>
+    </details>
+
+    <details class="card tier-card" data-cat="population">
+      <summary><span class="v">~400M</span><span class="l">Tier 3 — Z-class + towns</span><span class="plus">+</span></summary>
+      <div class="tier-body">
+        <ul class="tier-list">
+          <li>Everything not on the X or Y list is "Z-class" by default — this is where the bulk of India's ~4,000 statutory towns fall</li>
+          <li>Typical single-town population: 20,000–100,000 people</li>
+          <li>Includes district headquarters and fast-growing industrial towns (e.g. Tirupur, Erode, Bhilwara, Panipat)</li>
+          <li>Fastest-growing tier by e-commerce and fintech adoption rate, off a smaller base</li>
+        </ul>
+        <p class="tier-note">Too numerous and too small individually to list city-by-city with reliable figures — shown as characteristics instead of a table.</p>
+      </div>
+    </details>
+
+    <details class="card tier-card" data-cat="population">
+      <summary><span class="v">~700M+</span><span class="l">Villages (rural)</span><span class="plus">+</span></summary>
+      <div class="tier-body">
+        <ul class="tier-list">
+          <li>~600,000+ villages across India</li>
+          <li>Average village population: ~1,100–1,200 people</li>
+          <li>~65% of India's rural population still depends primarily on agriculture</li>
+          <li>Rural internet and UPI adoption is the fastest-growing segment nationally, off a smaller base</li>
+        </ul>
+      </div>
+    </details>
+
+    <div class="card" data-cat="population"><span class="v">2nd</span><span class="l">India's global rank by population</span></div>
+  </div>
+  <p class="sec-note" style="margin:12px 0 0;">"Tier 1/2/3" isn't one single official ranking in India — it's popular shorthand for the government's X/Y/Z classification (Department of Expenditure, used for HRA), which is what's shown here: X = Tier 1 (8 metros), Y = Tier 2 (~90 mid-size cities), Z = Tier 3 (everything else). Real-estate and market-research reports sometimes use their own, looser tiering — so a city's "tier" can genuinely differ by source.</p>
+
+  <div class="sub-title">Population by age group</div>
+  <p class="sec-note" style="margin-top:0;">India's youth bulge in one table — useful for any guesstimate that segments by "who's actually the customer."</p>
+  <div class="table-wrap">
+    <table class="dtable" data-cat="population">
+      <thead><tr><th>Age bracket</th><th>Life stage</th><th class="num">Share of population</th><th class="num">Approx. people</th></tr></thead>
+      <tbody>
+        <tr><td>0–14 yrs</td><td>Children</td><td class="num">~26%</td><td class="num">~385M</td></tr>
+        <tr><td>15–24 yrs</td><td>Youth / students</td><td class="num">~18%</td><td class="num">~260M</td></tr>
+        <tr><td>25–54 yrs</td><td>Core working-age</td><td class="num">~42%</td><td class="num">~610M</td></tr>
+        <tr><td>55–64 yrs</td><td>Mature working-age</td><td class="num">~8%</td><td class="num">~115M</td></tr>
+        <tr><td>65+ yrs</td><td>Elderly</td><td class="num">~7%</td><td class="num">~100M</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid cols-3" style="margin-top:12px;">
+    <div class="card accent" data-cat="population"><span class="v">~44%<span class="unit">~640M</span></span><span class="l">India under 25 years old</span></div>
+    <div class="card" data-cat="population"><span class="v">~68%<span class="unit">~1B</span></span><span class="l">India of working age (15–64)</span></div>
+    <div class="card teal" data-cat="population"><span class="v">~29 yrs</span><span class="l">Median age (vs. China ~39, US ~38)</span></div>
+  </div>
+  <p class="sec-note" style="margin:10px 0 0;">Age-bracket shares are UN/census-projection based and rounded — different sources split the working-age band slightly differently, so treat these as directional, not exact.</p>
+
+  <div class="sub-title">Household income split (annual)</div>
+  <div class="table-wrap">
+    <table class="dtable" data-cat="population">
+      <thead><tr><th>Tier</th><th>Annual household income</th><th class="num">Share of households</th><th class="num">Households</th></tr></thead>
+      <tbody>
+        <tr><td>Affluent</td><td>&gt; Rs 30L</td><td class="num">~5%</td><td class="num">~15M HH</td></tr>
+        <tr><td>Upper mid</td><td>Rs 15–30L</td><td class="num">~10%</td><td class="num">~30M HH</td></tr>
+        <tr><td>Middle</td><td>Rs 5–15L</td><td class="num">~25%</td><td class="num">~75M HH</td></tr>
+        <tr><td>Aspirers</td><td>Rs 1–5L</td><td class="num">~45%</td><td class="num">~135M HH</td></tr>
+        <tr><td>Low income</td><td>&lt; Rs 1L</td><td class="num">~15%</td><td class="num">~45M HH</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="sec-note" style="margin:10px 0 0;">Average household spend: ~Rs 2.5L/yr &nbsp;·&nbsp; Credit card users: ~100M &nbsp;·&nbsp; Demat accounts: ~180M+ &nbsp;·&nbsp; Income-tax return filers: ~34M (approx.) &nbsp;·&nbsp; PAN card holders: ~780M+ &nbsp;·&nbsp; Aadhaar holders: ~1.4B+</p>
+
+</section>
+
+<!-- ============ DIGITAL ============ -->
+<section class="sec" id="digital" data-cat="digital">
+  <div class="sec-head"><span class="sec-num">02</span><h2>Digital India</h2></div>
+  <p class="sec-note">The internet, social media and video base that every consumer-tech guesstimate segments from — broken down platform by platform.</p>
+
+  <div class="sub-title">Internet &amp; connectivity</div>
+  <div class="grid">
+    <div class="card accent" data-cat="digital"><span class="v">>1B<span class="unit">70%+</span></span><span class="l">Internet users</span></div>
+    <div class="card" data-cat="digital"><span class="v">750M–1B</span><span class="l">Smartphone users</span></div>
+    <div class="card" data-cat="digital"><span class="v">~300M+</span><span class="l">5G users</span></div>
+    <div class="card" data-cat="digital"><span class="v">~300M+</span><span class="l">FinTech users</span></div>
+    <div class="card" data-cat="digital"><span class="v">~500M+</span><span class="l">UPI users</span></div>
+    <div class="card" data-cat="digital"><span class="v">250–300M</span><span class="l">Online shoppers</span></div>
+    <div class="card" data-cat="digital"><span class="v">21.6B/mo</span><span class="l">UPI transaction volume, Dec 2025</span></div>
+    <div class="card teal" data-cat="digital"><span class="v">~500M+<span class="unit">34% of pop.</span></span><span class="l">Total social media users</span></div>
+  </div>
+
+  <div class="sub-title">Social media — platform by platform</div>
+  <div class="table-wrap">
+    <table class="dtable" data-cat="digital">
+      <thead><tr><th>Platform</th><th class="num">India users</th><th class="num">Avg. daily time / user</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>WhatsApp</td><td class="num">~535M+</td><td class="num">—</td><td>Counted as messaging, not "social media," in most trackers</td></tr>
+        <tr><td>YouTube</td><td class="num">~490–500M</td><td class="num">~72–90 min</td><td>India's single largest platform audience, worldwide</td></tr>
+        <tr><td>Instagram</td><td class="num">~390–480M</td><td class="num">~79 min</td><td>Range depends on ad-reach vs. registered-user methodology</td></tr>
+        <tr><td>Facebook</td><td class="num">~400M</td><td class="num">~66 min</td><td>Still India's 3rd largest platform by users</td></tr>
+        <tr><td>Snapchat</td><td class="num">~250M</td><td class="num">—</td><td>Skews younger, urban</td></tr>
+        <tr><td>LinkedIn</td><td class="num">~150–170M</td><td class="num">—</td><td>Registered members aged 18+; fastest-growing major market</td></tr>
+        <tr><td>X (Twitter)</td><td class="num">~30M</td><td class="num">—</td><td>Smallest of the major platforms in India</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="sec-note" style="margin:10px 0 0;">Average time across <i>all</i> social apps combined: ~2 hr 44 min/day, spread across ~6–7 platforms/month per user. TikTok has been banned in India since June 2020 — homegrown short-video apps (Instagram Reels, YouTube Shorts, Moj, Josh, ShareChat) absorbed that demand instead.</p>
+
+  <div class="sub-title">Video &amp; watch time</div>
+  <div class="grid cols-3">
+    <div class="card accent" data-cat="digital"><span class="v">~80 min</span><span class="l">Avg. daily video watch time per user (YouTube)</span></div>
+    <div class="card" data-cat="digital"><span class="v">~100M+</span><span class="l">OTT subscribers</span></div>
+    <div class="card teal" data-cat="digital"><span class="v">~450M</span><span class="l">Mobile gaming users</span></div>
+  </div>
+  <p class="sec-note" style="margin:10px 0 0;">Note: no official source confirms a single-figure "DAU" or "hours watched per day" aggregate for any platform in India, so those two guesstimate examples have been removed rather than presented as sourced figures.</p>
+</section>
+
+<!-- ============ FINTECH ============ -->
+<section class="sec" id="fintech" data-cat="fintech">
+  <div class="sec-head"><span class="sec-num">03</span><h2>Fintech &amp; digital payments</h2></div>
+  <p class="sec-note">UPI is India's single most reused guesstimate anchor. Know these six numbers cold.</p>
+  <div class="sector-flex">
+    <div class="stats">
+      <div class="grid cols-2">
+        <div class="card accent" data-cat="fintech"><span class="v">228.3B</span><span class="l">UPI transactions, 2025 (annual)</span></div>
+        <div class="card" data-cat="fintech"><span class="v">~Rs 299.7L Cr</span><span class="l">UPI transaction value, 2025</span></div>
+        <div class="card" data-cat="fintech"><span class="v">~21.7B</span><span class="l">UPI monthly volume, Jan 2026</span></div>
+        <div class="card" data-cat="fintech"><span class="v">500M+</span><span class="l">UPI unique users</span></div>
+        <div class="card" data-cat="fintech"><span class="v">~698M</span><span class="l">Daily avg. UPI transactions</span></div>
+        <div class="card" data-cat="fintech"><span class="v">~29%</span><span class="l">YoY growth, transaction volume</span></div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="tb-title">Quick guesstimate template</div>
+      <ol class="steps">
+        <li>Anchor: 500M UPI users</li>
+        <li>Segment: urban (60%) vs rural (40%)</li>
+        <li>Avg. txns/user/month: ~38 (228.3B ÷ 500M ÷ 12)</li>
+        <li>Apply use-case % (e.g. bill payments = 20%)</li>
+        <li>Sanity check vs. NPCI reported figures</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="sub-title">Banking &amp; credit</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="fintech"><span class="v">Rs 232L Cr</span><span class="l">Total bank deposits, 2025</span></div>
+    <div class="card" data-cat="fintech"><span class="v">Rs 181L Cr</span><span class="l">Total bank credit, 2025</span></div>
+    <div class="card" data-cat="fintech"><span class="v">2.31%</span><span class="l">Gross NPA, Mar 2025 (20-yr low)</span></div>
+    <div class="card" data-cat="fintech"><span class="v">Rs 1.78L Cr</span><span class="l">PSB profit, FY25</span></div>
+    <div class="card" data-cat="fintech"><span class="v">~1.6 Lakh</span><span class="l">Bank branches</span></div>
+    <div class="card" data-cat="fintech"><span class="v">~2.5 Lakh</span><span class="l">ATMs</span></div>
+    <div class="card" data-cat="fintech"><span class="v">900M+</span><span class="l">Bank account holders (Jan Dhan)</span></div>
+    <div class="card" data-cat="fintech"><span class="v">17.36%</span><span class="l">CRAR (capital buffer)</span></div>
+    <div class="card" data-cat="fintech"><span class="v">~Rs 70L Cr</span><span class="l">Mutual fund AUM</span></div>
+    <div class="card" data-cat="fintech"><span class="v">~100M</span><span class="l">Credit cards</span></div>
+    <div class="card" data-cat="fintech"><span class="v">950M+</span><span class="l">Debit cards</span></div>
+    <div class="card" data-cat="fintech"><span class="v">400M+</span><span class="l">Mobile wallet accounts</span></div>
+    <div class="card" data-cat="fintech"><span class="v">80M+</span><span class="l">BNPL users</span></div>
+    <div class="card" data-cat="fintech"><span class="v">~Rs 26,000 Cr</span><span class="l">Monthly SIP inflow</span></div>
+    <div class="card teal" data-cat="fintech"><span class="v">25+</span><span class="l">FinTech unicorns</span></div>
+    <div class="card" data-cat="fintech"><span class="v">~$1T</span><span class="l">Digital payments value, 2025</span></div>
+  </div>
+
+  <div class="ex-group-title">Worked examples</div>
+  <div class="ex" data-cat="fintech">
+    <summary><span>Estimate UPI transaction value per month</span><span class="plus">+</span></summary>
+    <div class="body">UPI users (500M) × 8 txns/month × Rs 1,500 avg ≈ <b style="color:var(--teal)">Rs 6 Lakh Cr/month</b> (NPCI actual: ~Rs 22L Cr in Dec 2025 — the gap shows why sanity-checking against a real anchor matters).</div>
+  </div>
+</section>
+
+<!-- ============ E-COMMERCE ============ -->
+<section class="sec" id="ecommerce" data-cat="ecommerce">
+  <div class="sec-head"><span class="sec-num">04</span><h2>E-commerce &amp; retail</h2></div>
+  <p class="sec-note">India is the world's 2nd largest e-retail market by shopper count — but still under-penetrated versus the US.</p>
+  <div class="sector-flex">
+    <div class="stats">
+      <div class="grid cols-2">
+        <div class="card accent" data-cat="ecommerce"><span class="v">~$137B</span><span class="l">E-commerce market size, 2025</span></div>
+        <div class="card" data-cat="ecommerce"><span class="v">~$159–163B</span><span class="l">Market size, 2026 est.</span></div>
+        <div class="card" data-cat="ecommerce"><span class="v">280–300M</span><span class="l">Online shoppers, 2025</span></div>
+        <div class="card" data-cat="ecommerce"><span class="v">420–440M</span><span class="l">Projected shoppers, 2030</span></div>
+        <div class="card" data-cat="ecommerce"><span class="v">~21.5%</span><span class="l">CAGR, 2025–2030</span></div>
+        <div class="card" data-cat="ecommerce"><span class="v">2nd</span><span class="l">India's global rank, e-retail market</span></div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="tb-title">Quick guesstimate template</div>
+      <ol class="steps">
+        <li>Anchor: 290M online shoppers</li>
+        <li>Segment: Tier 1 (40%) vs. Tier 2+ (60%)</li>
+        <li>Avg annual spend/shopper: ~$137B ÷ 290M = ~$472</li>
+        <li>Apply category share (e.g. fashion = ~25%)</li>
+        <li>Sanity check vs. IBEF/Statista benchmarks</li>
+      </ol>
+    </div>
+  </div>
+  <div class="sub-title">Retail &amp; commerce context</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="ecommerce"><span class="v">~$1.1T</span><span class="l">Total retail market, 2025</span></div>
+    <div class="card" data-cat="ecommerce"><span class="v">~$125B</span><span class="l">E-commerce, FY24</span></div>
+    <div class="card" data-cat="ecommerce"><span class="v">~24%</span><span class="l">Organized retail share</span></div>
+    <div class="card" data-cat="ecommerce"><span class="v">12M+</span><span class="l">Kirana (mom-and-pop) stores</span></div>
+    <div class="card" data-cat="ecommerce"><span class="v">~18.4%</span><span class="l">E-commerce CAGR to FY30</span></div>
+    <div class="card teal" data-cat="ecommerce"><span class="v">~10% <span class="unit">vs US ~20%</span></span><span class="l">E-commerce share of total retail</span></div>
+  </div>
+  <div class="ex-group-title">Worked examples</div>
+  <div class="ex" data-cat="ecommerce">
+    <summary><span>Swiggy / Zomato monthly GMV</span><span class="plus">+</span></summary>
+    <div class="body">Urban internet users (530M) × food-delivery users (20%) × 8 orders/month × Rs 300 avg order ≈ <b style="color:var(--teal)">Rs 2,544 Cr/month</b>.</div>
+  </div>
+  <div class="ex" data-cat="ecommerce">
+    <summary><span>India's online grocery market size</span><span class="plus">+</span></summary>
+    <div class="body">Online shoppers (250M) × grocery buyers online (30%) × Rs 3,000/month × 12 ≈ <b style="color:var(--teal)">Rs 2.7 Lakh Cr/yr (~$32B) — illustrative practice estimate, not an official figure</b>.</div>
+  </div>
+</section>
+
+<!-- ============ QUICK COMMERCE ============ -->
+<section class="sec" id="quickcommerce" data-cat="quickcommerce">
+  <div class="sec-head"><span class="sec-num">05</span><h2>Quick commerce (q-commerce)</h2></div>
+  <p class="sec-note">India's fastest-growing retail format — 10–20 minute delivery from dark stores. The category that ate grocery e-commerce's growth and is now moving into pharmacy, electronics and even food.</p>
+
+  <div class="sector-flex">
+    <div class="stats">
+      <div class="grid cols-2">
+        <div class="card accent" data-cat="quickcommerce"><span class="v">~$8–8.5B</span><span class="l">Quick commerce GMV, FY25/2025</span></div>
+        <div class="card" data-cat="quickcommerce"><span class="v">~$18–20B</span><span class="l">Projected GMV, 2027–28</span></div>
+        <div class="card" data-cat="quickcommerce"><span class="v">~70–80%</span><span class="l">YoY GMV growth, 2025</span></div>
+        <div class="card" data-cat="quickcommerce"><span class="v">45–55M</span><span class="l">Monthly transacting users</span></div>
+        <div class="card" data-cat="quickcommerce"><span class="v">10–20 min</span><span class="l">Typical delivery promise</span></div>
+        <div class="card" data-cat="quickcommerce"><span class="v">~45–50%</span><span class="l">Share of online grocery GMV (overtook e-grocery)</span></div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="tb-title">Quick guesstimate template</div>
+      <ol class="steps">
+        <li>Anchor: ~50M monthly transacting users, metro + Tier-1 skew</li>
+        <li>Segment: orders/user/month (~4–6) × avg order value (Rs 400–500)</li>
+        <li>Apply dark-store density: ~1 store per 2–3 sq km in a metro</li>
+        <li>Sanity check: dark store daily orders (~1,000–2,500) × AOV</li>
+        <li>Cross-check GMV vs. company investor-deck disclosures</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="sub-title">Big players &amp; market share (by GMV, India, 2025)</div>
+  <div class="table-wrap">
+    <table class="dtable" data-cat="quickcommerce">
+      <thead><tr><th>Platform</th><th>Parent / backing</th><th class="num">Est. GMV share</th><th class="num">Dark stores</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>Blinkit</td><td>Eternal (Zomato)</td><td class="num">~35–40%</td><td class="num">~1,000–1,300</td><td>Market leader by GMV; first mover into 10-min delivery at scale</td></tr>
+        <tr><td>Zepto</td><td>Independent (Zepto Marketplace)</td><td class="num">~20–25%</td><td class="num">~700–900</td><td>Fastest-growing; expanding into "Zepto Cafe" and 10-min food</td></tr>
+        <tr><td>Swiggy Instamart</td><td>Swiggy</td><td class="num">~20–25%</td><td class="num">~700–900</td><td>Deep cross-sell with Swiggy's food-delivery user base</td></tr>
+        <tr><td>BB Now (bigbasket)</td><td>Tata Group</td><td class="num">~5–8%</td><td class="num">~200–300</td><td>Repositioned bigbasket's dark-store network for quick delivery</td></tr>
+        <tr><td>Flipkart Minutes</td><td>Flipkart (Walmart)</td><td class="num">~3–5%</td><td class="num">~200+</td><td>Newer entrant, aggressive metro expansion since 2024</td></tr>
+        <tr><td>Amazon Now</td><td>Amazon</td><td class="num">&lt;3%</td><td class="num">Early-stage</td><td>Piloted in select metros; smallest footprint of the majors</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="sec-note" style="margin:10px 0 0;">The market is effectively a three-way race — Blinkit, Zepto and Instamart together account for the large majority of category GMV — with BB Now, Flipkart Minutes and Amazon Now as scaled challengers. Shares move quickly quarter to quarter and vary by data source (Datum, Redseer, JM Financial, company disclosures), so treat these as directional bands, not precise figures.</p>
+
+  <div class="sub-title">Category expansion &amp; unit economics</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="quickcommerce"><span class="v">Rs 400–500</span><span class="l">Average order value</span></div>
+    <div class="card" data-cat="quickcommerce"><span class="v">4–6</span><span class="l">Orders per user per month</span></div>
+    <div class="card" data-cat="quickcommerce"><span class="v">~2,500–4,000 sq ft</span><span class="l">Typical dark store size</span></div>
+    <div class="card" data-cat="quickcommerce"><span class="v">1,500–2,500</span><span class="l">SKUs per dark store</span></div>
+    <div class="card teal" data-cat="quickcommerce"><span class="v">Grocery, pharmacy, electronics, beauty</span><span class="l">Fastest-expanding categories</span></div>
+    <div class="card" data-cat="quickcommerce"><span class="v">Metro + Tier-1</span><span class="l">Where ~80%+ of GMV is concentrated today</span></div>
+    <div class="card" data-cat="quickcommerce"><span class="v">Near break-even to slightly loss-making</span><span class="l">Contribution margin, leading players (2025)</span></div>
+    <div class="card" data-cat="quickcommerce"><span class="v">~15,000+</span><span class="l">Delivery partners, top platform (peak)</span></div>
+    <div class="card" data-cat="quickcommerce"><span class="v">40–60</span><span class="l">Cities with active dark-store networks</span></div>
+  </div>
+  <p class="sec-note" style="margin:10px 0 0;">Competitive dynamics worth knowing for a case: (1) quick commerce is cannibalising both kirana-store share and online-grocery share simultaneously; (2) platforms are layering in ads/retail-media and private label to improve margins, since delivery economics alone are thin; (3) 10-minute food delivery (Zepto Cafe, Blinkit Bistro, Swiggy Snacc) is the newest battleground, competing directly with Swiggy/Zomato's core food business.</p>
+
+  <div class="ex-group-title">Worked examples</div>
+  <div class="ex" data-cat="quickcommerce">
+    <summary><span>Blinkit's daily order volume</span><span class="plus">+</span></summary>
+    <div class="body">Dark stores (~1,200) × avg. orders/store/day (~1,500) ≈ <b style="color:var(--teal)">~1.8M orders/day</b>, broadly in line with disclosed run-rates in Eternal's investor updates.</div>
+  </div>
+  <div class="ex" data-cat="quickcommerce">
+    <summary><span>Total quick commerce GMV, India</span><span class="plus">+</span></summary>
+    <div class="body">Monthly transacting users (~50M) × orders/month (~5) × AOV (Rs 450) × 12 ≈ <b style="color:var(--teal)">~Rs 13.5L Cr/yr (~$16B)</b> — a useful reminder to sanity-check a bottoms-up number against a published third-party GMV estimate, which typically comes in lower.</div>
+  </div>
+</section>
+
+<!-- ============ EV / MOBILITY ============ -->
+<section class="sec" id="ev" data-cat="ev">
+  <div class="sec-head"><span class="sec-num">06</span><h2>Mobility &amp; electric vehicles</h2></div>
+  <p class="sec-note">Two-wheelers still dominate India's EV mix — a very different shape from the global EV market.</p>
+  <div class="sector-flex">
+    <div class="stats">
+      <div class="grid cols-2">
+        <div class="card accent" data-cat="ev"><span class="v">~2.3M</span><span class="l">Total EV sales, 2025 (units)</span></div>
+        <div class="card" data-cat="ev"><span class="v">~8%</span><span class="l">EV share of new vehicle sales</span></div>
+        <div class="card" data-cat="ev"><span class="v">1.28M<span class="unit">57%</span></span><span class="l">E-2-wheelers, 2025</span></div>
+        <div class="card" data-cat="ev"><span class="v">0.8M<span class="unit">35%</span></span><span class="l">E-3-wheelers, 2025</span></div>
+        <div class="card" data-cat="ev"><span class="v">~176,560<span class="unit">+77% YoY</span></span><span class="l">E-4-wheelers, 2025</span></div>
+        <div class="card" data-cat="ev"><span class="v">~7%</span><span class="l">E-car share of car sales, May 2026</span></div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="tb-title">Quick guesstimate template</div>
+      <ol class="steps">
+        <li>Anchor: 2.3M total EVs sold/year</li>
+        <li>Segment by vehicle type (2W / 3W / 4W)</li>
+        <li>Apply city-tier penetration (metros higher)</li>
+        <li>Estimate charging stations needed (ratio-based)</li>
+        <li>Sanity check vs. Vahan portal data</li>
+      </ol>
+    </div>
+  </div>
+  <div class="sub-title">Mobility, broader context</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="ev"><span class="v">~50M</span><span class="l">Cars registered</span></div>
+    <div class="card" data-cat="ev"><span class="v">~250M</span><span class="l">Two-wheelers registered</span></div>
+    <div class="card" data-cat="ev"><span class="v">~3M+</span><span class="l">EVs on road (total)</span></div>
+    <div class="card" data-cat="ev"><span class="v">~12M+</span><span class="l">Daily metro riders</span></div>
+    <div class="card" data-cat="ev"><span class="v">~220M</span><span class="l">Air passengers per year</span></div>
+    <div class="card" data-cat="ev"><span class="v">~23M</span><span class="l">Daily railway passengers</span></div>
+    <div class="card teal" data-cat="ev"><span class="v">34<span class="unit">vs US 820</span></span><span class="l">Car ownership per 1,000 people</span></div>
+  </div>
+  <div class="ex-group-title">Worked examples</div>
+  <div class="ex" data-cat="ev">
+    <summary><span>EV two-wheeler market potential</span><span class="plus">+</span></summary>
+    <div class="body">2-wheeler stock (250M) × annual replacement rate (10%) × EV consideration (30%) ≈ <b style="color:var(--teal)">~7.5M units/yr</b>.</div>
+  </div>
+  <div class="ex" data-cat="ev">
+    <summary><span>Global EV sales per year</span><span class="plus">+</span></summary>
+    <div class="body">Global car sales/yr (~90M) × EV share (~18–20%) ≈ <b style="color:var(--teal)">16–18M EV units/yr</b>.</div>
+  </div>
+</section>
+
+<!-- ============ EDTECH ============ -->
+<section class="sec" id="edtech" data-cat="edtech">
+  <div class="sec-head"><span class="sec-num">07</span><h2>EdTech &amp; education</h2></div>
+  <p class="sec-note">A 250M-strong student base, but digital adoption is still the bottleneck — and the opportunity.</p>
+  <div class="sector-flex">
+    <div class="stats">
+      <div class="grid cols-2">
+        <div class="card accent" data-cat="edtech"><span class="v">~$7.5B</span><span class="l">EdTech market size, 2025</span></div>
+        <div class="card" data-cat="edtech"><span class="v">~$29–30B</span><span class="l">Projected market, 2030–31</span></div>
+        <div class="card" data-cat="edtech"><span class="v">900M–1B+</span><span class="l">Internet users (base)</span></div>
+        <div class="card" data-cat="edtech"><span class="v">~250M</span><span class="l">Student population (base)</span></div>
+        <div class="card" data-cat="edtech"><span class="v">~15.2%</span><span class="l">CAGR, 2025–2035</span></div>
+        <div class="card" data-cat="edtech"><span class="v">50M+</span><span class="l">EdTech users today</span></div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="tb-title">Quick guesstimate template</div>
+      <ol class="steps">
+        <li>Anchor: 250M students in India</li>
+        <li>Segment: K-12 vs. higher-ed vs. test prep</li>
+        <li>Apply digital adoption % (~30–40% use edtech)</li>
+        <li>Avg. spend per paying user (subscription-based)</li>
+        <li>Sanity check vs. reported market size ($7.5B)</li>
+      </ol>
+    </div>
+  </div>
+  <div class="sub-title">Education, broader context</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="edtech"><span class="v">~1.5M</span><span class="l">Schools (total)</span></div>
+    <div class="card" data-cat="edtech"><span class="v">~43M</span><span class="l">College students</span></div>
+    <div class="card" data-cat="edtech"><span class="v">~1.5M</span><span class="l">Engineering grads/yr</span></div>
+    <div class="card" data-cat="edtech"><span class="v">300K+</span><span class="l">MBA grads/yr</span></div>
+    <div class="card" data-cat="edtech"><span class="v">23</span><span class="l">IITs</span></div>
+    <div class="card" data-cat="edtech"><span class="v">20+</span><span class="l">IIMs</span></div>
+    <div class="card" data-cat="edtech"><span class="v">~77%</span><span class="l">Literacy rate</span></div>
+    <div class="card" data-cat="edtech"><span class="v">~3%</span><span class="l">Govt. spend on education (% GDP)</span></div>
+  </div>
+  <div class="ex-group-title">Worked example</div>
+  <div class="ex" data-cat="edtech">
+    <summary><span>MBA white-collar jobs created per year</span><span class="plus">+</span></summary>
+    <div class="body">MBA grads/yr (300K) × placed in corporate roles (70%) × into knowledge jobs (60%) ≈ <b style="color:var(--teal)">~126K roles/yr</b>.</div>
+  </div>
+</section>
+
+<!-- ============ HEALTHCARE ============ -->
+<section class="sec" id="healthcare" data-cat="healthcare">
+  <div class="sec-head"><span class="sec-num">08</span><h2>Healthcare</h2></div>
+  <p class="sec-note">Frequently the base for pharma, insurance and health-app guesstimates.</p>
+  <div class="grid cols-3">
+    <div class="card accent" data-cat="healthcare"><span class="v">~1.3M</span><span class="l">Registered doctors</span></div>
+    <div class="card" data-cat="healthcare"><span class="v">~70,000</span><span class="l">Hospitals</span></div>
+    <div class="card" data-cat="healthcare"><span class="v">~2M<span class="unit">1.4/1000</span></span><span class="l">Hospital beds (vs US 2.8/1000)</span></div>
+    <div class="card" data-cat="healthcare"><span class="v">~9 Lakh</span><span class="l">Pharmacies</span></div>
+    <div class="card" data-cat="healthcare"><span class="v">~23M</span><span class="l">Annual births</span></div>
+    <div class="card" data-cat="healthcare"><span class="v">100M+</span><span class="l">Diabetics</span></div>
+    <div class="card" data-cat="healthcare"><span class="v">200M+</span><span class="l">Hypertension patients</span></div>
+    <div class="card" data-cat="healthcare"><span class="v">~550M</span><span class="l">Health-insured lives</span></div>
+    <div class="card teal" data-cat="healthcare"><span class="v">&gt;80%</span><span class="l">Mental health treatment gap</span></div>
+    <div class="card accent" data-cat="healthcare"><span class="v">&gt;$100B/yr</span><span class="l">Total health expenditure (recent years)</span></div>
+    <div class="card" data-cat="healthcare"><span class="v">&gt;Rs 30.4L Cr <span class="unit">~$320B</span></span><span class="l">Healthcare market, projected (IBEF, next few years)</span></div>
+  </div>
+  <div class="ex-group-title">Worked examples <span style="font-weight:400; color:var(--muted); text-transform:none; letter-spacing:0;">(illustrative Fermi practice — not sourced figures)</span></div>
+  <div class="ex" data-cat="healthcare">
+    <summary><span>Diabetics needing insulin in India</span><span class="plus">+</span></summary>
+    <div class="body">Diabetics (100M) × Type-1 + severe Type-2 (30%) × on insulin (60%) ≈ <b style="color:var(--teal)">~18M people</b> (a practice estimate — no official figure tracks this directly).</div>
+  </div>
+  <div class="ex" data-cat="healthcare">
+    <summary><span>India's private healthcare market</span><span class="plus">+</span></summary>
+    <div class="body">Population (1.48B) × Rs 5,000/yr avg spend ≈ Rs 7.4L Cr; private share ~65% ≈ <b style="color:var(--teal)">Rs 4.8L Cr/yr (~$58B)</b> — well below actual total health expenditure of &gt;$100B/yr, showing why the avg.-spend assumption needs revising upward.</div>
+  </div>
+  <div class="ex" data-cat="healthcare">
+    <summary><span>Annual doctor consultations in India</span><span class="plus">+</span></summary>
+    <div class="body">Population (1.48B) × 3 consults/yr avg ≈ <b style="color:var(--teal)">~4.4B consultations/yr (~12M/day)</b> (a practice estimate; no official annual consultation count exists at this scale — eSanjeevani teleconsultations, for comparison, are in the hundreds of millions cumulatively, not billions per year).</div>
+  </div>
+  <div class="ex" data-cat="healthcare">
+    <summary><span>Mental health app TAM</span><span class="plus">+</span></summary>
+    <div class="body">Internet users (1B) × mental health need (20%) × willing to use app (15%) × paying (10%) × Rs 500/mo ≈ <b style="color:var(--teal)">~Rs 1,455 Cr/yr</b> (illustrative TAM sizing, not a market-research figure).</div>
+  </div>
+</section>
+
+<!-- ============ ECONOMY / SECTOR DEEP DIVES ============ -->
+<section class="sec" id="economy" data-cat="economy">
+  <div class="sec-head"><span class="sec-num">09</span><h2>Economy — sector deep dives</h2></div>
+  <p class="sec-note">Agriculture, FMCG, startups, media, real estate and B2B — the sectors that show up as guesstimate curveballs.</p>
+
+  <div class="sub-title">Agriculture</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="economy"><span class="v">~18%</span><span class="l">Share of GDP (GVA)</span></div>
+    <div class="card" data-cat="economy"><span class="v">~146M</span><span class="l">Farmers (cultivators)</span></div>
+    <div class="card" data-cat="economy"><span class="v">~93M</span><span class="l">Agricultural households</span></div>
+    <div class="card" data-cat="economy"><span class="v">~157M ha</span><span class="l">Arable land</span></div>
+    <div class="card" data-cat="economy"><span class="v">~$49B</span><span class="l">Agri exports, FY25</span></div>
+    <div class="card" data-cat="economy"><span class="v">~$354B</span><span class="l">Food processing market</span></div>
+    <div class="card" data-cat="economy"><span class="v">~3.1%</span><span class="l">Agri GDP growth, FY26</span></div>
+    <div class="card" data-cat="economy"><span class="v">~1.1 ha</span><span class="l">Average farm size</span></div>
+    <div class="card" data-cat="economy"><span class="v">~37M MT</span><span class="l">Cold storage capacity</span></div>
+  </div>
+
+  <div class="sub-title">FMCG</div>
+  <div class="grid cols-3">
+    <div class="card accent" data-cat="economy"><span class="v">~$289B</span><span class="l">Market size, 2025</span></div>
+    <div class="card" data-cat="economy"><span class="v">62% / 38%</span><span class="l">Urban / rural share</span></div>
+    <div class="card" data-cat="economy"><span class="v">6–8%</span><span class="l">Revenue growth, FY26</span></div>
+    <div class="card" data-cat="economy"><span class="v">10–12%</span><span class="l">Modern trade share</span></div>
+    <div class="card teal" data-cat="economy"><span class="v">8.4%<span class="unit">vs urban 4.6%</span></span><span class="l">Rural volume growth, Q2 2025</span></div>
+    <div class="card" data-cat="economy"><span class="v">~$643B</span><span class="l">Projected market, 2030</span></div>
+  </div>
+  <p class="sec-note" style="margin:10px 0 0;">Top players: HUL, ITC, Nestlé, P&amp;G</p>
+
+  <div class="sub-title">Startup ecosystem</div>
+  <div class="grid cols-3">
+    <div class="card accent" data-cat="economy"><span class="v">164K+</span><span class="l">DPIIT-recognised startups</span></div>
+    <div class="card" data-cat="economy"><span class="v">10K+</span><span class="l">Angel investors</span></div>
+    <div class="card" data-cat="economy"><span class="v">800+</span><span class="l">VC funds</span></div>
+    <div class="card" data-cat="economy"><span class="v">1,000+</span><span class="l">Incubators</span></div>
+    <div class="card teal" data-cat="economy"><span class="v">132</span><span class="l">Unicorns, 2026</span></div>
+    <div class="card" data-cat="economy"><span class="v">100+</span><span class="l">Soonicorns</span></div>
+    <div class="card" data-cat="economy"><span class="v">$12B+</span><span class="l">Funding raised, 2025</span></div>
+    <div class="card" data-cat="economy"><span class="v">FinTech, SaaS, HealthTech</span><span class="l">Top sectors</span></div>
+    <div class="card" data-cat="economy"><span class="v">Bengaluru, Delhi, Mumbai</span><span class="l">Top startup hubs</span></div>
+  </div>
+
+  <div class="sub-title">Media &amp; entertainment</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="economy"><span class="v">~$30B</span><span class="l">Sector size, 2025</span></div>
+    <div class="card" data-cat="economy"><span class="v">~9.1%</span><span class="l">Growth, YoY</span></div>
+    <div class="card" data-cat="economy"><span class="v">~Rs 10,000 Cr</span><span class="l">OTT revenue, FY25</span></div>
+    <div class="card" data-cat="economy"><span class="v">100M+</span><span class="l">OTT subscribers</span></div>
+    <div class="card" data-cat="economy"><span class="v">~210M</span><span class="l">TV households</span></div>
+    <div class="card" data-cat="economy"><span class="v">300M+</span><span class="l">Newspaper readers</span></div>
+    <div class="card" data-cat="economy"><span class="v">1,500–2,000</span><span class="l">Bollywood films/yr</span></div>
+    <div class="card" data-cat="economy"><span class="v">~$1T</span><span class="l">Projected sector size, 2030</span></div>
+  </div>
+
+  <div class="sub-title">Real estate</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="economy"><span class="v">~$200–300B</span><span class="l">Sector size, 2025</span></div>
+    <div class="card" data-cat="economy"><span class="v">~7–8%</span><span class="l">Direct share of GDP</span></div>
+    <div class="card" data-cat="economy"><span class="v">~10M units</span><span class="l">Urban housing shortfall</span></div>
+    <div class="card" data-cat="economy"><span class="v">40M+</span><span class="l">PMAY houses built</span></div>
+    <div class="card" data-cat="economy"><span class="v">~Rs 28L Cr</span><span class="l">Home loan book</span></div>
+    <div class="card" data-cat="economy"><span class="v">Rs 80L–2Cr</span><span class="l">Avg. home price, metro</span></div>
+    <div class="card" data-cat="economy"><span class="v">~60M sq ft/yr</span><span class="l">Office space demand</span></div>
+    <div class="card" data-cat="economy"><span class="v">DLF, Godrej, Lodha</span><span class="l">Top players</span></div>
+  </div>
+
+  <div class="ex-group-title">Worked examples</div>
+  <div class="ex" data-cat="economy">
+    <summary><span>Urban housing demand (annual new units)</span><span class="plus">+</span></summary>
+    <div class="body">Urban households (108M) × new household formation (2%/yr) + replacement (0.5%) ≈ <b style="color:var(--teal)">~2.7M units/yr</b>.</div>
+  </div>
+  <div class="ex" data-cat="economy">
+    <summary><span>Cloud SaaS TAM in India (B2B)</span><span class="plus">+</span></summary>
+    <div class="body">DPIIT startups (164K) + SMEs (63M) × adoption rate (5%) × avg. spend $5K/yr ≈ <b style="color:var(--teal)">~$16B TAM</b>.</div>
+  </div>
+  <div class="ex" data-cat="economy">
+    <summary><span>Cab rides in Mumbai (daily)</span><span class="plus">+</span></summary>
+    <div class="body">Mumbai population (21M) × working adults (60%) × use cab 3×/week (20%) ÷ 7 ≈ <b style="color:var(--teal)">~1.1M cab rides/day</b>.</div>
+  </div>
+</section>
+
+<!-- ============ GLOBAL BENCHMARKS ============ -->
+<section class="sec" id="global" data-cat="global">
+  <div class="sec-head"><span class="sec-num">10</span><h2>Global benchmarks</h2></div>
+  <p class="sec-note">For any guesstimate framed globally, or any "how does India compare" follow-up.</p>
+  <div class="table-wrap">
+    <table class="dtable">
+      <thead><tr><th>Metric</th><th class="num">India</th><th class="num">China</th><th class="num">USA</th><th class="num">Europe (EU)</th><th class="num">World</th></tr></thead>
+      <tbody>
+        <tr><td>Population</td><td class="num">~1.48B</td><td class="num">~1.41B</td><td class="num">~340M</td><td class="num">~450M</td><td class="num">~8.1B</td></tr>
+        <tr><td>GDP (nominal)</td><td class="num">~$4T</td><td class="num">~$18T</td><td class="num">~$29T</td><td class="num">~$18T</td><td class="num">~$110T</td></tr>
+        <tr><td>GDP per capita</td><td class="num">~$2,700</td><td class="num">~$13,000</td><td class="num">~$85,000</td><td class="num">~$38,000</td><td class="num">~$13,500</td></tr>
+        <tr><td>Internet users</td><td class="num">>1B</td><td class="num">~1.1B</td><td class="num">~310M</td><td class="num">~400M</td><td class="num">~5.5B</td></tr>
+        <tr><td>Smartphone users</td><td class="num">~750M+</td><td class="num">~1.1B</td><td class="num">~280M</td><td class="num">~380M</td><td class="num">~7B+</td></tr>
+        <tr><td>Median age</td><td class="num">~29</td><td class="num">~39</td><td class="num">~38</td><td class="num">~44</td><td class="num">~31</td></tr>
+        <tr><td>Urban population</td><td class="num">~36%</td><td class="num">~65%</td><td class="num">~83%</td><td class="num">~75%</td><td class="num">~57%</td></tr>
+        <tr><td>Households</td><td class="num">~300M</td><td class="num">~500M</td><td class="num">~130M</td><td class="num">~195M</td><td class="num">~2.1B</td></tr>
+        <tr><td>E-commerce market</td><td class="num">~$125B</td><td class="num">~$2T</td><td class="num">~$1.1T</td><td class="num">~$600B</td><td class="num">~$6T</td></tr>
+        <tr><td>Cars (total)</td><td class="num">~50M</td><td class="num">~320M</td><td class="num">~280M</td><td class="num">~260M</td><td class="num">~1.4B</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-title">US quick anchors</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="global"><span class="v">~340M</span><span class="l">Population</span></div>
+    <div class="card" data-cat="global"><span class="v">~130M</span><span class="l">Households</span></div>
+    <div class="card" data-cat="global"><span class="v">~$29T</span><span class="l">GDP</span></div>
+    <div class="card" data-cat="global"><span class="v">~$75,000/yr</span><span class="l">Median household income</span></div>
+    <div class="card" data-cat="global"><span class="v">~92%</span><span class="l">Internet penetration</span></div>
+    <div class="card" data-cat="global"><span class="v">190M+</span><span class="l">Credit card users</span></div>
+  </div>
+
+  <div class="sub-title">India vs. global ratios</div>
+  <div class="grid cols-3">
+    <div class="card accent" data-cat="global"><span class="v">~18.3%</span><span class="l">India's share of world population</span></div>
+    <div class="card" data-cat="global"><span class="v">~3.6%</span><span class="l">India's share of world GDP</span></div>
+    <div class="card" data-cat="global"><span class="v">~18%</span><span class="l">India's share of global internet users</span></div>
+    <div class="card teal" data-cat="global"><span class="v">#1</span><span class="l">India's global rank, UPI transaction volume</span></div>
+    <div class="card" data-cat="global"><span class="v">~20%</span><span class="l">Share of global pharma exports (by volume)</span></div>
+    <div class="card" data-cat="global"><span class="v">~55%</span><span class="l">Share of global IT services offshoring</span></div>
+  </div>
+
+  <div class="sub-title">World quick anchors</div>
+  <div class="grid cols-3">
+    <div class="card" data-cat="global"><span class="v">~8.1B</span><span class="l">World population</span></div>
+    <div class="card" data-cat="global"><span class="v">~5.5B</span><span class="l">World internet users</span></div>
+    <div class="card" data-cat="global"><span class="v">~7B+</span><span class="l">World smartphone users</span></div>
+    <div class="card" data-cat="global"><span class="v">~$110T</span><span class="l">World GDP</span></div>
+    <div class="card" data-cat="global"><span class="v">~$6T</span><span class="l">Global e-commerce market</span></div>
+    <div class="card" data-cat="global"><span class="v">~1.4B</span><span class="l">Cars on the road, worldwide</span></div>
+    <div class="card" data-cat="global"><span class="v">~4B</span><span class="l">Annual flight passengers, worldwide</span></div>
+    <div class="card" data-cat="global"><span class="v">~$1.5T</span><span class="l">Global pharma market</span></div>
+    <div class="card" data-cat="global"><span class="v">~$45T+</span><span class="l">S&amp;P 500 market cap</span></div>
+  </div>
+</section>
+
+<!-- ============ FRAMEWORKS ============ -->
+<section class="sec" id="frameworks" data-cat="frameworks">
+  <div class="sec-head"><span class="sec-num">11</span><h2>Guesstimate frameworks — worked examples</h2></div>
+  <p class="sec-note">The full worked chain for each estimate, in case you want to see the whole logic rather than just the answer.</p>
+
+  <div class="ex-group-title">Consumer &amp; digital</div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Netflix subscribers in India</span><span class="res">~18M</span></summary>
+    <div class="body">Internet users (970M) × can afford (15%) × OTT-interested (50%) × Netflix share (25%) ≈ ~18M subscribers.</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Swiggy / Zomato monthly GMV</span><span class="res">~Rs 2,544 Cr/mo</span></summary>
+    <div class="body">Urban internet (530M) × food delivery users (20%) × 8 orders/month × Rs 300 avg ≈ ~Rs 2,544 Cr/month.</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>India's online grocery market size</span><span class="res">~$32B/yr</span></summary>
+    <div class="body">Online shoppers (250M) × grocery buyers online (30%) × Rs 3,000/month × 12 ≈ ~Rs 2.7 Lakh Cr/yr (~$32B).</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>UPI transaction value (monthly)</span><span class="res">~Rs 6L Cr/mo</span></summary>
+    <div class="body">UPI users (500M) × 8 txns/month × Rs 1,500 avg ≈ ~Rs 6 Lakh Cr/month (NPCI actual: ~Rs 22L Cr, Dec 2025).</div>
+  </div>
+
+  <div class="ex-group-title">Healthcare &amp; pharma</div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Diabetics needing insulin in India</span><span class="res">~18M</span></summary>
+    <div class="body">Diabetics (100M) × Type-1 + severe Type-2 (30%) × on insulin (60%) ≈ ~18M people.</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>India's private healthcare market</span><span class="res">~$58B/yr</span></summary>
+    <div class="body">Population (1.48B) × Rs 5,000/yr avg spend ≈ Rs 7.4L Cr; private share 65% ≈ Rs 4.8L Cr/yr (~$58B).</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Annual doctor consultations in India</span><span class="res">~4.4B/yr</span></summary>
+    <div class="body">Population (1.48B) × 3 consults/yr avg ≈ ~4.4B consultations/yr (~12M/day).</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Mental health app TAM</span><span class="res">~Rs 1,455 Cr/yr</span></summary>
+    <div class="body">Internet users (970M) × mental health need (20%) × willing to use app (15%) × paying (10%) × Rs 500/mo ≈ ~Rs 1,455 Cr/yr.</div>
+  </div>
+
+  <div class="ex-group-title">Mobility, real estate &amp; B2B</div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>EV 2-wheeler market potential</span><span class="res">~7.5M units/yr</span></summary>
+    <div class="body">2-wheeler stock (250M) × annual replacement rate (10%) × EV consideration (30%) ≈ ~7.5M units/yr.</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Cab rides in Mumbai (daily)</span><span class="res">~1.1M/day</span></summary>
+    <div class="body">Mumbai population (21M) × working adults (60%) × use cab 3×/week (20%) ÷ 7 ≈ ~1.1M cab rides/day.</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Urban housing demand (annual new units)</span><span class="res">~2.7M units/yr</span></summary>
+    <div class="body">Urban households (108M) × new household formation (2%/yr) + replacement (0.5%) ≈ ~2.7M units/yr.</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Cloud SaaS TAM in India (B2B)</span><span class="res">~$16B</span></summary>
+    <div class="body">DPIIT startups (164K) + SMEs (63M) × adoption rate (5%) × avg. spend $5K/yr ≈ ~$16B TAM.</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>MBA white-collar jobs created per year</span><span class="res">~126K/yr</span></summary>
+    <div class="body">MBA grads/yr (300K) × placed in corporate roles (70%) × into knowledge jobs (60%) ≈ ~126K roles/yr.</div>
+  </div>
+
+  <div class="ex-group-title">Global frameworks</div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Netflix subscribers globally</span><span class="res">~124M (actual ~300M)</span></summary>
+    <div class="body">Global internet users (5.5B) × can afford (30%) × OTT-interested (50%) × Netflix share (15%) ≈ ~124M — the real number (~300M) means penetration assumptions should be pushed up for a mature global product.</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>Global EV sales per year</span><span class="res">16–18M units/yr</span></summary>
+    <div class="body">Global car sales/yr (~90M) × EV share (~18–20%) ≈ 16–18M EV units/yr.</div>
+  </div>
+  <div class="ex" data-cat="frameworks">
+    <summary><span>US coffee shop market</span><span class="res">~$39B/yr (actual ~$45B)</span></summary>
+    <div class="body">US adults (260M) × daily coffee drinkers (65%) × cafe visits 3×/week (30%) × $5 avg × 52 weeks ≈ ~$39B/yr.</div>
+  </div>
+
+  <div class="ex-group-title">Try before you scroll — practice prompts</div>
+  <div class="prompt" data-cat="frameworks">
+    <p class="q">1. Estimate the number of UPI transactions made for online food delivery in India per month.</p>
+    <details><summary>Show a structuring hint</summary>
+      <div class="hint">Start from UPI's ~698M daily transactions, isolate the share that's e-commerce/food-related, then apply the food-delivery segment's share of that basket — cross-check against Swiggy/Zomato's combined order volumes.</div>
+    </details>
+  </div>
+  <div class="prompt" data-cat="frameworks">
+    <p class="q">2. Estimate the number of EV two-wheelers that will be sold in Tier 2 &amp; Tier 3 cities next year.</p>
+    <details><summary>Show a structuring hint</summary>
+      <div class="hint">Anchor on the 1.28M E-2W sold in 2025, apply a growth rate, then split by city tier — Tier 2/3 typically lags metro EV adoption, so weight metros higher before flipping the ratio for smaller cities.</div>
+    </details>
+  </div>
+  <div class="prompt" data-cat="frameworks">
+    <p class="q">3. Estimate the number of paying edtech subscribers in India for competitive exam prep (UPSC/CAT/JEE).</p>
+    <details><summary>Show a structuring hint</summary>
+      <div class="hint">Start from the 250M student base, narrow to the college/post-school segment likely to take competitive exams, apply a "preparing this year" rate, then a paying-subscriber conversion rate — sanity check against the $7.5B total edtech market.</div>
+    </details>
+  </div>
+  <div class="prompt" data-cat="frameworks">
+    <p class="q">4. Estimate the share of India's e-commerce market that comes from fashion &amp; apparel.</p>
+    <details><summary>Show a structuring hint</summary>
+      <div class="hint">Use the $137B e-commerce market as the denominator; build the fashion share bottom-up from category buyers × average annual apparel spend, then compare the resulting % against your top-down guess.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ INTERVIEW PLAYBOOK ============ -->
+<section class="sec" id="interview" data-cat="interview">
+  <div class="sec-head"><span class="sec-num">12</span><h2>Interview playbook</h2></div>
+  <p class="sec-note">What interviewers are actually scoring, and the 60-second shape a strong answer takes.</p>
+
+  <div class="sacn">
+    <div><span class="letter">S</span><span class="pct">40%</span><h4>Structure</h4><p>Break into 2–4 MECE components before any number. Say it aloud. Draw a tree. They want to see your mind, not just your math.</p></div>
+    <div><span class="letter">A</span><span class="pct">30%</span><h4>Assumptions</h4><p>State every assumption clearly. Good assumptions show business sense. Bad numbers with good logic still pass.</p></div>
+    <div><span class="letter">C</span><span class="pct">20%</span><h4>Communication</h4><p>Think out loud. Don't go silent for two minutes. A confident wrong answer beats a silent right one.</p></div>
+    <div><span class="letter">N</span><span class="pct">10%</span><h4>Number sense</h4><p>Being off by 30–50% is fine. 10x off is a red flag. Always sanity-check your final number.</p></div>
+  </div>
+
+  <div class="dodont">
+    <div class="do">
+      <div class="col-title">Do this</div>
+      <div class="item"><b>Define before you calculate</b><span>Always state scope first: geography, time period, units. "I'll estimate this for India, for one year, in number of units."</span></div>
+      <div class="item"><b>State assumptions out loud</b><span>Every filter you apply — say it. "I'm assuming about 20% of internet users shop online = ~194M people." Shows business intuition.</span></div>
+      <div class="item"><b>Sanity check at the end</b><span>Before presenting, ask: does this feel right? Compare to a real-world reference, out loud — interviewers love this.</span></div>
+      <div class="item"><b>Use MECE structure</b><span>Mutually exclusive, collectively exhaustive. Split populations into non-overlapping groups: urban/rural, income tiers, age bands.</span></div>
+    </div>
+    <div class="dont">
+      <div class="col-title">Don't do that</div>
+      <div class="item"><b>Jump straight to numbers</b><span>Starting with "So India has 1.4B people, and 10% of them..." without any setup is the #1 red flag in guesstimate interviews.</span></div>
+      <div class="item"><b>Use obviously wrong anchors</b><span>"Assume India's population is 500M" will derail your entire estimate. Know your five anchors cold before entering any interview.</span></div>
+      <div class="item"><b>Panic if your math is off</b><span>If you catch an error, calmly say "let me revise that." Self-correction shows maturity — defending a wrong number is far worse.</span></div>
+      <div class="item"><b>Over-engineer it</b><span>A clean 3-step estimate beats a 10-step model that loses the interviewer. Precision is not the goal — a logical path to a reasonable ballpark is.</span></div>
+    </div>
+  </div>
+
+  <div class="sub-title">The 60-second answer template</div>
+  <div class="template60">
+    <div class="row"><span class="t">Opening · 10s</span><span class="c">"I'll estimate [metric] for [geography] for [time period]. I'll use a top-down approach starting from India's internet user base."</span></div>
+    <div class="row"><span class="t">Structure · 15s</span><span class="c">"I'll break this into: [segment A] and [segment B], then apply penetration and frequency to get a final number."</span></div>
+    <div class="row"><span class="t">Assumptions · 25s</span><span class="c">"Assuming internet users = 970M, of which 20% shop online = 194M. Of these, 15% buy in this category = 29M. Avg spend Rs 2,000 = Rs 5,800 Cr."</span></div>
+    <div class="row"><span class="t">Sanity check · 10s</span><span class="c">"That's ~Rs 5,800 Cr. Given top 3 players have combined revenue of Rs 8,000 Cr, this feels like a reasonable market size estimate."</span></div>
+  </div>
+</section>
+
+<!-- ============ BONUS GK ============ -->
+<section class="sec" id="bonus" data-cat="bonus">
+  <div class="sec-head"><span class="sec-num">13</span><h2>Bonus anchors</h2></div>
+  <p class="sec-note">Not from the source cheat sheets — a few more general-knowledge numbers worth having on hand for the wider political, economic and demographic questions interviewers like to slip in. Treat these as rounder, softer estimates than the sourced ones above.</p>
+  <div class="grid cols-3">
+    <div class="card" data-cat="bonus"><span class="v">~195</span><span class="l">Countries in the world</span></div>
+    <div class="card" data-cat="bonus"><span class="v">~3.29M km²</span><span class="l">India's land area (7th largest)</span></div>
+    <div class="card" data-cat="bonus"><span class="v">543 / 245</span><span class="l">Lok Sabha / Rajya Sabha seats</span></div>
+    <div class="card" data-cat="bonus"><span class="v">~800+</span><span class="l">Districts in India</span></div>
+    <div class="card" data-cat="bonus"><span class="v">22</span><span class="l">Constitutionally scheduled languages</span></div>
+    <div class="card accent" data-cat="bonus"><span class="v">~7.6%</span><span class="l">India real GDP growth, FY26 (RBI est.)</span></div>
+    <div class="card" data-cat="bonus"><span class="v">5.25%</span><span class="l">RBI repo rate, 2026</span></div>
+    <div class="card" data-cat="bonus"><span class="v">~$682B</span><span class="l">India forex reserves, May 2026</span></div>
+    <div class="card" data-cat="bonus"><span class="v">~70 yrs</span><span class="l">Life expectancy at birth</span></div>
+    <div class="card" data-cat="bonus"><span class="v">~943</span><span class="l">Sex ratio (females per 1,000 males, 2011 census)</span></div>
+    <div class="card teal" data-cat="bonus"><span class="v">5th</span><span class="l">India's global rank by nominal GDP</span></div>
+    <div class="card" data-cat="bonus"><span class="v">~9.7B</span><span class="l">Projected world population, 2050</span></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <hr>
+    <p>Welingkar BD Guesstimate Cheat Sheet — numbers here are guesstimation anchors, not citation-grade figures. The whole point of a guesstimate is to be roughly right, fast. Cross-check anything you plan to quote in a report or filing.</p>
+  </div>
+</footer>
+
+<a href="#main" class="backtop" id="backTop" aria-label="Back to top">↑</a>
+<div class="tooltip" id="mapTooltip"></div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
