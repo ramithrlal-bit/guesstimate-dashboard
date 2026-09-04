@@ -8,7 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
-
+<!-- Supabase JS Client -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 <a href="#main" class="skip">Skip to content</a>
@@ -25,8 +26,8 @@
 
     <div class="ledger" id="heroLedger">
       <div class="cell"><span class="num">~8.1B</span><span class="lbl">World population</span></div>
-      <div class="cell"><span class="num">~1.48B</span><span class="lbl">India population</span></div>
-      <div class="cell"><span class="num">~300M</span><span class="lbl">India households</span></div>
+      <div class="cell"><span class="num" data-metric="pop_india_total">~1.48B</span><span class="lbl">India population</span></div>
+      <div class="cell"><span class="num" data-metric="pop_households">~300M</span><span class="lbl">India households</span></div>
       <div class="cell"><span class="num">>1B</span><span class="lbl">Internet users (India)</span></div>
       <div class="cell"><span class="num">~700M</span><span class="lbl">Working-age population</span></div>
       <div class="cell"><span class="num">~750M+</span><span class="lbl">Smartphone users (India)</span></div>
@@ -68,13 +69,13 @@
   <p class="sec-note">India's five load-bearing anchors, then the full state-by-state map. Every guesstimate that starts with "assume India has..." starts here.</p>
 
   <div class="grid">
-    <div class="card accent" data-cat="population"><span class="v">~1.48B</span><span class="l">Total population</span></div>
+    <div class="card accent" data-cat="population"><span class="v" data-metric="pop_india_total">~1.48B</span><span class="l">Total population</span></div>
     <div class="card" data-cat="population"><span class="v">36%<span class="unit">· 530M</span></span><span class="l">Urban population</span></div>
     <div class="card" data-cat="population"><span class="v">64%<span class="unit">· 950M</span></span><span class="l">Rural population</span></div>
     <div class="card" data-cat="population"><span class="v">68%<span class="unit">· ~1B</span></span><span class="l">Working-age (15–64)</span></div>
     <div class="card" data-cat="population"><span class="v">~29 yrs</span><span class="l">Median age</span></div>
-    <div class="card" data-cat="population"><span class="v">~300M</span><span class="l">Households</span></div>
-    <div class="card" data-cat="population"><span class="v">~4.5</span><span class="l">Average household size</span></div>
+    <div class="card" data-cat="population"><span class="v" data-metric="pop_households">~300M</span><span class="l">Households</span></div>
+    <div class="card" data-cat="population"><span class="v" data-metric="pop_avg_hh_size">~4.5</span><span class="l">Average household size</span></div>
     <div class="card" data-cat="population"><span class="v">761M / 716M</span><span class="l">Male / female population</span></div>
   </div>
 
@@ -287,9 +288,9 @@
   <div class="sector-flex">
     <div class="stats">
       <div class="grid cols-2">
-        <div class="card accent" data-cat="fintech"><span class="v">228.3B</span><span class="l">UPI transactions, 2025 (annual)</span></div>
-        <div class="card" data-cat="fintech"><span class="v">~Rs 299.7L Cr</span><span class="l">UPI transaction value, 2025</span></div>
-        <div class="card" data-cat="fintech"><span class="v">~21.7B</span><span class="l">UPI monthly volume, Jan 2026</span></div>
+        <div class="card accent" data-cat="fintech"><span class="v" data-metric="upi_vol_annual">228.3B</span><span class="l">UPI transactions, 2025 (annual)</span></div>
+        <div class="card" data-cat="fintech"><span class="v" data-metric="upi_val_annual">~Rs 299.7L Cr</span><span class="l">UPI transaction value, 2025</span></div>
+        <div class="card" data-cat="fintech"><span class="v" data-metric="upi_vol_monthly">~21.7B</span><span class="l">UPI monthly volume, Jan 2026</span></div>
         <div class="card" data-cat="fintech"><span class="v">500M+</span><span class="l">UPI unique users</span></div>
         <div class="card" data-cat="fintech"><span class="v">~698M</span><span class="l">Daily avg. UPI transactions</span></div>
         <div class="card" data-cat="fintech"><span class="v">~29%</span><span class="l">YoY growth, transaction volume</span></div>
@@ -456,9 +457,9 @@
   <div class="sector-flex">
     <div class="stats">
       <div class="grid cols-2">
-        <div class="card accent" data-cat="ev"><span class="v">~2.3M</span><span class="l">Total EV sales, 2025 (units)</span></div>
+        <div class="card accent" data-cat="ev"><span class="v" data-metric="ev_sales_total">~2.3M</span><span class="l">Total EV sales, 2025 (units)</span></div>
         <div class="card" data-cat="ev"><span class="v">~8%</span><span class="l">EV share of new vehicle sales</span></div>
-        <div class="card" data-cat="ev"><span class="v">1.28M<span class="unit">57%</span></span><span class="l">E-2-wheelers, 2025</span></div>
+        <div class="card" data-cat="ev"><span class="v"><span data-metric="ev_sales_2w">1.28M</span><span class="unit" data-metric="ev_share_2w">57%</span></span><span class="l">E-2-wheelers, 2025</span></div>
         <div class="card" data-cat="ev"><span class="v">0.8M<span class="unit">35%</span></span><span class="l">E-3-wheelers, 2025</span></div>
         <div class="card" data-cat="ev"><span class="v">~176,560<span class="unit">+77% YoY</span></span><span class="l">E-4-wheelers, 2025</span></div>
         <div class="card" data-cat="ev"><span class="v">~7%</span><span class="l">E-car share of car sales, May 2026</span></div>

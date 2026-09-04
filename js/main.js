@@ -205,4 +205,46 @@
     });
   }
 
+  // ---- Supabase Integration ----
+  const SUPABASE_URL = 'https://ylxxyhkylixdejxakbys.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_KmVN6kXwRq9MfCJezk_ibA_L1FUB8Lb';
+
+  async function loadDashboardData() {
+    if (SUPABASE_URL === 'YOUR_SUPABASE_URL' || !window.supabase) {
+      console.log('Supabase not configured or library not loaded, using hardcoded values.');
+      return;
+    }
+
+    try {
+      const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      
+      const { data, error } = await client
+        .from('latest_observations')
+        .select('*');
+
+      if (error) {
+        console.error('Supabase query error:', error);
+        return; // fallback to hardcoded
+      }
+
+      if (!data || data.length === 0) {
+        console.log('No verified data found in Supabase, keeping hardcoded values.');
+        return; // fallback to hardcoded
+      }
+
+      // Hydrate DOM
+      data.forEach(obs => {
+        const el = document.querySelector(`[data-metric="${obs.metric_key}"]`);
+        if (el && obs.display_value) {
+          el.innerHTML = obs.display_value;
+        }
+      });
+      console.log('Dashboard hydrated with verified data from Supabase.');
+    } catch (err) {
+      console.error('Failed to load dashboard data from Supabase:', err);
+    }
+  }
+
+  loadDashboardData();
+
 })();
