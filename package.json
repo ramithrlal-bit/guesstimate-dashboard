@@ -1,0 +1,30 @@
+{
+  "name": "guesstimate-dashboard",
+  "version": "1.0.0",
+  "description": "A fast, static dashboard built for MBA, consulting, product, and VC interview prep, providing reliable anchor numbers for guesstimation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramithrlal-bit/guesstimate-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ramithrlal-bit/guesstimate-dashboard/issues"
+  },
+  "homepage": "https://github.com/ramithrlal-bit/guesstimate-dashboard#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.115.0",
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.4.2",
+    "node-fetch": "^2.7.0",
+    "pdf-parse": "^1.1.4",
+    "pg": "^8.23.0",
+    "xlsx": "^0.18.5"
+  }
+}

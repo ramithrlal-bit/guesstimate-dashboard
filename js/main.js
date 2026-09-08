@@ -220,7 +220,8 @@
       
       const { data, error } = await client
         .from('latest_observations')
-        .select('*');
+        .select('*')
+        .eq('verification_status', 'verified');
 
       if (error) {
         console.error('Supabase query error:', error);
