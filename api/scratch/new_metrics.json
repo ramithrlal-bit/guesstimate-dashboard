@@ -1,0 +1,932 @@
+{
+  "general_world_population": {
+    "original_text": "~8.1B",
+    "label": "World population",
+    "section": "general"
+  },
+  "general_internet_users_india": {
+    "original_text": "&gt;1B",
+    "label": "Internet users (India)",
+    "section": "general"
+  },
+  "general_working_age_population": {
+    "original_text": "~700M",
+    "label": "Working-age population",
+    "section": "general"
+  },
+  "general_smartphone_users_india": {
+    "original_text": "~750M+",
+    "label": "Smartphone users (India)",
+    "section": "general"
+  },
+  "population_urban_population": {
+    "original_text": "36%<span class=\"unit\">· 530M</span>",
+    "label": "Urban population",
+    "section": "population"
+  },
+  "population_rural_population": {
+    "original_text": "64%<span class=\"unit\">· 950M</span>",
+    "label": "Rural population",
+    "section": "population"
+  },
+  "population_working_age_15_64": {
+    "original_text": "68%<span class=\"unit\">· ~1B</span>",
+    "label": "Working-age (15–64)",
+    "section": "population"
+  },
+  "population_median_age": {
+    "original_text": "~29 yrs",
+    "label": "Median age",
+    "section": "population"
+  },
+  "population_male_female_population": {
+    "original_text": "761M / 716M",
+    "label": "Male / female population",
+    "section": "population"
+  },
+  "population_population_2025_est": {
+    "original_text": "—",
+    "label": "Population, 2025 est.",
+    "section": "population"
+  },
+  "population_share_of_india": {
+    "original_text": "—",
+    "label": "Share of India",
+    "section": "population"
+  },
+  "population_population_rank": {
+    "original_text": "—",
+    "label": "Population rank",
+    "section": "population"
+  },
+  "population_projected_growth_2026": {
+    "original_text": "—",
+    "label": "Projected growth, 2026",
+    "section": "population"
+  },
+  "population_tier_1_the_8_metros_x_class": {
+    "original_text": "~120M",
+    "label": "Tier 1 — the 8 metros (X-class)",
+    "section": "population"
+  },
+  "population_tier_2_y_class_cities": {
+    "original_text": "~250M",
+    "label": "Tier 2 — Y-class cities",
+    "section": "population"
+  },
+  "population_tier_3_z_class_towns": {
+    "original_text": "~400M",
+    "label": "Tier 3 — Z-class + towns",
+    "section": "population"
+  },
+  "population_villages_rural": {
+    "original_text": "~700M+",
+    "label": "Villages (rural)",
+    "section": "population"
+  },
+  "population_india_s_global_rank_by_population": {
+    "original_text": "2nd",
+    "label": "India's global rank by population",
+    "section": "population"
+  },
+  "population_india_under_25_years_old": {
+    "original_text": "~44%<span class=\"unit\">~640M</span>",
+    "label": "India under 25 years old",
+    "section": "population"
+  },
+  "population_india_of_working_age_15_64": {
+    "original_text": "~68%<span class=\"unit\">~1B</span>",
+    "label": "India of working age (15–64)",
+    "section": "population"
+  },
+  "population_median_age_vs_china_39_us_38": {
+    "original_text": "~29 yrs",
+    "label": "Median age (vs. China ~39, US ~38)",
+    "section": "population"
+  },
+  "digital_internet_users": {
+    "original_text": "&gt;1B<span class=\"unit\">70%+</span>",
+    "label": "Internet users",
+    "section": "digital"
+  },
+  "digital_smartphone_users": {
+    "original_text": "750M–1B",
+    "label": "Smartphone users",
+    "section": "digital"
+  },
+  "digital_5g_users": {
+    "original_text": "~300M+",
+    "label": "5G users",
+    "section": "digital"
+  },
+  "digital_fintech_users": {
+    "original_text": "~300M+",
+    "label": "FinTech users",
+    "section": "digital"
+  },
+  "digital_upi_users": {
+    "original_text": "~500M+",
+    "label": "UPI users",
+    "section": "digital"
+  },
+  "digital_online_shoppers": {
+    "original_text": "250–300M",
+    "label": "Online shoppers",
+    "section": "digital"
+  },
+  "digital_upi_transaction_volume_dec_2025": {
+    "original_text": "21.6B/mo",
+    "label": "UPI transaction volume, Dec 2025",
+    "section": "digital"
+  },
+  "digital_total_social_media_users": {
+    "original_text": "~500M+<span class=\"unit\">34% of pop.</span>",
+    "label": "Total social media users",
+    "section": "digital"
+  },
+  "digital_avg_daily_video_watch_time_per_user_youtube": {
+    "original_text": "~80 min",
+    "label": "Avg. daily video watch time per user (YouTube)",
+    "section": "digital"
+  },
+  "digital_ott_subscribers": {
+    "original_text": "~100M+",
+    "label": "OTT subscribers",
+    "section": "digital"
+  },
+  "digital_mobile_gaming_users": {
+    "original_text": "~450M",
+    "label": "Mobile gaming users",
+    "section": "digital"
+  },
+  "fintech_upi_unique_users": {
+    "original_text": "500M+",
+    "label": "UPI unique users",
+    "section": "fintech"
+  },
+  "fintech_daily_avg_upi_transactions": {
+    "original_text": "~698M",
+    "label": "Daily avg. UPI transactions",
+    "section": "fintech"
+  },
+  "fintech_yoy_growth_transaction_volume": {
+    "original_text": "~29%",
+    "label": "YoY growth, transaction volume",
+    "section": "fintech"
+  },
+  "fintech_total_bank_deposits_2025": {
+    "original_text": "Rs 232L Cr",
+    "label": "Total bank deposits, 2025",
+    "section": "fintech"
+  },
+  "fintech_total_bank_credit_2025": {
+    "original_text": "Rs 181L Cr",
+    "label": "Total bank credit, 2025",
+    "section": "fintech"
+  },
+  "fintech_gross_npa_mar_2025_20_yr_low": {
+    "original_text": "2.31%",
+    "label": "Gross NPA, Mar 2025 (20-yr low)",
+    "section": "fintech"
+  },
+  "fintech_psb_profit_fy25": {
+    "original_text": "Rs 1.78L Cr",
+    "label": "PSB profit, FY25",
+    "section": "fintech"
+  },
+  "fintech_bank_branches": {
+    "original_text": "~1.6 Lakh",
+    "label": "Bank branches",
+    "section": "fintech"
+  },
+  "fintech_atms": {
+    "original_text": "~2.5 Lakh",
+    "label": "ATMs",
+    "section": "fintech"
+  },
+  "fintech_bank_account_holders_jan_dhan": {
+    "original_text": "900M+",
+    "label": "Bank account holders (Jan Dhan)",
+    "section": "fintech"
+  },
+  "fintech_crar_capital_buffer": {
+    "original_text": "17.36%",
+    "label": "CRAR (capital buffer)",
+    "section": "fintech"
+  },
+  "fintech_credit_cards": {
+    "original_text": "~100M",
+    "label": "Credit cards",
+    "section": "fintech"
+  },
+  "fintech_debit_cards": {
+    "original_text": "950M+",
+    "label": "Debit cards",
+    "section": "fintech"
+  },
+  "fintech_mobile_wallet_accounts": {
+    "original_text": "400M+",
+    "label": "Mobile wallet accounts",
+    "section": "fintech"
+  },
+  "fintech_bnpl_users": {
+    "original_text": "80M+",
+    "label": "BNPL users",
+    "section": "fintech"
+  },
+  "fintech_monthly_sip_inflow": {
+    "original_text": "~Rs 26,000 Cr",
+    "label": "Monthly SIP inflow",
+    "section": "fintech"
+  },
+  "fintech_fintech_unicorns": {
+    "original_text": "25+",
+    "label": "FinTech unicorns",
+    "section": "fintech"
+  },
+  "fintech_digital_payments_value_2025": {
+    "original_text": "~$1T",
+    "label": "Digital payments value, 2025",
+    "section": "fintech"
+  },
+  "ecommerce_e_commerce_market_size_2025": {
+    "original_text": "~$137B",
+    "label": "E-commerce market size, 2025",
+    "section": "ecommerce"
+  },
+  "ecommerce_market_size_2026_est": {
+    "original_text": "~$159–163B",
+    "label": "Market size, 2026 est.",
+    "section": "ecommerce"
+  },
+  "ecommerce_online_shoppers_2025": {
+    "original_text": "280–300M",
+    "label": "Online shoppers, 2025",
+    "section": "ecommerce"
+  },
+  "ecommerce_projected_shoppers_2030": {
+    "original_text": "420–440M",
+    "label": "Projected shoppers, 2030",
+    "section": "ecommerce"
+  },
+  "ecommerce_cagr_2025_2030": {
+    "original_text": "~21.5%",
+    "label": "CAGR, 2025–2030",
+    "section": "ecommerce"
+  },
+  "ecommerce_india_s_global_rank_e_retail_market": {
+    "original_text": "2nd",
+    "label": "India's global rank, e-retail market",
+    "section": "ecommerce"
+  },
+  "ecommerce_total_retail_market_2025": {
+    "original_text": "~$1.1T",
+    "label": "Total retail market, 2025",
+    "section": "ecommerce"
+  },
+  "ecommerce_e_commerce_fy24": {
+    "original_text": "~$125B",
+    "label": "E-commerce, FY24",
+    "section": "ecommerce"
+  },
+  "ecommerce_organized_retail_share": {
+    "original_text": "~24%",
+    "label": "Organized retail share",
+    "section": "ecommerce"
+  },
+  "ecommerce_kirana_mom_and_pop_stores": {
+    "original_text": "12M+",
+    "label": "Kirana (mom-and-pop) stores",
+    "section": "ecommerce"
+  },
+  "ecommerce_e_commerce_cagr_to_fy30": {
+    "original_text": "~18.4%",
+    "label": "E-commerce CAGR to FY30",
+    "section": "ecommerce"
+  },
+  "ecommerce_e_commerce_share_of_total_retail": {
+    "original_text": "~10% <span class=\"unit\">vs US ~20%</span>",
+    "label": "E-commerce share of total retail",
+    "section": "ecommerce"
+  },
+  "quickcommerce_quick_commerce_gmv_fy25_2025": {
+    "original_text": "~$8–8.5B",
+    "label": "Quick commerce GMV, FY25/2025",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_projected_gmv_2027_28": {
+    "original_text": "~$18–20B",
+    "label": "Projected GMV, 2027–28",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_yoy_gmv_growth_2025": {
+    "original_text": "~70–80%",
+    "label": "YoY GMV growth, 2025",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_monthly_transacting_users": {
+    "original_text": "45–55M",
+    "label": "Monthly transacting users",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_typical_delivery_promise": {
+    "original_text": "10–20 min",
+    "label": "Typical delivery promise",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_share_of_online_grocery_gmv_overtook_e_grocery": {
+    "original_text": "~45–50%",
+    "label": "Share of online grocery GMV (overtook e-grocery)",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_average_order_value": {
+    "original_text": "Rs 400–500",
+    "label": "Average order value",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_orders_per_user_per_month": {
+    "original_text": "4–6",
+    "label": "Orders per user per month",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_typical_dark_store_size": {
+    "original_text": "~2,500–4,000 sq ft",
+    "label": "Typical dark store size",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_skus_per_dark_store": {
+    "original_text": "1,500–2,500",
+    "label": "SKUs per dark store",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_fastest_expanding_categories": {
+    "original_text": "Grocery, pharmacy, electronics, beauty",
+    "label": "Fastest-expanding categories",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_where_80_of_gmv_is_concentrated_today": {
+    "original_text": "Metro + Tier-1",
+    "label": "Where ~80%+ of GMV is concentrated today",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_contribution_margin_leading_players_2025": {
+    "original_text": "Near break-even to slightly loss-making",
+    "label": "Contribution margin, leading players (2025)",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_delivery_partners_top_platform_peak": {
+    "original_text": "~15,000+",
+    "label": "Delivery partners, top platform (peak)",
+    "section": "quickcommerce"
+  },
+  "quickcommerce_cities_with_active_dark_store_networks": {
+    "original_text": "40–60",
+    "label": "Cities with active dark-store networks",
+    "section": "quickcommerce"
+  },
+  "ev_ev_share_of_new_vehicle_sales": {
+    "original_text": "~8%",
+    "label": "EV share of new vehicle sales",
+    "section": "ev"
+  },
+  "ev_e_2_wheelers_2025": {
+    "original_text": "<span data-metric=\"ev_sales_2w\">1.28M</span><span class=\"unit\" data-metric=\"ev_share_2w\">57%</span>",
+    "label": "E-2-wheelers, 2025",
+    "section": "ev"
+  },
+  "ev_e_3_wheelers_2025": {
+    "original_text": "0.8M<span class=\"unit\">35%</span>",
+    "label": "E-3-wheelers, 2025",
+    "section": "ev"
+  },
+  "ev_e_4_wheelers_2025": {
+    "original_text": "~176,560<span class=\"unit\">+77% YoY</span>",
+    "label": "E-4-wheelers, 2025",
+    "section": "ev"
+  },
+  "ev_e_car_share_of_car_sales_may_2026": {
+    "original_text": "~7%",
+    "label": "E-car share of car sales, May 2026",
+    "section": "ev"
+  },
+  "ev_cars_registered": {
+    "original_text": "~50M",
+    "label": "Cars registered",
+    "section": "ev"
+  },
+  "ev_two_wheelers_registered": {
+    "original_text": "~250M",
+    "label": "Two-wheelers registered",
+    "section": "ev"
+  },
+  "ev_evs_on_road_total": {
+    "original_text": "~3M+",
+    "label": "EVs on road (total)",
+    "section": "ev"
+  },
+  "ev_daily_metro_riders": {
+    "original_text": "~12M+",
+    "label": "Daily metro riders",
+    "section": "ev"
+  },
+  "ev_daily_railway_passengers": {
+    "original_text": "~23M",
+    "label": "Daily railway passengers",
+    "section": "ev"
+  },
+  "ev_car_ownership_per_1_000_people": {
+    "original_text": "34<span class=\"unit\">vs US 820</span>",
+    "label": "Car ownership per 1,000 people",
+    "section": "ev"
+  },
+  "edtech_edtech_market_size_2025": {
+    "original_text": "~$7.5B",
+    "label": "EdTech market size, 2025",
+    "section": "edtech"
+  },
+  "edtech_projected_market_2030_31": {
+    "original_text": "~$29–30B",
+    "label": "Projected market, 2030–31",
+    "section": "edtech"
+  },
+  "edtech_internet_users_base": {
+    "original_text": "900M–1B+",
+    "label": "Internet users (base)",
+    "section": "edtech"
+  },
+  "edtech_student_population_base": {
+    "original_text": "~250M",
+    "label": "Student population (base)",
+    "section": "edtech"
+  },
+  "edtech_cagr_2025_2035": {
+    "original_text": "~15.2%",
+    "label": "CAGR, 2025–2035",
+    "section": "edtech"
+  },
+  "edtech_edtech_users_today": {
+    "original_text": "50M+",
+    "label": "EdTech users today",
+    "section": "edtech"
+  },
+  "edtech_schools_total": {
+    "original_text": "~1.5M",
+    "label": "Schools (total)",
+    "section": "edtech"
+  },
+  "edtech_college_students": {
+    "original_text": "~43M",
+    "label": "College students",
+    "section": "edtech"
+  },
+  "edtech_engineering_grads_yr": {
+    "original_text": "~1.5M",
+    "label": "Engineering grads/yr",
+    "section": "edtech"
+  },
+  "edtech_mba_grads_yr": {
+    "original_text": "300K+",
+    "label": "MBA grads/yr",
+    "section": "edtech"
+  },
+  "edtech_iits": {
+    "original_text": "23",
+    "label": "IITs",
+    "section": "edtech"
+  },
+  "edtech_iims": {
+    "original_text": "20+",
+    "label": "IIMs",
+    "section": "edtech"
+  },
+  "edtech_literacy_rate": {
+    "original_text": "~77%",
+    "label": "Literacy rate",
+    "section": "edtech"
+  },
+  "edtech_govt_spend_on_education_gdp": {
+    "original_text": "~3%",
+    "label": "Govt. spend on education (% GDP)",
+    "section": "edtech"
+  },
+  "healthcare_registered_doctors": {
+    "original_text": "~1.3M",
+    "label": "Registered doctors",
+    "section": "healthcare"
+  },
+  "healthcare_hospitals": {
+    "original_text": "~70,000",
+    "label": "Hospitals",
+    "section": "healthcare"
+  },
+  "healthcare_hospital_beds_vs_us_2_8_1000": {
+    "original_text": "~2M<span class=\"unit\">1.4/1000</span>",
+    "label": "Hospital beds (vs US 2.8/1000)",
+    "section": "healthcare"
+  },
+  "healthcare_pharmacies": {
+    "original_text": "~9 Lakh",
+    "label": "Pharmacies",
+    "section": "healthcare"
+  },
+  "healthcare_annual_births": {
+    "original_text": "~23M",
+    "label": "Annual births",
+    "section": "healthcare"
+  },
+  "healthcare_diabetics": {
+    "original_text": "100M+",
+    "label": "Diabetics",
+    "section": "healthcare"
+  },
+  "healthcare_hypertension_patients": {
+    "original_text": "200M+",
+    "label": "Hypertension patients",
+    "section": "healthcare"
+  },
+  "healthcare_health_insured_lives": {
+    "original_text": "~550M",
+    "label": "Health-insured lives",
+    "section": "healthcare"
+  },
+  "healthcare_mental_health_treatment_gap": {
+    "original_text": "&gt;80%",
+    "label": "Mental health treatment gap",
+    "section": "healthcare"
+  },
+  "healthcare_total_health_expenditure_recent_years": {
+    "original_text": "&gt;$100B/yr",
+    "label": "Total health expenditure (recent years)",
+    "section": "healthcare"
+  },
+  "healthcare_healthcare_market_projected_ibef_next_few_years": {
+    "original_text": "&gt;Rs 30.4L Cr <span class=\"unit\">~$320B</span>",
+    "label": "Healthcare market, projected (IBEF, next few years)",
+    "section": "healthcare"
+  },
+  "economy_share_of_gdp_gva": {
+    "original_text": "~18%",
+    "label": "Share of GDP (GVA)",
+    "section": "economy"
+  },
+  "economy_farmers_cultivators": {
+    "original_text": "~146M",
+    "label": "Farmers (cultivators)",
+    "section": "economy"
+  },
+  "economy_agricultural_households": {
+    "original_text": "~93M",
+    "label": "Agricultural households",
+    "section": "economy"
+  },
+  "economy_arable_land": {
+    "original_text": "~157M ha",
+    "label": "Arable land",
+    "section": "economy"
+  },
+  "economy_agri_exports_fy25": {
+    "original_text": "~$49B",
+    "label": "Agri exports, FY25",
+    "section": "economy"
+  },
+  "economy_food_processing_market": {
+    "original_text": "~$354B",
+    "label": "Food processing market",
+    "section": "economy"
+  },
+  "economy_agri_gdp_growth_fy26": {
+    "original_text": "~3.1%",
+    "label": "Agri GDP growth, FY26",
+    "section": "economy"
+  },
+  "economy_average_farm_size": {
+    "original_text": "~1.1 ha",
+    "label": "Average farm size",
+    "section": "economy"
+  },
+  "economy_cold_storage_capacity": {
+    "original_text": "~37M MT",
+    "label": "Cold storage capacity",
+    "section": "economy"
+  },
+  "economy_market_size_2025": {
+    "original_text": "~$289B",
+    "label": "Market size, 2025",
+    "section": "economy"
+  },
+  "economy_urban_rural_share": {
+    "original_text": "62% / 38%",
+    "label": "Urban / rural share",
+    "section": "economy"
+  },
+  "economy_revenue_growth_fy26": {
+    "original_text": "6–8%",
+    "label": "Revenue growth, FY26",
+    "section": "economy"
+  },
+  "economy_modern_trade_share": {
+    "original_text": "10–12%",
+    "label": "Modern trade share",
+    "section": "economy"
+  },
+  "economy_rural_volume_growth_q2_2025": {
+    "original_text": "8.4%<span class=\"unit\">vs urban 4.6%</span>",
+    "label": "Rural volume growth, Q2 2025",
+    "section": "economy"
+  },
+  "economy_projected_market_2030": {
+    "original_text": "~$643B",
+    "label": "Projected market, 2030",
+    "section": "economy"
+  },
+  "economy_dpiit_recognised_startups": {
+    "original_text": "164K+",
+    "label": "DPIIT-recognised startups",
+    "section": "economy"
+  },
+  "economy_angel_investors": {
+    "original_text": "10K+",
+    "label": "Angel investors",
+    "section": "economy"
+  },
+  "economy_vc_funds": {
+    "original_text": "800+",
+    "label": "VC funds",
+    "section": "economy"
+  },
+  "economy_incubators": {
+    "original_text": "1,000+",
+    "label": "Incubators",
+    "section": "economy"
+  },
+  "economy_unicorns_2026": {
+    "original_text": "132",
+    "label": "Unicorns, 2026",
+    "section": "economy"
+  },
+  "economy_soonicorns": {
+    "original_text": "100+",
+    "label": "Soonicorns",
+    "section": "economy"
+  },
+  "economy_funding_raised_2025": {
+    "original_text": "$12B+",
+    "label": "Funding raised, 2025",
+    "section": "economy"
+  },
+  "economy_top_sectors": {
+    "original_text": "FinTech, SaaS, HealthTech",
+    "label": "Top sectors",
+    "section": "economy"
+  },
+  "economy_top_startup_hubs": {
+    "original_text": "Bengaluru, Delhi, Mumbai",
+    "label": "Top startup hubs",
+    "section": "economy"
+  },
+  "economy_sector_size_2025": {
+    "original_text": "~$30B",
+    "label": "Sector size, 2025",
+    "section": "economy"
+  },
+  "economy_growth_yoy": {
+    "original_text": "~9.1%",
+    "label": "Growth, YoY",
+    "section": "economy"
+  },
+  "economy_ott_revenue_fy25": {
+    "original_text": "~Rs 10,000 Cr",
+    "label": "OTT revenue, FY25",
+    "section": "economy"
+  },
+  "economy_ott_subscribers": {
+    "original_text": "100M+",
+    "label": "OTT subscribers",
+    "section": "economy"
+  },
+  "economy_tv_households": {
+    "original_text": "~210M",
+    "label": "TV households",
+    "section": "economy"
+  },
+  "economy_newspaper_readers": {
+    "original_text": "300M+",
+    "label": "Newspaper readers",
+    "section": "economy"
+  },
+  "economy_bollywood_films_yr": {
+    "original_text": "1,500–2,000",
+    "label": "Bollywood films/yr",
+    "section": "economy"
+  },
+  "economy_projected_sector_size_2030": {
+    "original_text": "~$1T",
+    "label": "Projected sector size, 2030",
+    "section": "economy"
+  },
+  "economy_sector_size_2025_1": {
+    "original_text": "~$200–300B",
+    "label": "Sector size, 2025",
+    "section": "economy"
+  },
+  "economy_direct_share_of_gdp": {
+    "original_text": "~7–8%",
+    "label": "Direct share of GDP",
+    "section": "economy"
+  },
+  "economy_urban_housing_shortfall": {
+    "original_text": "~10M units",
+    "label": "Urban housing shortfall",
+    "section": "economy"
+  },
+  "economy_pmay_houses_built": {
+    "original_text": "40M+",
+    "label": "PMAY houses built",
+    "section": "economy"
+  },
+  "economy_home_loan_book": {
+    "original_text": "~Rs 28L Cr",
+    "label": "Home loan book",
+    "section": "economy"
+  },
+  "economy_avg_home_price_metro": {
+    "original_text": "Rs 80L–2Cr",
+    "label": "Avg. home price, metro",
+    "section": "economy"
+  },
+  "economy_office_space_demand": {
+    "original_text": "~60M sq ft/yr",
+    "label": "Office space demand",
+    "section": "economy"
+  },
+  "economy_top_players": {
+    "original_text": "DLF, Godrej, Lodha",
+    "label": "Top players",
+    "section": "economy"
+  },
+  "global_population": {
+    "original_text": "~340M",
+    "label": "Population",
+    "section": "global"
+  },
+  "global_households": {
+    "original_text": "~130M",
+    "label": "Households",
+    "section": "global"
+  },
+  "global_gdp": {
+    "original_text": "~$29T",
+    "label": "GDP",
+    "section": "global"
+  },
+  "global_median_household_income": {
+    "original_text": "~$75,000/yr",
+    "label": "Median household income",
+    "section": "global"
+  },
+  "global_internet_penetration": {
+    "original_text": "~92%",
+    "label": "Internet penetration",
+    "section": "global"
+  },
+  "global_credit_card_users": {
+    "original_text": "190M+",
+    "label": "Credit card users",
+    "section": "global"
+  },
+  "global_india_s_share_of_world_population": {
+    "original_text": "~18.3%",
+    "label": "India's share of world population",
+    "section": "global"
+  },
+  "global_india_s_share_of_world_gdp": {
+    "original_text": "~3.6%",
+    "label": "India's share of world GDP",
+    "section": "global"
+  },
+  "global_india_s_share_of_global_internet_users": {
+    "original_text": "~18%",
+    "label": "India's share of global internet users",
+    "section": "global"
+  },
+  "global_india_s_global_rank_upi_transaction_volume": {
+    "original_text": "#1",
+    "label": "India's global rank, UPI transaction volume",
+    "section": "global"
+  },
+  "global_share_of_global_pharma_exports_by_volume": {
+    "original_text": "~20%",
+    "label": "Share of global pharma exports (by volume)",
+    "section": "global"
+  },
+  "global_share_of_global_it_services_offshoring": {
+    "original_text": "~55%",
+    "label": "Share of global IT services offshoring",
+    "section": "global"
+  },
+  "global_world_population": {
+    "original_text": "~8.1B",
+    "label": "World population",
+    "section": "global"
+  },
+  "global_world_internet_users": {
+    "original_text": "~5.5B",
+    "label": "World internet users",
+    "section": "global"
+  },
+  "global_world_smartphone_users": {
+    "original_text": "~7B+",
+    "label": "World smartphone users",
+    "section": "global"
+  },
+  "global_world_gdp": {
+    "original_text": "~$110T",
+    "label": "World GDP",
+    "section": "global"
+  },
+  "global_global_e_commerce_market": {
+    "original_text": "~$6T",
+    "label": "Global e-commerce market",
+    "section": "global"
+  },
+  "global_cars_on_the_road_worldwide": {
+    "original_text": "~1.4B",
+    "label": "Cars on the road, worldwide",
+    "section": "global"
+  },
+  "global_annual_flight_passengers_worldwide": {
+    "original_text": "~4B",
+    "label": "Annual flight passengers, worldwide",
+    "section": "global"
+  },
+  "global_global_pharma_market": {
+    "original_text": "~$1.5T",
+    "label": "Global pharma market",
+    "section": "global"
+  },
+  "global_s_p_500_market_cap": {
+    "original_text": "~$45T+",
+    "label": "S&P 500 market cap",
+    "section": "global"
+  },
+  "bonus_countries_in_the_world": {
+    "original_text": "~195",
+    "label": "Countries in the world",
+    "section": "bonus"
+  },
+  "bonus_india_s_land_area_7th_largest": {
+    "original_text": "~3.29M km²",
+    "label": "India's land area (7th largest)",
+    "section": "bonus"
+  },
+  "bonus_lok_sabha_rajya_sabha_seats": {
+    "original_text": "543 / 245",
+    "label": "Lok Sabha / Rajya Sabha seats",
+    "section": "bonus"
+  },
+  "bonus_districts_in_india": {
+    "original_text": "~800+",
+    "label": "Districts in India",
+    "section": "bonus"
+  },
+  "bonus_constitutionally_scheduled_languages": {
+    "original_text": "22",
+    "label": "Constitutionally scheduled languages",
+    "section": "bonus"
+  },
+  "bonus_india_real_gdp_growth_fy26_rbi_est": {
+    "original_text": "~7.6%",
+    "label": "India real GDP growth, FY26 (RBI est.)",
+    "section": "bonus"
+  },
+  "bonus_rbi_repo_rate_2026": {
+    "original_text": "5.25%",
+    "label": "RBI repo rate, 2026",
+    "section": "bonus"
+  },
+  "bonus_india_forex_reserves_may_2026": {
+    "original_text": "~$682B",
+    "label": "India forex reserves, May 2026",
+    "section": "bonus"
+  },
+  "bonus_life_expectancy_at_birth": {
+    "original_text": "~70 yrs",
+    "label": "Life expectancy at birth",
+    "section": "bonus"
+  },
+  "bonus_sex_ratio_females_per_1_000_males_2011_census": {
+    "original_text": "~943",
+    "label": "Sex ratio (females per 1,000 males, 2011 census)",
+    "section": "bonus"
+  },
+  "bonus_india_s_global_rank_by_nominal_gdp": {
+    "original_text": "5th",
+    "label": "India's global rank by nominal GDP",
+    "section": "bonus"
+  },
+  "bonus_projected_world_population_2050": {
+    "original_text": "~9.7B",
+    "label": "Projected world population, 2050",
+    "section": "bonus"
+  }
+}

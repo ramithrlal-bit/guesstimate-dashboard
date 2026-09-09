@@ -211,7 +211,10 @@
 
   async function loadDashboardData() {
     if (SUPABASE_URL === 'YOUR_SUPABASE_URL' || !window.supabase) {
-      console.log('Supabase not configured or library not loaded, using hardcoded values.');
+      console.log('Supabase not configured or library not loaded. Clearing stale hardcoded metrics.');
+      document.querySelectorAll('[data-metric]').forEach(el => {
+        el.innerHTML = '<span class="unavailable" title="Data unavailable">—</span>';
+      });
       return;
     }
 
@@ -225,18 +228,21 @@
 
       if (error) {
         console.error('Supabase query error:', error);
-        return; // fallback to hardcoded
       }
 
-      if (!data || data.length === 0) {
-        console.log('No verified data found in Supabase, keeping hardcoded values.');
-        return; // fallback to hardcoded
+      const obsMap = {};
+      if (data) {
+        data.forEach(obs => {
+          obsMap[obs.metric_key] = obs;
+        });
       }
 
-      // Hydrate DOM
-      data.forEach(obs => {
-        const el = document.querySelector(`[data-metric="${obs.metric_key}"]`);
-        if (el) {
+      // Hydrate DOM and wipe missing metrics
+      document.querySelectorAll('[data-metric]').forEach(el => {
+        const key = el.getAttribute('data-metric');
+        const obs = obsMap[key];
+
+        if (obs) {
           if (obs.display_value) {
             el.innerHTML = obs.display_value;
           } else if (obs.value !== null && obs.value !== undefined) {
@@ -256,11 +262,17 @@
               el.innerHTML = formatted;
             }
           }
+        } else {
+          // No verified observation for this metric
+          el.innerHTML = '<span class="unavailable" title="Data unavailable">—</span>';
         }
       });
-      console.log('Dashboard hydrated with verified data from Supabase.');
+      console.log('Dashboard hydrated with verified data from Supabase. Missing data cleared.');
     } catch (err) {
       console.error('Failed to load dashboard data from Supabase:', err);
+      document.querySelectorAll('[data-metric]').forEach(el => {
+        el.innerHTML = '<span class="unavailable" title="Data unavailable">—</span>';
+      });
     }
   }
 

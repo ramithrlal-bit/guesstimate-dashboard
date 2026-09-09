@@ -1,8 +1,9 @@
-// const { extractNPCI } = require('../connectors/npci');
+const { extractNPCI } = require('../connectors/npci');
 const { extractWorldBankPopulation } = require('../connectors/worldbank');
 const { extractTRAI } = require('../connectors/trai');
 const { extract: extractVahan } = require('../connectors/vahan');
 const { persistObservation } = require('../core/persister');
+const { extractRBIRepoRate } = require('../connectors/rbi');
 
 module.exports = async function(req, res) {
   // Cron authorization check for Vercel
@@ -15,7 +16,6 @@ module.exports = async function(req, res) {
   const results = {};
 
   // 1. NPCI Connector (Disabled due to bot protection)
-  /*
   const npciResult = await extractNPCI();
   if (npciResult.success) {
     try {
@@ -37,7 +37,6 @@ module.exports = async function(req, res) {
     console.log('[Ingest] Skipping downstream pipeline for NPCI due to upstream failure.');
     results.npci = { success: false, error: npciResult.error };
   }
-  */
 
   // 2. World Bank Connector
   const wbResult = await extractWorldBankPopulation();
@@ -100,6 +99,21 @@ module.exports = async function(req, res) {
   } catch (e) {
     console.error('[Ingest] AMFI Connector Failed:', e.message);
     results.amfi = { success: false, error: e.message };
+  }
+
+  // 7. RBI Connector
+  const rbiResult = await extractRBIRepoRate();
+  if (rbiResult.success) {
+    try {
+      const persistRes = await persistObservation(rbiResult.data);
+      results.rbi = { success: true, status: persistRes.status };
+    } catch (e) {
+      console.error('[Ingest] Failed to persist RBI data:', e.message);
+      results.rbi = { success: false, error: e.message };
+    }
+  } else {
+    console.error('[Ingest] RBI Connector Failed:', rbiResult.error);
+    results.rbi = { success: false, error: rbiResult.error };
   }
 
   console.log('Ingestion pipeline finished.');
