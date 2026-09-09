@@ -236,8 +236,26 @@
       // Hydrate DOM
       data.forEach(obs => {
         const el = document.querySelector(`[data-metric="${obs.metric_key}"]`);
-        if (el && obs.display_value) {
-          el.innerHTML = obs.display_value;
+        if (el) {
+          if (obs.display_value) {
+            el.innerHTML = obs.display_value;
+          } else if (obs.value !== null && obs.value !== undefined) {
+            let num = Number(obs.value);
+            let formatted = num.toLocaleString('en-IN');
+            if (num >= 10000000) {
+              formatted = (num / 10000000).toFixed(2).replace(/\.00$/, '') + ' Cr';
+            } else if (num >= 1000000) {
+              formatted = (num / 1000000).toFixed(2).replace(/\.00$/, '') + 'M';
+            } else if (num >= 1000) {
+              formatted = (num / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+            }
+            if (obs.format_template) {
+              let baseVal = formatted.replace(/[a-zA-Z\s]+$/, '');
+              el.innerHTML = obs.format_template.replace('{{val}}', baseVal);
+            } else {
+              el.innerHTML = formatted;
+            }
+          }
         }
       });
       console.log('Dashboard hydrated with verified data from Supabase.');
