@@ -1,4 +1,4 @@
-const { extract } = require('../api/connectors/vahan');
+const { extract } = require('../lib/connectors/vahan');
 
 async function run() {
     try {

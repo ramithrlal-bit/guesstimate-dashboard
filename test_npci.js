@@ -1,4 +1,4 @@
-const { extractNPCI } = require('./api/connectors/npci');
+const { extractNPCI } = require('./lib/connectors/npci');
 
 async function testNPCI() {
   console.log("Running NPCI Connector Test...");

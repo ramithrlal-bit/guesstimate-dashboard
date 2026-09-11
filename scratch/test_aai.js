@@ -1,6 +1,6 @@
 require('dotenv').config({ path: '../.env' });
-const { extract } = require('../api/connectors/aai');
-const { persistObservation } = require('../api/core/persister');
+const { extract } = require('../lib/connectors/aai');
+const { persistObservation } = require('../lib/core/persister');
 
 async function run() {
     try {

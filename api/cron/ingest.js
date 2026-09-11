@@ -1,9 +1,9 @@
-const { extractNPCI } = require('../connectors/npci');
-const { extractWorldBankPopulation } = require('../connectors/worldbank');
-const { extractTRAI } = require('../connectors/trai');
-const { extract: extractVahan } = require('../connectors/vahan');
-const { persistObservation } = require('../core/persister');
-const { extractRBIRepoRate } = require('../connectors/rbi');
+const { extractNPCI } = require('../../lib/connectors/npci');
+const { extractWorldBankPopulation } = require('../../lib/connectors/worldbank');
+const { extractTRAI } = require('../../lib/connectors/trai');
+const { extract: extractVahan } = require('../../lib/connectors/vahan');
+const { persistObservation } = require('../../lib/core/persister');
+const { extractRBIRepoRate } = require('../../lib/connectors/rbi');
 
 module.exports = async function(req, res) {
   // Cron authorization check for Vercel
@@ -81,7 +81,7 @@ module.exports = async function(req, res) {
 
   // 5. AAI Connector
   try {
-    const { extract: extractAAI } = require('../connectors/aai');
+    const { extract: extractAAI } = require('../../lib/connectors/aai');
     const aaiData = await extractAAI();
     const persistRes = await persistObservation(aaiData);
     results.aai = { success: true, status: persistRes.status };
@@ -92,7 +92,7 @@ module.exports = async function(req, res) {
 
   // 6. AMFI Connector
   try {
-    const { extract: extractAMFI } = require('../connectors/amfi');
+    const { extract: extractAMFI } = require('../../lib/connectors/amfi');
     const amfiData = await extractAMFI();
     const persistRes = await persistObservation(amfiData);
     results.amfi = { success: true, status: persistRes.status };
@@ -118,7 +118,7 @@ module.exports = async function(req, res) {
 
   // 8. IAMAI Connector
   try {
-    const { extract: extractIAMAI } = require('../connectors/iamai');
+    const { extract: extractIAMAI } = require('../../lib/connectors/iamai');
     const iamaiDataArray = await extractIAMAI();
     results.iamai = { success: true, status: [] };
     for (const data of iamaiDataArray) {

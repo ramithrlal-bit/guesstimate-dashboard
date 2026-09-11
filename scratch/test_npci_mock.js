@@ -1,4 +1,4 @@
-const npci = require('../api/connectors/npci');
+const npci = require('../lib/connectors/npci');
 const fetch = require('node-fetch');
 
 // Override fetch in the module cache isn't super easy without proxyquire, 
@@ -34,8 +34,8 @@ Module.prototype.require = function() {
 };
 
 // Now re-require to apply the mock
-delete require.cache[require.resolve('../api/connectors/npci')];
-const npciMocked = require('../api/connectors/npci');
+delete require.cache[require.resolve('../lib/connectors/npci')];
+const npciMocked = require('../lib/connectors/npci');
 
 async function run() {
     const res = await npciMocked.extractNPCI();

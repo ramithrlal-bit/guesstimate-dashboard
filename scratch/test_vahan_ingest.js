@@ -1,6 +1,6 @@
 require('dotenv').config();
-const { extract } = require('../api/connectors/vahan');
-const { persistObservation } = require('../api/core/persister');
+const { extract } = require('../lib/connectors/vahan');
+const { persistObservation } = require('../lib/core/persister');
 
 async function testVahanIngest() {
     console.log("Starting VAHAN ingest test...");

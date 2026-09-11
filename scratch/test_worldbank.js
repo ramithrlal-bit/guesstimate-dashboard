@@ -1,6 +1,6 @@
 require('dotenv').config();
-const { extractWorldBankPopulation } = require('../api/connectors/worldbank');
-const { persistObservation } = require('../api/core/persister');
+const { extractWorldBankPopulation } = require('../lib/connectors/worldbank');
+const { persistObservation } = require('../lib/core/persister');
 const { createClient } = require('@supabase/supabase-js');
 
 async function testWorldBank() {

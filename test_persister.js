@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { persistObservation } = require('./api/core/persister');
+const { persistObservation } = require('./lib/core/persister');
 const { createClient } = require('@supabase/supabase-js');
 
 async function runTests() {
