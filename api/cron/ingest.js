@@ -116,6 +116,20 @@ module.exports = async function(req, res) {
     results.rbi = { success: false, error: rbiResult.error };
   }
 
+  // 8. IAMAI Connector
+  try {
+    const { extract: extractIAMAI } = require('../connectors/iamai');
+    const iamaiDataArray = await extractIAMAI();
+    results.iamai = { success: true, status: [] };
+    for (const data of iamaiDataArray) {
+      const persistRes = await persistObservation(data);
+      results.iamai.status.push(persistRes.status);
+    }
+  } catch (e) {
+    console.error('[Ingest] IAMAI Connector Failed:', e.message);
+    results.iamai = { success: false, error: e.message };
+  }
+
   console.log('Ingestion pipeline finished.');
   return res.status(200).json({ success: true, results });
 };

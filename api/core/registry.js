@@ -194,11 +194,32 @@ module.exports = {
         "max_value": 1000000000000
     },
     "digital_internet_users": {
-        "approved_domain": "unknown",
-        "extraction_method": "LIVE_RESEARCH",
-        "expected_unit": "unknown",
+        "approved_domain": "indiadigitalsummit.in",
+        "extraction_method": "LIVE_PRIMARY",
+        "expected_unit": "users",
         "min_value": 0,
-        "max_value": 1000000000000
+        "max_value": 5000000000
+    },
+    "digital_rural_internet_users": {
+        "approved_domain": "indiadigitalsummit.in",
+        "extraction_method": "LIVE_PRIMARY",
+        "expected_unit": "users",
+        "min_value": 0,
+        "max_value": 5000000000
+    },
+    "digital_urban_internet_users": {
+        "approved_domain": "indiadigitalsummit.in",
+        "extraction_method": "LIVE_PRIMARY",
+        "expected_unit": "users",
+        "min_value": 0,
+        "max_value": 5000000000
+    },
+    "digital_internet_penetration": {
+        "approved_domain": "indiadigitalsummit.in",
+        "extraction_method": "LIVE_PRIMARY",
+        "expected_unit": "%",
+        "min_value": 0,
+        "max_value": 100
     },
     "digital_smartphone_users": {
         "approved_domain": "unknown",
