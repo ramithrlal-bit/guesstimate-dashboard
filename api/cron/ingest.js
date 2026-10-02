@@ -130,6 +130,48 @@ module.exports = async function(req, res) {
     results.iamai = { success: false, error: e.message };
   }
 
+  // 9. DataReportal Connector
+  try {
+    const { extract: extractDataReportal } = require('../../lib/connectors/datareportal');
+    const datareportalDataArray = await extractDataReportal();
+    results.datareportal = { success: true, status: [] };
+    for (const data of datareportalDataArray) {
+      const persistRes = await persistObservation(data);
+      results.datareportal.status.push(persistRes.status);
+    }
+  } catch (e) {
+    console.error('[Ingest] DataReportal Connector Failed:', e.message);
+    results.datareportal = { success: false, error: e.message };
+  }
+
+  // 10. Ericsson Connector
+  try {
+    const { extract: extractEricsson } = require('../../lib/connectors/ericsson');
+    const ericssonDataArray = await extractEricsson();
+    results.ericsson = { success: true, status: [] };
+    for (const data of ericssonDataArray) {
+      const persistRes = await persistObservation(data);
+      results.ericsson.status.push(persistRes.status);
+    }
+  } catch (e) {
+    console.error('[Ingest] Ericsson Connector Failed:', e.message);
+    results.ericsson = { success: false, error: e.message };
+  }
+
+  // 11. EY Connector
+  try {
+    const { extract: extractEY } = require('../../lib/connectors/ey');
+    const eyDataArray = await extractEY();
+    results.ey = { success: true, status: [] };
+    for (const data of eyDataArray) {
+      const persistRes = await persistObservation(data);
+      results.ey.status.push(persistRes.status);
+    }
+  } catch (e) {
+    console.error('[Ingest] EY Connector Failed:', e.message);
+    results.ey = { success: false, error: e.message };
+  }
+
   console.log('Ingestion pipeline finished.');
   return res.status(200).json({ success: true, results });
 };

@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
 async function verify() {
-    const url = 'file:///C:/Users/ramit/OneDrive/Desktop/guesstimate-dashboard/index.html';
+    const url = 'https://guesstimate-dashboard.vercel.app/';
     console.log(`Launching Puppeteer to open ${url}...`);
     
     const browser = await puppeteer.launch({ headless: 'new' });
@@ -11,17 +11,20 @@ async function verify() {
         await page.goto(url, { waitUntil: 'networkidle0' });
         console.log('Page loaded');
         
-        // Wait a bit just in case
         await new Promise(r => setTimeout(r, 2000));
         
-        // Extract the metrics
         const metrics = await page.evaluate(() => {
             const results = {};
             const keys = [
                 'digital_internet_users',
                 'digital_rural_internet_users',
                 'digital_urban_internet_users',
-                'digital_internet_penetration'
+                'digital_internet_penetration',
+                'pop_india_total',
+                'trai_telephone_subscribers_total',
+                'ev_sales_total',
+                'aai_domestic_passengers',
+                'amfi_total_aum_cr'
             ];
             
             for (const key of keys) {
