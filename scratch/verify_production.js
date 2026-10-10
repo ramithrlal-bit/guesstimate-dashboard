@@ -25,7 +25,7 @@ async function verify() {
   
   page.on('console', msg => console.log('PAGE LOG:', msg.text()));
   
-  await page.goto('https://guesstimate-dashboard.vercel.app/', { waitUntil: 'networkidle0' });
+  await page.goto('http://127.0.0.1:8080/', { waitUntil: 'networkidle2' });
   
   await new Promise(resolve => setTimeout(resolve, 3000));
   

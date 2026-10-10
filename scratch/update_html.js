@@ -1,12 +1,14 @@
-const fs = require('fs');
-let r = fs.readFileSync('index.html', 'utf8');
-
-r = r.replace(/<span class="l">Smartphone users<\/span>/g, '<span class="l">Smartphone installed base</span>');
-r = r.replace(/<span class="l">5G users<\/span>/g, '<span class="l">5G subscriptions</span>');
-r = r.replace(/<span class="l">Social media users<\/span>/g, '<span class="l">Social media user identities</span>');
-r = r.replace(/<span class="l">OTT subscribers<\/span>/g, '<span class="l">Paid video subscriptions</span>');
-r = r.replace(/<span class="l">Mobile gaming users<\/span>/g, '<span class="l">Online gamers</span>');
-r = r.replace(/<span class="l">Platform users<\/span>/g, '<span class="l">Platform advertising reach / members</span>'); // Just in case this exact text exists
-
-fs.writeFileSync('index.html', r);
-console.log('Updated labels in HTML');
+﻿const fs = require('fs');
+let html = fs.readFileSync('index.html', 'utf8');
+const block = fs.readFileSync('scratch/ecommerce_block.html', 'utf8');
+const searchTarget = 'data-metric="ecommerce_e_commerce_share_of_total_retail"';
+const closingDivs = '</div>\n  </div>';
+const idx = html.indexOf(searchTarget);
+if (idx !== -1) {
+    const endIdx = html.indexOf(closingDivs, idx) + closingDivs.length;
+    html = html.slice(0, endIdx) + '\n\n' + block + html.slice(endIdx);
+    fs.writeFileSync('index.html', html);
+    console.log('Successfully updated index.html');
+} else {
+    console.log('Target string not found in index.html');
+}
