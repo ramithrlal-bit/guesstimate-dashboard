@@ -11,15 +11,21 @@ module.exports = async function(req, res) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
-  console.log('Starting ingestion pipeline...');
+  const isDryRun = req.query?.dryRun === 'true' || req.headers?.['x-dry-run'] === 'true' || process.env.DRY_RUN === 'true';
+
+  console.log(`Starting ingestion pipeline...${isDryRun ? ' [DRY RUN]' : ''}`);
   
+  const saveObservation = isDryRun 
+    ? async (obs) => ({ status: 'dry_run', observation: obs })
+    : persistObservation;
+
   const results = {};
 
   // 1. NPCI Connector (Disabled due to bot protection)
   const npciResult = await extractNPCI();
   if (npciResult.success) {
     try {
-      const persistRes = await persistObservation({
+      const persistRes = await saveObservation({
         metric_id: 'upi_vol_monthly',
         value: npciResult.data.value,
         display_value: npciResult.data.display_value,
@@ -43,7 +49,7 @@ module.exports = async function(req, res) {
   if (wbResult.success) {
     try {
       // The connector already returns the full payload structure correctly formatted
-      const persistRes = await persistObservation(wbResult.data);
+      const persistRes = await saveObservation(wbResult.data);
       results.worldbank = { success: true, status: persistRes.status };
     } catch (e) {
       console.error('[Ingest] Failed to persist World Bank data:', e.message);
@@ -58,7 +64,7 @@ module.exports = async function(req, res) {
   const traiResult = await extractTRAI();
   if (traiResult.success) {
     try {
-      const persistRes = await persistObservation(traiResult.data);
+      const persistRes = await saveObservation(traiResult.data);
       results.trai = { success: true, status: persistRes.status };
     } catch (e) {
       console.error('[Ingest] Failed to persist TRAI data:', e.message);
@@ -72,7 +78,7 @@ module.exports = async function(req, res) {
   // 4. VAHAN Connector
   try {
     const vahanData = await extractVahan();
-    const persistRes = await persistObservation(vahanData);
+    const persistRes = await saveObservation(vahanData);
     results.vahan = { success: true, status: persistRes.status };
   } catch (e) {
     console.error('[Ingest] VAHAN Connector Failed:', e.message);
@@ -83,7 +89,7 @@ module.exports = async function(req, res) {
   try {
     const { extract: extractAAI } = require('../../lib/connectors/aai');
     const aaiData = await extractAAI();
-    const persistRes = await persistObservation(aaiData);
+    const persistRes = await saveObservation(aaiData);
     results.aai = { success: true, status: persistRes.status };
   } catch (e) {
     console.error('[Ingest] AAI Connector Failed:', e.message);
@@ -94,7 +100,7 @@ module.exports = async function(req, res) {
   try {
     const { extract: extractAMFI } = require('../../lib/connectors/amfi');
     const amfiData = await extractAMFI();
-    const persistRes = await persistObservation(amfiData);
+    const persistRes = await saveObservation(amfiData);
     results.amfi = { success: true, status: persistRes.status };
   } catch (e) {
     console.error('[Ingest] AMFI Connector Failed:', e.message);
@@ -105,7 +111,7 @@ module.exports = async function(req, res) {
   const rbiResult = await extractRBIRepoRate();
   if (rbiResult.success) {
     try {
-      const persistRes = await persistObservation(rbiResult.data);
+      const persistRes = await saveObservation(rbiResult.data);
       results.rbi = { success: true, status: persistRes.status };
     } catch (e) {
       console.error('[Ingest] Failed to persist RBI data:', e.message);
@@ -122,7 +128,7 @@ module.exports = async function(req, res) {
     const iamaiDataArray = await extractIAMAI();
     results.iamai = { success: true, status: [] };
     for (const data of iamaiDataArray) {
-      const persistRes = await persistObservation(data);
+      const persistRes = await saveObservation(data);
       results.iamai.status.push(persistRes.status);
     }
   } catch (e) {
@@ -136,7 +142,7 @@ module.exports = async function(req, res) {
     const datareportalDataArray = await extractDataReportal();
     results.datareportal = { success: true, status: [] };
     for (const data of datareportalDataArray) {
-      const persistRes = await persistObservation(data);
+      const persistRes = await saveObservation(data);
       results.datareportal.status.push(persistRes.status);
     }
   } catch (e) {
@@ -150,7 +156,7 @@ module.exports = async function(req, res) {
     const ericssonDataArray = await extractEricsson();
     results.ericsson = { success: true, status: [] };
     for (const data of ericssonDataArray) {
-      const persistRes = await persistObservation(data);
+      const persistRes = await saveObservation(data);
       results.ericsson.status.push(persistRes.status);
     }
   } catch (e) {
@@ -164,12 +170,22 @@ module.exports = async function(req, res) {
     const eyDataArray = await extractEY();
     results.ey = { success: true, status: [] };
     for (const data of eyDataArray) {
-      const persistRes = await persistObservation(data);
+      const persistRes = await saveObservation(data);
       results.ey.status.push(persistRes.status);
     }
   } catch (e) {
     console.error('[Ingest] EY Connector Failed:', e.message);
     results.ey = { success: false, error: e.message };
+  }
+
+  // 12. Batch 1 Global & Macroeconomics Connector
+  try {
+    const { extractBatch1Global } = require('../../lib/connectors/batch1_global');
+    const batch1Results = await extractBatch1Global(isDryRun);
+    results.batch1_global = { success: true, results: batch1Results };
+  } catch (e) {
+    console.error('[Ingest] Batch 1 Global Connector Failed:', e.message);
+    results.batch1_global = { success: false, error: e.message };
   }
 
   console.log('Ingestion pipeline finished.');
