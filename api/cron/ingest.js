@@ -188,6 +188,16 @@ module.exports = async function(req, res) {
     results.batch1_global = { success: false, error: e.message };
   }
 
+  // 13. Batch 2 Core Connector
+  try {
+    const { extractBatch2Core } = require('../../lib/connectors/batch2_core');
+    const batch2Results = await extractBatch2Core(isDryRun);
+    results.batch2_core = { success: true, results: batch2Results };
+  } catch (e) {
+    console.error('[Ingest] Batch 2 Core Connector Failed:', e.message);
+    results.batch2_core = { success: false, error: e.message };
+  }
+
   console.log('Ingestion pipeline finished.');
   return res.status(200).json({ success: true, results });
 };
