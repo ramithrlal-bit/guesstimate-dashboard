@@ -243,7 +243,10 @@
         const obs = obsMap[key];
 
         if (obs) {
-          if (obs.display_value) {
+          if (key === 'global_world_population') {
+            const num = Number(obs.value);
+            el.innerHTML = '~' + (num / 1e9).toFixed(1) + 'B';
+          } else if (obs.display_value) {
             el.innerHTML = obs.display_value;
           } else if (obs.value !== null && obs.value !== undefined) {
             let num = Number(obs.value);
