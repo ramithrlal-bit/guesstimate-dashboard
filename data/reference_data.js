@@ -1,4 +1,4 @@
-// Synchronous fallback reference dataset for 264 metrics
+// Synchronous fallback reference dataset
 window.REFERENCE_DATA = {
   "pop_households": {
     "value": 300,
@@ -2374,6 +2374,15 @@ window.REFERENCE_DATA = {
     "source_name": "Reserve Bank of India Monetary Policy Committee",
     "source_url": "https://rbi.org.in/",
     "reporting_period": "Current",
+    "data_status": "Official"
+  },
+  "general_world_population": {
+    "value": 8215424893,
+    "display_value": "~8.2B",
+    "unit": "people",
+    "source_name": "World Bank (SP.POP.TOTL) / UN Population Division",
+    "source_url": "https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json&mrnev=1",
+    "reporting_period": "2025",
     "data_status": "Official"
   }
 };
