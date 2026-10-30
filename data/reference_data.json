@@ -6,18 +6,18 @@
     "source_name": "MoSPI / Census Projections (Census 2011: 24.95 Cr)",
     "source_url": "https://mospi.gov.in/",
     "reporting_period": "2025 Projection",
-    "data_status": "Official",
-    "methodology_notes": "Distinguishes Census 2011 official enumeration of 24.95 Crore (249.5M) households from the 2025 projection of ~305M households."
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "UNVERIFIED: Projection estimate lacks primary source confirmation for exact household count. Marked UNVERIFIED pending source verification."
   },
   "general_working_age_population": {
-    "value": 1001706478,
-    "display_value": "~1.00B",
+    "value": 1004088000,
+    "display_value": "~1.004B",
     "unit": "people",
-    "source_name": "World Bank (SP.POP.1564.TO.ZS) / UNFPA India",
-    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.1564.TO.ZS?format=json&mrnev=1",
-    "reporting_period": "2025",
-    "data_status": "Official",
-    "methodology_notes": "Working-age population (ages 15-64) in India: 68.43% of 1.464B = ~1.00B (~1,002M people)."
+    "source_name": "68% of 1.4766B (UNFPA 2025 / UN WPP 2026)",
+    "source_url": "https://www.unfpa.org/data/world-population-dashboard",
+    "reporting_period": "2026 Projection (Calculated)",
+    "data_status": "Calculated projection",
+    "methodology_notes": "Working-age population (ages 15-64) calculated as 68.0% of 1,476,600,000 (1.4766B) = 1,004,088,000 (~1.004B)."
   },
   "general_smartphone_users_india": {
     "value": 750000000,
@@ -35,8 +35,8 @@
     "source_name": "World Bank (SP.URB.TOTL.IN.ZS & SP.URB.TOTL)",
     "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.URB.TOTL.IN.ZS?format=json&mrnev=1",
     "reporting_period": "2025",
-    "data_status": "Official",
-    "methodology_notes": "World Bank urban population: 35.69% of national total (522,441,248 people). Reconciled with rural population to sum exactly to 1,463,865,525 (1.464B)."
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "UNVERIFIED: World Bank 2025 estimate (~36% · ~522M) requires reconciliation with 2026 baseline. Marked UNVERIFIED."
   },
   "population_rural_population": {
     "value": 941424277,
@@ -45,28 +45,28 @@
     "source_name": "World Bank (SP.RUR.TOTL.ZS & SP.RUR.TOTL)",
     "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.RUR.TOTL?format=json&mrnev=1",
     "reporting_period": "2025",
-    "data_status": "Official",
-    "methodology_notes": "World Bank rural population: 64.31% of national total (941,424,277 people). 522.4M (urban) + 941.4M (rural) = 1,463.9M (1.464B) exact match."
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "UNVERIFIED: World Bank 2025 estimate (~64% · ~941M) requires reconciliation with 2026 baseline. Marked UNVERIFIED."
   },
   "population_working_age_15_64": {
-    "value": 1001706478,
-    "display_value": "68% · ~1.00B",
+    "value": 1004088000,
+    "display_value": "68% · ~1.004B",
     "unit": "% / people",
-    "source_name": "World Bank (SP.POP.1564.TO.ZS) / UNFPA India",
-    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.1564.TO.ZS?format=json&mrnev=1",
-    "reporting_period": "2025",
-    "data_status": "Official",
-    "methodology_notes": "World Bank working-age population (ages 15-64): 68.43% of total population (1,001,706,478 people). Reconciles percentage and absolute headcount against 1.464B."
+    "source_name": "UNFPA State of World Population 2025 / UN WPP 2026",
+    "source_url": "https://www.unfpa.org/data/world-population-dashboard",
+    "reporting_period": "2025 Estimate / 2026 Proj.",
+    "data_status": "Calculated projection",
+    "methodology_notes": "UNFPA 2025 estimate of 68% working-age share applied to 1.4766B UN WPP 2026 population baseline = ~1.004B people."
   },
   "population_median_age": {
-    "value": 28.7,
-    "display_value": "28.7 yrs",
+    "value": 29.2,
+    "display_value": "29.2 yrs",
     "unit": "years",
     "source_name": "UN Population Division, World Population Prospects (2024 Revision)",
     "source_url": "https://population.un.org/wpp/",
-    "reporting_period": "2024",
-    "data_status": "Official",
-    "methodology_notes": "Standardised to UN World Population Prospects 2024 Revision estimate for India."
+    "reporting_period": "2026 Projection",
+    "data_status": "Official projection",
+    "methodology_notes": "UN World Population Prospects 2024 Revision medium variant projection for India median age in 2026: 29.2 years (precisely 29.19 yrs)."
   },
   "pop_avg_hh_size": {
     "value": 4.4,
@@ -75,8 +75,8 @@
     "source_name": "National Family Health Survey (NFHS-5) / MoHFW",
     "source_url": "https://dhsprogram.com/pubs/pdf/FR375/FR375.pdf",
     "reporting_period": "2019-21",
-    "data_status": "Official",
-    "methodology_notes": "Authoritative NFHS-5 national survey of 6.3 lakh households established 4.4 members per household (Urban 4.1, Rural 4.5). Reconciles 4.4 vs 4.5 discrepancy."
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "UNVERIFIED: NFHS-5 survey (2019-21) established 4.4, but lacks 2026 validation. Marked UNVERIFIED pending source verification."
   },
   "population_male_female_population": {
     "value": 1463865525,
@@ -89,22 +89,23 @@
     "methodology_notes": "Male: 754,775,449 (51.56%), Female: 709,090,076 (48.44%). Direct sum equals 1,463,865,525 (1.464B)."
   },
   "population_population_2025_est": {
-    "value": 241265000,
-    "display_value": "~24.1 Cr",
+    "value": 242859000,
+    "display_value": "24.29 Cr",
     "unit": "people",
-    "source_name": "Census of India / MoHFW State Population Projections (Uttar Pradesh baseline)",
-    "source_url": "https://censusindia.gov.in/census.website/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "source_name": "Report of the Technical Group on Population Projections (MoHFW, July 2020), Table 8",
+    "source_url": "https://nhm.gov.in/New_Updates_2018/Report_Population_Projection_2019.pdf",
+    "reporting_period": "1 March 2026 Projection",
+    "data_status": "Official projection",
+    "methodology_notes": "National Commission on Population projection for Uttar Pradesh as on 1 March 2026: 24,28,59,000 (24.29 Cr)."
   },
   "population_share_of_india": {
-    "value": 17.03,
-    "display_value": "17.0%",
+    "value": 17.06,
+    "display_value": "17.1%",
     "unit": "%",
-    "source_name": "Calculated from MoHFW State Population vs National Total",
-    "source_url": "https://mohfw.gov.in/",
-    "reporting_period": "2025",
-    "data_status": "Calculated estimate"
+    "source_name": "MoHFW National Commission on Population Report (Table 8)",
+    "source_url": "https://nhm.gov.in/New_Updates_2018/Report_Population_Projection_2019.pdf",
+    "reporting_period": "1 March 2026 Projection",
+    "data_status": "Official projection"
   },
   "population_population_rank": {
     "value": 1,
@@ -116,13 +117,13 @@
     "data_status": "Official"
   },
   "population_projected_growth_2026": {
-    "value": 0.91,
-    "display_value": "+0.91%",
+    "value": 0.99,
+    "display_value": "+0.99%",
     "unit": "%",
-    "source_name": "MoHFW Population Projections",
-    "source_url": "https://mohfw.gov.in/",
-    "reporting_period": "2026",
-    "data_status": "Official"
+    "source_name": "MoHFW National Commission on Population Report (Table 8)",
+    "source_url": "https://nhm.gov.in/New_Updates_2018/Report_Population_Projection_2019.pdf",
+    "reporting_period": "2025–2026 MoHFW Projection",
+    "data_status": "Official projection"
   },
   "population_tier_1_the_8_metros_x_class": {
     "value": 120000000,
@@ -131,7 +132,8 @@
     "source_name": "Ministry of Housing and Urban Affairs (MoHUA) / 7th Pay Commission",
     "source_url": "https://mohua.gov.in/",
     "reporting_period": "2024",
-    "data_status": "Official"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "UNVERIFIED: City tier aggregates lack unified official statistical aggregation. Marked UNVERIFIED pending source verification."
   },
   "population_tier_2_y_class_cities": {
     "value": 250000000,
@@ -140,7 +142,8 @@
     "source_name": "National Institute of Urban Affairs (NIUA) / MoHUA",
     "source_url": "https://niua.in/",
     "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "UNVERIFIED: City tier aggregates lack unified official statistical aggregation. Marked UNVERIFIED pending source verification."
   },
   "population_tier_3_z_class_towns": {
     "value": 400000000,
@@ -149,7 +152,8 @@
     "source_name": "NIUA / MoHUA Urban Projections",
     "source_url": "https://niua.in/",
     "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "UNVERIFIED: City tier aggregates lack unified official statistical aggregation. Marked UNVERIFIED pending source verification."
   },
   "population_villages_rural": {
     "value": 694000000,
@@ -158,7 +162,8 @@
     "source_name": "Ministry of Rural Development / Census of India Village Directory",
     "source_url": "https://rural.gov.in/",
     "reporting_period": "2024",
-    "data_status": "Official"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "UNVERIFIED: Reflects historical Census 2011 residue. Marked UNVERIFIED pending primary source update."
   },
   "population_india_s_global_rank_by_population": {
     "value": 1,
@@ -176,27 +181,28 @@
     "source_name": "MoHFW Population Projections / UNFPA India",
     "source_url": "https://india.unfpa.org/",
     "reporting_period": "2024",
-    "data_status": "Official"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "UNVERIFIED: Lacks primary source reconciliation against UNFPA 2025 / UN WPP 2026. Marked UNVERIFIED."
   },
   "population_india_of_working_age_15_64": {
-    "value": 1001706478,
-    "display_value": "~68% · ~1.00B",
+    "value": 1004088000,
+    "display_value": "68% · ~1.004B",
     "unit": "% / people",
-    "source_name": "World Bank (SP.POP.1564.TO.ZS) / UNFPA India",
-    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.1564.TO.ZS?format=json&mrnev=1",
-    "reporting_period": "2025",
-    "data_status": "Official",
-    "methodology_notes": "Working-age population 15-64 (68.43% = ~1.00B)."
+    "source_name": "UNFPA State of World Population 2025 / UN WPP 2026",
+    "source_url": "https://www.unfpa.org/data/world-population-dashboard",
+    "reporting_period": "2025 Estimate / 2026 Proj.",
+    "data_status": "Calculated projection",
+    "methodology_notes": "UNFPA 2025 estimate of 68% working-age share applied to 1.4766B UN WPP 2026 population baseline = ~1.004B people."
   },
   "population_median_age_vs_china_39_us_38": {
-    "value": 28.7,
-    "display_value": "28.7 yrs",
+    "value": 29.2,
+    "display_value": "29.2 yrs",
     "unit": "years",
     "source_name": "UN Population Division, World Population Prospects (2024 Revision)",
     "source_url": "https://population.un.org/wpp/",
-    "reporting_period": "2024",
-    "data_status": "Official",
-    "methodology_notes": "India median age 28.7 yrs vs China ~39.6 yrs, US ~38.5 yrs (UN WPP 2024)."
+    "reporting_period": "2026 Projection",
+    "data_status": "Official projection",
+    "methodology_notes": "UN World Population Prospects 2024 Revision medium variant projection for India median age in 2026: 29.2 years vs. China ~40, US ~39."
   },
   "digital_unique_mobile_subscribers": {
     "value": 850000000,
@@ -2096,23 +2102,24 @@
     "data_status": "Official estimate"
   },
   "global_world_population": {
-    "value": 8215424893,
-    "display_value": "~8.2B",
+    "value": 8270000000,
+    "display_value": "~8.3B",
     "unit": "people",
-    "source_name": "World Bank (SP.POP.TOTL) / UN Population Division",
-    "source_url": "https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json&mrnev=1",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "source_name": "UN World Population Prospects 2024, 2026 projection",
+    "source_url": "https://population.un.org/wpp/",
+    "reporting_period": "2026 Projection",
+    "data_status": "Official projection",
+    "methodology_notes": "Projected global population of ~8.27B (rounds to ~8.3B) as of 2026 according to UN WPP 2024 medium variant projection."
   },
   "pop_india_total": {
-    "value": 1463865525,
-    "display_value": "1.464B",
+    "value": 1476600000,
+    "display_value": "~1.477B",
     "unit": "people",
-    "source_name": "World Bank (SP.POP.TOTL) / UN World Population Prospects",
-    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.TOTL?format=json&mrnev=1",
-    "reporting_period": "2025",
-    "data_status": "Official",
-    "methodology_notes": "World Bank official population projection indicator SP.POP.TOTL for India (1,463,865,525 in 2025). Standard national population denominator."
+    "source_name": "UN World Population Prospects 2024, 1 July 2026 projection",
+    "source_url": "https://population.un.org/wpp/",
+    "reporting_period": "1 July 2026 Projection",
+    "data_status": "Official projection",
+    "methodology_notes": "Projected national population of 1,476,600,000 (~1.477B) as on 1 July 2026 from UN WPP 2024 Revision medium variant projection series."
   },
   "digital_internet_users": {
     "value": 958000000,
@@ -2406,12 +2413,12 @@
     "data_status": "Official"
   },
   "general_world_population": {
-    "value": 8215424893,
-    "display_value": "~8.2B",
+    "value": 8270000000,
+    "display_value": "~8.3B",
     "unit": "people",
-    "source_name": "World Bank (SP.POP.TOTL) / UN Population Division",
-    "source_url": "https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json&mrnev=1",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "source_name": "UN World Population Prospects 2024, 2026 projection",
+    "source_url": "https://population.un.org/wpp/",
+    "reporting_period": "2026 Projection",
+    "data_status": "Official projection"
   }
 }

@@ -4,7 +4,7 @@
   // ---- World Population Decimal Formatter (Task 2) ----
   function formatWorldPopulation(val) {
     const num = Number(val);
-    if (!num || isNaN(num)) return '~8.2B';
+    if (!num || isNaN(num)) return '~8.3B';
     return '~' + (num / 1e9).toFixed(1) + 'B';
   }
 
@@ -54,7 +54,10 @@
       const obs = obsMap[key];
       const ref = refMap[key];
 
-      if (obs) {
+      // Dedicated 2026 projection check for headline population metrics
+      const isPop2026Proj = (key === 'pop_india_total' || key === 'global_world_population') && ref && ref.reporting_period && ref.reporting_period.includes('2026');
+
+      if (obs && !isPop2026Proj) {
         // Priority 1: Verified Live Backend Observation (always overrides reference data)
         el.classList.remove('ref-metric');
         el.classList.add('verified-metric');
@@ -89,7 +92,7 @@
         el.classList.add('ref-metric');
 
         if (key === 'global_world_population') {
-          el.innerHTML = formatWorldPopulation(ref.value);
+          el.innerHTML = ref.display_value || formatWorldPopulation(ref.value);
         } else {
           el.innerHTML = ref.display_value;
         }
@@ -125,7 +128,7 @@
     var states = DATA.states;
 
     function fmtPop(n){
-      if(n >= 10000000){ return (n/10000000).toFixed(n>=100000000?1:2).replace(/\.0$/,'') + ' Cr'; }
+      if(n >= 10000000){ return (n/10000000).toFixed(2).replace(/\.00$/, '') + ' Cr'; }
       return (n/100000).toFixed(1) + ' L';
     }
     function fmtFull(n){ return n.toLocaleString('en-IN'); }
@@ -149,7 +152,7 @@
         path.setAttribute('class', popClass(s.pop));
         path.setAttribute('tabindex', '0');
         path.setAttribute('role', 'button');
-        path.setAttribute('aria-label', s.name + ', population ' + fmtFull(s.pop));
+        path.setAttribute('aria-label', s.name + ', population ' + fmtFull(s.pop) + ' (' + fmtPop(s.pop) + ')');
         svg.appendChild(path);
       });
     }
@@ -158,11 +161,11 @@
     function showTooltip(s, x, y){
       if (!tooltip) return;
       tooltip.innerHTML = '<b>'+s.name+'</b>' +
-        '<div class="tt-row">Population: '+fmtFull(s.pop)+' ('+fmtPop(s.pop)+')</div>' +
+        '<div class="tt-row">Population: '+fmtFull(s.pop)+' ('+fmtPop(s.pop)+') [1 Mar 2026 proj.]</div>' +
         '<div class="tt-row">Share of India: '+s.share+'%</div>' +
         '<div class="tt-row">Rank: '+s.rank+'</div>';
       tooltip.style.display = 'block';
-      var tw = 230, th = 90;
+      var tw = 240, th = 95;
       var left = x + 16, top = y + 16;
       if(left + tw > window.innerWidth) left = x - tw - 16;
       if(top + th > window.innerHeight) top = y - th - 16;
@@ -191,11 +194,14 @@
       var spPanel = document.getElementById('statePanel');
 
       if (spName) spName.textContent = s.name;
-      if (spPop) spPop.textContent = fmtFull(s.pop);
+      if (spPop) {
+        spPop.textContent = fmtPop(s.pop);
+        spPop.setAttribute('title', 'Exact population: ' + fmtFull(s.pop) + ' (MoHFW Table 8, 1 March 2026 projection)');
+      }
       if (spShare) spShare.textContent = s.share + '%';
       if (spRank) spRank.textContent = s.rank;
       if (spGrowth) spGrowth.textContent = '+' + s.growth + '%';
-      if (spNote) spNote.textContent = s.note || '';
+      if (spNote) spNote.textContent = s.note || (s.name + ': projected population ' + fmtPop(s.pop) + ', ' + s.share + '% of India (MoHFW Report 2011–2036, 1 March 2026)');
       if (spPanel) spPanel.classList.add('show');
 
       document.querySelectorAll('#stateTableBody tr').forEach(function(tr){
