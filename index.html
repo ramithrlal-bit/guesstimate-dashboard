@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/styles.css">
 <!-- Supabase JS Client -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="data/reference_data.js"></script>
 </head>
 <body>
 <a href="#main" class="skip">Skip to content</a>
@@ -23,7 +24,7 @@
     </div>
 
     <div class="ledger" id="heroLedger">
-      <div class="cell"><span class="num" data-metric="global_world_population">~8.1B</span><span class="lbl">World population</span></div>
+      <div class="cell"><span class="num" data-metric="global_world_population">~8.2B</span><span class="lbl">World population</span></div>
       <div class="cell"><span class="num" data-metric="pop_india_total">~1.48B</span><span class="lbl">India population</span></div>
       <div class="cell"><span class="num" data-metric="pop_households">~300M</span><span class="lbl">India households</span></div>
       <div class="cell"><span class="num" data-metric="digital_internet_users">&gt;1B</span><span class="lbl">Internet users (India)</span></div>
@@ -92,15 +93,15 @@
           <span><span class="sw" style="background:#e0a72e;"></span>110M+</span>
         </div>
       </div>
-      <div class="state-panel" id="statePanel">
-        <h4 id="spName">—</h4>
+      <div class="state-panel show" id="statePanel">
+        <h4 id="spName">Uttar Pradesh</h4>
         <div class="row">
-          <div><span class="v" id="spPop" data-metric="population_population_2025_est">—</span><span class="l">Population, 2025 est.</span></div>
-          <div><span class="v" id="spShare" data-metric="population_share_of_india">—</span><span class="l">Share of India</span></div>
-          <div><span class="v" id="spRank" data-metric="population_population_rank">—</span><span class="l">Population rank</span></div>
-          <div><span class="v" id="spGrowth" data-metric="population_projected_growth_2026">—</span><span class="l">Projected growth, 2026</span></div>
+          <div><span class="v" id="spPop" data-metric="population_population_2025_est">~24.1 Cr</span><span class="l">Population, 2025 est.</span></div>
+          <div><span class="v" id="spShare" data-metric="population_share_of_india">17.0%</span><span class="l">Share of India</span></div>
+          <div><span class="v" id="spRank" data-metric="population_population_rank">1st</span><span class="l">Population rank</span></div>
+          <div><span class="v" id="spGrowth" data-metric="population_projected_growth_2026">+0.91%</span><span class="l">Projected growth, 2026</span></div>
         </div>
-        <p class="l" id="spNote" style="margin-top:10px;"></p>
+        <p class="l" id="spNote" style="margin-top:10px;">Most populous state; ~17% of India's population</p>
       </div>
     </div>
     <div>
@@ -802,7 +803,7 @@
 
   <div class="sub-title">World quick anchors</div>
   <div class="grid cols-3">
-    <div class="card" data-cat="global"><span class="v" data-metric="global_world_population">~8.1B</span><span class="l">World population</span></div>
+    <div class="card" data-cat="global"><span class="v" data-metric="global_world_population">~8.2B</span><span class="l">World population</span></div>
     <div class="card" data-cat="global"><span class="v" data-metric="global_world_internet_users">~5.5B</span><span class="l">World internet users</span></div>
     <div class="card" data-cat="global"><span class="v" data-metric="global_world_smartphone_users">~7B+</span><span class="l">World smartphone users</span></div>
     <div class="card" data-cat="global"><span class="v" data-metric="global_world_gdp">~$110T</span><span class="l">World GDP</span></div>

@@ -338,3 +338,11 @@
   .backtop.show{opacity:1; pointer-events:auto;}
 
   @media (prefers-reduced-motion: reduce){ *{scroll-behavior:auto !important; transition:none !important;} }
+
+/* Distinguish reference data from automated live observations */
+[data-metric].ref-metric {
+  cursor: help;
+}
+[data-metric].verified-metric {
+  cursor: default;
+}
