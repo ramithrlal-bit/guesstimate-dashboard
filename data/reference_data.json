@@ -1,21 +1,23 @@
 {
   "pop_households": {
-    "value": 300,
-    "display_value": "~300M",
+    "value": 305000000,
+    "display_value": "~305M",
     "unit": "households",
-    "source_name": "Ministry of Statistics and Programme Implementation (MoSPI) / Census Projections",
+    "source_name": "MoSPI / Census Projections (Census 2011: 24.95 Cr)",
     "source_url": "https://mospi.gov.in/",
-    "reporting_period": "2024-25",
-    "data_status": "Official"
+    "reporting_period": "2025 Projection",
+    "data_status": "Official",
+    "methodology_notes": "Distinguishes Census 2011 official enumeration of 24.95 Crore (249.5M) households from the 2025 projection of ~305M households."
   },
   "general_working_age_population": {
-    "value": 980000000,
-    "display_value": "~980M",
+    "value": 1001706478,
+    "display_value": "~1.00B",
     "unit": "people",
-    "source_name": "MoHFW Technical Group on Population Projections",
-    "source_url": "https://mohfw.gov.in/",
+    "source_name": "World Bank (SP.POP.1564.TO.ZS) / UNFPA India",
+    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.1564.TO.ZS?format=json&mrnev=1",
     "reporting_period": "2025",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "Working-age population (ages 15-64) in India: 68.43% of 1.464B = ~1.00B (~1,002M people)."
   },
   "general_smartphone_users_india": {
     "value": 750000000,
@@ -27,58 +29,64 @@
     "data_status": "Industry estimate"
   },
   "population_urban_population": {
-    "value": 530000000,
-    "display_value": "36% · 530M",
-    "unit": "people",
-    "source_name": "MoHFW Technical Group on Population Projections",
-    "source_url": "https://mohfw.gov.in/",
+    "value": 522441248,
+    "display_value": "~36% · ~522M",
+    "unit": "% / people",
+    "source_name": "World Bank (SP.URB.TOTL.IN.ZS & SP.URB.TOTL)",
+    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.URB.TOTL.IN.ZS?format=json&mrnev=1",
     "reporting_period": "2025",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "World Bank urban population: 35.69% of national total (522,441,248 people). Reconciled with rural population to sum exactly to 1,463,865,525 (1.464B)."
   },
   "population_rural_population": {
-    "value": 934000000,
-    "display_value": "64% · 934M",
-    "unit": "people",
-    "source_name": "MoHFW Technical Group on Population Projections",
-    "source_url": "https://mohfw.gov.in/",
+    "value": 941424277,
+    "display_value": "~64% · ~941M",
+    "unit": "% / people",
+    "source_name": "World Bank (SP.RUR.TOTL.ZS & SP.RUR.TOTL)",
+    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.RUR.TOTL?format=json&mrnev=1",
     "reporting_period": "2025",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "World Bank rural population: 64.31% of national total (941,424,277 people). 522.4M (urban) + 941.4M (rural) = 1,463.9M (1.464B) exact match."
   },
   "population_working_age_15_64": {
-    "value": 68,
-    "display_value": "68% · ~980M",
-    "unit": "%",
-    "source_name": "MoHFW Technical Group on Population Projections",
-    "source_url": "https://mohfw.gov.in/",
+    "value": 1001706478,
+    "display_value": "68% · ~1.00B",
+    "unit": "% / people",
+    "source_name": "World Bank (SP.POP.1564.TO.ZS) / UNFPA India",
+    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.1564.TO.ZS?format=json&mrnev=1",
     "reporting_period": "2025",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "World Bank working-age population (ages 15-64): 68.43% of total population (1,001,706,478 people). Reconciles percentage and absolute headcount against 1.464B."
   },
   "population_median_age": {
     "value": 28.7,
-    "display_value": "~28.7 yrs",
+    "display_value": "28.7 yrs",
     "unit": "years",
-    "source_name": "UN Population Division (World Population Prospects)",
+    "source_name": "UN Population Division, World Population Prospects (2024 Revision)",
     "source_url": "https://population.un.org/wpp/",
     "reporting_period": "2024",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "Standardised to UN World Population Prospects 2024 Revision estimate for India."
   },
   "pop_avg_hh_size": {
     "value": 4.4,
-    "display_value": "~4.4",
-    "unit": "persons/household",
+    "display_value": "4.4",
+    "unit": "members/household",
     "source_name": "National Family Health Survey (NFHS-5) / MoHFW",
     "source_url": "https://dhsprogram.com/pubs/pdf/FR375/FR375.pdf",
-    "reporting_period": "2021-22",
-    "data_status": "Official"
+    "reporting_period": "2019-21",
+    "data_status": "Official",
+    "methodology_notes": "Authoritative NFHS-5 national survey of 6.3 lakh households established 4.4 members per household (Urban 4.1, Rural 4.5). Reconciles 4.4 vs 4.5 discrepancy."
   },
   "population_male_female_population": {
-    "value": 755000000,
+    "value": 1463865525,
     "display_value": "755M / 709M",
-    "unit": "people",
-    "source_name": "MoHFW Population Projections for India and States",
-    "source_url": "https://mohfw.gov.in/",
+    "unit": "male / female people",
+    "source_name": "World Bank (SP.POP.TOTL.MA.IN & SP.POP.TOTL.FE.IN)",
+    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.TOTL.MA.IN?format=json&mrnev=1",
     "reporting_period": "2025",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "Male: 754,775,449 (51.56%), Female: 709,090,076 (48.44%). Direct sum equals 1,463,865,525 (1.464B)."
   },
   "population_population_2025_est": {
     "value": 241265000,
@@ -171,22 +179,24 @@
     "data_status": "Official"
   },
   "population_india_of_working_age_15_64": {
-    "value": 68,
-    "display_value": "~68% · ~980M",
-    "unit": "%",
-    "source_name": "MoHFW Population Projections / UNFPA India",
-    "source_url": "https://india.unfpa.org/",
+    "value": 1001706478,
+    "display_value": "~68% · ~1.00B",
+    "unit": "% / people",
+    "source_name": "World Bank (SP.POP.1564.TO.ZS) / UNFPA India",
+    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.1564.TO.ZS?format=json&mrnev=1",
     "reporting_period": "2025",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "Working-age population 15-64 (68.43% = ~1.00B)."
   },
   "population_median_age_vs_china_39_us_38": {
     "value": 28.7,
-    "display_value": "~28.7 yrs",
+    "display_value": "28.7 yrs",
     "unit": "years",
-    "source_name": "UN World Population Prospects 2024",
+    "source_name": "UN Population Division, World Population Prospects (2024 Revision)",
     "source_url": "https://population.un.org/wpp/",
     "reporting_period": "2024",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "India median age 28.7 yrs vs China ~39.6 yrs, US ~38.5 yrs (UN WPP 2024)."
   },
   "digital_unique_mobile_subscribers": {
     "value": 850000000,
@@ -234,13 +244,14 @@
     "data_status": "Industry estimate"
   },
   "digital_upi_users": {
-    "value": 350000000,
+    "value": 350,
     "display_value": "~350M",
-    "unit": "users",
-    "source_name": "National Payments Corporation of India (NPCI) / RBI Payments Vision",
+    "unit": "monthly active users",
+    "source_name": "NPCI / Boston Consulting Group (BCG) / PhonePe Pulse",
     "source_url": "https://www.npci.org.in/",
-    "reporting_period": "2024-25",
-    "data_status": "Official"
+    "reporting_period": "2025",
+    "data_status": "Industry Estimate",
+    "methodology_notes": "Active monthly transacting unique users (~350M–400M). Distinct from registered/onboarded users (550M+)."
   },
   "digital_online_shoppers": {
     "value": 280000000,
@@ -281,47 +292,52 @@
   "upi_vol_annual": {
     "value": 228.3,
     "display_value": "228.3B",
-    "unit": "B",
+    "unit": "billion transactions",
     "source_name": "National Payments Corporation of India (NPCI) Annual Summary",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "reporting_period": "CY 2025",
+    "data_status": "Official",
+    "methodology_notes": "Full Calendar Year 2025 volume: 228.3 Billion transactions. For financial years: FY25 was 185.87B, FY26 was 241.62B (PIB/MoF)."
   },
   "upi_val_annual": {
     "value": 299.7,
     "display_value": "~Rs 299.7L Cr",
-    "unit": "Lakh Cr",
+    "unit": "lakh crore INR",
     "source_name": "National Payments Corporation of India (NPCI) Annual Summary",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "reporting_period": "CY 2025",
+    "data_status": "Official",
+    "methodology_notes": "Full Calendar Year 2025 value: ₹299.7 Lakh Crore (~$3.6 Trillion). FY25 value was ₹260.56L Cr, FY26 was ₹314.23L Cr."
   },
   "upi_vol_monthly": {
     "value": 21.7,
     "display_value": "~21.7B",
-    "unit": "B",
+    "unit": "billion transactions/month",
     "source_name": "National Payments Corporation of India (NPCI) Monthly Statistics",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
     "reporting_period": "Jan 2026",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "Monthly UPI transaction volume for January 2026 (~21.7B). Peak 2025 month was December at 21.63B."
   },
   "fintech_upi_unique_users": {
-    "value": 500000000,
-    "display_value": "500M+",
-    "unit": "users",
-    "source_name": "NPCI / RBI Payments Vision 2025 Target Tracking",
-    "source_url": "https://www.npci.org.in/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "value": 550,
+    "display_value": "550M+",
+    "unit": "registered onboarded users",
+    "source_name": "National Payments Corporation of India (NPCI) / Ministry of Finance (PIB)",
+    "source_url": "https://pib.gov.in/",
+    "reporting_period": "Mid-2026",
+    "data_status": "Official",
+    "methodology_notes": "Cumulative users onboarded / registered on UPI platform (55.49 Crore / 554.9M users as of mid-2026, PIB). Clearly distinguished from active transacting users."
   },
   "fintech_daily_avg_upi_transactions": {
-    "value": 698000000,
-    "display_value": "~698M",
+    "value": 625.5,
+    "display_value": "~625M",
     "unit": "transactions/day",
-    "source_name": "Calculated from NPCI monthly volume (21.64B / 31 days)",
+    "source_name": "Calculated from NPCI CY 2025 Annual Volume (228.3B / 365 days)",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
-    "reporting_period": "Dec 2025",
-    "data_status": "Calculated estimate"
+    "reporting_period": "CY 2025 (Annual Daily Avg)",
+    "data_status": "Calculated",
+    "methodology_notes": "Recalculated from annual volume: 228.3 Billion / 365 days = 625.48M/day (~625M). Peak December 2025 monthly daily average was ~698M/day (21.63B / 31 days)."
   },
   "fintech_yoy_growth_transaction_volume": {
     "value": 29,
@@ -333,22 +349,24 @@
     "data_status": "Official"
   },
   "fintech_total_bank_deposits_2025": {
-    "value": 23200000,
+    "value": 231.73,
     "display_value": "Rs 232L Cr",
-    "unit": "Lakh Cr",
+    "unit": "lakh crore INR",
     "source_name": "Reserve Bank of India (RBI) Scheduled Commercial Banks Bulletin",
-    "source_url": "https://rbi.org.in/scripts/BS_PressReleaseDisplay.aspx",
-    "reporting_period": "FY2025",
-    "data_status": "Official"
+    "source_url": "https://www.rbi.org.in/",
+    "reporting_period": "March 2025",
+    "data_status": "Official",
+    "methodology_notes": "Aggregate deposits of Scheduled Commercial Banks: ₹231.73 Lakh Crore as of March 2025 (FY25 close). Touched ₹262.30 Lakh Crore by March 2026."
   },
   "fintech_total_bank_credit_2025": {
-    "value": 18100000,
+    "value": 181,
     "display_value": "Rs 181L Cr",
-    "unit": "Lakh Cr",
+    "unit": "lakh crore INR",
     "source_name": "Reserve Bank of India (RBI) Scheduled Commercial Banks Bulletin",
-    "source_url": "https://rbi.org.in/scripts/BS_PressReleaseDisplay.aspx",
-    "reporting_period": "FY2025",
-    "data_status": "Official"
+    "source_url": "https://www.rbi.org.in/",
+    "reporting_period": "March 2025",
+    "data_status": "Official",
+    "methodology_notes": "Total bank credit of Scheduled Commercial Banks: ₹181.0 Lakh Crore as of March 2025. Touched ₹213.61 Lakh Crore by March 2026."
   },
   "fintech_gross_npa_mar_2025_20_yr_low": {
     "value": 2.31,
@@ -405,22 +423,24 @@
     "data_status": "Official"
   },
   "fintech_credit_cards": {
-    "value": 105000000,
-    "display_value": "~105M",
-    "unit": "cards",
+    "value": 113.5,
+    "display_value": "~113M",
+    "unit": "cards in circulation",
     "source_name": "RBI Bankwise Monthly ATM/POS/Card Statistics",
-    "source_url": "https://rbi.org.in/",
-    "reporting_period": "Dec 2025",
-    "data_status": "Official"
+    "source_url": "https://www.rbi.org.in/Scripts/ATMView.aspx",
+    "reporting_period": "Late 2025",
+    "data_status": "Official",
+    "methodology_notes": "Total credit cards in circulation: ~113.5M in late 2025, reaching 125.32M by September 2026 (RBI)."
   },
   "fintech_debit_cards": {
-    "value": 980000000,
-    "display_value": "980M+",
-    "unit": "cards",
+    "value": 1000,
+    "display_value": "~1.0B",
+    "unit": "cards in circulation",
     "source_name": "RBI Bankwise Monthly ATM/POS/Card Statistics",
-    "source_url": "https://rbi.org.in/",
-    "reporting_period": "Dec 2025",
-    "data_status": "Official"
+    "source_url": "https://www.rbi.org.in/Scripts/ATMView.aspx",
+    "reporting_period": "2025–2026",
+    "data_status": "Official",
+    "methodology_notes": "Total debit cards in circulation: ~980M in 2025, reaching 1.03B–1.04B in 2026 (RBI)."
   },
   "fintech_mobile_wallet_accounts": {
     "value": 400000000,
@@ -441,13 +461,14 @@
     "data_status": "Industry estimate"
   },
   "fintech_monthly_sip_inflow": {
-    "value": 26000,
-    "display_value": "~Rs 26,000 Cr",
-    "unit": "Cr",
+    "value": 32297,
+    "display_value": "~Rs 32,300 Cr",
+    "unit": "INR Crore/month",
     "source_name": "Association of Mutual Funds in India (AMFI) Monthly Data",
-    "source_url": "https://www.amfiindia.com/research-information",
-    "reporting_period": "Jan 2026",
-    "data_status": "Official"
+    "source_url": "https://www.amfiindia.com/research-information/other-data",
+    "reporting_period": "August 2026",
+    "data_status": "Official",
+    "methodology_notes": "Gross monthly SIP inflows: ₹32,297 Crore in August 2026 and ₹32,490 Crore in September 2026. September 2025 was ₹29,361 Crore. Reconciled to same reporting series as AUM."
   },
   "fintech_fintech_unicorns": {
     "value": 26,
@@ -864,40 +885,44 @@
     "data_status": "Industry estimate"
   },
   "ev_ev_share_of_new_vehicle_sales": {
-    "value": 8,
+    "value": 8.1,
     "display_value": "~8%",
-    "unit": "%",
+    "unit": "% of new registrations",
     "source_name": "Vahan Dashboard (MoRTH) / FADA Automotive Retail",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "FY2024-25",
-    "data_status": "Official"
+    "reporting_period": "CY 2025",
+    "data_status": "Official",
+    "methodology_notes": "Total EV registrations (2.3M) represented 8.1% of all new vehicle registrations (~28.5M) in CY 2025."
   },
   "ev_e_2_wheelers_sales": {
-    "value": 1280000,
+    "value": 1.28,
     "display_value": "1.28M",
-    "unit": "vehicles",
+    "unit": "million units",
     "source_name": "Vahan Dashboard (MoRTH) E-2W Annual Registrations",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "FY2024-25",
-    "data_status": "Official"
+    "reporting_period": "CY 2025",
+    "data_status": "Official",
+    "methodology_notes": "1.28 million electric two-wheelers registered in CY 2025, accounting for ~57% of total EV sales."
   },
   "ev_e_3_wheelers_sales": {
-    "value": 800000,
-    "display_value": "0.8M",
-    "unit": "vehicles",
+    "value": 0.8,
+    "display_value": "0.80M",
+    "unit": "million units",
     "source_name": "Vahan Dashboard (MoRTH) E-3W Annual Registrations",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "FY2024-25",
-    "data_status": "Official"
+    "reporting_period": "CY 2025",
+    "data_status": "Official",
+    "methodology_notes": "0.80 million electric three-wheelers registered in CY 2025 (passenger rickshaws + cargo e-carts), accounting for ~35% of total EV sales."
   },
   "ev_e_4_wheelers_sales": {
-    "value": 176560,
-    "display_value": "~176,560",
-    "unit": "vehicles",
+    "value": 176000,
+    "display_value": "~176K",
+    "unit": "units",
     "source_name": "Vahan Dashboard (MoRTH) E-4W Registrations",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "FY2024-25",
-    "data_status": "Official"
+    "reporting_period": "CY 2025",
+    "data_status": "Official",
+    "methodology_notes": "~175K to 176K electric passenger/commercial 4-wheelers registered in CY 2025 (1.75–1.76 Lakh units)."
   },
   "ev_e_car_share_of_car_sales_may_2026": {
     "value": 7,
@@ -972,13 +997,14 @@
     "data_status": "Official"
   },
   "ev_evs_on_road_total": {
-    "value": 3,
-    "display_value": "~3M+",
-    "unit": "vehicles",
+    "value": 8000000,
+    "display_value": "~8.0M",
+    "unit": "cumulative units on road",
     "source_name": "Vahan Dashboard Cumulative EV Registrations",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "reporting_period": "End of CY 2025",
+    "data_status": "Official",
+    "methodology_notes": "Cumulative on-road EV stock reached 7.98 million (79.76 Lakh) units by December 2025, crossing 8.04 million in early 2026."
   },
   "ev_daily_metro_riders": {
     "value": 12,
@@ -2079,13 +2105,14 @@
     "data_status": "Official"
   },
   "pop_india_total": {
-    "value": 1.464,
+    "value": 1463865525,
     "display_value": "1.464B",
-    "unit": "B",
-    "source_name": "World Bank / UN World Population Prospects",
+    "unit": "people",
+    "source_name": "World Bank (SP.POP.TOTL) / UN World Population Prospects",
     "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.TOTL?format=json&mrnev=1",
     "reporting_period": "2025",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "World Bank official population projection indicator SP.POP.TOTL for India (1,463,865,525 in 2025). Standard national population denominator."
   },
   "digital_internet_users": {
     "value": 958000000,
@@ -2214,31 +2241,34 @@
     "data_status": "Official"
   },
   "amfi_total_aum_cr": {
-    "value": 8707888,
-    "display_value": "Rs 87.1L Cr",
-    "unit": "Lakh Cr",
+    "value": 8707887.74,
+    "display_value": "87,07,888 Cr",
+    "unit": "INR Crore",
     "source_name": "Association of Mutual Funds in India (AMFI)",
-    "source_url": "https://www.amfiindia.com/research-information",
+    "source_url": "https://portal.amfiindia.com/",
     "reporting_period": "August 2026",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "Total Industry AUM: ₹87.08 Lakh Crore (87,07,887.74 Cr) as of August 2026. September 2026 stood at ₹82.64 Lakh Crore."
   },
   "ev_sales_total": {
-    "value": 791096,
-    "display_value": "~791K",
-    "unit": "vehicles",
-    "source_name": "Ministry of Road Transport and Highways (Vahan 4)",
+    "value": 2300000,
+    "display_value": "~2.3M",
+    "unit": "units",
+    "source_name": "Ministry of Road Transport and Highways (Vahan 4 Dashboard)",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "reporting_period": "CY 2025",
+    "data_status": "Official",
+    "methodology_notes": "Official annual EV registrations for Calendar Year 2025: ~2.30M to 2.34M units (23 Lakh+ units). Reconciled with segment sums (1.28M 2W + 0.8M 3W + 0.18M 4W = ~2.3M). Overrides previous partial mid-year extract of 791K."
   },
   "aai_domestic_passengers": {
     "value": 24.61,
-    "display_value": "24.6M/mo",
-    "unit": "M",
-    "source_name": "Airports Authority of India (AAI) Traffic Report",
+    "display_value": "24.61M/mo (~165.5M/yr)",
+    "unit": "passengers/month & passengers/year",
+    "source_name": "Directorate General of Civil Aviation (DGCA) & Airports Authority of India (AAI)",
     "source_url": "https://www.aai.aero/en/business-opportunities/aai-traffic-data",
-    "reporting_period": "August 2026",
-    "data_status": "Official"
+    "reporting_period": "FY 2024-25 / Aug 2026",
+    "data_status": "Official",
+    "methodology_notes": "Annual domestic air passengers: 165.5 million in FY25 (16.55 Crore, DGCA). Monthly airport passengers: 24.61 million in August 2026 (AAI). Reconciles annual and monthly figures."
   },
   "healthcare_expenditure_pct_gdp": {
     "value": 1.84,
