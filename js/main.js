@@ -57,7 +57,24 @@
       // Dedicated 2026 projection check for headline population metrics
       const isPop2026Proj = (key === 'pop_india_total' || key === 'global_world_population') && ref && ref.reporting_period && ref.reporting_period.includes('2026');
 
-      if (obs && !isPop2026Proj) {
+      // Dedicated check for audited Section 02 Digital metrics where 2026 authoritative updates or unverified flags supersede stale observations
+      const isDigitalAudited = (
+        key === 'digital_internet_users' ||
+        key === 'digital_internet_penetration' ||
+        key === 'trai_telephone_subscribers_total' ||
+        key === 'digital_unique_mobile_subscribers' ||
+        key === 'digital_urban_internet_users' ||
+        key === 'digital_rural_internet_users' ||
+        key === 'digital_smartphone_users' ||
+        key === 'general_smartphone_users_india' ||
+        key === 'digital_5g_users' ||
+        key === 'digital_fintech_users' ||
+        key === 'digital_upi_users' ||
+        key === 'digital_avg_daily_video_watch_time_per_user_youtube' ||
+        key === 'digital_whatsapp_users'
+      ) && ref;
+
+      if (obs && !isPop2026Proj && !isDigitalAudited) {
         // Priority 1: Verified Live Backend Observation (always overrides reference data)
         el.classList.remove('ref-metric');
         el.classList.add('verified-metric');

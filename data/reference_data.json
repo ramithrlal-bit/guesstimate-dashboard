@@ -23,10 +23,11 @@
     "value": 750000000,
     "display_value": "~750M+",
     "unit": "users",
-    "source_name": "Counterpoint Research / TRAI Reports",
+    "source_name": "Counterpoint Research / IDC (Unverified estimate)",
     "source_url": "https://www.counterpointresearch.com/",
     "reporting_period": "2025",
-    "data_status": "Industry estimate"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "Unverified: Industry trade estimates range between 650M and 780M; no official government census or TRAI hardware device register exists."
   },
   "population_urban_population": {
     "value": 522441248,
@@ -205,95 +206,104 @@
     "methodology_notes": "UN World Population Prospects 2024 Revision medium variant projection for India median age in 2026: 29.2 years vs. China ~40, US ~39."
   },
   "digital_unique_mobile_subscribers": {
-    "value": 850000000,
-    "display_value": "~850M",
-    "unit": "users",
-    "source_name": "GSMA Mobile Economy Asia Pacific 2024 / TRAI",
-    "source_url": "https://www.gsma.com/mobileeconomy/asiapacific/",
-    "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "value": 1212800000,
+    "display_value": "~1.213B",
+    "unit": "active SIMs",
+    "source_name": "Telecom Regulatory Authority of India (TRAI) Peak VLR",
+    "source_url": "https://www.trai.gov.in/release-publication/reports/telecom-subscriptions-reports",
+    "reporting_period": "Sep 2026",
+    "data_status": "Official",
+    "methodology_notes": "1,212.80 million active wireless subscribers on date of peak Visitor Location Register (VLR), representing 93.29% of reported wireless subscriber base. Note: Unique individual mobile phone owners estimated at ~850M–900M (GSMA)."
   },
   "digital_smartphone_users": {
     "value": 750000000,
     "display_value": "~750M",
     "unit": "users",
-    "source_name": "Counterpoint Research / TRAI Mobile Reports",
+    "source_name": "Counterpoint Research / IDC (Unverified estimate)",
     "source_url": "https://www.counterpointresearch.com/",
     "reporting_period": "2025",
-    "data_status": "Industry estimate"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "Unverified: Industry trade estimates range between 650M and 780M; no official government census or TRAI hardware device register exists."
   },
   "digital_feature_phone_users": {
     "value": 250000000,
     "display_value": "~250M",
     "unit": "users",
-    "source_name": "Counterpoint Research Market Monitor",
+    "source_name": "Counterpoint Research (Unverified estimate)",
     "source_url": "https://www.counterpointresearch.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "Unverified: Industry estimates range from 220M to 250M; lacks official statutory registry."
   },
   "digital_5g_users": {
     "value": 220000000,
     "display_value": "~220M",
     "unit": "subscriptions",
-    "source_name": "Ericsson Mobility Report / TRAI Telecom Highlights",
+    "source_name": "Ericsson Mobility / Telco Disclosures (Unverified estimate)",
     "source_url": "https://www.ericsson.com/en/reports-and-papers/mobility-report",
     "reporting_period": "2025",
-    "data_status": "Industry estimate"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "Unverified: Estimates vary from ~180M to ~220M to >300M across Ericsson, Nokia, and telco claims; TRAI does not publish standalone 5G subscription counts."
   },
   "digital_fintech_users": {
     "value": 450000000,
     "display_value": "~450M",
     "unit": "users",
-    "source_name": "Boston Consulting Group (BCG) / PhonePe Pulse",
+    "source_name": "BCG / PhonePe Pulse (Unverified estimate)",
     "source_url": "https://www.bcg.com/",
     "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "Unverified: Cumulative registered user base across digital payments & fintech apps (~350M–450M); lacks official RBI statutory definition."
   },
   "digital_upi_users": {
-    "value": 350,
-    "display_value": "~350M",
+    "value": 350000000,
+    "display_value": "~350M–400M",
     "unit": "monthly active users",
-    "source_name": "NPCI / Boston Consulting Group (BCG) / PhonePe Pulse",
+    "source_name": "NPCI / BCG Ecosystem Estimates / Ministry of Finance",
     "source_url": "https://www.npci.org.in/",
-    "reporting_period": "2025",
-    "data_status": "Industry Estimate",
-    "methodology_notes": "Active monthly transacting unique users (~350M–400M). Distinct from registered/onboarded users (550M+)."
+    "reporting_period": "2025-26",
+    "data_status": "Industry estimate",
+    "methodology_notes": "~350M–400M estimated unique transacting monthly active users (BCG/ecosystem trackers). Cumulative onboarded user base is ~555M (55.49 Cr as of June 2026, Ministry of Finance parliamentary response)."
   },
   "digital_online_shoppers": {
-    "value": 280000000,
+    "value": 290000000,
     "display_value": "280–300M",
     "unit": "users",
     "source_name": "Bain & Company / Flipkart 'How India Shops Online'",
     "source_url": "https://www.bain.com/insights/how-india-shops-online-2025/",
     "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "data_status": "Industry estimate",
+    "methodology_notes": "Annual active online e-retail shoppers reached 270M in 2024 and 290M–300M in 2025 per Bain & Company / Flipkart benchmark report."
   },
   "digital_upi_transaction_volume_dec_2025": {
-    "value": 21600000000,
+    "value": 21630000000,
     "display_value": "~21.6B/mo",
     "unit": "transactions",
     "source_name": "National Payments Corporation of India (NPCI) Monthly Product Statistics",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
     "reporting_period": "Dec 2025",
-    "data_status": "Official"
+    "data_status": "Official",
+    "methodology_notes": "Official NPCI statistics: 21.63 billion transactions in December 2025 (value: ₹27.97 trillion)."
   },
   "digital_whatsapp_users": {
     "value": 535000000,
     "display_value": "~535M",
     "unit": "users",
-    "source_name": "DataReportal Digital India / Meta Official Releases",
+    "source_name": "DataReportal Digital 2025: India / Meta Industry Estimates",
     "source_url": "https://datareportal.com/reports/digital-2025-india",
     "reporting_period": "2025",
-    "data_status": "Industry estimate"
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "Unverified estimate: ~535.8M advertising reach reported in DataReportal 2025; Meta does not publish official country-specific MAU for WhatsApp."
   },
   "digital_avg_daily_video_watch_time_per_user_youtube": {
-    "value": 70,
-    "display_value": "~70 mins",
+    "value": 72,
+    "display_value": ">72 mins",
     "unit": "minutes/day",
-    "source_name": "Google for India / Comscore Media Metrix",
+    "source_name": "Google for India / YouTube Brandcast (18+)",
     "source_url": "https://blog.google/intl/en-in/",
-    "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "reporting_period": "2024-25",
+    "data_status": "Official announcement",
+    "methodology_notes": "Official YouTube Brandcast announcement: Indian adults (18+) spend over 72 minutes daily on YouTube."
   },
   "upi_vol_annual": {
     "value": 228.3,
@@ -2122,130 +2132,144 @@
     "methodology_notes": "Projected national population of 1,476,600,000 (~1.477B) as on 1 July 2026 from UN WPP 2024 Revision medium variant projection series."
   },
   "digital_internet_users": {
-    "value": 958000000,
-    "display_value": "~958M",
+    "value": 1030000000,
+    "display_value": "~1.03B",
     "unit": "users",
-    "source_name": "TRAI / IAMAI Internet in India Report",
-    "source_url": "https://www.trai.gov.in/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "source_name": "DataReportal Digital 2026: India / NSO / ITU",
+    "source_url": "https://datareportal.com/reports/digital-2026-india",
+    "reporting_period": "2026",
+    "data_status": "Official benchmark",
+    "methodology_notes": "1.03 billion people using the internet in India, pushing internet penetration to 70.0% of total population (incorporates NSO/ITU baseline revision)."
   },
   "digital_internet_penetration": {
-    "value": 68,
-    "display_value": "~68%",
+    "value": 70,
+    "display_value": "~70%",
     "unit": "%",
-    "source_name": "TRAI Performance Indicators Report",
-    "source_url": "https://www.trai.gov.in/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "source_name": "DataReportal Digital 2026: India",
+    "source_url": "https://datareportal.com/reports/digital-2026-india",
+    "reporting_period": "2026",
+    "data_status": "Official benchmark",
+    "methodology_notes": "Internet penetration reached 70.0% of total population at start of 2026."
   },
   "digital_urban_internet_users": {
     "value": 458000000,
     "display_value": "~458M",
     "unit": "users",
-    "source_name": "IAMAI / Kantar Internet in India Report",
+    "source_name": "IAMAI / Kantar (Unverified against 2026 baseline)",
     "source_url": "https://www.iamai.in/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "reporting_period": "2024-25",
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "Unverified survey estimate: previous IAMAI/Kantar split (~458M urban / ~500M rural) unconfirmed against revised 1.03B national internet user total."
   },
   "digital_rural_internet_users": {
     "value": 500000000,
     "display_value": "~500M",
     "unit": "users",
-    "source_name": "IAMAI / Kantar Internet in India Report",
+    "source_name": "IAMAI / Kantar (Unverified against 2026 baseline)",
     "source_url": "https://www.iamai.in/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "reporting_period": "2024-25",
+    "data_status": "UNVERIFIED",
+    "methodology_notes": "Unverified survey estimate: previous IAMAI/Kantar split (~458M urban / ~500M rural) unconfirmed against revised 1.03B national internet user total."
   },
   "trai_telephone_subscribers_total": {
-    "value": 1.23,
-    "display_value": "~1.23B",
-    "unit": "B",
+    "value": 1.368,
+    "display_value": "~1.368B",
+    "unit": "B subscribers",
     "source_name": "Telecom Regulatory Authority of India (TRAI)",
-    "source_url": "https://www.trai.gov.in/",
-    "reporting_period": "Oct 2026",
-    "data_status": "Official"
+    "source_url": "https://www.trai.gov.in/release-publication/reports/telecom-subscriptions-reports",
+    "reporting_period": "Sep 2026",
+    "data_status": "Official",
+    "methodology_notes": "1,368.10 million total gross telephone subscribers (1,319.19M wireless + 48.91M wireline). Overall tele-density: 95.52%."
   },
   "digital_social_media_user_identities": {
     "value": 500000000,
     "display_value": "~500M",
-    "unit": "users",
-    "source_name": "DataReportal / Kepios Digital India",
-    "source_url": "https://datareportal.com/",
+    "unit": "user identities",
+    "source_name": "DataReportal Digital 2026: India (Kepios)",
+    "source_url": "https://datareportal.com/reports/digital-2026-india",
     "reporting_period": "2026",
-    "data_status": "Official"
+    "data_status": "Official benchmark",
+    "methodology_notes": "500 million active social media user identities, equating to 34.1% of total population (Kepios analysis)."
   },
   "digital_youtube_ad_reach": {
     "value": 500000000,
     "display_value": "~500M",
     "unit": "users",
-    "source_name": "Google / YouTube Advertising Reach India",
-    "source_url": "https://blog.google/intl/en-in/",
+    "source_name": "Google / YouTube Advertising Reach via DataReportal 2026",
+    "source_url": "https://datareportal.com/reports/digital-2026-india",
     "reporting_period": "2026",
-    "data_status": "Official"
+    "data_status": "Official benchmark",
+    "methodology_notes": "500 million YouTube advertising audience reach in India reported in DataReportal Digital 2026: India."
   },
   "digital_instagram_ad_reach": {
     "value": 481000000,
     "display_value": "~481M",
     "unit": "users",
-    "source_name": "Meta Advertising Resources / DataReportal",
-    "source_url": "https://datareportal.com/",
+    "source_name": "Meta Advertising Resources via DataReportal 2026",
+    "source_url": "https://datareportal.com/reports/digital-2026-india",
     "reporting_period": "2026",
-    "data_status": "Official"
+    "data_status": "Official benchmark",
+    "methodology_notes": "481 million Instagram advertising audience reach in India reported in DataReportal Digital 2026: India."
   },
   "digital_facebook_ad_reach": {
     "value": 403000000,
     "display_value": "~403M",
     "unit": "users",
-    "source_name": "Meta Advertising Resources / DataReportal",
-    "source_url": "https://datareportal.com/",
+    "source_name": "Meta Advertising Resources via DataReportal 2026",
+    "source_url": "https://datareportal.com/reports/digital-2026-india",
     "reporting_period": "2026",
-    "data_status": "Official"
+    "data_status": "Official benchmark",
+    "methodology_notes": "403 million Facebook advertising audience reach in India reported in DataReportal Digital 2026: India."
   },
   "digital_snapchat_ad_reach": {
     "value": 213000000,
     "display_value": "~213M",
     "unit": "users",
-    "source_name": "Snap Inc. Investor Relations / DataReportal",
-    "source_url": "https://investor.snap.com/",
+    "source_name": "Snap Inc. Advertising Resources via DataReportal 2026",
+    "source_url": "https://datareportal.com/reports/digital-2026-india",
     "reporting_period": "2026",
-    "data_status": "Official"
+    "data_status": "Official benchmark",
+    "methodology_notes": "213 million Snapchat advertising audience reach in India reported in DataReportal Digital 2026: India."
   },
   "digital_linkedin_members": {
     "value": 170000000,
     "display_value": "~170M",
     "unit": "members",
-    "source_name": "LinkedIn Economic Graph",
+    "source_name": "LinkedIn Economic Graph via DataReportal 2026",
     "source_url": "https://economicgraph.linkedin.com/",
     "reporting_period": "2026",
-    "data_status": "Official"
+    "data_status": "Official benchmark",
+    "methodology_notes": "170 million registered members (18+) in India reported in DataReportal Digital 2026: India."
   },
   "digital_x_ad_reach": {
     "value": 22200000,
     "display_value": "~22.2M",
     "unit": "users",
-    "source_name": "X Advertising Resources / DataReportal",
-    "source_url": "https://datareportal.com/",
+    "source_name": "X Advertising Resources via DataReportal 2026",
+    "source_url": "https://datareportal.com/reports/digital-2026-india",
     "reporting_period": "2026",
-    "data_status": "Official"
+    "data_status": "Official benchmark",
+    "methodology_notes": "22.2 million X advertising audience reach in India reported in DataReportal Digital 2026: India."
   },
   "digital_ott_subscribers": {
     "value": 216000000,
     "display_value": "~216M",
     "unit": "subscribers",
-    "source_name": "Ormax Media OTT Audience Report",
-    "source_url": "https://www.ormaxmedia.com/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "source_name": "FICCI-EY Media and Entertainment Report",
+    "source_url": "https://www.ey.com/en_in/media-entertainment",
+    "reporting_period": "2024-25",
+    "data_status": "Industry estimate",
+    "methodology_notes": "216 million paid OTT video subscriptions across 143 million households (~71% bundled via telecom/aggregators)."
   },
   "digital_mobile_gaming_users": {
     "value": 517000000,
     "display_value": "~517M",
     "unit": "gamers",
-    "source_name": "Lumikai Gaming Report / Invest India",
-    "source_url": "https://www.investindia.gov.in/",
+    "source_name": "FICCI-EY Media and Entertainment Report",
+    "source_url": "https://www.ey.com/en_in/media-entertainment",
     "reporting_period": "2025E",
-    "data_status": "Official"
+    "data_status": "Industry estimate",
+    "methodology_notes": "488 million online gamers in 2024, projected to reach 517 million in 2025 per FICCI-EY Media and Entertainment Report."
   },
   "amfi_total_aum_cr": {
     "value": 8707887.74,
