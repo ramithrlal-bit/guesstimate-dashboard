@@ -57,7 +57,7 @@
       // Dedicated 2026 projection check for headline population metrics
       const isPop2026Proj = (key === 'pop_india_total' || key === 'global_world_population') && ref && ref.reporting_period && ref.reporting_period.includes('2026');
 
-      // Dedicated check for audited Section 02 Digital metrics where 2026 authoritative updates or unverified flags supersede stale observations
+      // Dedicated check for audited Section 02 Digital metrics where authoritative 2025/2026 updates supersede stale observations
       const isDigitalAudited = (
         key === 'digital_internet_users' ||
         key === 'digital_internet_penetration' ||
