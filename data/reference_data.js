@@ -393,7 +393,7 @@ window.REFERENCE_DATA = {
     "source_url": "https://www.rbi.org.in/Scripts/PublicationReportDetails.aspx",
     "reporting_period": "March 2025",
     "data_status": "Official",
-    "methodology_notes": "Scheduled Commercial Banks gross non-performing assets ratio at 2.31% (multi-decade low, RBI FSR)."
+    "methodology_notes": "Scheduled Commercial Banks (SCBs) aggregate gross non-performing assets ratio: 2.31% as of March 31, 2025 (multi-decade low, RBI Financial Stability Report June 2025 / PIB). Standalone PSB GNPA stood at 2.58%."
   },
   "fintech_psb_profit_fy25": {
     "value": 1.98,
@@ -416,14 +416,14 @@ window.REFERENCE_DATA = {
     "methodology_notes": "Total commercial bank reporting offices (branches): 168,428 as of March 2026 (RBI DBIE). Reflects officially reporting bank offices under RBI definition."
   },
   "fintech_atms": {
-    "value": 250000,
-    "display_value": "~2.5 Lakh",
-    "unit": "ATMs",
-    "source_name": "RBI DBIE Bank-wise ATM Deployment Data",
+    "value": 209331,
+    "display_value": "209,331",
+    "unit": "ATMs & CRMs",
+    "source_name": "Reserve Bank of India (RBI) Bankwise ATM Deployment Data",
     "source_url": "https://data.rbi.org.in/DBIE/#/",
-    "reporting_period": "2025–2026",
+    "reporting_period": "March 2026",
     "data_status": "Official",
-    "methodology_notes": "Total automated teller machines (ATMs) and cash recyclers deployed across India: ~2.5 Lakh (RBI DBIE)."
+    "methodology_notes": "Total bank-deployed ATMs and Cash Recycler Machines (CRMs): 209,331 as of March 2026 (RBI DBIE). Total including White Label ATMs (WLAs) stood at 251,057 as of March 31, 2025 (RBI Report on Trend and Progress of Banking in India)."
   },
   "fintech_bank_account_holders_jan_dhan": {
     "value": 59.63,
@@ -456,34 +456,34 @@ window.REFERENCE_DATA = {
     "methodology_notes": "Credit cards outstanding in circulation: 125.32 million as of September 2026 (RBI Card Statistics)."
   },
   "fintech_debit_cards": {
-    "value": 1000,
-    "display_value": "~980M–1.0B",
-    "unit": "cards in circulation",
-    "source_name": "Reserve Bank of India (RBI) Bankwise ATM/POS/Card Statistics",
-    "source_url": "https://www.rbi.org.in/Scripts/ATMView.aspx",
-    "reporting_period": "2025–2026",
+    "value": 1005.2,
+    "display_value": "1,005.2M",
+    "unit": "million cards outstanding",
+    "source_name": "Reserve Bank of India (RBI) Bankwise Card Statistics",
+    "source_url": "https://www.rbi.org.in/Scripts/BS_ViewBankwiseATM.aspx",
+    "reporting_period": "RBI Card Statistics",
     "data_status": "Official",
-    "methodology_notes": "Total debit cards in circulation: ~980M in 2025 to 1.0B in 2026 (RBI)."
+    "methodology_notes": "Total outstanding debit cards: 1,005.2 million (100.52 crore) after adjusting for cancelled/withdrawn cards (RBI Bankwise ATM/POS/Card Statistics). Predominantly utilized for ATM cash extractions."
   },
   "fintech_mobile_wallet_accounts": {
-    "value": 400000000,
-    "display_value": "400M+",
-    "unit": "accounts",
-    "source_name": "RBI Payment and Settlement Systems Highlights",
+    "value": 1140000000,
+    "display_value": "1.14B",
+    "unit": "issued wallet accounts",
+    "source_name": "Reserve Bank of India (RBI) Payment System Indicators",
     "source_url": "https://rbi.org.in/",
-    "reporting_period": "2024–25",
+    "reporting_period": "RBI PPI Statistics",
     "data_status": "Official",
-    "methodology_notes": "Prepaid Payment Instrument (PPI) mobile wallet accounts: 400M+ (RBI Payment and Settlement Systems)."
+    "methodology_notes": "Total outstanding Prepaid Payment Instrument (PPI) wallets: 1.14 Billion instruments issued across bank and non-bank issuers (RBI Payment System Indicators). Represents issued wallet accounts, not unique users, as consumers frequently hold multiple wallet accounts."
   },
   "fintech_bnpl_users": {
     "value": 80000000,
     "display_value": "80M+",
     "unit": "users",
-    "source_name": "Redseer Strategy Consultants Indian FinTech Report",
+    "source_name": "Redseer Strategy Consultants BNPL Report",
     "source_url": "https://redseer.com/",
-    "reporting_period": "2024–25",
+    "reporting_period": "2026 Projection",
     "data_status": "Industry estimate",
-    "methodology_notes": "Active Buy Now Pay Later (BNPL) credit user base in India: ~80M (Redseer Strategy Consultants)."
+    "methodology_notes": "Projected BNPL user base in India reaching 80M+ consumers by 2026 (Redseer Strategy Consultants, 'India BNPL Market Analysis', projecting expansion from 15M in 2021 to 80-100M driven by e-commerce checkout credit)."
   },
   "fintech_monthly_sip_inflow": {
     "value": 32490,
@@ -503,7 +503,7 @@ window.REFERENCE_DATA = {
     "source_url": "https://www.startupindia.gov.in/",
     "reporting_period": "2025–2026",
     "data_status": "Official",
-    "methodology_notes": "FinTech unicorns founded in India with valuation >= $1B: 26+ (Invest India / DPIIT Startup India)."
+    "methodology_notes": "26+ fintech unicorns founded in India with valuation >= $1B tracked by Invest India / DPIIT Startup India Unicorn Hub and Tracxn Geo FinTech Report (2025–2026)."
   },
   "fintech_digital_payments_value_2025": {
     "value": 849.12,
