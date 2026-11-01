@@ -1034,34 +1034,40 @@
     "methodology_notes": "Last-mile dark-store-to-doorstep delivery cost."
   },
   "ev_ev_share_of_new_vehicle_sales": {
-    "value": 8.1,
-    "display_value": "~8%",
-    "unit": "% of new registrations",
-    "source_name": "Vahan Dashboard (MoRTH) / FADA Automotive Retail",
+    "value": 8.5,
+    "display_value": "~8.5% of new-vehicle sales",
+    "unit": "% of sales",
+    "source_name": "Industry data / Vahan, FY2026",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "CY 2025",
-    "data_status": "Official",
-    "methodology_notes": "Total EV registrations (2.3M) represented 8.1% of all new vehicle registrations (~28.5M) in CY 2025."
+    "reporting_period": "FY2026",
+    "data_status": "Authoritative",
+    "methodology_notes": "EV registrations as a percentage of total new vehicle registrations across all categories. Stock metric.",
+    "metric_type": "stock",
+    "definition": "EV share of total new-vehicle sales, not share of vehicles currently on the road."
   },
   "ev_e_2_wheelers_sales": {
-    "value": 1.28,
-    "display_value": "1.28M",
-    "unit": "million units",
-    "source_name": "Vahan Dashboard (MoRTH) E-2W Annual Registrations",
+    "value": 1400000,
+    "display_value": "~1.4M electric two-wheelers",
+    "unit": "vehicles",
+    "source_name": "Vahan / JMK Research, FY2026",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "CY 2025",
-    "data_status": "Official",
-    "methodology_notes": "1.28 million electric two-wheelers registered in CY 2025, accounting for ~57% of total EV sales."
+    "reporting_period": "FY2026",
+    "data_status": "Authoritative",
+    "methodology_notes": "Electric two-wheeler sales/registrations in FY2026. Represents 57.8% of total EV sales. Flow metric.",
+    "metric_type": "flow",
+    "definition": "India’s largest EV segment by annual sales (57.8% of FY2026 EV sales)."
   },
   "ev_e_3_wheelers_sales": {
-    "value": 0.8,
-    "display_value": "0.80M",
-    "unit": "million units",
-    "source_name": "Vahan Dashboard (MoRTH) E-3W Annual Registrations",
+    "value": 29,
+    "display_value": "~29% of EV sales",
+    "unit": "% of sales",
+    "source_name": "Vahan / FADA, FY2026",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "CY 2025",
-    "data_status": "Official",
-    "methodology_notes": "0.80 million electric three-wheelers registered in CY 2025 (passenger rickshaws + cargo e-carts), accounting for ~35% of total EV sales."
+    "reporting_period": "FY2026",
+    "data_status": "Authoritative",
+    "methodology_notes": "Electric three-wheeler share of total EV sales (~29%, ~7.25 lakh units). Flow metric.",
+    "metric_type": "flow",
+    "definition": "Electric three-wheelers are the second-largest EV segment by sales share (~7.25 lakh units)."
   },
   "ev_e_4_wheelers_sales": {
     "value": 176000,
@@ -1074,13 +1080,16 @@
     "methodology_notes": "~175K to 176K electric passenger/commercial 4-wheelers registered in CY 2025 (1.75–1.76 Lakh units)."
   },
   "ev_e_car_share_of_car_sales_may_2026": {
-    "value": 7,
-    "display_value": "~7%",
-    "unit": "%",
-    "source_name": "FADA Passenger Vehicle EV Penetration Outlook",
-    "source_url": "https://fada.in/",
-    "reporting_period": "2025-26",
-    "data_status": "Official estimate"
+    "value": 4.25,
+    "display_value": "~4.25% of passenger-vehicle sales",
+    "unit": "% of sales",
+    "source_name": "Industry data / Vahan, FY2026",
+    "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
+    "reporting_period": "FY2026",
+    "data_status": "Authoritative",
+    "metric_type": "stock",
+    "definition": "Electric-car penetration is much lower than electric two-wheeler penetration. Do not use the overall EV penetration figure for passenger cars.",
+    "methodology_notes": "Electric passenger vehicle sales as a percentage of total passenger car sales. Stock metric."
   },
   "ev_market_size_revenue_2024": {
     "value": 3.2,
@@ -1094,29 +1103,38 @@
   "ev_battery_pack_price_per_kwh": {
     "value": 139,
     "display_value": "$139/kWh",
-    "unit": "USD/kWh",
+    "unit": "cost",
     "source_name": "BloombergNEF Global Battery Price Survey",
-    "source_url": "https://about.bnef.com/",
-    "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "source_url": "https://about.bnef.com",
+    "reporting_period": "2024-25",
+    "data_status": "Authoritative",
+    "metric_type": "flow",
+    "definition": "Volume-weighted average lithium-ion battery pack price across transport sectors.",
+    "methodology_notes": "Global benchmark pack-level cost. Flow/price metric."
   },
   "ev_public_charging_stations": {
-    "value": 12146,
-    "display_value": "~12,146",
+    "value": 22753,
+    "display_value": "22,753 operational public charging stations",
     "unit": "stations",
-    "source_name": "Bureau of Energy Efficiency (BEE) / Ministry of Power",
-    "source_url": "https://beeindia.gov.in/",
-    "reporting_period": "2024",
-    "data_status": "Official"
+    "source_name": "Ministry of Power / Bureau of Energy Efficiency, Mar 2026",
+    "source_url": "https://beeindia.gov.in",
+    "reporting_period": "March 2026",
+    "data_status": "Authoritative",
+    "metric_type": "stock",
+    "definition": "A charging station is a physical location and may contain multiple chargers or charging points. (27,737 installed public charging stations).",
+    "methodology_notes": "Operational public EV charging stations. Note: 27,737 total installed charging stations as of March 2026. Stock metric."
   },
   "ev_electric_buses_on_road": {
-    "value": 9500,
-    "display_value": "~9,500",
-    "unit": "buses",
-    "source_name": "CESL / Ministry of Heavy Industries FAME-II Bus Deployments",
-    "source_url": "https://heavyindustries.gov.in/hi",
-    "reporting_period": "2024-25",
-    "data_status": "Official"
+    "value": 11500,
+    "display_value": "~11,500 electric buses",
+    "unit": "vehicles",
+    "source_name": "Ministry of Heavy Industries / Vahan / NITI Aayog",
+    "source_url": "https://heavyindustries.gov.in",
+    "reporting_period": "FY2026",
+    "data_status": "Estimate — source required",
+    "metric_type": "stock",
+    "definition": "Cumulative e-bus deployments under FAME-II, PM-eBus Sewa, and state transport undertakings. Do not infer bus sales from total EV sales.",
+    "methodology_notes": "Operating electric buses across Indian state transport undertakings and private fleets. Stock metric. Estimate — source required."
   },
   "ev_fame_ii_subsidy_outlay": {
     "value": 10000,
@@ -1128,59 +1146,76 @@
     "data_status": "Official"
   },
   "ev_cars_registered": {
-    "value": 50,
+    "value": 50000000,
     "display_value": "~50M",
-    "unit": "cars",
-    "source_name": "Ministry of Road Transport and Highways (MoRTH) Total Vehicle Fleet",
-    "source_url": "https://morth.nic.in/",
+    "unit": "vehicles",
+    "source_name": "MoRTH Road Transport Year Book",
+    "source_url": "https://morth.nic.in",
     "reporting_period": "2024",
-    "data_status": "Official"
+    "data_status": "Authoritative",
+    "metric_type": "stock",
+    "definition": "Total registered passenger cars on Indian roads.",
+    "methodology_notes": "Total active registered motor cars. Stock metric."
   },
   "ev_two_wheelers_registered": {
-    "value": 250,
+    "value": 250000000,
     "display_value": "~250M",
-    "unit": "two-wheelers",
+    "unit": "vehicles",
     "source_name": "MoRTH Road Transport Year Book",
-    "source_url": "https://morth.nic.in/",
+    "source_url": "https://morth.nic.in",
     "reporting_period": "2024",
-    "data_status": "Official"
+    "data_status": "Authoritative",
+    "metric_type": "stock",
+    "definition": "Total registered motorcycles and scooters on Indian roads.",
+    "methodology_notes": "Total active registered two-wheelers. Stock metric."
   },
   "ev_evs_on_road_total": {
-    "value": 8000000,
-    "display_value": "~8.0M",
-    "unit": "cumulative units on road",
-    "source_name": "Vahan Dashboard Cumulative EV Registrations",
+    "value": 8680000,
+    "display_value": "8.68M cumulative EV registrations",
+    "unit": "registrations",
+    "source_name": "Vahan / JMK Research, FY2026",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "End of CY 2025",
-    "data_status": "Official",
-    "methodology_notes": "Cumulative on-road EV stock reached 7.98 million (79.76 Lakh) units by December 2025, crossing 8.04 million in early 2026."
+    "reporting_period": "End FY2026",
+    "data_status": "Authoritative",
+    "methodology_notes": "Cumulative EV registrations since inception across all vehicle classes. Stock metric.",
+    "metric_type": "stock",
+    "definition": "Cumulative registrations since tracking began; not annual sales."
   },
   "ev_daily_metro_riders": {
-    "value": 12,
+    "value": 12000000,
     "display_value": "~12M+",
-    "unit": "passengers/day",
-    "source_name": "Ministry of Housing and Urban Affairs (MoHUA) Metro Rail Dashboard",
-    "source_url": "https://mohua.gov.in/",
+    "unit": "passengers",
+    "source_name": "MoHUA Metro Rail Dashboard",
+    "source_url": "https://mohua.gov.in",
     "reporting_period": "2024-25",
-    "data_status": "Official"
+    "data_status": "Authoritative",
+    "metric_type": "flow",
+    "definition": "Combined average daily ridership across all operational urban metro rail systems in India.",
+    "methodology_notes": "Aggregated urban metro daily trips. Flow metric."
   },
   "ev_daily_railway_passengers": {
-    "value": 23,
+    "value": 23000000,
     "display_value": "~23M",
-    "unit": "passengers/day",
-    "source_name": "Indian Railways (Ministry of Railways) Year Book",
-    "source_url": "https://indianrailways.gov.in/",
+    "unit": "passengers",
+    "source_name": "Indian Railways Year Book",
+    "source_url": "https://indianrailways.gov.in",
     "reporting_period": "FY2023-24",
-    "data_status": "Official"
+    "data_status": "Authoritative",
+    "metric_type": "flow",
+    "definition": "Average daily passenger journeys on the Indian Railways national network.",
+    "methodology_notes": "Daily passenger journeys on Indian Railways. Flow metric."
   },
   "ev_car_ownership_per_1_000_people": {
     "value": 34,
     "display_value": "34",
-    "unit": "per 1,000 people",
-    "source_name": "NITI Aayog / MoRTH Motorisation Rate Benchmark",
-    "source_url": "https://www.niti.gov.in/",
+    "unit": "rate",
+    "source_name": "NITI Aayog / MoRTH Motorisation Benchmark",
+    "source_url": "https://www.niti.gov.in",
     "reporting_period": "2024",
-    "data_status": "Official estimate"
+    "data_status": "Authoritative",
+    "metric_type": "stock",
+    "definition": "Motorisation rate measured as passenger cars per 1,000 population.",
+    "methodology_notes": "National average car density. Stock metric."
   },
   "edtech_edtech_market_size_2025": {
     "value": 7.5,
@@ -2423,24 +2458,28 @@
     "methodology_notes": "Assets under management is a stock metric, not annual inflows. Sourced from PwC India, Q3 FY26."
   },
   "ev_sales_total": {
-    "value": 2300000,
-    "display_value": "~2.3M",
-    "unit": "units",
-    "source_name": "Ministry of Road Transport and Highways (Vahan 4 Dashboard)",
+    "value": 2500000,
+    "display_value": "25 lakh+ EVs sold/registered",
+    "unit": "vehicles",
+    "source_name": "Vahan / JMK Research, FY2026",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-    "reporting_period": "CY 2025",
-    "data_status": "Official",
-    "methodology_notes": "Official annual EV registrations for Calendar Year 2025: ~2.30M to 2.34M units (23 Lakh+ units). Reconciled with segment sums (1.28M 2W + 0.8M 3W + 0.18M 4W = ~2.3M). Overrides previous partial mid-year extract of 791K."
+    "reporting_period": "FY2026",
+    "data_status": "Authoritative",
+    "methodology_notes": "Annual new electric vehicle registrations recorded on Vahan portal in FY2026. Flow metric.",
+    "metric_type": "flow",
+    "definition": "Annual registrations/sales, not the total number of EVs currently on Indian roads."
   },
   "aai_domestic_passengers": {
-    "value": 24.61,
+    "value": 24610000,
     "display_value": "24.61M/mo (~165.5M/yr)",
-    "unit": "passengers/month & passengers/year",
-    "source_name": "Directorate General of Civil Aviation (DGCA) & Airports Authority of India (AAI)",
-    "source_url": "https://www.aai.aero/en/business-opportunities/aai-traffic-data",
+    "unit": "passengers",
+    "source_name": "DGCA & AAI Traffic Reports",
+    "source_url": "https://www.aai.aero",
     "reporting_period": "FY 2024-25 / Aug 2026",
-    "data_status": "Official",
-    "methodology_notes": "Annual domestic air passengers: 165.5 million in FY25 (16.55 Crore, DGCA). Monthly airport passengers: 24.61 million in August 2026 (AAI). Reconciles annual and monthly figures."
+    "data_status": "Authoritative",
+    "methodology_notes": "Monthly domestic passenger throughput. Flow metric.",
+    "metric_type": "flow",
+    "definition": "Monthly and annual domestic air passenger traffic handled across Indian airports."
   },
   "healthcare_expenditure_pct_gdp": {
     "value": 1.84,
@@ -2938,5 +2977,113 @@
     "reporting_period": "January 2026",
     "data_status": "Authoritative",
     "methodology_notes": "Monthly year-on-year GMV growth in January 2026 (~100%). Distinct from FY2026 annual growth (~120% YoY GMV growth in FY2026). Flow metric."
+  },
+  "ev_public_charging_points": {
+    "value": 88000,
+    "display_value": "88,000 public charging points",
+    "unit": "charging points",
+    "metric_type": "stock",
+    "definition": "Charging points/chargers are individual charging connectors; not the same as charging stations.",
+    "source_name": "IEA Global EV Outlook 2026",
+    "source_url": "https://www.iea.org/reports/global-ev-outlook-2026",
+    "reporting_period": "End 2025",
+    "data_status": "Authoritative",
+    "methodology_notes": "Total public EVSE connectors/chargers installed across India. Stock metric."
+  },
+  "ev_evs_per_public_charger": {
+    "value": 30,
+    "display_value": "30 EVs per public charging point",
+    "unit": "vehicles",
+    "metric_type": "stock",
+    "definition": "Denominator is public charging points/EVSE, not charging stations.",
+    "source_name": "IEA Global EV Outlook 2026",
+    "source_url": "https://www.iea.org/reports/global-ev-outlook-2026",
+    "reporting_period": "2025",
+    "data_status": "Authoritative",
+    "methodology_notes": "Ratio of electric vehicles in stock per public charging connector. Stock metric."
+  },
+  "ev_2030_target": {
+    "value": 30,
+    "display_value": "30% of vehicle sales by 2030",
+    "unit": "% of sales",
+    "metric_type": "stock",
+    "definition": "Policy target for EV share of new-vehicle sales; not current penetration.",
+    "source_name": "NITI Aayog",
+    "source_url": "https://www.niti.gov.in",
+    "reporting_period": "2030 target",
+    "data_status": "Policy target",
+    "methodology_notes": "National indicative EV adoption target for 2030 new vehicle sales. Stock / policy target."
+  },
+  "ev_ride_hailing_rapido_mau": {
+    "value": 73960000,
+    "display_value": "Rapido: 73.96M MAU",
+    "unit": "MAU",
+    "metric_type": "stock",
+    "definition": "App monthly active users; one person may use multiple mobility apps, so do not add these to calculate unique riders.",
+    "source_name": "Sensor Tower, Jan–Feb 2026",
+    "source_url": "https://sensortower.com",
+    "reporting_period": "January–February 2026",
+    "data_status": "Authoritative",
+    "methodology_notes": "Monthly active users on Rapido app (auto, cab, bike taxi). Stock metric."
+  },
+  "ev_ride_hailing_uber_mau": {
+    "value": 39050000,
+    "display_value": "Uber: 39.05M MAU",
+    "unit": "MAU",
+    "metric_type": "stock",
+    "definition": "App monthly active users; one person may use multiple mobility apps, so do not add these to calculate unique riders.",
+    "source_name": "Sensor Tower, Jan–Feb 2026",
+    "source_url": "https://sensortower.com",
+    "reporting_period": "January–February 2026",
+    "data_status": "Authoritative",
+    "methodology_notes": "Monthly active users on Uber app in India. Stock metric."
+  },
+  "ev_ride_hailing_ola_mau": {
+    "value": 28150000,
+    "display_value": "Ola: 28.15M MAU",
+    "unit": "MAU",
+    "metric_type": "stock",
+    "definition": "App monthly active users; one person may use multiple mobility apps, so do not add these to calculate unique riders.",
+    "source_name": "Sensor Tower, Jan–Feb 2026",
+    "source_url": "https://sensortower.com",
+    "reporting_period": "January–February 2026",
+    "data_status": "Authoritative",
+    "methodology_notes": "Monthly active users on Ola Cabs app in India. Stock metric."
+  },
+  "ev_ride_hailing_market_share": {
+    "value": 52.4,
+    "display_value": "Rapido ~52.4%; Uber ~27.7%; Ola ~19.9%",
+    "unit": "share",
+    "metric_type": "stock",
+    "definition": "Share of monthly active users, not share of rides, revenue, or GMV.",
+    "source_name": "Sensor Tower, Jan–Feb 2026",
+    "source_url": "https://sensortower.com",
+    "reporting_period": "January–February 2026",
+    "data_status": "Authoritative",
+    "methodology_notes": "MAU market share across major ride-hailing platforms in India. Stock metric."
+  },
+  "ev_ride_hailing_daily_rides": {
+    "value": 0,
+    "display_value": "Modelled estimate",
+    "unit": "rides",
+    "metric_type": "flow",
+    "definition": "Ride-hailing MAU cannot be converted into daily rides without trip-frequency assumptions.",
+    "source_name": "Industry estimate",
+    "source_url": "https://redseer.com",
+    "reporting_period": "Modelled benchmark",
+    "data_status": "Estimate — source required",
+    "methodology_notes": "Modelled daily trips benchmark. Requires explicit trip frequency assumptions. Flow metric."
+  },
+  "ev_ride_hailing_market_size": {
+    "value": 0,
+    "display_value": "Estimate — source required",
+    "unit": "GMV",
+    "metric_type": "flow",
+    "definition": "Ride-hailing market size may be measured by revenue, bookings, GMV, or trips; these are not interchangeable.",
+    "source_name": "Industry estimate",
+    "source_url": "https://redseer.com",
+    "reporting_period": "Pending verified scope",
+    "data_status": "Estimate — source required",
+    "methodology_notes": "Market size definition varies between gross bookings, net platform revenue, and GMV. Flow metric."
   }
 }

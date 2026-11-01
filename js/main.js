@@ -161,7 +161,35 @@
         key === 'quickcommerce_projected_gmv_2027_28'
       ) && ref;
 
-      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited && !isQuickCommerceAudited) {
+      // Dedicated check for audited Section 06 Mobility & EV metrics where authoritative updates supersede stale observations
+      const isMobilityAudited = (
+        key === 'ev_sales_total' ||
+        key === 'ev_evs_on_road_total' ||
+        key === 'ev_ev_share_of_new_vehicle_sales' ||
+        key === 'ev_e_2_wheelers_sales' ||
+        key === 'ev_e_3_wheelers_sales' ||
+        key === 'ev_e_car_share_of_car_sales_may_2026' ||
+        key === 'ev_electric_buses_on_road' ||
+        key === 'ev_public_charging_stations' ||
+        key === 'ev_public_charging_points' ||
+        key === 'ev_evs_per_public_charger' ||
+        key === 'ev_2030_target' ||
+        key === 'ev_ride_hailing_rapido_mau' ||
+        key === 'ev_ride_hailing_uber_mau' ||
+        key === 'ev_ride_hailing_ola_mau' ||
+        key === 'ev_ride_hailing_market_share' ||
+        key === 'ev_ride_hailing_daily_rides' ||
+        key === 'ev_ride_hailing_market_size' ||
+        key === 'ev_battery_pack_price_per_kwh' ||
+        key === 'ev_cars_registered' ||
+        key === 'ev_two_wheelers_registered' ||
+        key === 'ev_car_ownership_per_1_000_people' ||
+        key === 'ev_daily_metro_riders' ||
+        key === 'ev_daily_railway_passengers' ||
+        key === 'aai_domestic_passengers'
+      ) && ref;
+
+      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited && !isQuickCommerceAudited && !isMobilityAudited) {
         // Priority 1: Verified Live Backend Observation (always overrides reference data)
         el.classList.remove('ref-metric');
         el.classList.add('verified-metric');
