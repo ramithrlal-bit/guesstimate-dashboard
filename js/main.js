@@ -90,6 +90,7 @@
         key === 'upi_vol_annual' ||
         key === 'upi_val_annual' ||
         key === 'upi_vol_monthly' ||
+        key === 'upi_val_monthly' ||
         key === 'fintech_upi_unique_users' ||
         key === 'fintech_daily_avg_upi_transactions' ||
         key === 'fintech_yoy_growth_transaction_volume' ||
@@ -103,6 +104,12 @@
         key === 'fintech_crar_capital_buffer' ||
         key === 'amfi_total_aum_cr' ||
         key === 'fintech_credit_cards' ||
+        key === 'fintech_credit_card_monthly_spend' ||
+        key === 'fintech_credit_card_annual_spend' ||
+        key === 'fintech_credit_card_transactions' ||
+        key === 'fintech_digital_lending_sanctions' ||
+        key === 'fintech_india_market_size' ||
+        key === 'fintech_qr_code_deployments' ||
         key === 'fintech_debit_cards' ||
         key === 'fintech_mobile_wallet_accounts' ||
         key === 'fintech_bnpl_users' ||
@@ -166,6 +173,9 @@
           tooltipText += '\nNote: ' + ref.methodology_notes;
         }
         el.setAttribute('title', tooltipText);
+        if (el.parentElement && el.parentElement.classList.contains('card') && !el.parentElement.getAttribute('title')) {
+          el.parentElement.setAttribute('title', tooltipText);
+        }
       } else {
         // Priority 3: Fail-closed fallback (Data unavailable)
         el.classList.remove('verified-metric', 'ref-metric');

@@ -312,54 +312,64 @@ window.__REFERENCE_DATA__ = {
     "methodology_notes": "Official YouTube Brandcast announcement: Indian adults (18+) spend over 72 minutes daily on YouTube."
   },
   "upi_vol_annual": {
-    "value": 228.3,
-    "display_value": "228.3B",
-    "unit": "billion transactions",
-    "source_name": "National Payments Corporation of India (NPCI) Annual Summary",
+    "value": 241616900000,
+    "display_value": "24,161.69 crore UPI transactions",
+    "unit": "transactions",
+    "metric_type": "flow",
+    "definition": "Approximately 241.6 billion transactions in the fiscal year.",
+    "source_name": "NPCI / PIB",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
-    "reporting_period": "CY 2025",
+    "reporting_period": "FY2025–26",
     "data_status": "Official",
-    "methodology_notes": "Full Calendar Year 2025 volume: 228.3 Billion transactions. For financial years: FY25 was 185.87B, FY26 was 241.62B (PIB/MoF)."
+    "methodology_notes": "Approximately 241.6 billion transactions in the fiscal year. Flow metric."
   },
   "upi_val_annual": {
-    "value": 299.7,
-    "display_value": "~₹299.7L Cr",
-    "unit": "lakh crore INR",
-    "source_name": "National Payments Corporation of India (NPCI) Annual Summary",
+    "value": 314000000000000,
+    "display_value": "₹314 lakh crore",
+    "unit": "₹ value",
+    "metric_type": "flow",
+    "definition": "Total value of UPI transactions in the fiscal year.",
+    "source_name": "NPCI / PIB",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
-    "reporting_period": "CY 2025",
+    "reporting_period": "FY2025–26",
     "data_status": "Official",
-    "methodology_notes": "Full Calendar Year 2025 value: ₹299.7 Lakh Crore (~$3.6 Trillion). FY25 value was ₹260.56L Cr, FY26 was ₹314.23L Cr."
+    "methodology_notes": "Total value of UPI transactions in the fiscal year. Flow metric."
   },
   "upi_vol_monthly": {
-    "value": 24.07,
-    "display_value": "24.07B",
-    "unit": "billion transactions/month",
-    "source_name": "National Payments Corporation of India (NPCI) Monthly Statistics",
+    "value": 24510000000,
+    "display_value": "24.51B UPI transactions",
+    "unit": "transactions",
+    "metric_type": "flow",
+    "definition": "Monthly transaction count; excludes same-account debit/credit transactions.",
+    "source_name": "NPCI Product Statistics",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
-    "reporting_period": "September 2026",
-    "data_status": "Official",
-    "methodology_notes": "Monthly UPI transaction volume for September 2026: 24.07 Billion transactions (NPCI Product Statistics)."
+    "reporting_period": "August 2026",
+    "data_status": "Official benchmark",
+    "methodology_notes": "Monthly transaction count; excludes same-account debit/credit transactions. Flow metric."
   },
   "fintech_upi_unique_users": {
-    "value": 550,
-    "display_value": "550M+",
-    "unit": "registered onboarded users",
-    "source_name": "National Payments Corporation of India (NPCI) / Ministry of Finance (PIB)",
-    "source_url": "https://pib.gov.in/",
+    "value": 554900000,
+    "display_value": "554.9M UPI users onboarded",
+    "unit": "users",
+    "metric_type": "stock",
+    "definition": "Cumulative unique users onboarded onto UPI.",
+    "source_name": "NPCI",
+    "source_url": "https://www.npci.org.in/",
     "reporting_period": "June 2026",
     "data_status": "Official",
-    "methodology_notes": "Cumulative users onboarded / registered on UPI platform (55.49 Crore / 554.9M users as of mid-2026, PIB). Clearly distinguished from active transacting users."
+    "methodology_notes": "Users onboarded is not the same as monthly active users. Stock metric."
   },
   "fintech_daily_avg_upi_transactions": {
-    "value": 625.5,
-    "display_value": "~625M",
-    "unit": "transactions/day",
-    "source_name": "Calculated from NPCI CY 2025 Annual Volume (228.3B / 365 days)",
+    "value": 790645161,
+    "display_value": "~791M UPI transactions/day",
+    "unit": "transactions",
+    "metric_type": "flow",
+    "definition": "Daily average transaction volume (calculated: 24.51B ÷ 31).",
+    "source_name": "Derived from NPCI Product Statistics",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
-    "reporting_period": "CY 2025 (Annual Daily Avg)",
+    "reporting_period": "August 2026",
     "data_status": "Calculated",
-    "methodology_notes": "Recalculated from annual volume: 228.3 Billion / 365 days = 625.48M/day (~625M)."
+    "methodology_notes": "Derived as August 2026 volume (24.51B) ÷ 31 days. Do not present this as a permanent constant."
   },
   "fintech_yoy_growth_transaction_volume": {
     "value": 30,
@@ -452,14 +462,16 @@ window.__REFERENCE_DATA__ = {
     "methodology_notes": "Capital to Risk-Weighted Assets Ratio (CRAR) specifically for Public Sector Banks (PSBs): 16.6% as of March 2026 (RBI FSR). Distinguishes from all-SCB CRAR."
   },
   "fintech_credit_cards": {
-    "value": 125.32,
-    "display_value": "125.32M",
-    "unit": "million cards outstanding",
-    "source_name": "Reserve Bank of India (RBI) Bankwise ATM/POS/Card Statistics",
-    "source_url": "https://www.rbi.org.in/Scripts/ATMView.aspx",
-    "reporting_period": "September 2026",
+    "value": 122860000,
+    "display_value": "122.86M credit cards outstanding",
+    "unit": "cards",
+    "metric_type": "stock",
+    "definition": "Number of active credit cards in circulation.",
+    "source_name": "RBI",
+    "source_url": "https://www.rbi.org.in/",
+    "reporting_period": "July 2026",
     "data_status": "Official",
-    "methodology_notes": "Credit cards outstanding in circulation: 125.32 million as of September 2026 (RBI Card Statistics)."
+    "methodology_notes": "Stock metric: number of cards in circulation, not monthly transactions. Note: UPI is a much larger payment rail by transaction count; credit-card spend is a separate consumer-credit metric."
   },
   "fintech_debit_cards": {
     "value": 1005.2,
@@ -2295,14 +2307,16 @@ window.__REFERENCE_DATA__ = {
     "methodology_notes": "488 million online gamers in 2024, projected to reach 517 million in 2025 per FICCI-EY Media and Entertainment Report."
   },
   "amfi_total_aum_cr": {
-    "value": 82.64,
-    "display_value": "₹82.64L Cr",
-    "unit": "lakh crore INR",
-    "source_name": "Association of Mutual Funds in India (AMFI)",
-    "source_url": "https://portal.amfiindia.com/",
-    "reporting_period": "30 September 2026",
-    "data_status": "Official",
-    "methodology_notes": "Mutual Fund Industry Month-End AUM (not average AUM): ₹82.64 lakh crore (₹82,64,000 Cr) as of 30 September 2026 (AMFI)."
+    "value": 81300000000000,
+    "display_value": "₹81.3 trillion mutual-fund AUM",
+    "unit": "AUM",
+    "metric_type": "stock",
+    "definition": "Total assets under management in mutual funds.",
+    "source_name": "PwC India",
+    "source_url": "https://www.pwc.in/",
+    "reporting_period": "Q3 FY26",
+    "data_status": "Industry report",
+    "methodology_notes": "Assets under management is a stock metric, not annual inflows. Sourced from PwC India, Q3 FY26."
   },
   "ev_sales_total": {
     "value": 2300000,
@@ -2544,5 +2558,89 @@ window.__REFERENCE_DATA__ = {
     "reporting_period": "FY2025–26",
     "data_status": "Official",
     "methodology_notes": "24,161.69 crore total UPI transactions for FY2025–26 with aggregate value of ₹314 lakh crore."
+  },
+  "upi_val_monthly": {
+    "value": 29820000000000,
+    "display_value": "₹29.82 lakh crore",
+    "unit": "₹ value",
+    "metric_type": "flow",
+    "definition": "Total value of UPI transactions in the month.",
+    "source_name": "NPCI Product Statistics",
+    "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
+    "reporting_period": "August 2026",
+    "data_status": "Official benchmark",
+    "methodology_notes": "Total value of UPI transactions in the month. Flow metric."
+  },
+  "fintech_credit_card_monthly_spend": {
+    "value": 2080000000000,
+    "display_value": "₹2.08 lakh crore monthly credit-card spend",
+    "unit": "₹ value",
+    "metric_type": "flow",
+    "definition": "Total monthly spending on credit cards.",
+    "source_name": "RBI",
+    "source_url": "https://www.rbi.org.in/",
+    "reporting_period": "July 2026",
+    "data_status": "Official",
+    "methodology_notes": "Flow metric: total spending during the month. Note: UPI is a much larger payment rail by transaction count; credit-card spend is a separate consumer-credit metric."
+  },
+  "fintech_credit_card_annual_spend": {
+    "value": 23620000000000,
+    "display_value": "₹23.62 lakh crore credit-card spend",
+    "unit": "₹ value",
+    "metric_type": "flow",
+    "definition": "Total annual spending on credit cards in the fiscal year.",
+    "source_name": "RBI",
+    "source_url": "https://www.rbi.org.in/",
+    "reporting_period": "FY2025–26",
+    "data_status": "Official",
+    "methodology_notes": "Fiscal-year spend, not calendar-year spend. Flow metric."
+  },
+  "fintech_credit_card_transactions": {
+    "value": 581000000,
+    "display_value": "58.1 crore credit-card transactions",
+    "unit": "transactions",
+    "metric_type": "flow",
+    "definition": "Total credit-card transaction volume in the month.",
+    "source_name": "RBI",
+    "source_url": "https://www.rbi.org.in/",
+    "reporting_period": "June 2026",
+    "data_status": "Official",
+    "methodology_notes": "Do not compare directly with UPI volume without noting the scale difference. Flow metric."
+  },
+  "fintech_digital_lending_sanctions": {
+    "value": 2200000000000,
+    "display_value": "₹2.2 trillion digital-lending sanctions over five years",
+    "unit": "₹ value",
+    "metric_type": "flow",
+    "definition": "Cumulative sanctioned loan value via digital lending channels over past five years.",
+    "source_name": "Redseer",
+    "source_url": "https://redseer.com/",
+    "reporting_period": "Past five years",
+    "data_status": "Industry estimate",
+    "methodology_notes": "Measures sanctioned loan value over past five years, not annual market revenue or outstanding loans. Sourced from Redseer, Aug 2026."
+  },
+  "fintech_india_market_size": {
+    "value": 51300000000,
+    "display_value": "USD 51.3B India fintech market size",
+    "unit": "market size",
+    "metric_type": "market_size",
+    "definition": "Fintech industry annual revenue market size.",
+    "source_name": "Research and Markets",
+    "source_url": "https://www.researchandmarkets.com/",
+    "reporting_period": "2026",
+    "data_status": "Industry benchmark",
+    "methodology_notes": "Market-revenue estimate; not comparable with UPI transaction value or lending sanctions. Projected USD 109.06B by 2031."
+  },
+  "fintech_qr_code_deployments": {
+    "value": 734000000,
+    "display_value": "734M QR-code deployments",
+    "unit": "deployments",
+    "metric_type": "stock",
+    "definition": "Total deployed merchant QR-code acceptance points across India.",
+    "source_name": "PwC India",
+    "source_url": "https://www.pwc.in/",
+    "reporting_period": "Q3 FY26",
+    "data_status": "Industry report",
+    "methodology_notes": "Deployment/acceptance-point count, not unique merchant count. Stock metric. Sourced from PwC India, Q3 FY26."
   }
 };
