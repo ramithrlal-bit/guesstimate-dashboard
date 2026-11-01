@@ -317,7 +317,7 @@ window.REFERENCE_DATA = {
   },
   "upi_val_annual": {
     "value": 299.7,
-    "display_value": "~Rs 299.7L Cr",
+    "display_value": "~₹299.7L Cr",
     "unit": "lakh crore INR",
     "source_name": "National Payments Corporation of India (NPCI) Annual Summary",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
@@ -326,14 +326,14 @@ window.REFERENCE_DATA = {
     "methodology_notes": "Full Calendar Year 2025 value: ₹299.7 Lakh Crore (~$3.6 Trillion). FY25 value was ₹260.56L Cr, FY26 was ₹314.23L Cr."
   },
   "upi_vol_monthly": {
-    "value": 21.7,
-    "display_value": "~21.7B",
+    "value": 24.07,
+    "display_value": "24.07B",
     "unit": "billion transactions/month",
     "source_name": "National Payments Corporation of India (NPCI) Monthly Statistics",
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
-    "reporting_period": "Jan 2026",
+    "reporting_period": "September 2026",
     "data_status": "Official",
-    "methodology_notes": "Monthly UPI transaction volume for January 2026 (~21.7B). Peak 2025 month was December at 21.63B."
+    "methodology_notes": "Monthly UPI transaction volume for September 2026: 24.07 Billion transactions (NPCI Product Statistics)."
   },
   "fintech_upi_unique_users": {
     "value": 550,
@@ -341,7 +341,7 @@ window.REFERENCE_DATA = {
     "unit": "registered onboarded users",
     "source_name": "National Payments Corporation of India (NPCI) / Ministry of Finance (PIB)",
     "source_url": "https://pib.gov.in/",
-    "reporting_period": "Mid-2026",
+    "reporting_period": "June 2026",
     "data_status": "Official",
     "methodology_notes": "Cumulative users onboarded / registered on UPI platform (55.49 Crore / 554.9M users as of mid-2026, PIB). Clearly distinguished from active transacting users."
   },
@@ -353,36 +353,37 @@ window.REFERENCE_DATA = {
     "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
     "reporting_period": "CY 2025 (Annual Daily Avg)",
     "data_status": "Calculated",
-    "methodology_notes": "Recalculated from annual volume: 228.3 Billion / 365 days = 625.48M/day (~625M). Peak December 2025 monthly daily average was ~698M/day (21.63B / 31 days)."
+    "methodology_notes": "Recalculated from annual volume: 228.3 Billion / 365 days = 625.48M/day (~625M)."
   },
   "fintech_yoy_growth_transaction_volume": {
-    "value": 29,
-    "display_value": "~29%",
+    "value": 30,
+    "display_value": "30.0%",
     "unit": "%",
-    "source_name": "NPCI YoY Product Growth Statistics",
-    "source_url": "https://www.npci.org.in/",
-    "reporting_period": "2025 vs 2024",
-    "data_status": "Official"
+    "source_name": "National Payments Corporation of India (NPCI) / Government of India",
+    "source_url": "https://www.npci.org.in/what-we-do/upi/product-statistics",
+    "reporting_period": "FY 2025–26",
+    "data_status": "Official",
+    "methodology_notes": "UPI transaction volume year-on-year growth: 30.0% for FY 2025–26 (NPCI / GoI)."
   },
   "fintech_total_bank_deposits_2025": {
-    "value": 231.73,
-    "display_value": "Rs 232L Cr",
+    "value": 268.48,
+    "display_value": "₹268.48L Cr",
     "unit": "lakh crore INR",
     "source_name": "Reserve Bank of India (RBI) Scheduled Commercial Banks Bulletin",
     "source_url": "https://www.rbi.org.in/",
-    "reporting_period": "March 2025",
+    "reporting_period": "March 2026",
     "data_status": "Official",
-    "methodology_notes": "Aggregate deposits of Scheduled Commercial Banks: ₹231.73 Lakh Crore as of March 2025 (FY25 close). Touched ₹262.30 Lakh Crore by March 2026."
+    "methodology_notes": "Aggregate deposits of Scheduled Commercial Banks (SCBs): ₹268.48 lakh crore as of March 2026 (RBI Bulletin)."
   },
   "fintech_total_bank_credit_2025": {
-    "value": 181,
-    "display_value": "Rs 181L Cr",
+    "value": 223.55,
+    "display_value": "₹223.55L Cr",
     "unit": "lakh crore INR",
     "source_name": "Reserve Bank of India (RBI) Scheduled Commercial Banks Bulletin",
     "source_url": "https://www.rbi.org.in/",
-    "reporting_period": "March 2025",
+    "reporting_period": "March 2026",
     "data_status": "Official",
-    "methodology_notes": "Total bank credit of Scheduled Commercial Banks: ₹181.0 Lakh Crore as of March 2025. Touched ₹213.61 Lakh Crore by March 2026."
+    "methodology_notes": "Total bank credit of Scheduled Commercial Banks (SCBs): ₹223.55 lakh crore as of March 2026 (RBI Bulletin)."
   },
   "fintech_gross_npa_mar_2025_20_yr_low": {
     "value": 2.31,
@@ -390,26 +391,29 @@ window.REFERENCE_DATA = {
     "unit": "%",
     "source_name": "RBI Financial Stability Report (June 2025)",
     "source_url": "https://www.rbi.org.in/Scripts/PublicationReportDetails.aspx",
-    "reporting_period": "Mar 2025",
-    "data_status": "Official"
+    "reporting_period": "March 2025",
+    "data_status": "Official",
+    "methodology_notes": "Scheduled Commercial Banks gross non-performing assets ratio at 2.31% (multi-decade low, RBI FSR)."
   },
   "fintech_psb_profit_fy25": {
-    "value": 178000,
-    "display_value": "Rs 1.78L Cr",
-    "unit": "Lakh Cr",
+    "value": 1.98,
+    "display_value": "₹1.98L Cr",
+    "unit": "lakh crore INR",
     "source_name": "Ministry of Finance / Public Sector Banks Performance Review",
     "source_url": "https://pib.gov.in/",
-    "reporting_period": "FY2024-25",
-    "data_status": "Official"
+    "reporting_period": "FY 2025–26",
+    "data_status": "Official",
+    "methodology_notes": "Aggregate net profit of Public Sector Banks (PSBs): ₹1.98 lakh crore for FY 2025–26 (Ministry of Finance / PIB)."
   },
   "fintech_bank_branches": {
-    "value": 160000,
-    "display_value": "~1.6 Lakh",
-    "unit": "branches",
-    "source_name": "RBI Database on Indian Economy (DBIE)",
+    "value": 168428,
+    "display_value": "168,428",
+    "unit": "reporting offices",
+    "source_name": "Reserve Bank of India (RBI) Database on Indian Economy",
     "source_url": "https://data.rbi.org.in/DBIE/#/",
-    "reporting_period": "2024-25",
-    "data_status": "Official"
+    "reporting_period": "March 2026",
+    "data_status": "Official",
+    "methodology_notes": "Total commercial bank reporting offices (branches): 168,428 as of March 2026 (RBI DBIE). Reflects officially reporting bank offices under RBI definition."
   },
   "fintech_atms": {
     "value": 250000,
@@ -417,46 +421,49 @@ window.REFERENCE_DATA = {
     "unit": "ATMs",
     "source_name": "RBI DBIE Bank-wise ATM Deployment Data",
     "source_url": "https://data.rbi.org.in/DBIE/#/",
-    "reporting_period": "2024-25",
-    "data_status": "Official"
+    "reporting_period": "2025–2026",
+    "data_status": "Official",
+    "methodology_notes": "Total automated teller machines (ATMs) and cash recyclers deployed across India: ~2.5 Lakh (RBI DBIE)."
   },
   "fintech_bank_account_holders_jan_dhan": {
-    "value": 540000000,
-    "display_value": "540M+",
-    "unit": "accounts",
-    "source_name": "Pradhan Mantri Jan Dhan Yojana (PMJDY) Official Portal",
+    "value": 59.63,
+    "display_value": "59.63 Cr",
+    "unit": "crore beneficiaries",
+    "source_name": "Department of Financial Services (DFS), Ministry of Finance / PMJDY",
     "source_url": "https://pmjdy.gov.in/",
-    "reporting_period": "Jan 2026",
-    "data_status": "Official"
+    "reporting_period": "21 October 2026",
+    "data_status": "Official",
+    "methodology_notes": "Total beneficiaries under Pradhan Mantri Jan Dhan Yojana (PMJDY): 59.63 crore (596.3M) as of 21 October 2026 (Department of Financial Services, Ministry of Finance)."
   },
   "fintech_crar_capital_buffer": {
-    "value": 17.36,
-    "display_value": "17.36%",
+    "value": 16.6,
+    "display_value": "16.6%",
     "unit": "%",
-    "source_name": "RBI Financial Stability Report (June 2025)",
+    "source_name": "Reserve Bank of India (RBI) Financial Stability Report",
     "source_url": "https://www.rbi.org.in/",
-    "reporting_period": "Mar 2025",
-    "data_status": "Official"
+    "reporting_period": "March 2026",
+    "data_status": "Official",
+    "methodology_notes": "Capital to Risk-Weighted Assets Ratio (CRAR) specifically for Public Sector Banks (PSBs): 16.6% as of March 2026 (RBI FSR). Distinguishes from all-SCB CRAR."
   },
   "fintech_credit_cards": {
-    "value": 113.5,
-    "display_value": "~113M",
-    "unit": "cards in circulation",
-    "source_name": "RBI Bankwise Monthly ATM/POS/Card Statistics",
+    "value": 125.32,
+    "display_value": "125.32M",
+    "unit": "million cards outstanding",
+    "source_name": "Reserve Bank of India (RBI) Bankwise ATM/POS/Card Statistics",
     "source_url": "https://www.rbi.org.in/Scripts/ATMView.aspx",
-    "reporting_period": "Late 2025",
+    "reporting_period": "September 2026",
     "data_status": "Official",
-    "methodology_notes": "Total credit cards in circulation: ~113.5M in late 2025, reaching 125.32M by September 2026 (RBI)."
+    "methodology_notes": "Credit cards outstanding in circulation: 125.32 million as of September 2026 (RBI Card Statistics)."
   },
   "fintech_debit_cards": {
     "value": 1000,
-    "display_value": "~1.0B",
+    "display_value": "~980M–1.0B",
     "unit": "cards in circulation",
-    "source_name": "RBI Bankwise Monthly ATM/POS/Card Statistics",
+    "source_name": "Reserve Bank of India (RBI) Bankwise ATM/POS/Card Statistics",
     "source_url": "https://www.rbi.org.in/Scripts/ATMView.aspx",
     "reporting_period": "2025–2026",
     "data_status": "Official",
-    "methodology_notes": "Total debit cards in circulation: ~980M in 2025, reaching 1.03B–1.04B in 2026 (RBI)."
+    "methodology_notes": "Total debit cards in circulation: ~980M in 2025 to 1.0B in 2026 (RBI)."
   },
   "fintech_mobile_wallet_accounts": {
     "value": 400000000,
@@ -464,8 +471,9 @@ window.REFERENCE_DATA = {
     "unit": "accounts",
     "source_name": "RBI Payment and Settlement Systems Highlights",
     "source_url": "https://rbi.org.in/",
-    "reporting_period": "2024-25",
-    "data_status": "Official"
+    "reporting_period": "2024–25",
+    "data_status": "Official",
+    "methodology_notes": "Prepaid Payment Instrument (PPI) mobile wallet accounts: 400M+ (RBI Payment and Settlement Systems)."
   },
   "fintech_bnpl_users": {
     "value": 80000000,
@@ -473,18 +481,19 @@ window.REFERENCE_DATA = {
     "unit": "users",
     "source_name": "Redseer Strategy Consultants Indian FinTech Report",
     "source_url": "https://redseer.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2024–25",
+    "data_status": "Industry estimate",
+    "methodology_notes": "Active Buy Now Pay Later (BNPL) credit user base in India: ~80M (Redseer Strategy Consultants)."
   },
   "fintech_monthly_sip_inflow": {
-    "value": 32297,
-    "display_value": "~Rs 32,300 Cr",
+    "value": 32490,
+    "display_value": "₹32,490 Cr",
     "unit": "INR Crore/month",
-    "source_name": "Association of Mutual Funds in India (AMFI) Monthly Data",
+    "source_name": "Association of Mutual Funds in India (AMFI)",
     "source_url": "https://www.amfiindia.com/research-information/other-data",
-    "reporting_period": "August 2026",
+    "reporting_period": "September 2026",
     "data_status": "Official",
-    "methodology_notes": "Gross monthly SIP inflows: ₹32,297 Crore in August 2026 and ₹32,490 Crore in September 2026. September 2025 was ₹29,361 Crore. Reconciled to same reporting series as AUM."
+    "methodology_notes": "Gross monthly SIP contribution/inflow: ₹32,490 crore in September 2026 (AMFI)."
   },
   "fintech_fintech_unicorns": {
     "value": 26,
@@ -492,17 +501,19 @@ window.REFERENCE_DATA = {
     "unit": "unicorns",
     "source_name": "Invest India / DPIIT Startup India Database",
     "source_url": "https://www.startupindia.gov.in/",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "reporting_period": "2025–2026",
+    "data_status": "Official",
+    "methodology_notes": "FinTech unicorns founded in India with valuation >= $1B: 26+ (Invest India / DPIIT Startup India)."
   },
   "fintech_digital_payments_value_2025": {
-    "value": 1,
-    "display_value": "~$1T+",
-    "unit": "USD T",
-    "source_name": "BCG / PhonePe Pulse Digital Payments Market Sizing",
-    "source_url": "https://www.bcg.com/",
-    "reporting_period": "2025",
-    "data_status": "Industry estimate"
+    "value": 849.12,
+    "display_value": "₹849.12L Cr",
+    "unit": "lakh crore INR",
+    "source_name": "Government of India Retail Digital Payment Statistics",
+    "source_url": "https://pib.gov.in/",
+    "reporting_period": "FY 2024–25",
+    "data_status": "Official",
+    "methodology_notes": "Total retail digital payments value: ₹849.12 lakh crore for FY 2024–25 (Ministry of Electronics and IT / Government of India Retail Digital Payment Statistics)."
   },
   "ecommerce_e_commerce_market_size_2025": {
     "value": 137,
@@ -2272,14 +2283,14 @@ window.REFERENCE_DATA = {
     "methodology_notes": "488 million online gamers in 2024, projected to reach 517 million in 2025 per FICCI-EY Media and Entertainment Report."
   },
   "amfi_total_aum_cr": {
-    "value": 8707887.74,
-    "display_value": "87,07,888 Cr",
-    "unit": "INR Crore",
+    "value": 82.64,
+    "display_value": "₹82.64L Cr",
+    "unit": "lakh crore INR",
     "source_name": "Association of Mutual Funds in India (AMFI)",
     "source_url": "https://portal.amfiindia.com/",
-    "reporting_period": "August 2026",
+    "reporting_period": "30 September 2026",
     "data_status": "Official",
-    "methodology_notes": "Total Industry AUM: ₹87.08 Lakh Crore (87,07,887.74 Cr) as of August 2026. September 2026 stood at ₹82.64 Lakh Crore."
+    "methodology_notes": "Mutual Fund Industry Month-End AUM (not average AUM): ₹82.64 lakh crore (₹82,64,000 Cr) as of 30 September 2026 (AMFI)."
   },
   "ev_sales_total": {
     "value": 2300000,

@@ -74,7 +74,33 @@
         key === 'digital_whatsapp_users'
       ) && ref;
 
-      if (obs && !isPop2026Proj && !isDigitalAudited) {
+      // Dedicated check for audited Section 03 FinTech metrics where authoritative 2025/2026 updates supersede stale observations
+      const isFintechAudited = (
+        key === 'upi_vol_annual' ||
+        key === 'upi_val_annual' ||
+        key === 'upi_vol_monthly' ||
+        key === 'fintech_upi_unique_users' ||
+        key === 'fintech_daily_avg_upi_transactions' ||
+        key === 'fintech_yoy_growth_transaction_volume' ||
+        key === 'fintech_total_bank_deposits_2025' ||
+        key === 'fintech_total_bank_credit_2025' ||
+        key === 'fintech_gross_npa_mar_2025_20_yr_low' ||
+        key === 'fintech_psb_profit_fy25' ||
+        key === 'fintech_bank_branches' ||
+        key === 'fintech_atms' ||
+        key === 'fintech_bank_account_holders_jan_dhan' ||
+        key === 'fintech_crar_capital_buffer' ||
+        key === 'amfi_total_aum_cr' ||
+        key === 'fintech_credit_cards' ||
+        key === 'fintech_debit_cards' ||
+        key === 'fintech_mobile_wallet_accounts' ||
+        key === 'fintech_bnpl_users' ||
+        key === 'fintech_monthly_sip_inflow' ||
+        key === 'fintech_fintech_unicorns' ||
+        key === 'fintech_digital_payments_value_2025'
+      ) && ref;
+
+      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited) {
         // Priority 1: Verified Live Backend Observation (always overrides reference data)
         el.classList.remove('ref-metric');
         el.classList.add('verified-metric');
