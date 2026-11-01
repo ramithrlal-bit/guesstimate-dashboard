@@ -60,16 +60,27 @@
       // Dedicated check for audited Section 02 Digital metrics where authoritative 2025/2026 updates supersede stale observations
       const isDigitalAudited = (
         key === 'digital_internet_users' ||
+        key === 'hero_digital_internet_users' ||
         key === 'digital_internet_penetration' ||
+        key === 'digital_internet_subscribers' ||
+        key === 'digital_broadband_subscribers' ||
+        key === 'digital_mobile_connections' ||
         key === 'trai_telephone_subscribers_total' ||
         key === 'digital_unique_mobile_subscribers' ||
         key === 'digital_urban_internet_users' ||
         key === 'digital_rural_internet_users' ||
         key === 'digital_smartphone_users' ||
         key === 'general_smartphone_users_india' ||
+        key === 'digital_feature_phone_users' ||
         key === 'digital_5g_users' ||
         key === 'digital_fintech_users' ||
         key === 'digital_upi_users' ||
+        key === 'digital_online_shoppers' ||
+        key === 'digital_social_media_user_identities' ||
+        key === 'digital_upi_monthly_transactions' ||
+        key === 'digital_upi_transaction_volume_dec_2025' ||
+        key === 'digital_upi_daily_transactions' ||
+        key === 'digital_upi_annual_transactions' ||
         key === 'digital_avg_daily_video_watch_time_per_user_youtube' ||
         key === 'digital_whatsapp_users'
       ) && ref;
@@ -136,13 +147,25 @@
 
         if (key === 'global_world_population') {
           el.innerHTML = ref.display_value || formatWorldPopulation(ref.value);
+        } else if (key === 'digital_internet_users' && el.classList.contains('num')) {
+          el.innerHTML = '~1.03B';
         } else {
           el.innerHTML = ref.display_value;
         }
 
         const statusTag = ref.data_status || 'Reference';
         const periodTag = ref.reporting_period ? ' (' + ref.reporting_period + ')' : '';
-        el.setAttribute('title', 'Reference Data [' + statusTag + ']: ' + ref.source_name + periodTag);
+        let tooltipText = 'Reference Data [' + statusTag + ']: ' + ref.source_name + periodTag;
+        if (ref.definition) {
+          tooltipText += '\nDefinition: ' + ref.definition;
+        }
+        if (ref.unit) {
+          tooltipText += '\nUnit: ' + ref.unit;
+        }
+        if (ref.methodology_notes) {
+          tooltipText += '\nNote: ' + ref.methodology_notes;
+        }
+        el.setAttribute('title', tooltipText);
       } else {
         // Priority 3: Fail-closed fallback (Data unavailable)
         el.classList.remove('verified-metric', 'ref-metric');

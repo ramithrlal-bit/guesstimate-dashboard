@@ -237,25 +237,103 @@
 
 <!-- ============ DIGITAL ============ -->
 <section class="sec" id="digital" data-cat="digital">
-  <div class="sec-head"><span class="sec-num">02</span><h2>Digital India</h2></div>
-  <p class="sec-note">The internet, telecom, social media and video base that every consumer-tech guesstimate segments from. Note distinction: Total Telephone Subscribers (gross ~1.368B) and Active Wireless Subscribers (peak VLR ~1.213B, TRAI Sep 2026) represent SIM connections, whereas unique individual mobile phone owners are estimated at ~850M–900M (GSMA).</p>
+  <div class="sec-head"><span class="sec-num">02</span><h2>Digital &amp; internet</h2></div>
+  <p class="sec-note">Every consumer-tech, mobility, and fintech guesstimate segments from these core digital rails. <b>Population baseline:</b> Total India population is <b>~1.477B</b> (UN WPP 2026 projection), comprising <b>~535M urban</b> (~36%) and <b>~942M rural</b> (~64%). <b>Internet penetration:</b> 70.0% nationally (1.03B unique users), with ~410M active urban internet users (~76.6% urban penetration) and ~548M active rural internet users (~58.2% rural penetration, IAMAI/Kantar).</p>
+
+  <div class="diff-box">
+    <div class="diff-title">Why these metrics differ — Users vs. Subscriptions vs. Connections:</div>
+    <ul>
+      <li><b>Internet users (1.03B · 70.0%):</b> Unique human beings who use the internet (DataReportal / Kepios, Oct 2025; base: ~1.47B population). Does not count multiple SIMs or duplicate accounts.</li>
+      <li><b>Internet subscribers (1.11B):</b> Total telecom service subscriptions (fixed wireline + wireless mobile per TRAI, Jun 2026). Exceeds unique users because one individual/household often holds multiple subscriptions.</li>
+      <li><b>Broadband subscribers (1.09B):</b> High-speed data connections (&gt;512 Kbps per TRAI, Jun 2026). Counts active data connections, not unique individuals.</li>
+      <li><b>Active wireless subscribers (1.19B):</b> Active SIM cards communicating with mobile networks on date of peak VLR (TRAI, Apr 2026). Represents active SIM subscriptions, not unique people.</li>
+      <li><b>Mobile connections (1.06B · 72.5%):</b> Active cellular mobile connections/SIMs tracked by GSMA Intelligence (late 2025). Not equal to smartphone users (~740M) or unique mobile phone owners (~850M–900M).</li>
+      <li><b>Social-media user identities (500M · 34.1%):</b> Active social-media user accounts across platforms (DataReportal / Kepios, Oct 2025). Represents user identities (including multi-account users), not deduplicated people.</li>
+    </ul>
+  </div>
 
   <div class="sub-title">Internet &amp; connectivity</div>
   <div class="grid cols-4">
-    <div class="card accent" data-cat="digital"><span class="v" data-metric="digital_internet_users">~1.03B</span><span class="l">Internet users (India, 2026)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_internet_penetration">~70%</span><span class="l">Internet penetration (2026)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_urban_internet_users">~410M</span><span class="l">Urban internet users (est.)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_rural_internet_users">~548M</span><span class="l">Rural internet users (est.)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="trai_telephone_subscribers_total">~1.368B</span><span class="l">Total telephone subscribers (gross)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_unique_mobile_subscribers">~1.213B</span><span class="l">Active wireless SIMs (Peak VLR)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_smartphone_users">~740M</span><span class="l">Smartphone installed base (est.)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_feature_phone_users">~200M–220M</span><span class="l">Feature phone users (est.)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_5g_users">~394M–430M</span><span class="l">5G subscriptions (2025 est., Ericsson)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_fintech_users">~450M</span><span class="l">Digital payment users (est.)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_upi_users">~350M–400M</span><span class="l">Active UPI users (monthly transacting)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_online_shoppers">280–300M</span><span class="l">Online shoppers (2024–25)</span></div>
-    <div class="card" data-cat="digital"><span class="v" data-metric="digital_upi_transaction_volume_dec_2025">~21.6B/mo</span><span class="l">UPI transaction volume, Dec 2025</span></div>
-    <div class="card teal" data-cat="digital"><span class="v" data-metric="digital_social_media_user_identities">~500M</span><span class="l">Social media user identities</span></div>
+    <div class="card accent" data-cat="digital" title="Definition: Unique people using the internet&#10;Unit: people&#10;Source: DataReportal / Kepios (Oct 2025)&#10;Note: Penetration 70.0% of ~1.47B population. Not derived from TRAI subscriber counts.">
+      <span class="v" data-metric="digital_internet_users">1.03B internet users</span>
+      <span class="l">Internet users (70.0% of population)</span>
+      <span class="card-meta">Unit: people · DataReportal / Kepios (Oct 2025)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Telecom subscriptions/connections, not unique people&#10;Unit: subscriptions&#10;Source: TRAI (Jun 2026)&#10;Note: Includes fixed and wireless internet subscriptions; higher than internet users because one person may have multiple connections.">
+      <span class="v" data-metric="digital_internet_subscribers">1.11B internet subscribers</span>
+      <span class="l">Internet subscribers (telecom connections)</span>
+      <span class="card-meta">Unit: subscriptions · TRAI (Jun 2026)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Broadband connections&#10;Unit: subscriptions&#10;Source: TRAI (Jun 2026)&#10;Note: Counts broadband data connections (&gt;512 Kbps), not unique individuals.">
+      <span class="v" data-metric="digital_broadband_subscribers">1.09B broadband subscribers</span>
+      <span class="l">Broadband subscribers (&gt;512 Kbps)</span>
+      <span class="card-meta">Unit: subscriptions · TRAI (Jun 2026)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Active cellular mobile connections/SIMs&#10;Unit: connections&#10;Source: GSMA Intelligence via DataReportal (late 2025)&#10;Note: Equates to 72.5% of ~1.47B population. Not equal to smartphone users or unique mobile users.">
+      <span class="v" data-metric="digital_mobile_connections">1.06B mobile connections</span>
+      <span class="l">Mobile connections (72.5% of pop.)</span>
+      <span class="card-meta">Unit: connections · GSMA / DataReportal (late 2025)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: TRAI active wireless/mobile subscriptions&#10;Unit: subscriptions&#10;Source: TRAI (Apr 2026)&#10;Note: Measures active SIM subscriptions on date of peak VLR, not unique people.">
+      <span class="v" data-metric="digital_unique_mobile_subscribers">1.19B active wireless subscribers</span>
+      <span class="l">Active wireless subscribers (TRAI VLR)</span>
+      <span class="card-meta">Unit: subscriptions · TRAI (Apr 2026)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Gross wireline + wireless telephone subscriptions&#10;Unit: subscriptions&#10;Source: TRAI (Sep 2026)&#10;Note: 1,368.10M gross telephone subscriptions (1,319.19M wireless + 48.91M wireline). Measures gross subscriptions, not unique people.">
+      <span class="v" data-metric="trai_telephone_subscribers_total">~1.368B telephone subscribers</span>
+      <span class="l">Total telephone subscribers (gross)</span>
+      <span class="card-meta">Unit: subscriptions · TRAI (Sep 2026)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Active internet users residing in urban areas&#10;Unit: people&#10;Source: IAMAI / Kantar (2025)&#10;Note: 410M active urban internet users (~76.6% urban penetration against ~535M urban population base).">
+      <span class="v" data-metric="digital_urban_internet_users">~410M urban internet users</span>
+      <span class="l">Urban internet users (~76.6% urban)</span>
+      <span class="card-meta">Unit: people · IAMAI / Kantar (2025)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Active internet users residing in rural areas&#10;Unit: people&#10;Source: IAMAI / Kantar (2025)&#10;Note: 548M active rural internet users (~58.2% rural penetration against ~942M rural population base).">
+      <span class="v" data-metric="digital_rural_internet_users">~548M rural internet users</span>
+      <span class="l">Rural internet users (~58.2% rural)</span>
+      <span class="card-meta">Unit: people · IAMAI / Kantar (2025)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Active smartphones in regular use&#10;Unit: devices&#10;Source: Counterpoint Research (2025)&#10;Note: 740M active smartphones in use in India (~14% of global active installed base).">
+      <span class="v" data-metric="digital_smartphone_users">~740M active smartphones</span>
+      <span class="l">Smartphone installed base (est.)</span>
+      <span class="card-meta">Unit: devices · Counterpoint Research (2025)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Active 2G/4G feature phones in use&#10;Unit: devices&#10;Source: Counterpoint Research (2025)&#10;Note: 200M–220M active feature phones in use, including ~35M–40M 4G feature phones (JioBharat, Lava).">
+      <span class="v" data-metric="digital_feature_phone_users">~200M–220M feature phones</span>
+      <span class="l">Feature phone installed base (est.)</span>
+      <span class="card-meta">Unit: devices · Counterpoint Research (2025)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Commercial 5G mobile subscriptions&#10;Unit: subscriptions&#10;Source: Ericsson Mobility Report (2025)&#10;Note: Commercial 5G subscriptions in India grew to 394M–430M by 2025 (~35% of total mobile subscriptions).">
+      <span class="v" data-metric="digital_5g_users">~394M–430M 5G subscriptions</span>
+      <span class="l">5G subscriptions (Ericsson est.)</span>
+      <span class="card-meta">Unit: subscriptions · Ericsson Mobility (2025)</span>
+    </div>
+    <div class="card teal" data-cat="digital" title="Definition: Active social-media user identities; may include multiple accounts per person&#10;Unit: user identities&#10;Source: DataReportal / Kepios (Oct 2025)&#10;Note: Penetration: 34.1% of population (~1.47B); 48.7% of internet users (1.03B). Do not label as unique people.">
+      <span class="v" data-metric="digital_social_media_user_identities">500M social-media user identities</span>
+      <span class="l">Social-media identities (34.1% pop.)</span>
+      <span class="card-meta">Unit: user identities · Kepios (Oct 2025)</span>
+    </div>
+    <div class="card accent" data-cat="digital" title="Definition: Monthly UPI transactions (Value: ₹29.82 lakh crore as of August 2026)&#10;Unit: transactions&#10;Source: NPCI Product Statistics (Aug 2026)&#10;Note: Monthly volume: 24.51B transactions worth ₹29.82 lakh crore (as of August 2026).">
+      <span class="v" data-metric="digital_upi_monthly_transactions">24.51B UPI transactions</span>
+      <span class="l">Monthly UPI volume (as of Aug 2026)</span>
+      <span class="card-meta">Unit: transactions · NPCI (Aug 2026) · ₹29.82L Cr</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Daily average UPI transactions&#10;Unit: transactions/day&#10;Source: Derived from NPCI Product Statistics (Aug 2026)&#10;Note: Calculated as August 2026 monthly volume (24.51B) ÷ 31 days = ~791M/day. Do not present this as a constant across all months.">
+      <span class="v" data-metric="digital_upi_daily_transactions">~791M UPI transactions per day</span>
+      <span class="l">Daily avg. UPI transactions (Aug 2026)</span>
+      <span class="card-meta">Unit: transactions/day · Derived NPCI (Aug 2026)</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Total annual UPI transactions for FY 2025–26 (Value: ₹314 lakh crore)&#10;Unit: transactions&#10;Source: NPCI / PIB (FY2025–26)&#10;Note: 24,161.69 crore total UPI transactions for FY 2025–26 with aggregate value of ₹314 lakh crore.">
+      <span class="v" data-metric="digital_upi_annual_transactions">24,161.69 crore UPI transactions</span>
+      <span class="l">Annual UPI volume (FY2025–26)</span>
+      <span class="card-meta">Unit: transactions · NPCI / PIB (FY2025–26) · ₹314L Cr</span>
+    </div>
+    <div class="card" data-cat="digital" title="Definition: Reported unique UPI users in India&#10;Unit: users&#10;Source: Secondary reporting; verify against NPCI before treating as official (Early 2026)&#10;Note: User count is less standardized than transaction volume/value.">
+      <span class="v" data-metric="digital_upi_users">500M+ reported unique UPI users</span>
+      <span class="l">Reported unique UPI users (est.)</span>
+      <span class="card-meta">Unit: users · Secondary reporting (Early 2026)</span>
+    </div>
   </div>
 
   <div class="sub-title">Social media — platform by platform</div>
