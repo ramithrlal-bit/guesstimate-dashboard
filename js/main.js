@@ -118,7 +118,25 @@
         key === 'fintech_digital_payments_value_2025'
       ) && ref;
 
-      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited) {
+      // Dedicated check for audited Section 04 E-commerce metrics where authoritative updates supersede stale observations
+      const isEcommerceAudited = (
+        key === 'ecommerce_annual_online_retail_gmv' ||
+        key === 'ecommerce_e_retail_gmv_2025' ||
+        key === 'ecommerce_online_shoppers_2025' ||
+        key === 'ecommerce_online_shopping_penetration' ||
+        key === 'ecommerce_annual_online_transacting_users' ||
+        key === 'ecommerce_e_commerce_share_of_total_retail' ||
+        key === 'ecommerce_quick_commerce_gov_fy25' ||
+        key === 'ecommerce_quick_commerce_market_size' ||
+        key === 'ecommerce_flipkart_market_share' ||
+        key === 'ecommerce_amazon_market_share' ||
+        key === 'ecommerce_mobile_share_of_b2c_value' ||
+        key === 'ecommerce_cagr_2025_2030' ||
+        key === 'ecommerce_market_size_2026_est' ||
+        key === 'ecommerce_active_stores_india'
+      ) && ref;
+
+      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited) {
         // Priority 1: Verified Live Backend Observation (always overrides reference data)
         el.classList.remove('ref-metric');
         el.classList.add('verified-metric');

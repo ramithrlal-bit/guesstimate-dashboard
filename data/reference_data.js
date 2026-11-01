@@ -1,4 +1,4 @@
-window.__REFERENCE_DATA__ = {
+const REFERENCE_DATA = {
   "pop_households": {
     "value": 305000000,
     "display_value": "~305M",
@@ -543,22 +543,28 @@ window.__REFERENCE_DATA__ = {
     "data_status": "Industry estimate"
   },
   "ecommerce_market_size_2026_est": {
-    "value": 160,
-    "display_value": "~$159–163B",
-    "unit": "USD B",
-    "source_name": "Bain & Company / Flipkart Consumer Commerce",
-    "source_url": "https://www.bain.com/insights/how-india-shops-online-2025/",
-    "reporting_period": "2026E",
-    "data_status": "Industry estimate"
+    "value": 159300000000,
+    "display_value": "$159.3B India e-commerce market size",
+    "unit": "market size",
+    "metric_type": "market_size",
+    "definition": "Market-size estimate; scope differs from e-retail GMV ($65–66B) and quick-commerce GOV. Do not use this number interchangeably with the $65–66B e-retail GMV card.",
+    "source_name": "Mordor Intelligence",
+    "source_url": "https://www.mordorintelligence.com/industry-reports/india-ecommerce-market",
+    "reporting_period": "2026",
+    "data_status": "Industry benchmark",
+    "methodology_notes": "Total Indian e-commerce market size estimate for 2026 ($159.3B). Broader scope than physical e-retail merchandise GMV."
   },
   "ecommerce_online_shoppers_2025": {
-    "value": 290000000,
-    "display_value": "280–300M",
+    "value": 295000000,
+    "display_value": "290–300M online shoppers",
     "unit": "shoppers",
-    "source_name": "Bain & Company 'How India Shops Online'",
-    "source_url": "https://www.bain.com/insights/how-india-shops-online-2025/",
+    "metric_type": "stock",
+    "definition": "People who shop online; distinct from annual transacting users.",
+    "source_name": "Bain & Flipkart, How India Shops Online 2026",
+    "source_url": "https://www.bain.com/insights/how-india-shops-online-2026/",
     "reporting_period": "2025",
-    "data_status": "Industry estimate"
+    "data_status": "Benchmark",
+    "methodology_notes": "Individuals who shop online for retail goods. Stock metric. Distinct from broader annual transacting users."
   },
   "ecommerce_projected_shoppers_2030": {
     "value": 430000000,
@@ -566,17 +572,21 @@ window.__REFERENCE_DATA__ = {
     "unit": "shoppers",
     "source_name": "Bain & Company Projection",
     "source_url": "https://www.bain.com/insights/how-india-shops-online-2025/",
-    "reporting_period": "2030P",
-    "data_status": "Industry estimate"
+    "reporting_period": "2030 projection",
+    "data_status": "Industry estimate",
+    "definition": "Projected count of online shoppers in India by calendar year 2030."
   },
   "ecommerce_cagr_2025_2030": {
-    "value": 21.5,
-    "display_value": "~21.5%",
-    "unit": "%",
-    "source_name": "Bain & Company Indian E-Commerce Growth Outlook",
-    "source_url": "https://www.bain.com/insights/how-india-shops-online-2025/",
-    "reporting_period": "2025-30P",
-    "data_status": "Industry estimate"
+    "value": 20,
+    "display_value": "19–21% CAGR",
+    "unit": "growth rate",
+    "metric_type": "flow",
+    "definition": "Compound annual growth rate for e-retail; distinct from quarterly or annual YoY growth. (Q1 2026: 23–25% YoY growth — IBEF).",
+    "source_name": "Bain & Flipkart, How India Shops Online 2026",
+    "source_url": "https://www.bain.com/insights/how-india-shops-online-2026/",
+    "reporting_period": "Through 2025",
+    "data_status": "Benchmark",
+    "methodology_notes": "Compound annual growth rate for Indian e-retail through 2025. Quarterly note: 23–25% YoY growth in Q1 2026 (IBEF)."
   },
   "ecommerce_india_s_global_rank_e_retail_market": {
     "value": 2,
@@ -584,17 +594,19 @@ window.__REFERENCE_DATA__ = {
     "unit": "rank",
     "source_name": "Bain & Company / eMarketer (by shopper base)",
     "source_url": "https://www.bain.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "definition": "Global rank of India's e-retail market by online shopper base (2nd behind China)."
   },
   "ecommerce_total_retail_market_2025": {
     "value": 1100,
     "display_value": "~$1.1T",
-    "unit": "USD T",
+    "unit": "market size",
     "source_name": "Kearney / Confederation of Indian Industry (CII) Retail Report",
     "source_url": "https://www.kearney.com/",
     "reporting_period": "2025",
-    "data_status": "Industry estimate"
+    "data_status": "Industry estimate",
+    "definition": "Total retail merchandise market size in India across organized and unorganized retail channels."
   },
   "ecommerce_e_commerce_fy24": {
     "value": 125,
@@ -608,11 +620,12 @@ window.__REFERENCE_DATA__ = {
   "ecommerce_organized_retail_share": {
     "value": 24,
     "display_value": "~24%",
-    "unit": "%",
+    "unit": "share",
     "source_name": "Kearney / Boston Consulting Group (BCG) Indian Retail",
     "source_url": "https://www.bcg.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "definition": "Percentage share of organized retail (modern brick-and-mortar and online) in total Indian retail."
   },
   "ecommerce_kirana_mom_and_pop_stores": {
     "value": 12000000,
@@ -620,8 +633,9 @@ window.__REFERENCE_DATA__ = {
     "unit": "stores",
     "source_name": "Kantar / Confederation of All India Traders (CAIT)",
     "source_url": "https://cait.in/",
-    "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "definition": "Estimated traditional unorganized neighborhood mom-and-pop grocery and provisions stores in India."
   },
   "ecommerce_e_commerce_cagr_to_fy30": {
     "value": 18.4,
@@ -633,94 +647,115 @@ window.__REFERENCE_DATA__ = {
     "data_status": "Industry estimate"
   },
   "ecommerce_e_commerce_share_of_total_retail": {
-    "value": 10,
-    "display_value": "~10% vs US ~20%",
-    "unit": "%",
-    "source_name": "Bain & Company / Kearney Retail Penetration Study",
-    "source_url": "https://www.bain.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "value": 8,
+    "display_value": "8% of total retail",
+    "unit": "share",
+    "metric_type": "stock",
+    "definition": "Online retail merchandise sales as a percentage of total merchandise retail ($1.1T). Projected 14% by 2028.",
+    "source_name": "IBEF",
+    "source_url": "https://www.ibef.org/industry/ecommerce.aspx",
+    "reporting_period": "2024",
+    "data_status": "Official estimate",
+    "methodology_notes": "8% current share of total retail in 2024. Projected 14% by 2028 per IBEF (do not display 14% as current share)."
   },
   "ecommerce_average_order_value": {
     "value": 1200,
     "display_value": "Rs 1,200",
-    "unit": "Rs",
+    "unit": "₹ value",
     "source_name": "Redseer Strategy Consultants Online Retail Index",
     "source_url": "https://redseer.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "definition": "Average order basket value across major Indian consumer e-commerce platforms.",
+    "metric_type": "flow"
   },
   "ecommerce_annual_online_retail_gmv": {
-    "value": 85,
-    "display_value": "~$85B",
-    "unit": "USD B",
-    "source_name": "Redseer Strategy Consultants Online Retail GMV Benchmark",
-    "source_url": "https://redseer.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "value": 65500000000,
+    "display_value": "$65–66B e-retail GMV",
+    "unit": "GMV",
+    "metric_type": "flow",
+    "definition": "Gross merchandise value for India’s e-retail market; this is not the same as total e-commerce market size.",
+    "source_name": "Bain & Flipkart, How India Shops Online 2026",
+    "source_url": "https://www.bain.com/insights/how-india-shops-online-2026/",
+    "reporting_period": "2025",
+    "data_status": "Benchmark",
+    "methodology_notes": "Primary market-size anchor for India's physical e-retail merchandise market. Excludes travel, food delivery, and digital services."
   },
   "ecommerce_tier_2_3_contribution": {
     "value": 60,
     "display_value": "~60%",
-    "unit": "%",
+    "unit": "share",
     "source_name": "Bain & Company / Flipkart E-Commerce Consumer Trends",
     "source_url": "https://www.bain.com/insights/how-india-shops-online-2025/",
     "reporting_period": "2025",
-    "data_status": "Industry estimate"
+    "data_status": "Industry estimate",
+    "definition": "Share of incremental e-commerce shoppers originating from Tier 2, Tier 3, and rural India."
   },
   "ecommerce_electronics_share": {
     "value": 30,
     "display_value": "~30%",
-    "unit": "%",
+    "unit": "share",
     "source_name": "IBEF Retail & E-Commerce Sector Category Mix",
     "source_url": "https://www.ibef.org/industry/ecommerce.aspx",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "definition": "Share of consumer electronics and mobile devices in total e-retail GMV.",
+    "metric_type": "flow"
   },
   "ecommerce_fashion_lifestyle_share": {
     "value": 25,
     "display_value": "~25%",
-    "unit": "%",
+    "unit": "share",
     "source_name": "IBEF / Bain Category Breakdown",
     "source_url": "https://www.ibef.org/industry/ecommerce.aspx",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "definition": "Share of apparel, footwear, and lifestyle accessories in total e-retail GMV.",
+    "metric_type": "flow"
   },
   "ecommerce_grocery_share": {
     "value": 15,
     "display_value": "~15%",
-    "unit": "%",
+    "unit": "share",
     "source_name": "Bain / Redseer Category Share",
     "source_url": "https://www.bain.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "definition": "Share of online grocery and essentials (including quick commerce) in total e-retail GMV.",
+    "metric_type": "flow"
   },
   "ecommerce_bpc_share": {
     "value": 8,
     "display_value": "~8%",
-    "unit": "%",
+    "unit": "share",
     "source_name": "Nykaa Investor Presentation / Redseer Beauty Report",
     "source_url": "https://www.nykaa.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "definition": "Share of beauty, personal care, and cosmetics in total e-retail GMV.",
+    "metric_type": "flow"
   },
   "ecommerce_exports_2025": {
     "value": 4.5,
     "display_value": "~$4.5B",
-    "unit": "USD B",
+    "unit": "GMV",
     "source_name": "Directorate General of Foreign Trade (DGFT) E-Commerce Exports",
     "source_url": "https://www.dgft.gov.in/",
     "reporting_period": "2025",
-    "data_status": "Official"
+    "data_status": "Official",
+    "definition": "Estimated annual value of cross-border e-commerce exports from Indian sellers.",
+    "metric_type": "flow"
   },
   "ecommerce_cash_on_delivery_share": {
     "value": 60,
     "display_value": "~60%",
-    "unit": "%",
+    "unit": "share",
     "source_name": "Bain & Company / Delhivery Logistics Analysis",
     "source_url": "https://www.bain.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "definition": "Share of e-commerce parcel deliveries fulfilled using Cash on Delivery (COD) payment mode.",
+    "metric_type": "flow"
   },
   "quickcommerce_quick_commerce_gmv_fy25_2025": {
     "value": 8.2,
@@ -2642,5 +2677,117 @@ window.__REFERENCE_DATA__ = {
     "reporting_period": "Q3 FY26",
     "data_status": "Industry report",
     "methodology_notes": "Deployment/acceptance-point count, not unique merchant count. Stock metric. Sourced from PwC India, Q3 FY26."
+  },
+  "ecommerce_e_retail_gmv_2025": {
+    "value": 65500000000,
+    "display_value": "$65–66B e-retail GMV",
+    "unit": "GMV",
+    "metric_type": "flow",
+    "definition": "Gross merchandise value for India’s e-retail market; this is not the same as total e-commerce market size.",
+    "source_name": "Bain & Flipkart, How India Shops Online 2026",
+    "source_url": "https://www.bain.com/insights/how-india-shops-online-2026/",
+    "reporting_period": "2025",
+    "data_status": "Benchmark",
+    "methodology_notes": "Primary market-size anchor for India's physical e-retail merchandise market. Excludes travel, food delivery, and digital services."
+  },
+  "ecommerce_online_shopping_penetration": {
+    "value": 30,
+    "display_value": "~30% of internet users",
+    "unit": "penetration rate",
+    "metric_type": "stock",
+    "definition": "Denominator is internet users (~1.03B), not India’s total population (~1.477B).",
+    "source_name": "Bain & Flipkart, How India Shops Online 2026",
+    "source_url": "https://www.bain.com/insights/how-india-shops-online-2026/",
+    "reporting_period": "2025",
+    "data_status": "Benchmark",
+    "methodology_notes": "Online shoppers (290–300M) as a percentage of India's ~1.03B internet user base. Denominator is internet users."
+  },
+  "ecommerce_annual_online_transacting_users": {
+    "value": 330000000,
+    "display_value": "320–340M annual online transacting users",
+    "unit": "users",
+    "metric_type": "stock",
+    "definition": "Users who transacted online during the year across commerce, payments, travel, and services; not identical to online shoppers.",
+    "source_name": "IBEF",
+    "source_url": "https://www.ibef.org/industry/ecommerce.aspx",
+    "reporting_period": "FY2026",
+    "data_status": "Industry estimate",
+    "methodology_notes": "Users who completed at least one digital transaction during the year. Broader scope than physical e-retail online shoppers."
+  },
+  "ecommerce_quick_commerce_gov_fy25": {
+    "value": 640000000000,
+    "display_value": "~₹64,000 crore quick-commerce GOV",
+    "unit": "GOV",
+    "metric_type": "flow",
+    "definition": "Gross order value (GOV) across quick-commerce dark-store platforms (~$7.6B). GOV means gross order value; do not label as GMV unless source explicitly defines it as GMV.",
+    "source_name": "Industry estimate",
+    "source_url": "https://redseer.com/",
+    "reporting_period": "FY2025",
+    "data_status": "Industry estimate",
+    "methodology_notes": "~₹64,000 crore (~$7.6B) GOV across Blinkit, Instamart, Zepto, and BB Now in FY2025. GOV represents gross order value before cancellations/discounts."
+  },
+  "ecommerce_quick_commerce_market_size": {
+    "value": 5800000000,
+    "display_value": "$5.8B quick-commerce market size",
+    "unit": "market size",
+    "metric_type": "market_size",
+    "definition": "Market-size estimates vary by methodology; other published 2026 estimates range from $3.65B to ₹1.90 trillion. Not the same metric as quick-commerce GOV.",
+    "source_name": "MarkNtel Advisors",
+    "source_url": "https://www.marknteladvisors.com/",
+    "reporting_period": "2026",
+    "data_status": "Industry estimate",
+    "methodology_notes": "Market size estimate of quick commerce industry revenues. Do not conflate with ₹64,000 Cr platform gross order value (GOV)."
+  },
+  "ecommerce_flipkart_market_share": {
+    "value": 48,
+    "display_value": "~48% e-retail market share",
+    "unit": "marketplace share",
+    "metric_type": "stock",
+    "definition": "Market-share estimate is dated (FY2023); do not present as a current 2026 share.",
+    "source_name": "FY2023 estimate",
+    "source_url": "https://redseer.com/",
+    "reporting_period": "FY2023",
+    "data_status": "Historical benchmark",
+    "methodology_notes": "FY2023 market share of Flipkart Group (including Myntra) in Indian physical e-retail GMV. Dated estimate; not current 2026."
+  },
+  "ecommerce_amazon_market_share": {
+    "value": 32.5,
+    "display_value": "~30–35% e-retail market share",
+    "unit": "marketplace share",
+    "metric_type": "stock",
+    "definition": "Market-share estimate is dated (FY2023); do not present as a current 2026 share.",
+    "source_name": "FY2023 estimate",
+    "source_url": "https://redseer.com/",
+    "reporting_period": "FY2023",
+    "data_status": "Historical benchmark",
+    "methodology_notes": "FY2023 market share of Amazon India in Indian physical e-retail GMV. Dated estimate; not current 2026."
+  },
+  "ecommerce_mobile_share_of_b2c_value": {
+    "value": 76.6,
+    "display_value": "76.6% of B2C transaction value via mobile",
+    "unit": "share",
+    "metric_type": "flow",
+    "definition": "Refers to B2C transaction value, not the share of orders or users.",
+    "source_name": "Mordor Intelligence",
+    "source_url": "https://www.mordorintelligence.com/industry-reports/india-ecommerce-market",
+    "reporting_period": "2026",
+    "data_status": "Industry estimate",
+    "methodology_notes": "76.6% of Indian B2C e-commerce gross transaction value is transacted through mobile devices (smartphones/tablets)."
+  },
+  "ecommerce_active_stores_india": {
+    "value": 600000,
+    "display_value": "~6 lakh active e-commerce stores",
+    "unit": "stores",
+    "metric_type": "stock",
+    "definition": "Store count is not the same as seller count; verify source before presenting as official. Estimate — source required.",
+    "source_name": "Industry estimate",
+    "source_url": "https://www.ibef.org/industry/ecommerce.aspx",
+    "reporting_period": "Latest available estimate",
+    "data_status": "Estimate — source required",
+    "methodology_notes": "Estimated active storefronts and D2C online retail stores operating in India. Store count is not identical to marketplace seller count."
   }
 };
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = REFERENCE_DATA;
+}
