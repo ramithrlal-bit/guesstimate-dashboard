@@ -136,7 +136,32 @@
         key === 'ecommerce_active_stores_india'
       ) && ref;
 
-      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited) {
+      // Dedicated check for audited Section 05 Quick Commerce metrics where authoritative updates supersede stale observations
+      const isQuickCommerceAudited = (
+        key === 'quickcommerce_quick_commerce_gmv_fy26' ||
+        key === 'quickcommerce_quick_commerce_gmv_fy25_2025' ||
+        key === 'quickcommerce_share_of_online_retail' ||
+        key === 'quickcommerce_share_of_online_grocery_gmv_overtook_e_grocery' ||
+        key === 'quickcommerce_monthly_transacting_users' ||
+        key === 'quickcommerce_zepto_annual_transacting_users' ||
+        key === 'quickcommerce_daily_orders_market' ||
+        key === 'quickcommerce_top3_annual_orders_fy26' ||
+        key === 'quickcommerce_total_dark_stores_2026' ||
+        key === 'quickcommerce_average_order_value' ||
+        key === 'quickcommerce_blinkit_market_share' ||
+        key === 'quickcommerce_zepto_market_share' ||
+        key === 'quickcommerce_instamart_market_share' ||
+        key === 'quickcommerce_yoy_gmv_growth_2025' ||
+        key === 'quickcommerce_yoy_gmv_growth_fy26' ||
+        key === 'quickcommerce_typical_delivery_promise' ||
+        key === 'quickcommerce_blinkit_dark_stores' ||
+        key === 'quickcommerce_zepto_dark_stores' ||
+        key === 'quickcommerce_instamart_dark_stores' ||
+        key === 'quickcommerce_orders_per_user_per_month' ||
+        key === 'quickcommerce_projected_gmv_2027_28'
+      ) && ref;
+
+      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited && !isQuickCommerceAudited) {
         // Priority 1: Verified Live Backend Observation (always overrides reference data)
         el.classList.remove('ref-metric');
         el.classList.add('verified-metric');
