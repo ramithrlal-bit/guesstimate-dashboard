@@ -260,7 +260,10 @@
       // Dedicated check for audited Section 10 Economy metrics where authoritative updates supersede stale observations
       const isEconomyAudited = key && (key.startsWith('economy_') || key === 'agri_food_processing_market' || key === 'agri_exports_value' || key === 'agri_operational_landholdings') && ref;
 
-      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited && !isQuickCommerceAudited && !isMobilityAudited && !isEdtechAudited && !isHealthcareAudited && !isEconomyAudited) {
+      // Dedicated check for audited Section 11 Global metrics where authoritative updates supersede stale observations
+      const isGlobalAudited = key && key.startsWith('global_') && ref;
+
+      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited && !isQuickCommerceAudited && !isMobilityAudited && !isEdtechAudited && !isHealthcareAudited && !isEconomyAudited && !isGlobalAudited) {
         // Priority 1: Verified Live Backend Observation (always overrides reference data)
         el.classList.remove('ref-metric');
         el.classList.add('verified-metric');

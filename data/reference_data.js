@@ -1,6 +1,6 @@
 /**
  * Guesstimate Dashboard - Authoritative Reference Dataset
- * Generated: 2026-11-08T09:34:44.789Z
+ * Generated: 2026-11-08T18:13:23.713Z
  */
 window.REFERENCE_DATA = {
   "pop_households": {
@@ -2095,22 +2095,23 @@ window.REFERENCE_DATA = {
     "data_status": "Official"
   },
   "global_households": {
-    "value": 131200000,
-    "display_value": "~130M",
+    "value": 131000000,
+    "display_value": "~131M (2024–25)",
     "unit": "households",
-    "source_name": "US Census Bureau Current Population Survey (CPS)",
+    "source_name": "US Census Bureau CPS",
     "source_url": "https://www.census.gov/",
-    "reporting_period": "2024",
+    "reporting_period": "2024-25",
     "data_status": "Official"
   },
   "global_median_household_income": {
-    "value": 75149,
-    "display_value": "~$75,000/yr",
-    "unit": "USD/year",
-    "source_name": "US Census Bureau Income in the United States",
-    "source_url": "https://www.census.gov/library/publications.html",
-    "reporting_period": "2023-24",
-    "data_status": "Official"
+    "value": 80610,
+    "display_value": "~$80,610/yr (2023)",
+    "unit": "USD/yr",
+    "source_name": "US Census Bureau (CPS ASEC)",
+    "source_url": "https://www.census.gov/topics/income-poverty/income.html",
+    "reporting_period": "2023",
+    "data_status": "Official",
+    "notes": "Real median household income per US Census Bureau Current Population Survey (CPS ASEC)"
   },
   "global_credit_card_users": {
     "value": 190000000,
@@ -2122,13 +2123,13 @@ window.REFERENCE_DATA = {
     "data_status": "Official"
   },
   "global_india_s_share_of_global_internet_users": {
-    "value": 17.8,
-    "display_value": "~18%",
+    "value": 16,
+    "display_value": "~16% (2026)",
     "unit": "%",
-    "source_name": "Calculated: India (IAMAI ~958M) / World (ITU ~5.4B-6.0B)",
+    "source_name": "ITU / DataReportal, 2026",
     "source_url": "https://www.itu.int/",
-    "reporting_period": "2024-25",
-    "data_status": "Calculated estimate"
+    "reporting_period": "2026",
+    "data_status": "Calculated: India (1.03B) / World (6.3B)"
   },
   "global_india_s_global_rank_upi_transaction_volume": {
     "value": 1,
@@ -2141,21 +2142,23 @@ window.REFERENCE_DATA = {
   },
   "global_share_of_global_pharma_exports_by_volume": {
     "value": 20,
-    "display_value": "~20%",
+    "display_value": "~20% (Global share)",
     "unit": "%",
-    "source_name": "Department of Pharmaceuticals / Indian Brand Equity Foundation",
-    "source_url": "https://pharmaceuticals.gov.in/en",
-    "reporting_period": "2024",
-    "data_status": "Official"
+    "source_name": "Department of Pharmaceuticals",
+    "source_url": "https://pharmaceuticals.gov.in/",
+    "reporting_period": "2024-25",
+    "data_status": "Official",
+    "notes": "Share of global generic drug exports by volume"
   },
   "global_share_of_global_it_services_offshoring": {
-    "value": 56,
-    "display_value": "~55%",
+    "value": 55,
+    "display_value": "~55% (FY25)",
     "unit": "%",
-    "source_name": "NASSCOM Strategic Review 'Tech Services in India'",
+    "source_name": "NASSCOM Strategic Review",
     "source_url": "https://nasscom.in/",
-    "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "reporting_period": "FY25",
+    "data_status": "Industry estimate",
+    "notes": "Global sourcing & IT-BPM delivery market share per NASSCOM"
   },
   "global_world_smartphone_users": {
     "value": 7100000000,
@@ -2167,22 +2170,24 @@ window.REFERENCE_DATA = {
     "data_status": "Industry estimate"
   },
   "global_global_e_commerce_market": {
-    "value": 6.3,
-    "display_value": "~$6T",
+    "value": 6,
+    "display_value": "~$6T (2024–25)",
     "unit": "USD T",
-    "source_name": "eMarketer / Insider Intelligence Global E-Commerce Sizing",
-    "source_url": "https://www.insiderintelligence.com/",
-    "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "source_name": "eMarketer / Statista",
+    "source_url": "https://www.emarketer.com/",
+    "reporting_period": "2024-25",
+    "data_status": "Industry estimate",
+    "notes": "Global retail e-commerce sales"
   },
   "global_cars_on_the_road_worldwide": {
-    "value": 1440000000,
-    "display_value": "~1.4B",
-    "unit": "vehicles",
-    "source_name": "Hedges & Company Global Car Population / OICA",
-    "source_url": "https://www.oica.net/",
+    "value": 1400000000,
+    "display_value": "~1.4B motor vehicles",
+    "unit": "motor vehicles",
+    "source_name": "Hedges & Company / OICA",
+    "source_url": "https://hedgescompany.com/",
     "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "data_status": "Industry estimate",
+    "notes": "Total registered motor vehicles in operation; distinct from passenger cars"
   },
   "global_global_pharma_market": {
     "value": 1.5,
@@ -2194,13 +2199,14 @@ window.REFERENCE_DATA = {
     "data_status": "Industry estimate"
   },
   "global_s_p_500_market_cap": {
-    "value": 46.5,
-    "display_value": "~$45T+",
+    "value": 51.5,
+    "display_value": "~$51.5T (Jan 2026)",
     "unit": "USD T",
-    "source_name": "S&P Dow Jones Indices / Bloomberg Market Data",
-    "source_url": "https://www.spglobal.com/spdji/en/",
-    "reporting_period": "2024-25",
-    "data_status": "Official"
+    "source_name": "S&P Dow Jones Indices",
+    "source_url": "https://www.spglobal.com/spdji/",
+    "reporting_period": "Jan 2026",
+    "data_status": "Market benchmark",
+    "notes": "Total market capitalization of S&P 500 index constituents"
   },
   "bonus_countries_in_the_world": {
     "value": 195,
@@ -2293,14 +2299,13 @@ window.REFERENCE_DATA = {
     "data_status": "Official estimate"
   },
   "global_world_population": {
-    "value": 8270000000,
-    "display_value": "~8.3B",
+    "value": 8300000000,
+    "display_value": "~8.3B (2026 projection)",
     "unit": "people",
     "source_name": "UN World Population Prospects 2024, 2026 projection",
-    "source_url": "https://population.un.org/wpp/",
-    "reporting_period": "2026 Projection",
-    "data_status": "Official projection",
-    "methodology_notes": "Projected global population of ~8.27B (rounds to ~8.3B) as of 2026 according to UN WPP 2024 medium variant projection."
+    "source_url": "https://population.un.org/",
+    "reporting_period": "2026 projection",
+    "data_status": "Official projection"
   },
   "pop_india_total": {
     "value": 1476600000,
@@ -2549,22 +2554,22 @@ window.REFERENCE_DATA = {
     "data_status": "Official"
   },
   "global_population": {
-    "value": 341784857,
-    "display_value": "~342M",
+    "value": 342000000,
+    "display_value": "~342M (2025)",
     "unit": "people",
-    "source_name": "World Bank (SP.POP.TOTL) United States",
-    "source_url": "https://api.worldbank.org/v2/country/USA/indicator/SP.POP.TOTL?format=json&mrnev=1",
+    "source_name": "US Census Bureau / World Bank",
+    "source_url": "https://www.census.gov/",
     "reporting_period": "2025",
     "data_status": "Official"
   },
   "global_gdp": {
-    "value": 30769700000000,
-    "display_value": "~$30.8T",
-    "unit": "USD",
-    "source_name": "World Bank (NY.GDP.MKTP.CD) United States",
-    "source_url": "https://api.worldbank.org/v2/country/USA/indicator/NY.GDP.MKTP.CD?format=json&mrnev=1",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "value": 32.64,
+    "display_value": "~$32.64T (2026)",
+    "unit": "USD T",
+    "source_name": "IMF World Economic Outlook, October 2026",
+    "source_url": "https://www.imf.org/en/Publications/WEO",
+    "reporting_period": "2026",
+    "data_status": "Official estimate"
   },
   "global_internet_penetration": {
     "value": 94.69,
@@ -2585,40 +2590,41 @@ window.REFERENCE_DATA = {
     "data_status": "Official"
   },
   "global_india_s_share_of_world_gdp": {
-    "value": 3.34,
-    "display_value": "~3.3%",
+    "value": 3.2,
+    "display_value": "~3.2% (2026)",
     "unit": "%",
-    "source_name": "World Bank / Calculated (India / World GDP)",
-    "source_url": "https://api.worldbank.org/v2/country/IND/indicator/NY.GDP.MKTP.CD?format=json&mrnev=1",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "source_name": "IMF World Economic Outlook, October 2026",
+    "source_url": "https://www.imf.org/en/Publications/WEO",
+    "reporting_period": "2026",
+    "data_status": "Calculated: India ($4.06T) / World ($128T)"
   },
   "global_world_internet_users": {
-    "value": 6046552721,
-    "display_value": "~6.0B",
+    "value": 6300000000,
+    "display_value": "~6.3B (2026)",
     "unit": "users",
-    "source_name": "World Bank (IT.NET.USER.ZS * SP.POP.TOTL)",
-    "source_url": "https://api.worldbank.org/v2/country/WLD/indicator/IT.NET.USER.ZS?format=json&mrnev=1",
-    "reporting_period": "2025",
+    "source_name": "ITU Facts and Figures 2026",
+    "source_url": "https://www.itu.int/",
+    "reporting_period": "2026",
     "data_status": "Official"
   },
   "global_world_gdp": {
-    "value": 118350166039396,
-    "display_value": "~$118.4T",
-    "unit": "USD",
-    "source_name": "World Bank (NY.GDP.MKTP.CD) World Total",
-    "source_url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.CD?format=json&mrnev=1",
-    "reporting_period": "2025",
-    "data_status": "Official"
+    "value": 128,
+    "display_value": "~$128T (2026)",
+    "unit": "USD T",
+    "source_name": "IMF World Economic Outlook, October 2026",
+    "source_url": "https://www.imf.org/en/Publications/WEO",
+    "reporting_period": "2026",
+    "data_status": "Official estimate"
   },
   "global_annual_flight_passengers_worldwide": {
-    "value": 4268984474.04,
-    "display_value": "~4.27B",
+    "value": 4.96,
+    "display_value": "~4.96B (2024)",
     "unit": "passengers",
-    "source_name": "World Bank (IS.AIR.PSGR) / ICAO",
-    "source_url": "https://api.worldbank.org/v2/country/WLD/indicator/IS.AIR.PSGR?format=json&mrnev=1",
-    "reporting_period": "2023",
-    "data_status": "Official"
+    "source_name": "IATA World Air Transport Statistics",
+    "source_url": "https://www.iata.org/",
+    "reporting_period": "2024",
+    "data_status": "Official",
+    "notes": "Global scheduled airline passengers carried"
   },
   "bonus_rbi_repo_rate_2026": {
     "value": 5.5,
