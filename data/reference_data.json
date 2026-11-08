@@ -1587,12 +1587,12 @@
     "data_status": "Official"
   },
   "agri_exports_value": {
-    "value": 48.9,
-    "display_value": "~$50B",
+    "value": 51.1,
+    "display_value": "~$51.1B (FY25)",
     "unit": "USD B",
-    "source_name": "APEDA / Department of Commerce",
-    "source_url": "https://apeda.gov.in/",
-    "reporting_period": "FY2023-24",
+    "source_name": "PIB / Department of Commerce",
+    "source_url": "https://commerce.gov.in/",
+    "reporting_period": "FY25",
     "data_status": "Official"
   },
   "agri_imports_value": {
@@ -1677,13 +1677,13 @@
     "data_status": "Official"
   },
   "agri_food_processing_market": {
-    "value": 300,
-    "display_value": "~$300B",
+    "value": 382,
+    "display_value": "~$382B (FY25)",
     "unit": "USD B",
-    "source_name": "Ministry of Food Processing Industries (MoFPI) / Invest India",
-    "source_url": "https://www.investindia.gov.in/sector/food-processing",
-    "reporting_period": "2024-25",
-    "data_status": "Official estimate"
+    "source_name": "IBEF food-processing market estimate",
+    "source_url": "https://www.ibef.org/industry/food-processing",
+    "reporting_period": "FY25",
+    "data_status": "Industry estimate"
   },
   "agri_post_harvest_losses": {
     "value": 15,
@@ -1722,10 +1722,10 @@
     "data_status": "Official"
   },
   "economy_share_of_gdp_gva": {
-    "value": 17.7,
+    "value": 18,
     "display_value": "~18%",
     "unit": "%",
-    "source_name": "MoSPI / National Accounts Statistics 2024",
+    "source_name": "MoSPI / National Accounts Statistics",
     "source_url": "https://mospi.gov.in/",
     "reporting_period": "FY2023-24",
     "data_status": "Official"
@@ -1733,11 +1733,12 @@
   "economy_farmers_cultivators": {
     "value": 146000000,
     "display_value": "~146M",
-    "unit": "people",
-    "source_name": "Agriculture Census of India / MoA&FW",
+    "unit": "operational holdings",
+    "source_name": "Agriculture Census of India",
     "source_url": "https://agcensus.gov.in/",
     "reporting_period": "Census Benchmark",
-    "data_status": "Official"
+    "data_status": "Official",
+    "notes": "Operational agricultural holdings in India; not individual farmers"
   },
   "economy_agricultural_households": {
     "value": 93000000,
@@ -1752,28 +1753,30 @@
     "value": 157000000,
     "display_value": "~157M ha",
     "unit": "hectares",
-    "source_name": "Directorate of Economics and Statistics / MoA&FW Land Use Statistics",
+    "source_name": "Directorate of Economics and Statistics / MoA&FW",
     "source_url": "https://desagri.gov.in/",
     "reporting_period": "2023-24",
-    "data_status": "Official"
+    "data_status": "Official",
+    "notes": "Total arable land; distinct from net sown area which is ~140–141M ha"
   },
   "economy_agri_exports_fy25": {
-    "value": 48.9,
-    "display_value": "~$49B",
+    "value": 51.1,
+    "display_value": "~$51.1B (FY25)",
     "unit": "USD B",
-    "source_name": "Department of Commerce / APEDA Export Bulletin",
+    "source_name": "PIB / Ministry of Agriculture / Department of Commerce",
     "source_url": "https://commerce.gov.in/",
-    "reporting_period": "FY2024-25",
-    "data_status": "Official"
+    "reporting_period": "FY25",
+    "data_status": "Official",
+    "notes": "Total agricultural exports (~$51.1B in FY25); agri-food exports alone are ~$49.4B"
   },
   "economy_food_processing_market": {
-    "value": 354,
-    "display_value": "~$354B",
+    "value": 382,
+    "display_value": "~$382B (FY25)",
     "unit": "USD B",
-    "source_name": "Ministry of Food Processing Industries (MoFPI) / Invest India",
-    "source_url": "https://www.investindia.gov.in/sector/food-processing",
-    "reporting_period": "2025",
-    "data_status": "Official estimate"
+    "source_name": "IBEF food-processing market estimate",
+    "source_url": "https://www.ibef.org/industry/food-processing",
+    "reporting_period": "FY25",
+    "data_status": "Industry estimate"
   },
   "economy_agri_gdp_growth_fy26": {
     "value": 3.1,
@@ -1788,7 +1791,7 @@
     "value": 1.08,
     "display_value": "~1.1 ha",
     "unit": "hectares",
-    "source_name": "Agriculture Census of India / MoA&FW",
+    "source_name": "Agriculture Census of India",
     "source_url": "https://agcensus.gov.in/",
     "reporting_period": "Census Benchmark",
     "data_status": "Official"
@@ -1804,9 +1807,9 @@
   },
   "economy_market_size_2025": {
     "value": 289,
-    "display_value": "~$289B",
+    "display_value": "~$289B (2025)",
     "unit": "USD B",
-    "source_name": "NielsenIQ / FICCI Indian FMCG Sector Outlook",
+    "source_name": "NielsenIQ",
     "source_url": "https://nielseniq.com/",
     "reporting_period": "2025",
     "data_status": "Industry estimate"
@@ -1822,7 +1825,7 @@
   },
   "economy_revenue_growth_fy26": {
     "value": 7,
-    "display_value": "6–8%",
+    "display_value": "6–8% (FY26)",
     "unit": "%",
     "source_name": "CRISIL Ratings FMCG Sector Review",
     "source_url": "https://www.crisil.com/",
@@ -1831,16 +1834,17 @@
   },
   "economy_modern_trade_share": {
     "value": 11,
-    "display_value": "10–12%",
+    "display_value": "10–12% (National)",
     "unit": "%",
-    "source_name": "Kantar Worldpanel Indian FMCG Retail Channels",
+    "source_name": "Kantar / NielsenIQ",
     "source_url": "https://www.kantar.com/",
-    "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "notes": "National FMCG modern trade share is 10–12%; reaches ~22.8% in top-8 metros (Q1 2025)"
   },
   "economy_rural_volume_growth_q2_2025": {
     "value": 8.4,
-    "display_value": "8.4% vs urban 4.6%",
+    "display_value": "8.4% vs urban 4.6% (Q2 2025)",
     "unit": "%",
     "source_name": "NielsenIQ Quarterly FMCG Volume Growth Monitor",
     "source_url": "https://nielseniq.com/",
@@ -1849,73 +1853,76 @@
   },
   "economy_projected_market_2030": {
     "value": 643,
-    "display_value": "~$643B",
+    "display_value": "~$643B (2030)",
     "unit": "USD B",
-    "source_name": "FICCI / NielsenIQ Long-Term FMCG Market Sizing",
+    "source_name": "FICCI / NielsenIQ",
     "source_url": "https://ficci.in/",
     "reporting_period": "2030P",
     "data_status": "Industry estimate"
   },
   "economy_dpiit_recognised_startups": {
     "value": 164000,
-    "display_value": "164K+",
+    "display_value": "164K+ (Jan 2026)",
     "unit": "startups",
-    "source_name": "Department for Promotion of Industry and Internal Trade (DPIIT) Startup India Portal",
+    "source_name": "DPIIT Startup India Portal",
     "source_url": "https://www.startupindia.gov.in/",
     "reporting_period": "Jan 2026",
     "data_status": "Official"
   },
   "economy_angel_investors": {
     "value": 10000,
-    "display_value": "10K+",
+    "display_value": "10K+ (2024–25)",
     "unit": "investors",
-    "source_name": "Indian Angel Network / Inc42 Indian Tech Ecosystem Report",
+    "source_name": "Indian Angel Network / Inc42",
     "source_url": "https://inc42.com/",
     "reporting_period": "2024-25",
-    "data_status": "Industry estimate"
+    "data_status": "Industry estimate",
+    "notes": "Active individual angel investors in India's startup ecosystem"
   },
   "economy_vc_funds": {
     "value": 800,
-    "display_value": "800+",
+    "display_value": "800+ (2024–25)",
     "unit": "funds",
-    "source_name": "Indian Private Equity and Venture Capital Association (IVCA)",
+    "source_name": "IVCA (Indian Private Equity and Venture Capital Association)",
     "source_url": "https://ivca.in/",
-    "reporting_period": "2024",
-    "data_status": "Industry estimate"
+    "reporting_period": "2024-25",
+    "data_status": "Industry estimate",
+    "notes": "Active registered venture capital and private equity funds in India"
   },
   "economy_incubators": {
     "value": 1000,
     "display_value": "1,000+",
     "unit": "incubators",
-    "source_name": "Atal Innovation Mission (AIM) / NITI Aayog / Startup India",
+    "source_name": "Atal Innovation Mission (AIM) / Startup India",
     "source_url": "https://aim.gov.in/",
     "reporting_period": "2024-25",
     "data_status": "Official"
   },
   "economy_unicorns_2026": {
-    "value": 132,
-    "display_value": "132",
+    "value": 118,
+    "display_value": "118 active (132 total)",
     "unit": "unicorns",
-    "source_name": "Invest India / Hurun India Unicorn Index",
+    "source_name": "Invest India / Tracxn",
     "source_url": "https://www.investindia.gov.in/",
     "reporting_period": "2025-26",
-    "data_status": "Industry estimate"
+    "data_status": "Official & Industry",
+    "notes": "Privately held startups valued at $1B+; 118 active in India per Invest India, 132 total founded per Tracxn (2025-26)"
   },
   "economy_soonicorns": {
     "value": 100,
-    "display_value": "100+",
+    "display_value": "100+ (2025)",
     "unit": "startups",
-    "source_name": "Tracxn / Inc42 Soonicorn Tracker",
+    "source_name": "Tracxn / Inc42",
     "source_url": "https://tracxn.com/",
     "reporting_period": "2025",
     "data_status": "Industry estimate"
   },
   "economy_funding_raised_2025": {
     "value": 12,
-    "display_value": "$12B+",
+    "display_value": "$12B+ (2025)",
     "unit": "USD B",
     "source_name": "Inc42 / PwC India Startup Deals Review",
-    "source_url": "https://www.pwc.in/",
+    "source_url": "https://inc42.com/",
     "reporting_period": "2025",
     "data_status": "Industry estimate"
   },
@@ -1923,8 +1930,8 @@
     "value": 0,
     "display_value": "FinTech, SaaS, HealthTech",
     "unit": "sectors",
-    "source_name": "IVCA / Bain India Venture Capital Report",
-    "source_url": "https://www.bain.com/",
+    "source_name": "IVCA / Bain India VC Report",
+    "source_url": "https://ivca.in/",
     "reporting_period": "2024-25",
     "data_status": "Industry estimate"
   },
@@ -1935,20 +1942,20 @@
     "source_name": "Startup India State & City Rankings / Tracxn",
     "source_url": "https://www.startupindia.gov.in/",
     "reporting_period": "2025",
-    "data_status": "Industry estimate"
+    "data_status": "Official"
   },
   "economy_sector_size_2025": {
     "value": 30,
-    "display_value": "~$30B",
+    "display_value": "~$30B (2025)",
     "unit": "USD B",
-    "source_name": "FICCI-EY Media and Entertainment Report 2024",
+    "source_name": "FICCI-EY Media and Entertainment Report",
     "source_url": "https://ficci.in/",
     "reporting_period": "2025",
     "data_status": "Industry estimate"
   },
   "economy_growth_yoy": {
     "value": 9.1,
-    "display_value": "~9.1%",
+    "display_value": "~9.1% (2024–25)",
     "unit": "%",
     "source_name": "FICCI-EY M&E Sector Growth Rate",
     "source_url": "https://ficci.in/",
@@ -1957,7 +1964,7 @@
   },
   "economy_ott_revenue_fy25": {
     "value": 10000,
-    "display_value": "~Rs 10,000 Cr",
+    "display_value": "~Rs 10,000 Cr (FY25)",
     "unit": "Cr",
     "source_name": "FICCI-EY Digital Media & OTT Revenue Review",
     "source_url": "https://ficci.in/",
@@ -1966,7 +1973,7 @@
   },
   "economy_ott_subscribers": {
     "value": 100000000,
-    "display_value": "100M+",
+    "display_value": "100M+ (2024)",
     "unit": "subscriptions",
     "source_name": "Ormax Media 'OTT Audience Report'",
     "source_url": "https://www.ormaxmedia.com/",
@@ -1975,9 +1982,9 @@
   },
   "economy_tv_households": {
     "value": 210000000,
-    "display_value": "~210M",
+    "display_value": "~210M (2024)",
     "unit": "households",
-    "source_name": "Broadcast Audience Research Council (BARC) India Universe Estimate",
+    "source_name": "BARC India Universe Estimate",
     "source_url": "https://barcindia.co.in/",
     "reporting_period": "2024",
     "data_status": "Industry estimate"
@@ -1995,23 +2002,24 @@
     "value": 1750,
     "display_value": "1,500–2,000",
     "unit": "films/year",
-    "source_name": "Central Board of Film Certification (CBFC) Annual Report",
+    "source_name": "Central Board of Film Certification (CBFC)",
     "source_url": "https://www.cbfcindia.gov.in/",
     "reporting_period": "2024",
     "data_status": "Official"
   },
   "economy_projected_sector_size_2030": {
     "value": 1,
-    "display_value": "~$1T",
+    "display_value": "~$1T (2030)",
     "unit": "USD T",
-    "source_name": "CREDAI-Colliers Real Estate 2030 Vision",
+    "source_name": "CREDAI-Colliers",
     "source_url": "https://www.colliers.com/",
     "reporting_period": "2030P",
-    "data_status": "Industry estimate"
+    "data_status": "Industry estimate",
+    "notes": "CREDAI-Colliers Real Estate 2030 Vision projection"
   },
   "economy_sector_size_2025_1": {
     "value": 265,
-    "display_value": "~$200–300B",
+    "display_value": "~$200–300B (2025)",
     "unit": "USD B",
     "source_name": "IBEF Real Estate Industry Overview",
     "source_url": "https://www.ibef.org/industry/real-estate-india.aspx",
@@ -2022,52 +2030,53 @@
     "value": 7.3,
     "display_value": "~7–8%",
     "unit": "%",
-    "source_name": "NITI Aayog / MoHUA Real Estate Contribution to GDP",
+    "source_name": "NITI Aayog / MoHUA",
     "source_url": "https://www.niti.gov.in/",
     "reporting_period": "2024",
     "data_status": "Official estimate"
   },
   "economy_urban_housing_shortfall": {
     "value": 10000000,
-    "display_value": "~10M units",
+    "display_value": "~10M units (2024)",
     "unit": "units",
-    "source_name": "Ministry of Housing and Urban Affairs (MoHUA) Technical Group on Urban Housing",
+    "source_name": "MoHUA / HUDCO",
     "source_url": "https://mohua.gov.in/",
     "reporting_period": "2024",
-    "data_status": "Official"
+    "data_status": "Official",
+    "notes": "Validated urban housing shortage under MoHUA / PMAY-U demand assessment (~10–11.2M units)"
   },
   "economy_pmay_houses_built": {
     "value": 40000000,
-    "display_value": "40M+",
+    "display_value": "40M+ (Jan 2026)",
     "unit": "houses",
-    "source_name": "Pradhan Mantri Awas Yojana (PMAY Urban + Gramin) Official Dashboard",
+    "source_name": "Pradhan Mantri Awas Yojana (PMAY) Dashboard",
     "source_url": "https://pmay-urban.gov.in/",
     "reporting_period": "Jan 2026",
     "data_status": "Official"
   },
   "economy_home_loan_book": {
     "value": 2800000,
-    "display_value": "~Rs 28L Cr",
+    "display_value": "~Rs 28L Cr (FY25)",
     "unit": "Lakh Cr",
-    "source_name": "Reserve Bank of India (RBI) Sectoral Deployment of Bank Credit",
+    "source_name": "Reserve Bank of India (RBI)",
     "source_url": "https://rbi.org.in/",
-    "reporting_period": "2024-25",
+    "reporting_period": "FY2024-25",
     "data_status": "Official"
   },
   "economy_avg_home_price_metro": {
     "value": 140,
-    "display_value": "Rs 80L–2Cr",
+    "display_value": "Rs 80L–2Cr (2024)",
     "unit": "Lakh Rs",
-    "source_name": "Knight Frank India Real Estate Residential Review",
+    "source_name": "Knight Frank India",
     "source_url": "https://www.knightfrank.co.in/",
     "reporting_period": "2024",
     "data_status": "Industry estimate"
   },
   "economy_office_space_demand": {
     "value": 60,
-    "display_value": "~60M sq ft/yr",
+    "display_value": "~60M sq ft/yr (2024)",
     "unit": "million sq ft/year",
-    "source_name": "CBRE / Colliers India Office Market Trends",
+    "source_name": "CBRE / Colliers",
     "source_url": "https://www.cbre.co.in/",
     "reporting_period": "2024",
     "data_status": "Industry estimate"
@@ -2076,7 +2085,7 @@
     "value": 0,
     "display_value": "DLF, Godrej, Lodha",
     "unit": "companies",
-    "source_name": "BSE India Market Capitalisation of Realty Index Constituents",
+    "source_name": "BSE India Realty Index",
     "source_url": "https://www.bseindia.com/",
     "reporting_period": "2025",
     "data_status": "Official"
@@ -3247,5 +3256,15 @@
     "source_url": "https://nhsrcindia.org/national-health-accounts-records",
     "reporting_period": "2022–23",
     "data_status": "Official"
+  },
+  "economy_me_projected_sector_size_2030": {
+    "value": 50,
+    "display_value": "~$50B (2030)",
+    "unit": "USD B",
+    "source_name": "FICCI-EY Media & Entertainment",
+    "source_url": "https://ficci.in/",
+    "reporting_period": "2030P",
+    "data_status": "Industry estimate",
+    "notes": "FICCI-EY M&E 2030 projection (~₹4.3L Cr at ~10% CAGR)"
   }
 }
