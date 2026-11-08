@@ -189,7 +189,75 @@
         key === 'aai_domestic_passengers'
       ) && ref;
 
-      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited && !isQuickCommerceAudited && !isMobilityAudited) {
+      // Dedicated check for audited Section 07 EdTech & online education metrics where authoritative updates supersede stale observations
+      const isEdtechAudited = (
+        key === 'edtech_market_size_2026' ||
+        key === 'edtech_edtech_market_size_2025' ||
+        key === 'edtech_cagr_2026_2034' ||
+        key === 'edtech_cagr_2025_2035' ||
+        key === 'edtech_k12_share' ||
+        key === 'edtech_online_education_market_size' ||
+        key === 'edtech_test_prep_market_size' ||
+        key === 'edtech_projected_market_2030_31' ||
+        key === 'edtech_test_prep_cagr' ||
+        key === 'edtech_school_students' ||
+        key === 'edtech_student_population_base' ||
+        key === 'edtech_schools' ||
+        key === 'edtech_schools_total' ||
+        key === 'edtech_teachers' ||
+        key === 'edtech_pupil_teacher_ratio' ||
+        key === 'edtech_schools_with_computers' ||
+        key === 'edtech_schools_with_internet' ||
+        key === 'edtech_pw_paid_users' ||
+        key === 'edtech_edtech_users_today' ||
+        key === 'edtech_pw_revenue_q3' ||
+        key === 'edtech_funding_2024' ||
+        key === 'edtech_college_students' ||
+        key === 'edtech_engineering_grads_yr' ||
+        key === 'edtech_mba_grads_yr' ||
+        key === 'edtech_iits' ||
+        key === 'edtech_iims' ||
+        key === 'edtech_literacy_rate' ||
+        key === 'edtech_govt_spend_on_education_gdp'
+      ) && ref;
+
+      // Dedicated check for audited Section 08 Healthcare metrics where authoritative updates supersede stale observations
+      const isHealthcareAudited = (
+        key === 'healthcare_market_size_projected' ||
+        key === 'healthcare_market_size_2025' ||
+        key === 'healthcare_expenditure_pct_gdp' ||
+        key === 'healthcare_total_health_expenditure_pct_gdp' ||
+        key === 'healthcare_govt_health_expenditure_pct_gdp' ||
+        key === 'healthcare_govt_expenditure_share' ||
+        key === 'healthcare_private_expenditure_share' ||
+        key === 'healthcare_per_capita_expenditure' ||
+        key === 'healthcare_out_of_pocket_expenditure' ||
+        key === 'healthcare_health_insured_lives' ||
+        key === 'healthcare_health_insurance_penetration' ||
+        key === 'healthcare_hospitals' ||
+        key === 'healthcare_hospital_beds_total' ||
+        key === 'healthcare_hospital_beds_per_1000' ||
+        key === 'healthcare_registered_doctors' ||
+        key === 'healthcare_doctors_per_1000' ||
+        key === 'healthcare_nurses_registered' ||
+        key === 'healthcare_primary_health_centres' ||
+        key === 'healthcare_diagnostic_market_size' ||
+        key === 'healthcare_pharmacies' ||
+        key === 'bonus_life_expectancy_at_birth' ||
+        key === 'healthcare_life_expectancy' ||
+        key === 'healthcare_infant_mortality_rate' ||
+        key === 'healthcare_maternal_mortality_ratio' ||
+        key === 'healthcare_annual_births' ||
+        key === 'healthcare_diabetics' ||
+        key === 'healthcare_hypertension_patients' ||
+        key === 'healthcare_immunisation_coverage' ||
+        key === 'healthcare_mental_health_treatment_gap' ||
+        key === 'healthcare_pharma_market_size' ||
+        key === 'healthcare_medical_devices_market' ||
+        key === 'healthcare_telemedicine_consultations'
+      ) && ref;
+
+      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited && !isQuickCommerceAudited && !isMobilityAudited && !isEdtechAudited && !isHealthcareAudited) {
         // Priority 1: Verified Live Backend Observation (always overrides reference data)
         el.classList.remove('ref-metric');
         el.classList.add('verified-metric');
