@@ -574,7 +574,6 @@
 
   // ---- Category Menu Drawer ----
   var menuBtn = document.getElementById('menuBtn');
-  var controlMenuBtn = document.getElementById('controlMenuBtn');
   var menuCloseBtn = document.getElementById('menuCloseBtn');
   var menuDrawer = document.getElementById('menuDrawer');
   var menuOverlay = document.getElementById('menuOverlay');
@@ -587,7 +586,6 @@
     menuDrawer.setAttribute('aria-hidden', 'false');
     menuOverlay.setAttribute('aria-hidden', 'false');
     if (menuBtn) menuBtn.setAttribute('aria-expanded', 'true');
-    if (controlMenuBtn) controlMenuBtn.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
   }
 
@@ -598,12 +596,10 @@
     menuDrawer.setAttribute('aria-hidden', 'true');
     menuOverlay.setAttribute('aria-hidden', 'true');
     if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
-    if (controlMenuBtn) controlMenuBtn.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   }
 
   if (menuBtn) menuBtn.addEventListener('click', openMenu);
-  if (controlMenuBtn) controlMenuBtn.addEventListener('click', openMenu);
   if (menuCloseBtn) menuCloseBtn.addEventListener('click', closeMenu);
   if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
 
