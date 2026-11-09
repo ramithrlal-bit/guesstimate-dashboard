@@ -586,7 +586,6 @@
     menuDrawer.setAttribute('aria-hidden', 'false');
     menuOverlay.setAttribute('aria-hidden', 'false');
     if (menuBtn) menuBtn.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
   }
 
   function closeMenu() {
@@ -596,7 +595,6 @@
     menuDrawer.setAttribute('aria-hidden', 'true');
     menuOverlay.setAttribute('aria-hidden', 'true');
     if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
   }
 
   if (menuBtn) menuBtn.addEventListener('click', openMenu);
@@ -609,30 +607,53 @@
     }
   });
 
+  function goToSection(targetId) {
+    var targetSec = document.getElementById(targetId);
+    if (!targetSec) return;
+
+    // Reset search
+    if (searchInput && searchInput.value) {
+      searchInput.value = '';
+    }
+
+    // Reset category filter if not 'all' so target section is visible
+    if (activeCat !== 'all') {
+      chips.forEach(function(c) { c.classList.remove('active'); });
+      var allChip = document.querySelector('.chip[data-cat="all"]');
+      if (allChip) allChip.classList.add('active');
+      activeCat = 'all';
+    }
+    applyFilter();
+
+    // Close menu drawer immediately
+    closeMenu();
+
+    // Calculate exact scroll target with sticky control bar dynamically accounted for
+    var controlbar = document.querySelector('.controlbar');
+    var barHeight = controlbar ? controlbar.getBoundingClientRect().height : 70;
+    var paddingGap = 16; // breathing space between sticky header and category starting point
+    var totalOffset = barHeight + paddingGap;
+
+    var secTop = targetSec.getBoundingClientRect().top + window.pageYOffset;
+    var targetY = Math.max(0, Math.round(secTop - totalOffset));
+
+    window.scrollTo({
+      top: targetY,
+      behavior: 'smooth'
+    });
+
+    if (history && history.replaceState) {
+      history.replaceState(null, '', '#' + targetId);
+    }
+  }
+
   menuNavItems.forEach(function(item) {
     item.addEventListener('click', function(e) {
       e.preventDefault();
-      var targetId = item.getAttribute('href').replace('#', '');
-      var targetSec = document.getElementById(targetId);
-      closeMenu();
-
-      // Ensure target section is visible by resetting category filter and search
-      if (activeCat !== 'all') {
-        chips.forEach(function(c) { c.classList.remove('active'); });
-        var allChip = document.querySelector('.chip[data-cat="all"]');
-        if (allChip) allChip.classList.add('active');
-        activeCat = 'all';
-      }
-      if (searchInput && searchInput.value) {
-        searchInput.value = '';
-      }
-      applyFilter();
-
-      if (targetSec) {
-        setTimeout(function() {
-          targetSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 120);
-      }
+      var href = item.getAttribute('href') || (this && this.getAttribute('href'));
+      if (!href) return;
+      var targetId = href.replace('#', '');
+      goToSection(targetId);
     });
   });
 

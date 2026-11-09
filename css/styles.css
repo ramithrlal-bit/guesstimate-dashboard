@@ -393,9 +393,14 @@ h1.title {
 section.sec {
   padding: 56px 0 44px;
   border-bottom: 1px solid var(--line-soft);
-  scroll-margin-top: 70px;
+  scroll-margin-top: 110px;
   min-width: 0;
   max-width: 100%;
+}
+@media (max-width: 980px) {
+  section.sec {
+    scroll-margin-top: 140px;
+  }
 }
 section.sec:last-of-type {
   border-bottom: none;
@@ -1523,6 +1528,7 @@ footer hr {
   opacity: 0;
   pointer-events: none;
   transition: opacity .25s ease;
+  touch-action: none;
 }
 .menu-overlay.open {
   opacity: 1;
