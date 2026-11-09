@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20261109_polish">
+<link rel="stylesheet" href="css/styles.css?v=20261110_sources">
 <!-- Supabase JS Client -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="data/reference_data.js?v=20261030_v4"></script>
@@ -61,7 +61,8 @@
       <button class="chip" data-cat="frameworks">Frameworks</button>
       <button class="chip" data-cat="interview">Interview</button>
       <button class="chip" data-cat="bonus">Bonus GK</button>
-    </div>
+    
+      <button class="chip" data-cat="sources">Sources</button></div>
   </div>
 </div>
 
@@ -74,14 +75,14 @@
   <p class="sec-note">India's five load-bearing anchors, then the full state-by-state map. Every guesstimate that starts with "assume India has..." starts here.</p>
 
   <div class="grid">
-    <div class="card accent" data-cat="population"><div class="card-head">Total Population</div><span class="v" data-metric="pop_india_total">~1.477B</span><div class="card-footer"><span class="card-source">UN World Population Prospects 2024, 1 July...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="population"><div class="card-head">Urban Population</div><span class="v" data-metric="population_urban_population">~36% · ~522M</span><div class="card-footer"><span class="card-source">World Bank · 2025</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="population"><div class="card-head">Rural Population</div><span class="v" data-metric="population_rural_population">~64% · ~941M</span><div class="card-footer"><span class="card-source">World Bank · 2025</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="population"><div class="card-head">Working-Age (15–64)</div><span class="v" data-metric="population_working_age_15_64">68% · ~1.004B</span><div class="card-footer"><span class="card-source">UNFPA State of World Population 2025 · 202...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="population"><div class="card-head">Median Age</div><span class="v" data-metric="population_median_age">29.2 yrs</span><div class="card-footer"><span class="card-source">UN Population Division, World Population P...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="population"><div class="card-head">Households</div><span class="v" data-metric="pop_households">~305M</span><div class="card-footer"><span class="card-source">MoSPI · 2025 Projection</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="population"><div class="card-head">Average Household Size</div><span class="v" data-metric="pop_avg_hh_size">4.4</span><div class="card-footer"><span class="card-source">National Family Health Survey · 2019-21</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="population"><div class="card-head">Male / Female Population</div><span class="v" data-metric="population_male_female_population">755M / 709M</span><div class="card-footer"><span class="card-source">World Bank · 2025</span><span class="card-type">Stock</span></div></div>
+    <div class="card accent" data-cat="population"><div class="card-head">Total Population</div><span class="v" data-metric="pop_india_total">~1.477B</span></div>
+    <div class="card" data-cat="population"><div class="card-head">Urban Population</div><span class="v" data-metric="population_urban_population">~36% · ~522M</span></div>
+    <div class="card" data-cat="population"><div class="card-head">Rural Population</div><span class="v" data-metric="population_rural_population">~64% · ~941M</span></div>
+    <div class="card" data-cat="population"><div class="card-head">Working-Age (15–64)</div><span class="v" data-metric="population_working_age_15_64">68% · ~1.004B</span></div>
+    <div class="card" data-cat="population"><div class="card-head">Median Age</div><span class="v" data-metric="population_median_age">29.2 yrs</span></div>
+    <div class="card" data-cat="population"><div class="card-head">Households</div><span class="v" data-metric="pop_households">~305M</span></div>
+    <div class="card" data-cat="population"><div class="card-head">Average Household Size</div><span class="v" data-metric="pop_avg_hh_size">4.4</span></div>
+    <div class="card" data-cat="population"><div class="card-head">Male / Female Population</div><span class="v" data-metric="population_male_female_population">755M / 709M</span></div>
   </div>
 
   <div class="sub-title">State-by-state population</div>
@@ -143,7 +144,7 @@
           </tbody>
         </table>
         <p class="tier-note">This is the complete list — only these 8 cities are officially "X-class" (Dept. of Expenditure, 7th CPC), the closest thing India has to a formal Tier-1 definition. Figures are urban-agglomeration estimates that vary by source.</p>
-      <div class="card-footer"><span class="card-source">City Class Distribution</span><span class="card-type">Stock</span></div></div>
+      </div>
     </details>
 
     <details class="card tier-card" data-cat="population">
@@ -173,7 +174,7 @@
           </tbody>
         </table>
         <p class="tier-note">A sample of the largest — the government's "Y-class" list runs to around 90 cities and towns; all Y-class areas together are estimated to house ~250M people. Everything popularly called "Tier 2" in India sits in this one official band, not a separate rung below it.</p>
-      <div class="card-footer"><span class="card-source">City Class Distribution</span><span class="card-type">Stock</span></div></div>
+      </div>
     </details>
 
     <details class="card tier-card" data-cat="population">
@@ -186,7 +187,7 @@
           <li>Fastest-growing tier by e-commerce and fintech adoption rate, off a smaller base</li>
         </ul>
         <p class="tier-note">Too numerous and too small individually to list city-by-city with reliable figures — shown as characteristics instead of a table.</p>
-      <div class="card-footer"><span class="card-source">City Class Distribution</span><span class="card-type">Stock</span></div></div>
+      </div>
     </details>
 
     <details class="card tier-card" data-cat="population">
@@ -198,10 +199,10 @@
           <li>~65% of India's rural population still depends primarily on agriculture</li>
           <li>Rural internet and UPI adoption is the fastest-growing segment nationally, off a smaller base</li>
         </ul>
-      <div class="card-footer"><span class="card-source">City Class Distribution</span><span class="card-type">Stock</span></div></div>
+      </div>
     </details>
 
-    <div class="card" data-cat="population"><div class="card-head">India's Global Rank by Population</div><span class="v" data-metric="population_india_s_global_rank_by_population">1st</span><div class="card-footer"><span class="card-source">UN Department of Economic and Social Affai...</span><span class="card-type">Stock</span></div></div>
+    <div class="card" data-cat="population"><div class="card-head">India's Global Rank by Population</div><span class="v" data-metric="population_india_s_global_rank_by_population">1st</span></div>
   </div>
   <p class="sec-note" style="margin:12px 0 0;">"Tier 1/2/3" isn't one single official ranking in India — it's popular shorthand for the government's X/Y/Z classification (Department of Expenditure, used for HRA), which is what's shown here: X = Tier 1 (8 metros), Y = Tier 2 (~90 mid-size cities), Z = Tier 3 (everything else). Real-estate and market-research reports sometimes use their own, looser tiering — so a city's "tier" can genuinely differ by source.</p>
 
@@ -218,9 +219,9 @@
     </table>
   </div>
   <div class="grid cols-3" style="margin-top:12px;">
-    <div class="card accent" data-cat="population"><div class="card-head">India Under 25 Years Old</div><span class="v" data-metric="population_india_under_25_years_old">~43% · ~630M</span><div class="card-footer"><span class="card-source">MoHFW Population Projections · 2024</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="population"><div class="card-head">India of Working Age</div><span class="v" data-metric="population_india_of_working_age_15_64">68% · ~1.004B</span><div class="card-footer"><span class="card-source">UNFPA State of World Population 2025 · 202...</span><span class="card-type">Stock</span></div></div>
-    <div class="card teal" data-cat="population"><div class="card-head">Median Age</div><span class="v" data-metric="population_median_age_vs_china_39_us_38">29.2 yrs</span><div class="card-footer"><span class="card-source">UN Population Division, World Population P...</span><span class="card-type">Stock</span></div></div>
+    <div class="card accent" data-cat="population"><div class="card-head">India Under 25 Years Old</div><span class="v" data-metric="population_india_under_25_years_old">~43% · ~630M</span></div>
+    <div class="card" data-cat="population"><div class="card-head">India of Working Age</div><span class="v" data-metric="population_india_of_working_age_15_64">68% · ~1.004B</span></div>
+    <div class="card teal" data-cat="population"><div class="card-head">Median Age</div><span class="v" data-metric="population_median_age_vs_china_39_us_38">29.2 yrs</span></div>
   </div>
   <p class="sec-note" style="margin:10px 0 0;">Shares total 99% due to integer rounding (unrounded: 0–14 is 24.4%, 15–64 is 68.1%, 65+ is 7.5%, totaling 100.0%). Sourced from UNFPA 2025 estimates; headcounts calculated from UN WPP 2026 baseline (~1.4766B). Working-age (15–64) is maintained as a cohesive demographic band.</p>
 
@@ -263,67 +264,67 @@
     <div class="card accent" data-cat="digital" title="Definition: Unique people using the internet
 Unit: people
 Source: DataReportal / Kepios (Oct 2025)
-Note: Penetration 70.0% of ~1.47B population. Not derived from TRAI subscriber counts."><div class="card-head">Internet Users</div><span class="v" data-metric="digital_internet_users">1.03B internet users</span><div class="card-footer"><span class="card-source">DataReportal / Kepios (Oct 2025)</span><span class="card-type">Stock</span></div></div>
+Note: Penetration 70.0% of ~1.47B population. Not derived from TRAI subscriber counts."><div class="card-head">Internet Users</div><span class="v" data-metric="digital_internet_users">1.03B internet users</span></div>
     <div class="card" data-cat="digital" title="Definition: Telecom subscriptions/connections, not unique people
 Unit: subscriptions
 Source: TRAI (Jun 2026)
-Note: Includes fixed and wireless internet subscriptions; higher than internet users because one person may have multiple connections."><div class="card-head">Internet Subscribers</div><span class="v" data-metric="digital_internet_subscribers">1.11B internet subscribers</span><div class="card-footer"><span class="card-source">TRAI (Jun 2026)</span><span class="card-type">Stock</span></div></div>
+Note: Includes fixed and wireless internet subscriptions; higher than internet users because one person may have multiple connections."><div class="card-head">Internet Subscribers</div><span class="v" data-metric="digital_internet_subscribers">1.11B internet subscribers</span></div>
     <div class="card" data-cat="digital" title="Definition: Broadband connections
 Unit: subscriptions
 Source: TRAI (Jun 2026)
-Note: Counts broadband data connections (>512 Kbps), not unique individuals."><div class="card-head">Broadband Subscribers</div><span class="v" data-metric="digital_broadband_subscribers">1.09B broadband subscribers</span><div class="card-footer"><span class="card-source">TRAI (Jun 2026)</span><span class="card-type">Stock</span></div></div>
+Note: Counts broadband data connections (>512 Kbps), not unique individuals."><div class="card-head">Broadband Subscribers</div><span class="v" data-metric="digital_broadband_subscribers">1.09B broadband subscribers</span></div>
     <div class="card" data-cat="digital" title="Definition: Active cellular mobile connections/SIMs
 Unit: connections
 Source: GSMA Intelligence via DataReportal (late 2025)
-Note: Equates to 72.5% of ~1.47B population. Not equal to smartphone users or unique mobile users."><div class="card-head">Mobile Connections</div><span class="v" data-metric="digital_mobile_connections">1.06B mobile connections</span><div class="card-footer"><span class="card-source">GSMA / DataReportal (late 2025)</span><span class="card-type">Stock</span></div></div>
+Note: Equates to 72.5% of ~1.47B population. Not equal to smartphone users or unique mobile users."><div class="card-head">Mobile Connections</div><span class="v" data-metric="digital_mobile_connections">1.06B mobile connections</span></div>
     <div class="card" data-cat="digital" title="Definition: TRAI active wireless/mobile subscriptions
 Unit: subscriptions
 Source: TRAI (Apr 2026)
-Note: Measures active SIM subscriptions on date of peak VLR, not unique people."><div class="card-head">Active Wireless Subscribers</div><span class="v" data-metric="digital_unique_mobile_subscribers">1.19B active wireless subscribers</span><div class="card-footer"><span class="card-source">TRAI (Apr 2026)</span><span class="card-type">Stock</span></div></div>
+Note: Measures active SIM subscriptions on date of peak VLR, not unique people."><div class="card-head">Active Wireless Subscribers</div><span class="v" data-metric="digital_unique_mobile_subscribers">1.19B active wireless subscribers</span></div>
     <div class="card" data-cat="digital" title="Definition: Gross wireline + wireless telephone subscriptions
 Unit: subscriptions
 Source: TRAI (Sep 2026)
-Note: 1,368.10M gross telephone subscriptions (1,319.19M wireless + 48.91M wireline). Measures gross subscriptions, not unique people."><div class="card-head">Total Telephone Subscribers</div><span class="v" data-metric="trai_telephone_subscribers_total">~1.368B telephone subscribers</span><div class="card-footer"><span class="card-source">TRAI (Sep 2026)</span><span class="card-type">Stock</span></div></div>
+Note: 1,368.10M gross telephone subscriptions (1,319.19M wireless + 48.91M wireline). Measures gross subscriptions, not unique people."><div class="card-head">Total Telephone Subscribers</div><span class="v" data-metric="trai_telephone_subscribers_total">~1.368B telephone subscribers</span></div>
     <div class="card" data-cat="digital" title="Definition: Active internet users residing in urban areas
 Unit: people
 Source: IAMAI / Kantar (2025)
-Note: 410M active urban internet users (~76.6% urban penetration against ~535M urban population base)."><div class="card-head">Urban Internet Users</div><span class="v" data-metric="digital_urban_internet_users">~410M urban internet users</span><div class="card-footer"><span class="card-source">IAMAI / Kantar (2025)</span><span class="card-type">Stock</span></div></div>
+Note: 410M active urban internet users (~76.6% urban penetration against ~535M urban population base)."><div class="card-head">Urban Internet Users</div><span class="v" data-metric="digital_urban_internet_users">~410M urban internet users</span></div>
     <div class="card" data-cat="digital" title="Definition: Active internet users residing in rural areas
 Unit: people
 Source: IAMAI / Kantar (2025)
-Note: 548M active rural internet users (~58.2% rural penetration against ~942M rural population base)."><div class="card-head">Rural Internet Users</div><span class="v" data-metric="digital_rural_internet_users">~548M rural internet users</span><div class="card-footer"><span class="card-source">IAMAI / Kantar (2025)</span><span class="card-type">Stock</span></div></div>
+Note: 548M active rural internet users (~58.2% rural penetration against ~942M rural population base)."><div class="card-head">Rural Internet Users</div><span class="v" data-metric="digital_rural_internet_users">~548M rural internet users</span></div>
     <div class="card" data-cat="digital" title="Definition: Active smartphones in regular use
 Unit: devices
 Source: Counterpoint Research (2025)
-Note: 740M active smartphones in use in India (~14% of global active installed base)."><div class="card-head">Smartphone Installed Base</div><span class="v" data-metric="digital_smartphone_users">~740M active smartphones</span><div class="card-footer"><span class="card-source">Counterpoint Research (2025)</span><span class="card-type">Stock</span></div></div>
+Note: 740M active smartphones in use in India (~14% of global active installed base)."><div class="card-head">Smartphone Installed Base</div><span class="v" data-metric="digital_smartphone_users">~740M active smartphones</span></div>
     <div class="card" data-cat="digital" title="Definition: Active 2G/4G feature phones in use
 Unit: devices
 Source: Counterpoint Research (2025)
-Note: 200M–220M active feature phones in use, including ~35M–40M 4G feature phones (JioBharat, Lava)."><div class="card-head">Feature Phone Installed Base</div><span class="v" data-metric="digital_feature_phone_users">~200M–220M feature phones</span><div class="card-footer"><span class="card-source">Counterpoint Research (2025)</span><span class="card-type">Stock</span></div></div>
+Note: 200M–220M active feature phones in use, including ~35M–40M 4G feature phones (JioBharat, Lava)."><div class="card-head">Feature Phone Installed Base</div><span class="v" data-metric="digital_feature_phone_users">~200M–220M feature phones</span></div>
     <div class="card" data-cat="digital" title="Definition: Commercial 5G mobile subscriptions
 Unit: subscriptions
 Source: Ericsson Mobility Report (2025)
-Note: Commercial 5G subscriptions in India grew to 394M–430M by 2025 (~35% of total mobile subscriptions)."><div class="card-head">5G Subscriptions</div><span class="v" data-metric="digital_5g_users">~394M–430M 5G subscriptions</span><div class="card-footer"><span class="card-source">Ericsson Mobility (2025)</span><span class="card-type">Stock</span></div></div>
+Note: Commercial 5G subscriptions in India grew to 394M–430M by 2025 (~35% of total mobile subscriptions)."><div class="card-head">5G Subscriptions</div><span class="v" data-metric="digital_5g_users">~394M–430M 5G subscriptions</span></div>
     <div class="card teal" data-cat="digital" title="Definition: Active social-media user identities; may include multiple accounts per person
 Unit: user identities
 Source: DataReportal / Kepios (Oct 2025)
-Note: Penetration: 34.1% of population (~1.47B); 48.7% of internet users (1.03B). Do not label as unique people."><div class="card-head">Social-media Identities</div><span class="v" data-metric="digital_social_media_user_identities">500M social-media user identities</span><div class="card-footer"><span class="card-source">Kepios (Oct 2025)</span><span class="card-type">Stock</span></div></div>
+Note: Penetration: 34.1% of population (~1.47B); 48.7% of internet users (1.03B). Do not label as unique people."><div class="card-head">Social-media Identities</div><span class="v" data-metric="digital_social_media_user_identities">500M social-media user identities</span></div>
     <div class="card accent" data-cat="digital" title="Definition: Monthly UPI transactions (Value: ₹29.82 lakh crore as of August 2026)
 Unit: transactions
 Source: NPCI Product Statistics (Aug 2026)
-Note: Monthly volume: 24.51B transactions worth ₹29.82 lakh crore (as of August 2026)."><div class="card-head">Monthly UPI Volume</div><span class="v" data-metric="digital_upi_monthly_transactions">24.51B UPI transactions</span><div class="card-footer"><span class="card-source">NPCI (Aug 2026) · ₹29.82L Cr</span><span class="card-type">Flow</span></div></div>
+Note: Monthly volume: 24.51B transactions worth ₹29.82 lakh crore (as of August 2026)."><div class="card-head">Monthly UPI Volume</div><span class="v" data-metric="digital_upi_monthly_transactions">24.51B UPI transactions</span></div>
     <div class="card" data-cat="digital" title="Definition: Daily average UPI transactions
 Unit: transactions/day
 Source: Derived from NPCI Product Statistics (Aug 2026)
-Note: Calculated as August 2026 monthly volume (24.51B) ÷ 31 days = ~791M/day. Do not present this as a constant across all months."><div class="card-head">Daily Avg. UPI Transactions</div><span class="v" data-metric="digital_upi_daily_transactions">~791M UPI transactions per day</span><div class="card-footer"><span class="card-source">Derived NPCI (Aug 2026)</span><span class="card-type">Stock</span></div></div>
+Note: Calculated as August 2026 monthly volume (24.51B) ÷ 31 days = ~791M/day. Do not present this as a constant across all months."><div class="card-head">Daily Avg. UPI Transactions</div><span class="v" data-metric="digital_upi_daily_transactions">~791M UPI transactions per day</span></div>
     <div class="card" data-cat="digital" title="Definition: Total annual UPI transactions for FY 2025–26 (Value: ₹314 lakh crore)
 Unit: transactions
 Source: NPCI / PIB (FY2025–26)
-Note: 24,161.69 crore total UPI transactions for FY 2025–26 with aggregate value of ₹314 lakh crore."><div class="card-head">Annual UPI Volume</div><span class="v" data-metric="digital_upi_annual_transactions">24,161.69 crore UPI transactions</span><div class="card-footer"><span class="card-source">NPCI / PIB (FY2025–26) · ₹314L Cr</span><span class="card-type">Flow</span></div></div>
+Note: 24,161.69 crore total UPI transactions for FY 2025–26 with aggregate value of ₹314 lakh crore."><div class="card-head">Annual UPI Volume</div><span class="v" data-metric="digital_upi_annual_transactions">24,161.69 crore UPI transactions</span></div>
     <div class="card" data-cat="digital" title="Definition: Reported unique UPI users in India
 Unit: users
 Source: Secondary reporting; verify against NPCI before treating as official (Early 2026)
-Note: User count is less standardized than transaction volume/value."><div class="card-head">Reported Unique UPI Users</div><span class="v" data-metric="digital_upi_users">500M+ reported unique UPI users</span><div class="card-footer"><span class="card-source">Secondary reporting (Early 2026)</span><span class="card-type">Stock</span></div></div>
+Note: User count is less standardized than transaction volume/value."><div class="card-head">Reported Unique UPI Users</div><span class="v" data-metric="digital_upi_users">500M+ reported unique UPI users</span></div>
   </div>
 
   <div class="sub-title">Social media — platform by platform</div>
@@ -345,9 +346,9 @@ Note: User count is less standardized than transaction volume/value."><div class
 
   <div class="sub-title">Video &amp; watch time</div>
   <div class="grid cols-3">
-    <div class="card accent" data-cat="digital"><div class="card-head">Avg. Daily YouTube Watch Time</div><span class="v" data-metric="digital_avg_daily_video_watch_time_per_user_youtube">&gt;72 mins</span><div class="card-footer"><span class="card-source">Google for India · 2024-25</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="digital"><div class="card-head">Paid Video Subscriptions</div><span class="v" data-metric="digital_ott_subscribers">~216M</span><div class="card-footer"><span class="card-source">FICCI-EY Media and Entertainment Report · ...</span><span class="card-type">Stock</span></div></div>
-    <div class="card teal" data-cat="digital"><div class="card-head">Online Gamers</div><span class="v" data-metric="digital_mobile_gaming_users">~517M</span><div class="card-footer"><span class="card-source">FICCI-EY Media and Entertainment Report · ...</span><span class="card-type">Stock</span></div></div>
+    <div class="card accent" data-cat="digital"><div class="card-head">Avg. Daily YouTube Watch Time</div><span class="v" data-metric="digital_avg_daily_video_watch_time_per_user_youtube">&gt;72 mins</span></div>
+    <div class="card" data-cat="digital"><div class="card-head">Paid Video Subscriptions</div><span class="v" data-metric="digital_ott_subscribers">~216M</span></div>
+    <div class="card teal" data-cat="digital"><div class="card-head">Online Gamers</div><span class="v" data-metric="digital_mobile_gaming_users">~517M</span></div>
   </div>
   <p class="sec-note" style="margin:10px 0 0;">Note: Watch time reflects official YouTube Brandcast announcement for adults 18+ (&gt;72 mins/day). Paid video subscriptions (216M across 143M households) and online gamers (517M projected for 2025) are sourced from the annual FICCI-EY Media and Entertainment Report.</p>
 </section>
@@ -362,27 +363,27 @@ Note: User count is less standardized than transaction volume/value."><div class
         <div class="card accent" data-cat="fintech" title="Definition: Monthly transaction count; excludes same-account debit/credit transactions.
 Period: August 2026
 Source: NPCI Product Statistics, Aug 2026
-Type: Flow"><div class="card-head">Monthly UPI Volume</div><span class="v" data-metric="upi_vol_monthly">24.51B UPI transactions</span><div class="card-footer"><span class="card-source">NPCI Product Statistics</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Monthly UPI Volume</div><span class="v" data-metric="upi_vol_monthly">24.51B UPI transactions</span></div>
         <div class="card" data-cat="fintech" title="Definition: Total value of UPI transactions in the month.
 Period: August 2026
 Source: NPCI Product Statistics, Aug 2026
-Type: Flow"><div class="card-head">Monthly UPI Value</div><span class="v" data-metric="upi_val_monthly">₹29.82 lakh crore</span><div class="card-footer"><span class="card-source">NPCI Product Statistics</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Monthly UPI Value</div><span class="v" data-metric="upi_val_monthly">₹29.82 lakh crore</span></div>
         <div class="card" data-cat="fintech" title="Definition: Daily average UPI transactions (calculated: 24.51B ÷ 31 days = ~791M/day). Do not present this as a permanent constant.
 Period: August 2026
 Source: Derived from NPCI Product Statistics, Aug 2026
-Type: Flow"><div class="card-head">Daily Avg. UPI Transactions</div><span class="v" data-metric="fintech_daily_avg_upi_transactions">~791M UPI transactions/day</span><div class="card-footer"><span class="card-source">Derived (24.51B ÷ 31)</span><span class="card-type">Transaction</span></div></div>
+Type: Flow"><div class="card-head">Daily Avg. UPI Transactions</div><span class="v" data-metric="fintech_daily_avg_upi_transactions">~791M UPI transactions/day</span></div>
         <div class="card" data-cat="fintech" title="Definition: Approximately 241.6 billion transactions in the fiscal year.
 Period: FY2025–26
 Source: NPCI / PIB, FY2025–26
-Type: Flow"><div class="card-head">Annual UPI Volume</div><span class="v" data-metric="upi_vol_annual">24,161.69 crore UPI transactions</span><div class="card-footer"><span class="card-source">NPCI / PIB</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Annual UPI Volume</div><span class="v" data-metric="upi_vol_annual">24,161.69 crore UPI transactions</span></div>
         <div class="card" data-cat="fintech" title="Definition: Total value of UPI transactions in the fiscal year.
 Period: FY2025–26
 Source: NPCI / PIB, FY2025–26
-Type: Flow"><div class="card-head">Annual UPI Value</div><span class="v" data-metric="upi_val_annual">₹314 lakh crore</span><div class="card-footer"><span class="card-source">NPCI / PIB</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Annual UPI Value</div><span class="v" data-metric="upi_val_annual">₹314 lakh crore</span></div>
         <div class="card" data-cat="fintech" title="Definition: Users onboarded is not the same as monthly active users.
 Period: June 2026
 Source: NPCI, Jun 2026
-Type: Stock"><div class="card-head">Registered UPI Users</div><span class="v" data-metric="fintech_upi_unique_users">554.9M UPI users onboarded</span><div class="card-footer"><span class="card-source">NPCI Cumulative Base</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Registered UPI Users</div><span class="v" data-metric="fintech_upi_unique_users">554.9M UPI users onboarded</span></div>
       </div>
     </div>
     <div class="side">
@@ -403,28 +404,28 @@ Type: Stock"><div class="card-head">Registered UPI Users</div><span class="v" da
 Period: July 2026
 Source: RBI, Jul 2026
 Type: Stock
-Note: UPI is a much larger payment rail by transaction count; credit-card spend is a separate consumer-credit metric."><div class="card-head">Credit Cards Outstanding</div><span class="v" data-metric="fintech_credit_cards">122.86M credit cards outstanding</span><div class="card-footer"><span class="card-source">RBI Bankwise ATM/Cards</span><span class="card-type">Stock</span></div></div>
+Note: UPI is a much larger payment rail by transaction count; credit-card spend is a separate consumer-credit metric."><div class="card-head">Credit Cards Outstanding</div><span class="v" data-metric="fintech_credit_cards">122.86M credit cards outstanding</span></div>
     <div class="card" data-cat="fintech" title="Definition: Flow metric: total spending during the month.
 Period: July 2026
 Source: RBI, Jul 2026
 Type: Flow
-Note: UPI is a much larger payment rail by transaction count; credit-card spend is a separate consumer-credit metric."><div class="card-head">Monthly Credit-card Spend</div><span class="v" data-metric="fintech_credit_card_monthly_spend">₹2.08 lakh crore monthly credit-card spend</span><div class="card-footer"><span class="card-source">RBI Monthly Bulletin</span><span class="card-type">Flow</span></div></div>
+Note: UPI is a much larger payment rail by transaction count; credit-card spend is a separate consumer-credit metric."><div class="card-head">Monthly Credit-card Spend</div><span class="v" data-metric="fintech_credit_card_monthly_spend">₹2.08 lakh crore monthly credit-card spend</span></div>
     <div class="card" data-cat="fintech" title="Definition: Fiscal-year spend, not calendar-year spend. Flow metric: total credit card expenditures across POS and e-commerce.
 Period: FY2025–26
 Source: RBI, FY2025–26
-Type: Flow"><div class="card-head">Annual Credit-card Spend</div><span class="v" data-metric="fintech_credit_card_annual_spend">₹23.62 lakh crore credit-card spend</span><div class="card-footer"><span class="card-source">RBI Payment Systems</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Annual Credit-card Spend</div><span class="v" data-metric="fintech_credit_card_annual_spend">₹23.62 lakh crore credit-card spend</span></div>
     <div class="card" data-cat="fintech" title="Definition: Do not compare directly with UPI volume without noting the scale difference. Flow metric: monthly transaction count.
 Period: June 2026
 Source: RBI, Jun 2026
-Type: Flow"><div class="card-head">Credit-card Transactions</div><span class="v" data-metric="fintech_credit_card_transactions">58.1 crore credit-card transactions</span><div class="card-footer"><span class="card-source">RBI Payment Indicators</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Credit-card Transactions</div><span class="v" data-metric="fintech_credit_card_transactions">58.1 crore credit-card transactions</span></div>
     <div class="card" data-cat="fintech" title="Definition: Measures sanctioned loan value, not annual market revenue or outstanding loans.
 Period: Past five years
 Source: Redseer, Aug 2026
-Type: Flow"><div class="card-head">Digital Lending Sanctions</div><span class="v" data-metric="fintech_digital_lending_sanctions">₹2.2 trillion digital-lending sanctions over five years</span><div class="card-footer"><span class="card-source">Redseer (Aug 2026)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Digital Lending Sanctions</div><span class="v" data-metric="fintech_digital_lending_sanctions">₹2.2 trillion digital-lending sanctions over five years</span></div>
     <div class="card" data-cat="fintech" title="Definition: Deployment/acceptance-point count, not unique merchant count. Stock metric.
 Period: Q3 FY26
 Source: PwC India, Q3 FY26
-Type: Stock"><div class="card-head">QR-code Deployments</div><span class="v" data-metric="fintech_qr_code_deployments">734M QR-code deployments</span><div class="card-footer"><span class="card-source">PwC India Fintech Report</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">QR-code Deployments</div><span class="v" data-metric="fintech_qr_code_deployments">734M QR-code deployments</span></div>
   </div>
 
   <div class="sub-title">Fintech market, wealth &amp; digital payments</div>
@@ -432,27 +433,27 @@ Type: Stock"><div class="card-head">QR-code Deployments</div><span class="v" dat
     <div class="card" data-cat="fintech" title="Definition: Market-revenue estimate; not comparable with UPI transaction value or lending sanctions. Projected USD 109.06B by 2031.
 Period: 2026
 Source: Research and Markets, 2026
-Type: Market size"><div class="card-head">India Fintech Market Size</div><span class="v" data-metric="fintech_india_market_size">USD 51.3B India fintech market size</span><div class="card-footer"><span class="card-source">Research and Markets (Proj. $109.06B 2031)</span><span class="card-type">Stock</span></div></div>
+Type: Market size"><div class="card-head">India Fintech Market Size</div><span class="v" data-metric="fintech_india_market_size">USD 51.3B India fintech market size</span></div>
     <div class="card" data-cat="fintech" title="Definition: Assets under management is a stock metric, not annual inflows.
 Period: Q3 FY26
 Source: PwC India, Q3 FY26
-Type: Stock"><div class="card-head">Mutual-fund AUM</div><span class="v" data-metric="amfi_total_aum_cr">₹81.3 trillion mutual-fund AUM</span><div class="card-footer"><span class="card-source">PwC India Fintech Report</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Mutual-fund AUM</div><span class="v" data-metric="amfi_total_aum_cr">₹81.3 trillion mutual-fund AUM</span></div>
     <div class="card" data-cat="fintech" title="Definition: Monthly systematic investment plan inflows into mutual funds. Flow metric.
 Period: September 2026
 Source: AMFI Monthly SIP Inflows
-Type: Flow"><div class="card-head">Monthly SIP Inflow</div><span class="v" data-metric="fintech_monthly_sip_inflow">₹32,490 Cr</span><div class="card-footer"><span class="card-source">AMFI</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Monthly SIP Inflow</div><span class="v" data-metric="fintech_monthly_sip_inflow">₹32,490 Cr</span></div>
     <div class="card" data-cat="fintech" title="Definition: Total value of retail electronic and card payments. Flow metric.
 Period: FY 2024–25
 Source: RBI Annual Report
-Type: Flow"><div class="card-head">Retail Digital Payments Value</div><span class="v" data-metric="fintech_digital_payments_value_2025">₹849.12L Cr</span><div class="card-footer"><span class="card-source">RBI</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Retail Digital Payments Value</div><span class="v" data-metric="fintech_digital_payments_value_2025">₹849.12L Cr</span></div>
     <div class="card teal" data-cat="fintech" title="Definition: FinTech startups valued at $1B+ with primary operations in India. Stock metric.
 Period: 2026
 Source: DPIIT / Tracxn
-Type: Stock"><div class="card-head">FinTech Unicorns</div><span class="v" data-metric="fintech_fintech_unicorns">26+</span><div class="card-footer"><span class="card-source">DPIIT / Tracxn</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">FinTech Unicorns</div><span class="v" data-metric="fintech_fintech_unicorns">26+</span></div>
     <div class="card" data-cat="fintech" title="Definition: Projected user base for Buy Now Pay Later services. Stock metric.
 Period: 2026 proj.
 Source: Redseer Strategy Consultants
-Type: Stock"><div class="card-head">BNPL User Base</div><span class="v" data-metric="fintech_bnpl_users">80M+</span><div class="card-footer"><span class="card-source">2026 proj. · Redseer</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">BNPL User Base</div><span class="v" data-metric="fintech_bnpl_users">80M+</span></div>
   </div>
 
   <div class="sub-title">Banking system &amp; financial inclusion</div>
@@ -460,39 +461,39 @@ Type: Stock"><div class="card-head">BNPL User Base</div><span class="v" data-met
     <div class="card" data-cat="fintech" title="Definition: Total active debit cards issued by banks. Stock metric.
 Period: July 2026
 Source: RBI Bankwise ATM/Cards
-Type: Stock"><div class="card-head">Outstanding Debit Cards</div><span class="v" data-metric="fintech_debit_cards">1,005.2M</span><div class="card-footer"><span class="card-source">RBI</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Outstanding Debit Cards</div><span class="v" data-metric="fintech_debit_cards">1,005.2M</span></div>
     <div class="card" data-cat="fintech" title="Definition: Active prepaid payment instrument wallets. Stock metric.
 Period: July 2026
 Source: RBI Payment System Indicators
-Type: Stock"><div class="card-head">PPI Mobile Wallets</div><span class="v" data-metric="fintech_mobile_wallet_accounts">1.14B</span><div class="card-footer"><span class="card-source">RBI</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">PPI Mobile Wallets</div><span class="v" data-metric="fintech_mobile_wallet_accounts">1.14B</span></div>
     <div class="card" data-cat="fintech" title="Definition: Aggregate deposits with all scheduled commercial banks. Stock metric.
 Period: March 2026
 Source: RBI Scheduled Banks Statement
-Type: Stock"><div class="card-head">Scheduled Commercial Bank Deposits</div><span class="v" data-metric="fintech_total_bank_deposits_2025">₹268.48L Cr</span><div class="card-footer"><span class="card-source">RBI</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Scheduled Commercial Bank Deposits</div><span class="v" data-metric="fintech_total_bank_deposits_2025">₹268.48L Cr</span></div>
     <div class="card" data-cat="fintech" title="Definition: Total bank credit outstanding from scheduled commercial banks. Stock metric.
 Period: March 2026
 Source: RBI Scheduled Banks Statement
-Type: Stock"><div class="card-head">Scheduled Commercial Bank Credit</div><span class="v" data-metric="fintech_total_bank_credit_2025">₹223.55L Cr</span><div class="card-footer"><span class="card-source">RBI</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Scheduled Commercial Bank Credit</div><span class="v" data-metric="fintech_total_bank_credit_2025">₹223.55L Cr</span></div>
     <div class="card" data-cat="fintech" title="Definition: Gross non-performing assets ratio across all scheduled commercial banks. Stock metric.
 Period: March 2025
 Source: RBI Financial Stability Report
-Type: Stock"><div class="card-head">All-SCB Gross NPA</div><span class="v" data-metric="fintech_gross_npa_mar_2025_20_yr_low">2.31%</span><div class="card-footer"><span class="card-source">RBI</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">All-SCB Gross NPA</div><span class="v" data-metric="fintech_gross_npa_mar_2025_20_yr_low">2.31%</span></div>
     <div class="card" data-cat="fintech" title="Definition: Combined net profit of all public sector banks. Flow metric.
 Period: FY 2025–26
 Source: Ministry of Finance
-Type: Flow"><div class="card-head">Public Sector Bank Net Profit</div><span class="v" data-metric="fintech_psb_profit_fy25">₹1.98L Cr</span><div class="card-footer"><span class="card-source">Ministry of Finance</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Public Sector Bank Net Profit</div><span class="v" data-metric="fintech_psb_profit_fy25">₹1.98L Cr</span></div>
     <div class="card" data-cat="fintech" title="Definition: Operating bank reporting offices across India. Stock metric.
 Period: March 2026
 Source: RBI Directory of Commercial Bank Offices
-Type: Stock"><div class="card-head">Bank Reporting Offices</div><span class="v" data-metric="fintech_bank_branches">168,428</span><div class="card-footer"><span class="card-source">RBI</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Bank Reporting Offices</div><span class="v" data-metric="fintech_bank_branches">168,428</span></div>
     <div class="card" data-cat="fintech" title="Definition: Operating bank ATMs and cash recyclers. Stock metric.
 Period: March 2026
 Source: RBI Bankwise ATM/Cards
-Type: Stock"><div class="card-head">Bank ATMS &amp; Recyclers</div><span class="v" data-metric="fintech_atms">209,331</span><div class="card-footer"><span class="card-source">RBI</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Bank ATMS &amp; Recyclers</div><span class="v" data-metric="fintech_atms">209,331</span></div>
     <div class="card" data-cat="fintech" title="Definition: Total beneficiaries with operative accounts under PMJDY. Stock metric.
 Period: 21 October 2026
 Source: Department of Financial Services (DFS)
-Type: Stock"><div class="card-head">Jan Dhan Beneficiaries</div><span class="v" data-metric="fintech_bank_account_holders_jan_dhan">59.63 Cr</span><div class="card-footer"><span class="card-source">DFS / PMJDY</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Jan Dhan Beneficiaries</div><span class="v" data-metric="fintech_bank_account_holders_jan_dhan">59.63 Cr</span></div>
   </div>
 
   <div class="ex-group-title">Worked examples</div>
@@ -512,27 +513,27 @@ Type: Stock"><div class="card-head">Jan Dhan Beneficiaries</div><span class="v" 
         <div class="card accent" data-cat="ecommerce" title="Definition: Gross merchandise value for India’s e-retail market; this is not the same as total e-commerce market size.
 Period: 2025
 Source: Bain &amp; Flipkart, How India Shops Online 2026
-Type: Flow"><div class="card-head">Monthly GMV</div><span class="v" data-metric="ecommerce_annual_online_retail_gmv">$65–66B e-retail GMV</span><div class="card-footer"><span class="card-source">Bain &amp; Flipkart, How India Shops Online 2026</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Monthly GMV</div><span class="v" data-metric="ecommerce_annual_online_retail_gmv">$65–66B e-retail GMV</span></div>
         <div class="card" data-cat="ecommerce" title="Definition: Market-size estimate; scope differs from e-retail GMV and quick-commerce GOV. Do not use interchangeably with $65–66B e-retail GMV.
 Period: 2026
 Source: Mordor Intelligence, 2026
-Type: Flow"><div class="card-head">Total E-Commerce Market Size</div><span class="v" data-metric="ecommerce_market_size_2026_est">$159.3B India e-commerce market size</span><div class="card-footer"><span class="card-source">Mordor Intelligence, 2026</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Total E-Commerce Market Size</div><span class="v" data-metric="ecommerce_market_size_2026_est">$159.3B India e-commerce market size</span></div>
         <div class="card" data-cat="ecommerce" title="Definition: People who shop online; distinct from annual transacting users.
 Period: 2025
 Source: Bain &amp; Flipkart, How India Shops Online 2026
-Type: Stock"><div class="card-head">Online Shoppers</div><span class="v" data-metric="ecommerce_online_shoppers_2025">290–300M online shoppers</span><div class="card-footer"><span class="card-source">Bain &amp; Flipkart, How India Shops Online 2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Online Shoppers</div><span class="v" data-metric="ecommerce_online_shoppers_2025">290–300M online shoppers</span></div>
         <div class="card" data-cat="ecommerce" title="Definition: Denominator is internet users (~1.03B), not India’s total population.
 Period: 2025
 Source: Bain &amp; Flipkart, How India Shops Online 2026
-Type: Stock"><div class="card-head">Online Shopping Penetration</div><span class="v" data-metric="ecommerce_online_shopping_penetration">~30% of internet users</span><div class="card-footer"><span class="card-source">Bain &amp; Flipkart (Denominator: ~1.03B users)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Online Shopping Penetration</div><span class="v" data-metric="ecommerce_online_shopping_penetration">~30% of internet users</span></div>
         <div class="card" data-cat="ecommerce" title="Definition: Compound annual growth rate for e-retail; distinct from quarterly or annual YoY growth. Secondary note: 23–25% YoY growth in Q1 2026 — IBEF.
 Period: Through 2025
 Source: Bain &amp; Flipkart, How India Shops Online 2026
-Type: Flow"><div class="card-head">E-Retail CAGR</div><span class="v" data-metric="ecommerce_cagr_2025_2030">19–21% CAGR</span><div class="card-footer"><span class="card-source">Bain &amp; Flipkart (23–25% YoY Q1 2026 — IBEF)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">E-Retail CAGR</div><span class="v" data-metric="ecommerce_cagr_2025_2030">19–21% CAGR</span></div>
         <div class="card" data-cat="ecommerce" title="Definition: Global rank of India's e-retail market by online shopper base (2nd behind China).
 Period: 2025
 Source: Bain &amp; Flipkart
-Type: Stock"><div class="card-head">Global Rank (Online Shoppers)</div><span class="v" data-metric="ecommerce_india_s_global_rank_e_retail_market">2nd</span><div class="card-footer"><span class="card-source">Bain &amp; Flipkart (after China)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Global Rank (Online Shoppers)</div><span class="v" data-metric="ecommerce_india_s_global_rank_e_retail_market">2nd</span></div>
       </div>
     </div>
     <div class="side">
@@ -552,27 +553,27 @@ Type: Stock"><div class="card-head">Global Rank (Online Shoppers)</div><span cla
     <div class="card" data-cat="ecommerce" title="Definition: Users who transacted online during the year across commerce, payments, travel, and services; not identical to online shoppers.
 Period: FY2026
 Source: IBEF, FY2026
-Type: Stock"><div class="card-head">Annual Online Transacting Users</div><span class="v" data-metric="ecommerce_annual_online_transacting_users">320–340M annual online transacting users</span><div class="card-footer"><span class="card-source">IBEF, FY2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Annual Online Transacting Users</div><span class="v" data-metric="ecommerce_annual_online_transacting_users">320–340M annual online transacting users</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Online retail share of India total retail. Projected 14% by 2028. Do not display 14% as the current share.
 Period: 2024
 Source: IBEF
-Type: Stock"><div class="card-head">Online Retail Share of Total Retail</div><span class="v" data-metric="ecommerce_e_commerce_share_of_total_retail">8% of total retail</span><div class="card-footer"><span class="card-source">IBEF (Projected 14% by 2028)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Online Retail Share of Total Retail</div><span class="v" data-metric="ecommerce_e_commerce_share_of_total_retail">8% of total retail</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Refers to B2C transaction value, not the share of orders or users.
 Period: 2026
 Source: Mordor Intelligence, 2026
-Type: Flow"><div class="card-head">Mobile Share of B2C E-commerce</div><span class="v" data-metric="ecommerce_mobile_share_of_b2c_value">76.6% of B2C transaction value via mobile</span><div class="card-footer"><span class="card-source">Mordor Intelligence, 2026</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Mobile Share of B2C E-commerce</div><span class="v" data-metric="ecommerce_mobile_share_of_b2c_value">76.6% of B2C transaction value via mobile</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Market-share estimate is dated; do not present as a current 2026 share.
 Period: FY2023
 Source: FY2023 estimate
-Type: Stock"><div class="card-head">Flipkart Market Share</div><span class="v" data-metric="ecommerce_flipkart_market_share">~48% e-retail market share</span><div class="card-footer"><span class="card-source">FY2023 estimate (dated baseline)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Flipkart Market Share</div><span class="v" data-metric="ecommerce_flipkart_market_share">~48% e-retail market share</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Market-share estimate is dated; do not present as a current 2026 share.
 Period: FY2023
 Source: FY2023 estimate
-Type: Stock"><div class="card-head">Amazon India Market Share</div><span class="v" data-metric="ecommerce_amazon_market_share">~30–35% e-retail market share</span><div class="card-footer"><span class="card-source">FY2023 estimate (dated baseline)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Amazon India Market Share</div><span class="v" data-metric="ecommerce_amazon_market_share">~30–35% e-retail market share</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Store count is not the same as seller count; verify source before presenting as official.
 Period: Latest available estimate
 Source: Industry estimate
-Type: Stock"><div class="card-head">Active E-commerce Stores</div><span class="v" data-metric="ecommerce_active_stores_india">~6 lakh active e-commerce stores</span><div class="card-footer"><span class="card-source">Industry estimate</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Active E-commerce Stores</div><span class="v" data-metric="ecommerce_active_stores_india">~6 lakh active e-commerce stores</span></div>
   </div>
 
   <div class="sub-title">Quick commerce (q-commerce) scale &amp; retail context</div>
@@ -580,27 +581,27 @@ Type: Stock"><div class="card-head">Active E-commerce Stores</div><span class="v
     <div class="card accent" data-cat="ecommerce" title="Definition: GOV means gross order value across quick-commerce dark stores. Do not label this as GMV unless the source explicitly defines it as GMV.
 Period: FY2025
 Source: Industry estimate, FY2025
-Type: Flow"><div class="card-head">Quick-commerce GOV</div><span class="v" data-metric="ecommerce_quick_commerce_gov_fy25">~₹64,000 crore quick-commerce GOV</span><div class="card-footer"><span class="card-source">Industry estimate (~$7.6B GOV)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Quick-commerce GOV</div><span class="v" data-metric="ecommerce_quick_commerce_gov_fy25">~₹64,000 crore quick-commerce GOV</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Market-size estimates vary by methodology; other published 2026 estimates range from $3.65B to ₹1.90 trillion. Do not conflate quick-commerce market size with quick-commerce GOV.
 Period: 2026
 Source: MarkNtel Advisors, 2026
-Type: Flow"><div class="card-head">Quick-commerce Market Size</div><span class="v" data-metric="ecommerce_quick_commerce_market_size">$5.8B quick-commerce market size</span><div class="card-footer"><span class="card-source">MarkNtel Advisors, 2026</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Quick-commerce Market Size</div><span class="v" data-metric="ecommerce_quick_commerce_market_size">$5.8B quick-commerce market size</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Total retail merchandise market size in India across organized and unorganized retail channels.
 Period: 2025
 Source: Kearney / CII Retail Report
-Type: Stock"><div class="card-head">Total Retail Market</div><span class="v" data-metric="ecommerce_total_retail_market_2025">~$1.1T</span><div class="card-footer"><span class="card-source">Kearney / CII Retail Report</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Total Retail Market</div><span class="v" data-metric="ecommerce_total_retail_market_2025">~$1.1T</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Percentage share of organized retail (modern brick-and-mortar and online) in total Indian retail.
 Period: 2025
 Source: Kearney / BCG Indian Retail
-Type: Stock"><div class="card-head">Organized Retail Share</div><span class="v" data-metric="ecommerce_organized_retail_share">~24%</span><div class="card-footer"><span class="card-source">Kearney / BCG Indian Retail</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Organized Retail Share</div><span class="v" data-metric="ecommerce_organized_retail_share">~24%</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Estimated traditional unorganized neighborhood mom-and-pop grocery and provisions stores in India.
 Period: 2025
 Source: Kantar / CAIT
-Type: Stock"><div class="card-head">Kirana Stores</div><span class="v" data-metric="ecommerce_kirana_mom_and_pop_stores">12M+</span><div class="card-footer"><span class="card-source">Kantar / CAIT</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Kirana Stores</div><span class="v" data-metric="ecommerce_kirana_mom_and_pop_stores">12M+</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Projected count of online shoppers in India by calendar year 2030.
 Period: 2030 projection
 Source: Bain &amp; Company Projection
-Type: Stock"><div class="card-head">Projected Shoppers by 2030</div><span class="v" data-metric="ecommerce_projected_shoppers_2030">420–440M</span><div class="card-footer"><span class="card-source">Bain &amp; Company Projection</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Projected Shoppers by 2030</div><span class="v" data-metric="ecommerce_projected_shoppers_2030">420–440M</span></div>
   </div>
 
   <div class="sub-title">Categories &amp; basket economics</div>
@@ -608,35 +609,35 @@ Type: Stock"><div class="card-head">Projected Shoppers by 2030</div><span class=
     <div class="card" data-cat="ecommerce" title="Definition: Average order basket value across major Indian consumer e-commerce platforms.
 Period: 2025
 Source: Redseer Strategy Consultants
-Type: Flow"><div class="card-head">Average Order Value</div><span class="v" data-metric="ecommerce_average_order_value">Rs 1,200</span><div class="card-footer"><span class="card-source">Redseer Strategy Consultants</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Average Order Value</div><span class="v" data-metric="ecommerce_average_order_value">Rs 1,200</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Share of incremental e-commerce shoppers originating from Tier 2, Tier 3, and rural India.
 Period: 2025
 Source: Bain &amp; Company / Flipkart
-Type: Stock"><div class="card-head">Tier 2+ Contribution to Shoppers</div><span class="v" data-metric="ecommerce_tier_2_3_contribution">~60%</span><div class="card-footer"><span class="card-source">Bain &amp; Flipkart</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Tier 2+ Contribution to Shoppers</div><span class="v" data-metric="ecommerce_tier_2_3_contribution">~60%</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Share of consumer electronics and mobile devices in total e-retail GMV.
 Period: 2025
 Source: IBEF Category Mix
-Type: Flow"><div class="card-head">Electronics Category Share</div><span class="v" data-metric="ecommerce_electronics_share">~30%</span><div class="card-footer"><span class="card-source">IBEF Category Mix</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Electronics Category Share</div><span class="v" data-metric="ecommerce_electronics_share">~30%</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Share of apparel, footwear, and lifestyle accessories in total e-retail GMV.
 Period: 2025
 Source: IBEF / Bain Breakdown
-Type: Flow"><div class="card-head">Fashion &amp; Lifestyle Share</div><span class="v" data-metric="ecommerce_fashion_lifestyle_share">~25%</span><div class="card-footer"><span class="card-source">IBEF / Bain</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Fashion &amp; Lifestyle Share</div><span class="v" data-metric="ecommerce_fashion_lifestyle_share">~25%</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Share of online grocery and essentials (including quick commerce) in total e-retail GMV.
 Period: 2025
 Source: Bain / Redseer Category Share
-Type: Flow"><div class="card-head">Online Grocery Share</div><span class="v" data-metric="ecommerce_grocery_share">~15%</span><div class="card-footer"><span class="card-source">Bain / Redseer</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Online Grocery Share</div><span class="v" data-metric="ecommerce_grocery_share">~15%</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Share of beauty, personal care, and cosmetics in total e-retail GMV.
 Period: 2025
 Source: Nykaa / Redseer Beauty Report
-Type: Flow"><div class="card-head">Beauty &amp; Personal Care</div><span class="v" data-metric="ecommerce_bpc_share">~8%</span><div class="card-footer"><span class="card-source">Nykaa / Redseer</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Beauty &amp; Personal Care</div><span class="v" data-metric="ecommerce_bpc_share">~8%</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Estimated annual value of cross-border e-commerce exports from Indian sellers.
 Period: 2025
 Source: DGFT E-Commerce Exports
-Type: Flow"><div class="card-head">E-commerce Exports</div><span class="v" data-metric="ecommerce_exports_2025">~$4.5B</span><div class="card-footer"><span class="card-source">DGFT E-Commerce Exports</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">E-commerce Exports</div><span class="v" data-metric="ecommerce_exports_2025">~$4.5B</span></div>
     <div class="card" data-cat="ecommerce" title="Definition: Share of e-commerce parcel deliveries fulfilled using Cash on Delivery (COD) payment mode.
 Period: 2025
 Source: Bain &amp; Delhivery Logistics Analysis
-Type: Flow"><div class="card-head">Cash on Delivery Share</div><span class="v" data-metric="ecommerce_cash_on_delivery_share">~60%</span><div class="card-footer"><span class="card-source">Bain &amp; Delhivery Logistics</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Cash on Delivery Share</div><span class="v" data-metric="ecommerce_cash_on_delivery_share">~60%</span></div>
   </div>
 
   <div class="ex-group-title">Worked examples</div>
@@ -661,27 +662,27 @@ Type: Flow"><div class="card-head">Cash on Delivery Share</div><span class="v" d
         <div class="card accent" data-cat="quickcommerce" title="Definition: Gross merchandise value for India’s quick-commerce market. Do not use older FY2025 figures ($7–8B) as the current market size.
 Period: FY2026
 Source: Redseer / Bain–Flipkart, FY2026
-Type: Flow"><div class="card-head">Monthly GMV</div><span class="v" data-metric="quickcommerce_quick_commerce_gmv_fy26">$13–14B quick-commerce GMV</span><div class="card-footer"><span class="card-source">Redseer / Bain–Flipkart, FY2026</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Monthly GMV</div><span class="v" data-metric="quickcommerce_quick_commerce_gmv_fy26">$13–14B quick-commerce GMV</span></div>
         <div class="card" data-cat="quickcommerce" title="Definition: Monthly year-on-year GMV growth; distinct from FY2026 annual growth or CAGR. (~120% YoY GMV growth in FY2026).
 Period: January 2026
 Source: Redseer, January 2026
-Type: Flow"><div class="card-head">YoY GMV Growth</div><span class="v" data-metric="quickcommerce_yoy_gmv_growth_fy26">~100% YoY GMV growth</span><div class="card-footer"><span class="card-source">Redseer (~120% YoY in FY2026)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">YoY GMV Growth</div><span class="v" data-metric="quickcommerce_yoy_gmv_growth_fy26">~100% YoY GMV growth</span></div>
         <div class="card" data-cat="quickcommerce" title="Definition: Monthly active users across quick-commerce platforms; distinct from annual transacting users.
 Period: H1 2026
 Source: Redseer, H1 2026
-Type: Stock"><div class="card-head">Monthly Active Users</div><span class="v" data-metric="quickcommerce_monthly_transacting_users">60M+ monthly users</span><div class="card-footer"><span class="card-source">Redseer, H1 2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Monthly Active Users</div><span class="v" data-metric="quickcommerce_monthly_transacting_users">60M+ monthly users</span></div>
         <div class="card" data-cat="quickcommerce" title="Definition: Share of India’s online retail, not total offline-plus-online retail.
 Period: FY2026
 Source: Redseer, FY2026
-Type: Stock"><div class="card-head">Share of Online Retail</div><span class="v" data-metric="quickcommerce_share_of_online_retail">~17% of online retail</span><div class="card-footer"><span class="card-source">Redseer, FY2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Share of Online Retail</div><span class="v" data-metric="quickcommerce_share_of_online_retail">~17% of online retail</span></div>
         <div class="card" data-cat="quickcommerce" title="Definition: Market-wide daily order-volume estimate. Replaces older 2.5–3M orders/day estimate.
 Period: January 2026
 Source: Redseer, January 2026
-Type: Flow"><div class="card-head">Market Orders per Day</div><span class="v" data-metric="quickcommerce_daily_orders_market">~7.8M orders/day</span><div class="card-footer"><span class="card-source">Redseer, January 2026</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Market Orders per Day</div><span class="v" data-metric="quickcommerce_daily_orders_market">~7.8M orders/day</span></div>
         <div class="card" data-cat="quickcommerce" title="Definition: Market estimate includes quick-fulfilment warehouses and dark stores; company-reported count covers only the three major platforms (4,525 reported by Blinkit, Zepto, Swiggy Instamart in Q4 FY2026).
 Period: 2026
 Source: Industry estimate, 2026
-Type: Stock"><div class="card-head">Total Dark Stores</div><span class="v" data-metric="quickcommerce_total_dark_stores_2026">5,500+ dark stores</span><div class="card-footer"><span class="card-source">Industry estimate (4,525 top-3 reported Q4...</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Total Dark Stores</div><span class="v" data-metric="quickcommerce_total_dark_stores_2026">5,500+ dark stores</span></div>
       </div>
     </div>
     <div class="side">
@@ -701,27 +702,27 @@ Type: Stock"><div class="card-head">Total Dark Stores</div><span class="v" data-
     <div class="card" data-cat="quickcommerce" title="Definition: Top-three platform orders (Blinkit + Zepto + Swiggy Instamart); not necessarily total market orders.
 Period: FY2026
 Source: Company disclosures / Redseer, FY2026
-Type: Flow"><div class="card-head">Big-three Annual Orders</div><span class="v" data-metric="quickcommerce_top3_annual_orders_fy26">1.97B orders</span><div class="card-footer"><span class="card-source">Blinkit + Zepto + Swiggy Instamart</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Big-three Annual Orders</div><span class="v" data-metric="quickcommerce_top3_annual_orders_fy26">1.97B orders</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: This is Zepto-specific and must not be shown as the total quick-commerce market. Distinct from market monthly users (60M+).
 Period: FY2026
 Source: Zepto, FY2026
-Type: Stock"><div class="card-head">Zepto Annual Transacting Users</div><span class="v" data-metric="quickcommerce_zepto_annual_transacting_users">47.97M annual transacting users</span><div class="card-footer"><span class="card-source">Zepto (entity-specific, not total market)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Zepto Annual Transacting Users</div><span class="v" data-metric="quickcommerce_zepto_annual_transacting_users">47.97M annual transacting users</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Net average order value across major quick-commerce platforms; rounded operating benchmark. Do not present AOV as a fixed constant.
 Period: Q4 FY2026
 Source: Platform disclosures / Redseer, Q4 FY2026
-Type: Flow"><div class="card-head">Average Order Value</div><span class="v" data-metric="quickcommerce_average_order_value">₹450–550 average order value</span><div class="card-footer"><span class="card-source">Platform disclosures / Redseer</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Average Order Value</div><span class="v" data-metric="quickcommerce_average_order_value">₹450–550 average order value</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Operating benchmark across major Indian cities, not a verified market-wide statistic.
 Period: Operating benchmark
 Source: Industry benchmark
-Type: Stock"><div class="card-head">Typical Delivery Time</div><span class="v" data-metric="quickcommerce_typical_delivery_promise">10–18 minutes</span><div class="card-footer"><span class="card-source">Industry operational estimate</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Typical Delivery Time</div><span class="v" data-metric="quickcommerce_typical_delivery_promise">10–18 minutes</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Average monthly ordering frequency of active transacting customers.
 Period: 2026
 Source: Redseer / Bernstein, 2026
-Type: Flow"><div class="card-head">Orders per User per Month</div><span class="v" data-metric="quickcommerce_orders_per_user_per_month">4–6 orders/month</span><div class="card-footer"><span class="card-source">Redseer / Bernstein</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Orders per User per Month</div><span class="v" data-metric="quickcommerce_orders_per_user_per_month">4–6 orders/month</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Projected quick-commerce GMV by FY2028.
 Period: 2027-28P
 Source: Bernstein / HSBC Quick Commerce Projections
-Type: Flow"><div class="card-head">Projected GMV (2028)</div><span class="v" data-metric="quickcommerce_projected_gmv_2027_28">~$18–20B projected GMV</span><div class="card-footer"><span class="card-source">2027-28P · Bernstein / HSBC Projections</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Projected GMV (2028)</div><span class="v" data-metric="quickcommerce_projected_gmv_2027_28">~$18–20B projected GMV</span></div>
   </div>
 
   <div class="sub-title">Major platforms &amp; market share (FY2026)</div>
@@ -729,15 +730,15 @@ Type: Flow"><div class="card-head">Projected GMV (2028)</div><span class="v" dat
     <div class="card accent" data-cat="quickcommerce" title="Definition: Order share (~47%) and net order-value share (~51%) are different metrics.
 Period: FY2026
 Source: Redseer / company disclosures, FY2026
-Type: Stock"><div class="card-head">Blinkit Market Share</div><span class="v" data-metric="quickcommerce_blinkit_market_share">~47% order share</span><div class="card-footer"><span class="card-source">~51% net order-value share · Redseer, FY2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Blinkit Market Share</div><span class="v" data-metric="quickcommerce_blinkit_market_share">~47% order share</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Order share (~33%) and net order-value share (~29%) are different metrics.
 Period: FY2026
 Source: Redseer / company disclosures, FY2026
-Type: Stock"><div class="card-head">Zepto Market Share</div><span class="v" data-metric="quickcommerce_zepto_market_share">~33% order share</span><div class="card-footer"><span class="card-source">~29% net order-value share · Redseer, FY2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Zepto Market Share</div><span class="v" data-metric="quickcommerce_zepto_market_share">~33% order share</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Order share (~21%) and net order-value share (~20%) are different metrics.
 Period: FY2026
 Source: Redseer / company disclosures, FY2026
-Type: Stock"><div class="card-head">Instamart Market Share</div><span class="v" data-metric="quickcommerce_instamart_market_share">~21% order share</span><div class="card-footer"><span class="card-source">~20% net order-value share · Redseer, FY2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Instamart Market Share</div><span class="v" data-metric="quickcommerce_instamart_market_share">~21% order share</span></div>
   </div>
 
   <div class="table-wrap">
@@ -761,39 +762,39 @@ Type: Stock"><div class="card-head">Instamart Market Share</div><span class="v" 
     <div class="card" data-cat="quickcommerce" title="Definition: Typical physical footprint of an urban quick-commerce micro-warehouse / dark store.
 Period: 2026
 Source: Knight Frank India, 2026
-Type: Stock"><div class="card-head">Typical Dark Store Size</div><span class="v" data-metric="quickcommerce_typical_dark_store_size">~2,500–4,000 sq ft</span><div class="card-footer"><span class="card-source">Knight Frank India</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Typical Dark Store Size</div><span class="v" data-metric="quickcommerce_typical_dark_store_size">~2,500–4,000 sq ft</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Active product assortment stock-keeping units maintained per dark store.
 Period: 2026
 Source: Blinkit / Zepto Investor Updates, 2026
-Type: Stock"><div class="card-head">SKUs per Dark Store</div><span class="v" data-metric="quickcommerce_skus_per_dark_store">2,500–5,000 SKUs</span><div class="card-footer"><span class="card-source">Blinkit / Zepto Updates</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">SKUs per Dark Store</div><span class="v" data-metric="quickcommerce_skus_per_dark_store">2,500–5,000 SKUs</span></div>
     <div class="card teal" data-cat="quickcommerce" title="Definition: Non-grocery merchandise categories exhibiting the fastest growth in quick commerce.
 Period: 2026
 Source: Platform disclosures, 2026
-Type: Stock"><div class="card-head">Fastest-expanding Categories</div><span class="v" data-metric="quickcommerce_fastest_expanding_categories">Beauty, electronics, pharmacy, toys</span><div class="card-footer"><span class="card-source">Platform disclosures</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Fastest-expanding Categories</div><span class="v" data-metric="quickcommerce_fastest_expanding_categories">Beauty, electronics, pharmacy, toys</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Geographic concentration of quick-commerce GMV in India.
 Period: 2026
 Source: Redseer Metro Dominance, 2026
-Type: Stock"><div class="card-head">GMV Concentration</div><span class="v" data-metric="quickcommerce_where_80_of_gmv_is_concentrated_today">Top 8 Metros</span><div class="card-footer"><span class="card-source">Redseer Metro Analysis</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">GMV Concentration</div><span class="v" data-metric="quickcommerce_where_80_of_gmv_is_concentrated_today">Top 8 Metros</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Contribution margin status of established dark stores.
 Period: FY2026
 Source: Zomato &amp; Swiggy Filings, FY2026
-Type: Flow"><div class="card-head">Store-level Contribution Margin</div><span class="v" data-metric="quickcommerce_contribution_margin_leading_players_2025">Positive store-level / near breakeven</span><div class="card-footer"><span class="card-source">Financial filings</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Store-level Contribution Margin</div><span class="v" data-metric="quickcommerce_contribution_margin_leading_players_2025">Positive store-level / near breakeven</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Active delivery partner fleet on leading quick-commerce platforms.
 Period: 2026
 Source: Company operational updates, 2026
-Type: Stock"><div class="card-head">Active Delivery Partner Fleet</div><span class="v" data-metric="quickcommerce_delivery_partners_top_platform_peak">100,000+ active gig riders</span><div class="card-footer"><span class="card-source">Platform disclosures</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Active Delivery Partner Fleet</div><span class="v" data-metric="quickcommerce_delivery_partners_top_platform_peak">100,000+ active gig riders</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Number of Indian cities with active quick-commerce dark store infrastructure.
 Period: 2026
 Source: Company network trackers, 2026
-Type: Stock"><div class="card-head">Cities With Dark-store Networks</div><span class="v" data-metric="quickcommerce_cities_with_active_dark_store_networks">60–80 cities</span><div class="card-footer"><span class="card-source">Company network trackers</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Cities With Dark-store Networks</div><span class="v" data-metric="quickcommerce_cities_with_active_dark_store_networks">60–80 cities</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Customer cohort retention after 90 days from first purchase.
 Period: 2026
 Source: Redseer Consumer Cohorts, 2026
-Type: Stock"><div class="card-head">Customer Retention</div><span class="v" data-metric="quickcommerce_customer_retention_3_months">~55–65% 3-month retention</span><div class="card-footer"><span class="card-source">Redseer cohort data</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Customer Retention</div><span class="v" data-metric="quickcommerce_customer_retention_3_months">~55–65% 3-month retention</span></div>
     <div class="card" data-cat="quickcommerce" title="Definition: Last-mile fulfillment delivery cost per order.
 Period: 2026
 Source: Logistics audits &amp; equity research, 2026
-Type: Flow"><div class="card-head">Delivery Cost per Order</div><span class="v" data-metric="quickcommerce_delivery_cost_per_order">~₹45–60/order</span><div class="card-footer"><span class="card-source">Logistics audits</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Delivery Cost per Order</div><span class="v" data-metric="quickcommerce_delivery_cost_per_order">~₹45–60/order</span></div>
   </div>
 
   <div class="ex-group-title">Worked examples</div>
@@ -818,27 +819,27 @@ Type: Flow"><div class="card-head">Delivery Cost per Order</div><span class="v" 
         <div class="card accent" data-cat="ev" title="Definition: Annual registrations/sales, not the total number of EVs currently on Indian roads.
 Period: FY2026
 Source: Vahan / JMK Research, FY2026
-Type: Flow"><div class="card-head">Annual EV Sales</div><span class="v" data-metric="ev_sales_total">25 lakh+ EVs sold/registered</span><div class="card-footer"><span class="card-source">Vahan / JMK Research, FY2026</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Annual EV Sales</div><span class="v" data-metric="ev_sales_total">25 lakh+ EVs sold/registered</span></div>
         <div class="card" data-cat="ev" title="Definition: Cumulative registrations since tracking began; not annual sales.
 Period: End FY2026
 Source: Vahan / JMK Research, FY2026
-Type: Stock"><div class="card-head">Cumulative EV Stock</div><span class="v" data-metric="ev_evs_on_road_total">8.68M cumulative EV registrations</span><div class="card-footer"><span class="card-source">Vahan / JMK Research</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Cumulative EV Stock</div><span class="v" data-metric="ev_evs_on_road_total">8.68M cumulative EV registrations</span></div>
         <div class="card" data-cat="ev" title="Definition: EV share of total new-vehicle sales, not share of vehicles currently on the road.
 Period: FY2026
 Source: Industry data / Vahan, FY2026
-Type: Stock"><div class="card-head">Overall EV Penetration</div><span class="v" data-metric="ev_ev_share_of_new_vehicle_sales">~8.5% of new-vehicle sales</span><div class="card-footer"><span class="card-source">Industry data / Vahan</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Overall EV Penetration</div><span class="v" data-metric="ev_ev_share_of_new_vehicle_sales">~8.5% of new-vehicle sales</span></div>
         <div class="card" data-cat="ev" title="Definition: India’s largest EV segment by annual sales (57.8% of FY2026 EV sales).
 Period: FY2026
 Source: Vahan / JMK Research, FY2026
-Type: Flow"><div class="card-head">Electric Two-Wheelers</div><span class="v" data-metric="ev_e_2_wheelers_sales">~1.4M electric two-wheelers</span><div class="card-footer"><span class="card-source">57.8% of FY2026 EV sales · Vahan / JMK</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Electric Two-Wheelers</div><span class="v" data-metric="ev_e_2_wheelers_sales">~1.4M electric two-wheelers</span></div>
         <div class="card" data-cat="ev" title="Definition: Electric three-wheelers are the second-largest EV segment by sales share (~7.25 lakh units).
 Period: FY2026
 Source: Vahan / FADA, FY2026
-Type: Flow"><div class="card-head">Electric Three-Wheelers</div><span class="v" data-metric="ev_e_3_wheelers_sales">~29% of EV sales</span><div class="card-footer"><span class="card-source">Vahan / FADA (~7.25L units)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Electric Three-Wheelers</div><span class="v" data-metric="ev_e_3_wheelers_sales">~29% of EV sales</span></div>
         <div class="card" data-cat="ev" title="Definition: Policy target for EV share of new-vehicle sales; not current penetration.
 Period: 2030 target
 Source: NITI Aayog
-Type: Stock"><div class="card-head">2030 EV Adoption Target</div><span class="v" data-metric="ev_2030_target">30% of vehicle sales by 2030</span><div class="card-footer"><span class="card-source">NITI Aayog</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">2030 EV Adoption Target</div><span class="v" data-metric="ev_2030_target">30% of vehicle sales by 2030</span></div>
       </div>
     </div>
     <div class="side">
@@ -858,27 +859,27 @@ Type: Stock"><div class="card-head">2030 EV Adoption Target</div><span class="v"
     <div class="card accent" data-cat="ev" title="Definition: A charging station is a physical location and may contain multiple chargers or charging points.
 Period: March 2026
 Source: Ministry of Power / Bureau of Energy Efficiency, Mar 2026
-Type: Stock"><div class="card-head">Public Charging Stations</div><span class="v" data-metric="ev_public_charging_stations">22,753 operational public charging stations</span><div class="card-footer"><span class="card-source">27,737 installed · MoP / BEE, Mar 2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Public Charging Stations</div><span class="v" data-metric="ev_public_charging_stations">22,753 operational public charging stations</span></div>
     <div class="card" data-cat="ev" title="Definition: Charging points/chargers are individual charging connectors; not the same as charging stations.
 Period: End 2025
 Source: IEA Global EV Outlook 2026
-Type: Stock"><div class="card-head">Public Charging Points</div><span class="v" data-metric="ev_public_charging_points">88,000 public charging points</span><div class="card-footer"><span class="card-source">IEA Global EV Outlook 2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Public Charging Points</div><span class="v" data-metric="ev_public_charging_points">88,000 public charging points</span></div>
     <div class="card" data-cat="ev" title="Definition: Denominator is public charging points/EVSE, not charging stations.
 Period: 2025
 Source: IEA Global EV Outlook 2026
-Type: Stock"><div class="card-head">EVs per Public Charger</div><span class="v" data-metric="ev_evs_per_public_charger">30 EVs per public charging point</span><div class="card-footer"><span class="card-source">IEA Global EV Outlook 2026</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">EVs per Public Charger</div><span class="v" data-metric="ev_evs_per_public_charger">30 EVs per public charging point</span></div>
     <div class="card" data-cat="ev" title="Definition: Electric-car penetration is much lower than electric two-wheeler penetration. Do not use the overall EV penetration figure for passenger cars.
 Period: FY2026
 Source: Industry data / Vahan, FY2026
-Type: Stock"><div class="card-head">Electric Passenger Cars</div><span class="v" data-metric="ev_e_car_share_of_car_sales_may_2026">~4.25% of passenger-vehicle sales</span><div class="card-footer"><span class="card-source">Industry data / Vahan</span><span class="card-type">Flow</span></div></div>
+Type: Stock"><div class="card-head">Electric Passenger Cars</div><span class="v" data-metric="ev_e_car_share_of_car_sales_may_2026">~4.25% of passenger-vehicle sales</span></div>
     <div class="card" data-cat="ev" title="Definition: Cumulative e-bus deployments under FAME-II, PM-eBus Sewa, and state transport undertakings. Do not infer bus sales from total EV sales.
 Period: FY2026
 Source: Ministry of Heavy Industries / Vahan / NITI Aayog
-Type: Stock"><div class="card-head">Electric Buses on Road</div><span class="v" data-metric="ev_electric_buses_on_road">~11,500 electric buses</span><div class="card-footer"><span class="card-source">MHI / Vahan / NITI Aayog</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Electric Buses on Road</div><span class="v" data-metric="ev_electric_buses_on_road">~11,500 electric buses</span></div>
     <div class="card" data-cat="ev" title="Definition: Volume-weighted average lithium-ion battery pack price across transport sectors.
 Period: 2024-25
 Source: BloombergNEF Global Battery Price Survey
-Type: Flow"><div class="card-head">Battery Pack Price</div><span class="v" data-metric="ev_battery_pack_price_per_kwh">$139/kWh</span><div class="card-footer"><span class="card-source">2024-25 · BloombergNEF Survey</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Battery Pack Price</div><span class="v" data-metric="ev_battery_pack_price_per_kwh">$139/kWh</span></div>
   </div>
 
   <div class="sub-title">Ride-hailing &amp; app-based mobility</div>
@@ -886,27 +887,27 @@ Type: Flow"><div class="card-head">Battery Pack Price</div><span class="v" data-
     <div class="card accent" data-cat="ev" title="Definition: App monthly active users; one person may use multiple mobility apps, so do not add these to calculate unique riders.
 Period: January–February 2026
 Source: Sensor Tower, Jan–Feb 2026
-Type: Stock"><div class="card-head">Rapido Ride-Hailing MAU</div><span class="v" data-metric="ev_ride_hailing_rapido_mau">Rapido: 73.96M MAU</span><div class="card-footer"><span class="card-source">Sensor Tower</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Rapido Ride-Hailing MAU</div><span class="v" data-metric="ev_ride_hailing_rapido_mau">Rapido: 73.96M MAU</span></div>
     <div class="card" data-cat="ev" title="Definition: App monthly active users; one person may use multiple mobility apps, so do not add these to calculate unique riders.
 Period: January–February 2026
 Source: Sensor Tower, Jan–Feb 2026
-Type: Stock"><div class="card-head">Uber Ride-Hailing MAU</div><span class="v" data-metric="ev_ride_hailing_uber_mau">Uber: 39.05M MAU</span><div class="card-footer"><span class="card-source">Sensor Tower</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Uber Ride-Hailing MAU</div><span class="v" data-metric="ev_ride_hailing_uber_mau">Uber: 39.05M MAU</span></div>
     <div class="card" data-cat="ev" title="Definition: App monthly active users; one person may use multiple mobility apps, so do not add these to calculate unique riders.
 Period: January–February 2026
 Source: Sensor Tower, Jan–Feb 2026
-Type: Stock"><div class="card-head">Ola Ride-Hailing MAU</div><span class="v" data-metric="ev_ride_hailing_ola_mau">Ola: 28.15M MAU</span><div class="card-footer"><span class="card-source">Sensor Tower</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Ola Ride-Hailing MAU</div><span class="v" data-metric="ev_ride_hailing_ola_mau">Ola: 28.15M MAU</span></div>
     <div class="card" data-cat="ev" title="Definition: Share of monthly active users, not share of rides, revenue, or GMV.
 Period: January–February 2026
 Source: Sensor Tower, Jan–Feb 2026
-Type: Stock"><div class="card-head">Ride-Hailing Market Share</div><span class="v" data-metric="ev_ride_hailing_market_share">Rapido ~52.4%; Uber ~27.7%; Ola ~19.9%</span><div class="card-footer"><span class="card-source">Sensor Tower</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Ride-Hailing Market Share</div><span class="v" data-metric="ev_ride_hailing_market_share">Rapido ~52.4%; Uber ~27.7%; Ola ~19.9%</span></div>
     <div class="card" data-cat="ev" title="Definition: Ride-hailing MAU cannot be converted into daily rides without trip-frequency assumptions.
 Period: Modelled benchmark
 Source: Industry estimate
-Type: Flow"><div class="card-head">Ride-Hailing Daily Rides</div><span class="v" data-metric="ev_ride_hailing_daily_rides">Modelled estimate</span><div class="card-footer"><span class="card-source">Requires frequency assumptions</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Ride-Hailing Daily Rides</div><span class="v" data-metric="ev_ride_hailing_daily_rides">Modelled estimate</span></div>
     <div class="card" data-cat="ev" title="Definition: Ride-hailing market size may be measured by revenue, bookings, GMV, or trips; these are not interchangeable.
 Period: Pending verified scope
 Source: Industry estimate
-Type: Flow"><div class="card-head">Ride-Hailing Market Size</div><span class="v" data-metric="ev_ride_hailing_market_size">Estimate — source required</span><div class="card-footer"><span class="card-source">Scope-dependent · GMV vs Bookings vs Rev</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Ride-Hailing Market Size</div><span class="v" data-metric="ev_ride_hailing_market_size">Estimate — source required</span></div>
   </div>
 
   <div class="sub-title">National vehicle fleet &amp; mass transit context</div>
@@ -914,27 +915,27 @@ Type: Flow"><div class="card-head">Ride-Hailing Market Size</div><span class="v"
     <div class="card" data-cat="ev" title="Definition: Total registered passenger cars on Indian roads.
 Period: 2024
 Source: MoRTH Road Transport Year Book
-Type: Stock"><div class="card-head">Cars Registered (Total)</div><span class="v" data-metric="ev_cars_registered">~50M</span><div class="card-footer"><span class="card-source">MoRTH Year Book</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Cars Registered (Total)</div><span class="v" data-metric="ev_cars_registered">~50M</span></div>
     <div class="card" data-cat="ev" title="Definition: Total registered motorcycles and scooters on Indian roads.
 Period: 2024
 Source: MoRTH Road Transport Year Book
-Type: Stock"><div class="card-head">Two-Wheelers Registered</div><span class="v" data-metric="ev_two_wheelers_registered">~250M</span><div class="card-footer"><span class="card-source">MoRTH Year Book</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Two-Wheelers Registered</div><span class="v" data-metric="ev_two_wheelers_registered">~250M</span></div>
     <div class="card teal" data-cat="ev" title="Definition: Motorisation rate measured as passenger cars per 1,000 population.
 Period: 2024
 Source: NITI Aayog / MoRTH Motorisation Benchmark
-Type: Stock"><div class="card-head">Car Ownership per 1,000</div><span class="v" data-metric="ev_car_ownership_per_1_000_people">34</span><div class="card-footer"><span class="card-source">NITI Aayog / MoRTH</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Car Ownership per 1,000</div><span class="v" data-metric="ev_car_ownership_per_1_000_people">34</span></div>
     <div class="card" data-cat="ev" title="Definition: Combined average daily ridership across all operational urban metro rail systems in India.
 Period: 2024-25
 Source: MoHUA Metro Rail Dashboard
-Type: Flow"><div class="card-head">Daily Metro Ridership</div><span class="v" data-metric="ev_daily_metro_riders">~12M+</span><div class="card-footer"><span class="card-source">2024-25 · MoHUA Metro Dashboard</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Daily Metro Ridership</div><span class="v" data-metric="ev_daily_metro_riders">~12M+</span></div>
     <div class="card" data-cat="ev" title="Definition: Average daily passenger journeys on the Indian Railways national network.
 Period: FY2023-24
 Source: Indian Railways Year Book
-Type: Flow"><div class="card-head">Daily Railway Passengers</div><span class="v" data-metric="ev_daily_railway_passengers">~23M</span><div class="card-footer"><span class="card-source">FY2023-24 · Indian Railways Year Book</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Daily Railway Passengers</div><span class="v" data-metric="ev_daily_railway_passengers">~23M</span></div>
     <div class="card" data-cat="ev" title="Definition: Monthly and annual domestic air passenger traffic handled across Indian airports.
 Period: FY 2024-25 / Aug 2026
 Source: DGCA &amp; AAI Traffic Reports
-Type: Flow"><div class="card-head">Domestic Air Passengers</div><span class="v" data-metric="aai_domestic_passengers">24.61M/mo (~165.5M/yr)</span><div class="card-footer"><span class="card-source">DGCA &amp; AAI Traffic Reports</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Domestic Air Passengers</div><span class="v" data-metric="aai_domestic_passengers">24.61M/mo (~165.5M/yr)</span></div>
   </div>
 
   <div class="ex-group-title">Worked examples</div>
@@ -959,27 +960,27 @@ Type: Flow"><div class="card-head">Domestic Air Passengers</div><span class="v" 
         <div class="card accent" data-cat="edtech" title="Definition: EdTech market revenue estimate; scope differs from online education and test preparation. (Historic baseline: $7.5B, 2024/2025 — IBEF / IMARC-derived estimate)
 Period: 2026
 Source: IMARC Group, 2026
-Type: Flow"><div class="card-head">Market Size</div><span class="v" data-metric="edtech_market_size_2026">$4.60B India EdTech market</span><div class="card-footer"><span class="card-source">IMARC Group ($7.5B baseline, IBEF/IMARC)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Market Size</div><span class="v" data-metric="edtech_market_size_2026">$4.60B India EdTech market</span></div>
         <div class="card" data-cat="edtech" title="Definition: Compound annual growth rate; distinct from annual YoY revenue growth. Secondary projection: 16.4% CAGR, 2025–2030 — MarketsandMarkets.
 Period: 2026–2034
 Source: IMARC Group
-Type: Flow"><div class="card-head">EdTech Market Growth</div><span class="v" data-metric="edtech_cagr_2026_2034">27.94% CAGR, 2026–2034</span><div class="card-footer"><span class="card-source">IMARC (16.4% CAGR, 2025–30 M&amp;M)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">EdTech Market Growth</div><span class="v" data-metric="edtech_cagr_2026_2034">27.94% CAGR, 2026–2034</span></div>
         <div class="card" data-cat="edtech" title="Definition: Online-education revenue; not identical to the broader EdTech market.
 Period: 2026
 Source: IMARC Group, 2026
-Type: Flow"><div class="card-head">Online Education Market Size</div><span class="v" data-metric="edtech_online_education_market_size">$4.48B online-education market</span><div class="card-footer"><span class="card-source">IMARC Group (Distinct from broader EdTech)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Online Education Market Size</div><span class="v" data-metric="edtech_online_education_market_size">$4.48B online-education market</span></div>
         <div class="card" data-cat="edtech" title="Definition: Share of EdTech market revenue, not share of student enrolment.
 Period: 2025
 Source: IMARC Group
-Type: Stock"><div class="card-head">K-12 Market Share</div><span class="v" data-metric="edtech_k12_share">43% of EdTech market</span><div class="card-footer"><span class="card-source">IMARC Group (Revenue share, not enrolment)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">K-12 Market Share</div><span class="v" data-metric="edtech_k12_share">43% of EdTech market</span></div>
         <div class="card" data-cat="edtech" title="Definition: Test-prep market revenue; not the same as total EdTech market revenue.
 Period: FY2026
 Source: Redseer, FY2026
-Type: Flow"><div class="card-head">Test-Preparation Market Size</div><span class="v" data-metric="edtech_test_prep_market_size">$14.8B test-preparation market</span><div class="card-footer"><span class="card-source">Redseer (Omnichannel test prep)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Test-Preparation Market Size</div><span class="v" data-metric="edtech_test_prep_market_size">$14.8B test-preparation market</span></div>
         <div class="card" data-cat="edtech" title="Definition: Projected CAGR for India’s test-preparation market.
 Period: FY2026–FY2030P
 Source: Redseer
-Type: Flow"><div class="card-head">Test-Prep Market Growth</div><span class="v" data-metric="edtech_test_prep_cagr">12–15% CAGR through FY2030</span><div class="card-footer"><span class="card-source">Redseer</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Test-Prep Market Growth</div><span class="v" data-metric="edtech_test_prep_cagr">12–15% CAGR through FY2030</span></div>
       </div>
     </div>
     <div class="side">
@@ -999,27 +1000,27 @@ Type: Flow"><div class="card-head">Test-Prep Market Growth</div><span class="v" 
     <div class="card accent" data-cat="edtech" title="Definition: Pre-primary through higher-secondary enrolment across recognized schools.
 Period: AY 2025–26
 Source: UDISE+ 2025–26
-Type: Stock"><div class="card-head">School Students</div><span class="v" data-metric="edtech_school_students">24.72 crore school students</span><div class="card-footer"><span class="card-source">UDISE+ (Pre-primary to Class 12)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">School Students</div><span class="v" data-metric="edtech_school_students">24.72 crore school students</span></div>
     <div class="card" data-cat="edtech" title="Definition: Recognised schools covered by UDISE+.
 Period: AY 2025–26
 Source: UDISE+ 2025–26
-Type: Stock"><div class="card-head">Schools</div><span class="v" data-metric="edtech_schools">14.67 lakh schools</span><div class="card-footer"><span class="card-source">UDISE+ 2025–26</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Schools</div><span class="v" data-metric="edtech_schools">14.67 lakh schools</span></div>
     <div class="card" data-cat="edtech" title="Definition: Total teachers in recognized schools.
 Period: AY 2025–26
 Source: UDISE+ 2025–26
-Type: Stock"><div class="card-head">Teachers</div><span class="v" data-metric="edtech_teachers">1.03 crore teachers</span><div class="card-footer"><span class="card-source">UDISE+ 2025–26</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Teachers</div><span class="v" data-metric="edtech_teachers">1.03 crore teachers</span></div>
     <div class="card" data-cat="edtech" title="Definition: Average students per teacher across the school system.
 Period: AY 2025–26
 Source: UDISE+ 2025–26
-Type: Stock"><div class="card-head">Pupil–Teacher Ratio</div><span class="v" data-metric="edtech_pupil_teacher_ratio">24:1 pupil–teacher ratio</span><div class="card-footer"><span class="card-source">UDISE+ 2025–26</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Pupil–Teacher Ratio</div><span class="v" data-metric="edtech_pupil_teacher_ratio">24:1 pupil–teacher ratio</span></div>
     <div class="card" data-cat="edtech" title="Definition: Share of schools reporting computer availability.
 Period: AY 2025–26
 Source: UDISE+ 2025–26
-Type: Stock"><div class="card-head">Schools with Computers</div><span class="v" data-metric="edtech_schools_with_computers">69.9% of schools with computers</span><div class="card-footer"><span class="card-source">UDISE+ 2025–26</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Schools with Computers</div><span class="v" data-metric="edtech_schools_with_computers">69.9% of schools with computers</span></div>
     <div class="card" data-cat="edtech" title="Definition: Share of schools reporting internet availability.
 Period: AY 2025–26
 Source: UDISE+ 2025–26
-Type: Stock"><div class="card-head">Schools with Internet</div><span class="v" data-metric="edtech_schools_with_internet">67.4% of schools with internet</span><div class="card-footer"><span class="card-source">UDISE+ 2025–26</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Schools with Internet</div><span class="v" data-metric="edtech_schools_with_internet">67.4% of schools with internet</span></div>
   </div>
 
   <div class="sub-title">Platforms, company disclosures &amp; venture funding</div>
@@ -1027,15 +1028,15 @@ Type: Stock"><div class="card-head">Schools with Internet</div><span class="v" d
     <div class="card accent" data-cat="edtech" title="Definition: Company-specific paid-user metric; not India’s total EdTech user base.
 Period: FY2025
 Source: Physics Wallah / BSE, FY2025
-Type: Stock"><div class="card-head">Physics Wallah Paid Users</div><span class="v" data-metric="edtech_pw_paid_users">4.46M paid users</span><div class="card-footer"><span class="card-source">Physics Wallah / BSE (Entity-specific)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Physics Wallah Paid Users</div><span class="v" data-metric="edtech_pw_paid_users">4.46M paid users</span></div>
     <div class="card" data-cat="edtech" title="Definition: Quarterly revenue, not annual revenue.
 Period: Q3 FY2026
 Source: Physics Wallah, Q3 FY2026
-Type: Flow"><div class="card-head">Physics Wallah Revenue</div><span class="v" data-metric="edtech_pw_revenue_q3">₹1,082 crore revenue</span><div class="card-footer"><span class="card-source">Physics Wallah (Quarterly run-rate)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Physics Wallah Revenue</div><span class="v" data-metric="edtech_pw_revenue_q3">₹1,082 crore revenue</span></div>
     <div class="card" data-cat="edtech" title="Definition: Venture funding is investor capital deployed, not market revenue. Up from $207M in 2023.
 Period: 2024
 Source: Nexdigm, 2024
-Type: Flow"><div class="card-head">EdTech Funding</div><span class="v" data-metric="edtech_funding_2024">$608M EdTech funding</span><div class="card-footer"><span class="card-source">Nexdigm (Up from $207M in 2023)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">EdTech Funding</div><span class="v" data-metric="edtech_funding_2024">$608M EdTech funding</span></div>
   </div>
 
   <div class="sub-title">Higher education &amp; workforce pipeline (AISHE / AICTE)</div>
@@ -1043,31 +1044,31 @@ Type: Flow"><div class="card-head">EdTech Funding</div><span class="v" data-metr
     <div class="card" data-cat="edtech" title="Definition: Higher education enrolment across universities and colleges.
 Period: 2021-22
 Source: AISHE / Ministry of Education
-Type: Stock"><div class="card-head">Higher Education Enrolment</div><span class="v" data-metric="edtech_college_students">4.33 crore college students</span><div class="card-footer"><span class="card-source">2021-22 · AISHE / Ministry of Education</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Higher Education Enrolment</div><span class="v" data-metric="edtech_college_students">4.33 crore college students</span></div>
     <div class="card" data-cat="edtech" title="Definition: Engineering graduates passing out annually.
 Period: 2023-24
 Source: AICTE Annual Data
-Type: Flow"><div class="card-head">Annual Engineering Graduates</div><span class="v" data-metric="edtech_engineering_grads_yr">~1.5M engineering grads/yr</span><div class="card-footer"><span class="card-source">2023-24 · AICTE Annual Data</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Annual Engineering Graduates</div><span class="v" data-metric="edtech_engineering_grads_yr">~1.5M engineering grads/yr</span></div>
     <div class="card" data-cat="edtech" title="Definition: Management education graduates passing out annually.
 Period: 2023-24
 Source: AICTE Management Intake
-Type: Flow"><div class="card-head">Annual MBA Graduates</div><span class="v" data-metric="edtech_mba_grads_yr">300K+ MBA grads/yr</span><div class="card-footer"><span class="card-source">2023-24 · AICTE Management Intake</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Annual MBA Graduates</div><span class="v" data-metric="edtech_mba_grads_yr">300K+ MBA grads/yr</span></div>
     <div class="card" data-cat="edtech" title="Definition: Premier technical institutes of national importance.
 Period: 2025
 Source: Ministry of Education
-Type: Stock"><div class="card-head">IITs (Institutes)</div><span class="v" data-metric="edtech_iits">23 institutes</span><div class="card-footer"><span class="card-source">Ministry of Education</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">IITs (Institutes)</div><span class="v" data-metric="edtech_iits">23 institutes</span></div>
     <div class="card" data-cat="edtech" title="Definition: Premier management institutes of national importance.
 Period: 2025
 Source: Ministry of Education
-Type: Stock"><div class="card-head">IIMs (Institutes)</div><span class="v" data-metric="edtech_iims">21 institutes</span><div class="card-footer"><span class="card-source">Ministry of Education</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">IIMs (Institutes)</div><span class="v" data-metric="edtech_iims">21 institutes</span></div>
     <div class="card" data-cat="edtech" title="Definition: Literacy rate among population aged 7 and above.
 Period: 2021-23
 Source: NSO / MoSPI Household Survey
-Type: Stock"><div class="card-head">National Literacy Rate</div><span class="v" data-metric="edtech_literacy_rate">~77.7% literacy rate</span><div class="card-footer"><span class="card-source">2021-23 · NSO / MoSPI Household Survey</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">National Literacy Rate</div><span class="v" data-metric="edtech_literacy_rate">~77.7% literacy rate</span></div>
     <div class="card" data-cat="edtech" title="Definition: Total government expenditure on education as a percentage of GDP.
 Period: FY2024-25
 Source: Economic Survey / Union Budget
-Type: Flow"><div class="card-head">Govt. Spend on Education</div><span class="v" data-metric="edtech_govt_spend_on_education_gdp">~3.0% of GDP</span><div class="card-footer"><span class="card-source">FY2024-25 · Economic Survey / Union Budget</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Govt. Spend on Education</div><span class="v" data-metric="edtech_govt_spend_on_education_gdp">~3.0% of GDP</span></div>
   </div>
 
   <div class="ex-group-title">Worked example</div>
@@ -1087,39 +1088,39 @@ Type: Flow"><div class="card-head">Govt. Spend on Education</div><span class="v"
     <div class="card accent" data-cat="healthcare" title="Definition: India's healthcare delivery, medical tech, and diagnostics market revenue. Forward-looking projection: ~$692B by 2026. Distinct from Total Health Expenditure.
 Period: 2025
 Source: IBEF / Credence Research India healthcare market estimates
-Type: Flow"><div class="card-head">Healthcare Market Size</div><span class="v" data-metric="healthcare_market_size_projected">~$638B (2025)</span><div class="card-footer"><span class="card-source">2025 (Projected: ~$692B, 2026) · IBEF / Cr...</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Healthcare Market Size</div><span class="v" data-metric="healthcare_market_size_projected">~$638B (2025)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Total Health Expenditure (THE) as a percentage of GDP, encompassing both government and private spending. Not government spending alone.
 Period: 2021–22
 Source: National Health Accounts Estimates for India 2021–22
-Type: Flow"><div class="card-head">Total Health Expenditure</div><span class="v" data-metric="healthcare_expenditure_pct_gdp">3.8% of GDP (2021–22)</span><div class="card-footer"><span class="card-source">National Health Accounts (NHA 2021–22)</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Total Health Expenditure</div><span class="v" data-metric="healthcare_expenditure_pct_gdp">3.8% of GDP (2021–22)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Government Health Expenditure (GHE) as a percentage of GDP across Union and State governments. NHA 2021–22 reported 1.84% of GDP.
 Period: 2022–23
 Source: National Health Accounts Estimates for India 2022–23 / 2021–22
-Type: Flow"><div class="card-head">Government Health Expenditure</div><span class="v" data-metric="healthcare_govt_health_expenditure_pct_gdp">1.43% of GDP (2022–23)</span><div class="card-footer"><span class="card-source">2022–23 (1.84% in 2021–22) · NHA 2022–23</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Government Health Expenditure</div><span class="v" data-metric="healthcare_govt_health_expenditure_pct_gdp">1.43% of GDP (2022–23)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Government Health Expenditure as a share of Total Health Expenditure (THE). NHA 2021–22 reported 48.0%.
 Period: 2022–23
 Source: National Health Accounts Estimates
-Type: Stock"><div class="card-head">Government Share of Health Exp.</div><span class="v" data-metric="healthcare_govt_expenditure_share">43.7% (2022–23)</span><div class="card-footer"><span class="card-source">2022–23 (48% in 2021–22) · NHA 2022–23</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Government Share of Health Exp.</div><span class="v" data-metric="healthcare_govt_expenditure_share">43.7% (2022–23)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Private share defined as the complement of government share of Total Health Expenditure (100% - 43.7% = 56.3%). In 2021–22 dataset: ~52%.
 Period: 2022–23
 Source: Derived from National Health Accounts Estimates
-Type: Stock"><div class="card-head">Private Share of Health Exp.</div><span class="v" data-metric="healthcare_private_expenditure_share">~56% (2022–23)</span><div class="card-footer"><span class="card-source">2022–23 (~52% in 2021–22) · NHA 2022–23</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Private Share of Health Exp.</div><span class="v" data-metric="healthcare_private_expenditure_share">~56% (2022–23)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Per capita Total Health Expenditure per annum across public and private health spending.
 Period: 2021–22
 Source: National Health Accounts Estimates for India 2021–22
-Type: Flow"><div class="card-head">Per Capita Health Expenditure</div><span class="v" data-metric="healthcare_per_capita_expenditure">Rs 6,602 (2021–22)</span><div class="card-footer"><span class="card-source">NHA 2021–22 / MoHFW</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Per Capita Health Expenditure</div><span class="v" data-metric="healthcare_per_capita_expenditure">Rs 6,602 (2021–22)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Out-of-pocket expenditure (OOPE) as a share of Total Health Expenditure directly borne by households. In 2021–22 dataset: 39.4%.
 Period: 2022–23
 Source: National Health Accounts Estimates
-Type: Stock"><div class="card-head">Out-of-Pocket Expenditure</div><span class="v" data-metric="healthcare_out_of_pocket_expenditure">43.4% (2022–23)</span><div class="card-footer"><span class="card-source">2022–23 (39.4% in 2021–22) · NHA 2022–23</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Out-of-Pocket Expenditure</div><span class="v" data-metric="healthcare_out_of_pocket_expenditure">43.4% (2022–23)</span></div>
     <div class="card teal" data-cat="healthcare" title="Definition: Total population covered under any public or private health insurance scheme (including PM-JAY and state schemes).
 Period: 2025
 Source: NSS 2025 health survey coverage estimates
-Type: Stock"><div class="card-head">Health-Insured Lives</div><span class="v" data-metric="healthcare_health_insured_lives">~680M (2025)</span><div class="card-footer"><span class="card-source">NSS 2025 health survey</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Health-Insured Lives</div><span class="v" data-metric="healthcare_health_insured_lives">~680M (2025)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Share of population with at least one health cover (government or private); not private retail insurance alone.
 Period: 2025
 Source: NSS 2025 health survey
-Type: Stock"><div class="card-head">Health Insurance Penetration</div><span class="v" data-metric="healthcare_health_insurance_penetration">~46% (2025)</span><div class="card-footer"><span class="card-source">NSS 2025 (At least one health cover)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Health Insurance Penetration</div><span class="v" data-metric="healthcare_health_insurance_penetration">~46% (2025)</span></div>
   </div>
 
   <div class="sub-title">Infrastructure and access</div>
@@ -1127,39 +1128,39 @@ Type: Stock"><div class="card-head">Health Insurance Penetration</div><span clas
     <div class="card" data-cat="healthcare" title="Definition: Total public and private hospitals operational in India.
 Period: 2024
 Source: National Health Profile / MoHFW / PM-JAY Registry
-Type: Stock"><div class="card-head">Total Hospitals</div><span class="v" data-metric="healthcare_hospitals">~70,000 hospitals (2024)</span><div class="card-footer"><span class="card-source">NHP / MoHFW / PM-JAY Registry</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Total Hospitals</div><span class="v" data-metric="healthcare_hospitals">~70,000 hospitals (2024)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Total hospital beds across public and private health facilities in India.
 Period: 2024
 Source: IBEF / DGHS healthcare sector estimate
-Type: Stock"><div class="card-head">Hospital Beds (Total)</div><span class="v" data-metric="healthcare_hospital_beds_total">~1.9–2.0M (2024)</span><div class="card-footer"><span class="card-source">IBEF / DGHS healthcare sector estimate</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Hospital Beds (Total)</div><span class="v" data-metric="healthcare_hospital_beds_total">~1.9–2.0M (2024)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Hospital beds available per 1,000 population across all health facilities (vs WHO benchmark 3.0, US 2.8).
 Period: 2024
 Source: IBEF India healthcare sector estimate
-Type: Stock"><div class="card-head">Hospital Beds per 1,000</div><span class="v" data-metric="healthcare_hospital_beds_per_1000">1.3 per 1,000 (2024)</span><div class="card-footer"><span class="card-source">IBEF India healthcare estimate</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Hospital Beds per 1,000</div><span class="v" data-metric="healthcare_hospital_beds_per_1000">1.3 per 1,000 (2024)</span></div>
     <div class="card accent" data-cat="healthcare" title="Definition: Total registered doctors across the Indian Medical Register / National Medical Commission.
 Period: 2024
 Source: National Medical Commission (NMC)
-Type: Stock"><div class="card-head">Registered Doctors</div><span class="v" data-metric="healthcare_registered_doctors">~1.3M doctors (2024)</span><div class="card-footer"><span class="card-source">National Medical Commission (NMC)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Registered Doctors</div><span class="v" data-metric="healthcare_registered_doctors">~1.3M doctors (2024)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Active allopathic doctors per 1,000 population (rises to ~1.2/1000 when including AYUSH practitioners).
 Period: 2024
 Source: NMC / MoHFW
-Type: Stock"><div class="card-head">Doctors per 1,000</div><span class="v" data-metric="healthcare_doctors_per_1000">0.9 per 1,000 (2024)</span><div class="card-footer"><span class="card-source">NMC / MoHFW</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Doctors per 1,000</div><span class="v" data-metric="healthcare_doctors_per_1000">0.9 per 1,000 (2024)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Registered nursing personnel including nurses, auxiliary nurse midwives (ANMs), and lady health visitors.
 Period: 2025
 Source: Indian Nursing Council / PIB
-Type: Stock"><div class="card-head">Registered Nurses</div><span class="v" data-metric="healthcare_nurses_registered">~4.3M nursing personnel (2025)</span><div class="card-footer"><span class="card-source">Indian Nursing Council / PIB</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Registered Nurses</div><span class="v" data-metric="healthcare_nurses_registered">~4.3M nursing personnel (2025)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Primary Health Centres functioning across rural and urban primary healthcare networks.
 Period: 2023–24
 Source: Rural Health Statistics / MoHFW
-Type: Stock"><div class="card-head">Primary Health Centres</div><span class="v" data-metric="healthcare_primary_health_centres">~31,000 PHCs (2023–24)</span><div class="card-footer"><span class="card-source">Rural Health Statistics / MoHFW</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Primary Health Centres</div><span class="v" data-metric="healthcare_primary_health_centres">~31,000 PHCs (2023–24)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Annual market size of pathology and radiology diagnostic services in India.
 Period: 2024
 Source: FICCI / Ernst &amp; Young Diagnostic Services in India
-Type: Flow"><div class="card-head">Diagnostic Market Size</div><span class="v" data-metric="healthcare_diagnostic_market_size">~$13B (2024)</span><div class="card-footer"><span class="card-source">FICCI / EY Diagnostic Services</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Diagnostic Market Size</div><span class="v" data-metric="healthcare_diagnostic_market_size">~$13B (2024)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Licensed retail chemists and druggist pharmacy stores operating across India.
 Period: 2024
 Source: All India Organisation of Chemists and Druggists (AIOCD)
-Type: Stock"><div class="card-head">Pharmacies</div><span class="v" data-metric="healthcare_pharmacies">~9 lakh (2024)</span><div class="card-footer"><span class="card-source">AIOCD (Licensed retail chemists)</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Pharmacies</div><span class="v" data-metric="healthcare_pharmacies">~9 lakh (2024)</span></div>
   </div>
 
   <div class="sub-title">Healthcare outcomes</div>
@@ -1167,35 +1168,35 @@ Type: Stock"><div class="card-head">Pharmacies</div><span class="v" data-metric=
     <div class="card" data-cat="healthcare" title="Definition: Average life expectancy at birth across India.
 Period: 2024
 Source: SRS / World Bank, 2024
-Type: Stock"><div class="card-head">Life Expectancy</div><span class="v" data-metric="bonus_life_expectancy_at_birth">~72 years (2024)</span><div class="card-footer"><span class="card-source">SRS / World Bank</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Life Expectancy</div><span class="v" data-metric="bonus_life_expectancy_at_birth">~72 years (2024)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Infant deaths per 1,000 live births.
 Period: 2022
 Source: Sample Registration System (SRS) Statistical Report / RGI
-Type: Flow"><div class="card-head">Infant Mortality Rate</div><span class="v" data-metric="healthcare_infant_mortality_rate">26 per 1,000 live births (2022)</span><div class="card-footer"><span class="card-source">SRS Statistical Report / RGI</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Infant Mortality Rate</div><span class="v" data-metric="healthcare_infant_mortality_rate">26 per 1,000 live births (2022)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Maternal deaths during pregnancy/childbirth per 100,000 live births.
 Period: 2018–20
 Source: SRS Special Bulletin on MMR / RGI
-Type: Flow"><div class="card-head">Maternal Mortality Ratio</div><span class="v" data-metric="healthcare_maternal_mortality_ratio">97 per 100,000 live births (2018–20)</span><div class="card-footer"><span class="card-source">SRS Special Bulletin / RGI</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Maternal Mortality Ratio</div><span class="v" data-metric="healthcare_maternal_mortality_ratio">97 per 100,000 live births (2018–20)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Total annual live births delivered across India.
 Period: 2023
 Source: SRS Statistical Report / MoHFW, 2023
-Type: Flow"><div class="card-head">Annual Births</div><span class="v" data-metric="healthcare_annual_births">~23M births/yr (2023)</span><div class="card-footer"><span class="card-source">SRS Statistical Report / MoHFW</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Annual Births</div><span class="v" data-metric="healthcare_annual_births">~23M births/yr (2023)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Adults diagnosed with diabetes in India.
 Period: 2023
 Source: ICMR-INDIAB Study / Lancet, 2023
-Type: Stock"><div class="card-head">Diabetics</div><span class="v" data-metric="healthcare_diabetics">100M+ adults (2023)</span><div class="card-footer"><span class="card-source">ICMR-INDIAB Study / Lancet</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Diabetics</div><span class="v" data-metric="healthcare_diabetics">100M+ adults (2023)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Adults living with hypertension in India.
 Period: 2024
 Source: WHO India NCD Profile / ICMR, 2024
-Type: Stock"><div class="card-head">Hypertension Patients</div><span class="v" data-metric="healthcare_hypertension_patients">200M+ adults (2024)</span><div class="card-footer"><span class="card-source">WHO India NCD Profile / ICMR</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Hypertension Patients</div><span class="v" data-metric="healthcare_hypertension_patients">200M+ adults (2024)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Percentage of children aged 12–23 months fully vaccinated with core vaccines.
 Period: 2021–22
 Source: NFHS-5 / MoHFW, 2021–22
-Type: Stock"><div class="card-head">Immunisation Coverage</div><span class="v" data-metric="healthcare_immunisation_coverage">~76% full immunisation (2021–22)</span><div class="card-footer"><span class="card-source">NFHS-5 / MoHFW</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Immunisation Coverage</div><span class="v" data-metric="healthcare_immunisation_coverage">~76% full immunisation (2021–22)</span></div>
     <div class="card teal" data-cat="healthcare" title="Definition: Percentage of individuals with mental health disorders not receiving formal medical treatment.
 Period: 2023
 Source: National Mental Health Survey (NMHS) / NIMHANS
-Type: Stock"><div class="card-head">Mental Health Treatment Gap</div><span class="v" data-metric="healthcare_mental_health_treatment_gap">&gt;80% treatment gap (2023)</span><div class="card-footer"><span class="card-source">NMHS / NIMHANS</span><span class="card-type">Stock</span></div></div>
+Type: Stock"><div class="card-head">Mental Health Treatment Gap</div><span class="v" data-metric="healthcare_mental_health_treatment_gap">&gt;80% treatment gap (2023)</span></div>
   </div>
 
   <div class="sub-title">Industry and digital health</div>
@@ -1203,15 +1204,15 @@ Type: Stock"><div class="card-head">Mental Health Treatment Gap</div><span class
     <div class="card" data-cat="healthcare" title="Definition: Total turnover of Indian pharmaceutical manufacturing (domestic sales + exports).
 Period: 2025
 Source: IBEF / Bain India pharmaceutical market estimate
-Type: Flow"><div class="card-head">Pharma Market Size</div><span class="v" data-metric="healthcare_pharma_market_size">~$55B (2025)</span><div class="card-footer"><span class="card-source">IBEF / Bain India pharma estimate</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Pharma Market Size</div><span class="v" data-metric="healthcare_pharma_market_size">~$55B (2025)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Market size of medical equipment, consumables, and in-vitro diagnostics in India.
 Period: 2024
 Source: Invest India / Department of Pharmaceuticals
-Type: Flow"><div class="card-head">Medical Devices Market</div><span class="v" data-metric="healthcare_medical_devices_market">~$11B (2024)</span><div class="card-footer"><span class="card-source">Invest India / Dept of Pharmaceuticals</span><span class="card-type">Flow</span></div></div>
+Type: Flow"><div class="card-head">Medical Devices Market</div><span class="v" data-metric="healthcare_medical_devices_market">~$11B (2024)</span></div>
     <div class="card" data-cat="healthcare" title="Definition: Cumulative nationwide telemedicine consultations completed on the government's eSanjeevani platform.
 Period: Dec 2025
 Source: Ministry of Health &amp; Family Welfare / PIB
-Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="v" data-metric="healthcare_telemedicine_consultations">430M+ cumulative consultations (Dec 2025)</span><div class="card-sub">Cumulative since launch, not annual</div><div class="card-footer"><span class="card-source">MoHFW / PIB (National Service)</span><span class="card-type">Cumulative Stock</span></div></div>
+Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="v" data-metric="healthcare_telemedicine_consultations">430M+ cumulative consultations (Dec 2025)</span><div class="card-sub">Cumulative since launch, not annual</div></div>
   </div>
   <div class="ex-group-title">Worked examples <span style="font-weight:400; color:var(--muted); text-transform:none; letter-spacing:0;">(illustrative Fermi practice — not sourced figures)</span></div>
   <div class="ex" data-cat="healthcare">
@@ -1238,38 +1239,38 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
 
   <div class="sub-title">Market and production</div>
   <div class="grid cols-3">
-    <div class="card accent" data-cat="agriculture"><div class="card-head">Agri Share of GVA</div><span class="v" data-metric="agri_gva_share">~18%</span><div class="card-footer"><span class="card-source">Ministry of Statistics and Programme Imple...</span><span class="card-type">Flow</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Total Foodgrain Production</div><span class="v" data-metric="agri_total_foodgrain_production">~354 MT</span><div class="card-footer"><span class="card-source">Ministry of Agriculture &amp; Farmers Welfare ...</span><span class="card-type">Flow</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Rice Production</div><span class="v" data-metric="agri_rice_production">~149.1 MT</span><div class="card-footer"><span class="card-source">Ministry of Agriculture &amp; Farmers Welfare ...</span><span class="card-type">Flow</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Wheat Production</div><span class="v" data-metric="agri_wheat_production">117.51 MT</span><div class="card-footer"><span class="card-source">Ministry of Agriculture &amp; Farmers Welfare ...</span><span class="card-type">Flow</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Horticulture Production</div><span class="v" data-metric="agri_horticulture_production">~350 MT</span><div class="card-footer"><span class="card-source">Ministry of Agriculture and Farmers Welfar...</span><span class="card-type">Flow</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Agri Exports Value</div><span class="v" data-metric="agri_exports_value">~$51.1B (FY25)</span><div class="card-footer"><span class="card-source">PIB / Dept of Commerce · FY25</span><span class="card-type">Flow</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Agri Imports Value</div><span class="v" data-metric="agri_imports_value">~$35B</span><div class="card-footer"><span class="card-source">Department of Commerce Agri-Import Statist...</span><span class="card-type">Flow</span></div></div>
+    <div class="card accent" data-cat="agriculture"><div class="card-head">Agri Share of GVA</div><span class="v" data-metric="agri_gva_share">~18%</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Total Foodgrain Production</div><span class="v" data-metric="agri_total_foodgrain_production">~354 MT</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Rice Production</div><span class="v" data-metric="agri_rice_production">~149.1 MT</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Wheat Production</div><span class="v" data-metric="agri_wheat_production">117.51 MT</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Horticulture Production</div><span class="v" data-metric="agri_horticulture_production">~350 MT</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Agri Exports Value</div><span class="v" data-metric="agri_exports_value">~$51.1B (FY25)</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Agri Imports Value</div><span class="v" data-metric="agri_imports_value">~$35B</span></div>
   </div>
 
   <div class="sub-title">Farmers and economics</div>
   <div class="grid cols-3">
-    <div class="card teal" data-cat="agriculture"><div class="card-head">Operational Landholdings</div><span class="v" data-metric="agri_operational_landholdings">~146M</span><div class="card-footer"><span class="card-source">Agriculture Census of India · Census Bench...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Average Holding Size</div><span class="v" data-metric="agri_average_holding_size">1.08 Ha</span><div class="card-footer"><span class="card-source">Agriculture Census of India · Census Bench...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Agri Workforce Share</div><span class="v" data-metric="agri_workforce_share">~45%</span><div class="card-footer"><span class="card-source">Periodic Labour Force Survey · 2023-24</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Irrigation Coverage</div><span class="v" data-metric="agri_irrigation_coverage">~55%</span><div class="card-footer"><span class="card-source">Directorate of Economics and Statistics · ...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Fertiliser Consumption</div><span class="v" data-metric="agri_fertiliser_consumption">~60 MT</span><div class="card-footer"><span class="card-source">Department of Fertilisers Annual Review · ...</span><span class="card-type">Flow</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Agri Credit Flow</div><span class="v" data-metric="agri_credit_flow">Rs 20L Cr</span><div class="card-footer"><span class="card-source">NABARD · FY2023-24</span><span class="card-type">Stock</span></div></div>
+    <div class="card teal" data-cat="agriculture"><div class="card-head">Operational Landholdings</div><span class="v" data-metric="agri_operational_landholdings">~146M</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Average Holding Size</div><span class="v" data-metric="agri_average_holding_size">1.08 Ha</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Agri Workforce Share</div><span class="v" data-metric="agri_workforce_share">~45%</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Irrigation Coverage</div><span class="v" data-metric="agri_irrigation_coverage">~55%</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Fertiliser Consumption</div><span class="v" data-metric="agri_fertiliser_consumption">~60 MT</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Agri Credit Flow</div><span class="v" data-metric="agri_credit_flow">Rs 20L Cr</span></div>
   </div>
 
   <div class="sub-title">Supply chain and markets</div>
   <div class="grid cols-3">
-    <div class="card" data-cat="agriculture"><div class="card-head">E-NAM Mandis</div><span class="v" data-metric="agri_enam_mandis">~1,360</span><div class="card-footer"><span class="card-source">National Agriculture Market · 2025</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Cold Storage Capacity</div><span class="v" data-metric="agri_cold_storage_capacity">~40 MT</span><div class="card-footer"><span class="card-source">National Centre for Cold-chain Development...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">Food Processing Market</div><span class="v" data-metric="agri_food_processing_market">~$382B (FY25)</span><div class="card-footer"><span class="card-source">IBEF · FY25</span><span class="card-type">Stock</span></div></div>
-    <div class="card teal" data-cat="agriculture"><div class="card-head">Post-Harvest Losses</div><span class="v" data-metric="agri_post_harvest_losses">~15%</span><div class="card-footer"><span class="card-source">ICAR-CIPHET Harvest and Post-Harvest Losse...</span><span class="card-type">Stock</span></div></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">E-NAM Mandis</div><span class="v" data-metric="agri_enam_mandis">~1,360</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Cold Storage Capacity</div><span class="v" data-metric="agri_cold_storage_capacity">~40 MT</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Food Processing Market</div><span class="v" data-metric="agri_food_processing_market">~$382B (FY25)</span></div>
+    <div class="card teal" data-cat="agriculture"><div class="card-head">Post-Harvest Losses</div><span class="v" data-metric="agri_post_harvest_losses">~15%</span></div>
   </div>
 
   <div class="sub-title">Sustainability and technology</div>
   <div class="grid cols-3">
-    <div class="card" data-cat="agriculture"><div class="card-head">Organic Farming Area</div><span class="v" data-metric="agri_organic_farming_area">~2.9M Ha</span><div class="card-footer"><span class="card-source">National Programme for Organic Production ...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">PM-KISAN Beneficiaries</div><span class="v" data-metric="agri_pm_kisan_beneficiaries">~110M</span><div class="card-footer"><span class="card-source">PM-KISAN Samman Nidhi Official Portal · 20...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="agriculture"><div class="card-head">PMFBY Insured Area</div><span class="v" data-metric="agri_pmfby_insured_area">~50M Ha</span><div class="card-footer"><span class="card-source">Pradhan Mantri Fasal Bima Yojana · FY2023-24</span><span class="card-type">Stock</span></div></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">Organic Farming Area</div><span class="v" data-metric="agri_organic_farming_area">~2.9M Ha</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">PM-KISAN Beneficiaries</div><span class="v" data-metric="agri_pm_kisan_beneficiaries">~110M</span></div>
+    <div class="card" data-cat="agriculture"><div class="card-head">PMFBY Insured Area</div><span class="v" data-metric="agri_pmfby_insured_area">~50M Ha</span></div>
   </div>
 </section>
 
@@ -1282,50 +1283,50 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
     <div class="card" data-cat="economy" title="Agriculture and allied sectors share of India's Gross Value Added (GVA) / GDP at basic prices.">
       <div class="card-head">Agri Share of GDP</div>
       <span class="v" data-metric="economy_share_of_gdp_gva">~18%</span>
-      <div class="card-footer"><span class="card-source">MoSPI · FY24</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Operational agricultural holdings in India per Agriculture Census of India (~146M total operational holdings); distinct from individual farmers.">
       <div class="card-head">Operational Holdings</div>
       <span class="v" data-metric="economy_farmers_cultivators">~146M</span>
       <div class="card-sub">Operational landholdings, not farmers</div>
-      <div class="card-footer"><span class="card-source">Agriculture Census of India</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Total agricultural households in India according to NSSO Situation Assessment Survey.">
       <div class="card-head">Agricultural Households</div>
       <span class="v" data-metric="economy_agricultural_households">~93M</span>
-      <div class="card-footer"><span class="card-source">NSSO (77th Round)</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Total arable land in India (~157M ha); distinct from net sown area which is ~140–141M ha.">
       <div class="card-head">Arable Land</div>
       <span class="v" data-metric="economy_arable_land">~157M ha</span>
       <div class="card-sub">Arable land; net sown area is ~140–141M ha</div>
-      <div class="card-footer"><span class="card-source">DES / MoA&amp;FW</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Total broader agricultural exports from India in FY25 (~$51.1B); agri-food exports alone stand at ~$49.4B.">
       <div class="card-head">Agri Exports (FY25)</div>
       <span class="v" data-metric="economy_agri_exports_fy25">~$51.1B (FY25)</span>
       <div class="card-sub">Total agri exports; agri-food is ~$49.4B</div>
-      <div class="card-footer"><span class="card-source">PIB / Dept of Commerce · FY25</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Estimated market size of India's food processing sector in FY25 per IBEF.">
       <div class="card-head">Food Processing Market</div>
       <span class="v" data-metric="economy_food_processing_market">~$382B (FY25)</span>
-      <div class="card-footer"><span class="card-source">IBEF · FY25</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Projected agricultural GVA / GDP growth for FY26 per RBI Monetary Policy Committee &amp; Economic Survey.">
       <div class="card-head">Agri GDP Growth (FY26)</div>
       <span class="v" data-metric="economy_agri_gdp_growth_fy26">~3.1%</span>
-      <div class="card-footer"><span class="card-source">RBI MPC / Economic Survey · FY26</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Average operational holding size in India per Agriculture Census (1.08 ha benchmarked to ~1.1 ha).">
       <div class="card-head">Average Farm Size</div>
       <span class="v" data-metric="economy_average_farm_size">~1.1 ha</span>
-      <div class="card-footer"><span class="card-source">Agriculture Census of India</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Total national cold storage capacity across registered facilities in India per NCCD / MoFPI.">
       <div class="card-head">Cold Storage Capacity</div>
       <span class="v" data-metric="economy_cold_storage_capacity">~37M MT</span>
-      <div class="card-footer"><span class="card-source">NCCD / MoFPI</span><span class="card-type">Stock</span></div>
+      
     </div>
   </div>
 
@@ -1334,33 +1335,33 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
     <div class="card accent" data-cat="economy" title="Total Indian fast-moving consumer goods (FMCG) market size in 2025 per NielsenIQ.">
       <div class="card-head">FMCG Market Size (2025)</div>
       <span class="v" data-metric="economy_market_size_2025">~$289B (2025)</span>
-      <div class="card-footer"><span class="card-source">NielsenIQ · 2025</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="FMCG demand split between urban consumption (62%) and rural consumption (38%) per NielsenIQ.">
       <div class="card-head">Urban / Rural Share</div>
       <span class="v" data-metric="economy_urban_rural_share">62% / 38%</span>
-      <div class="card-footer"><span class="card-source">NielsenIQ · 2024–25</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Projected annual revenue growth rate for the Indian FMCG sector in FY26 per CRISIL Ratings.">
       <div class="card-head">Revenue Growth (FY26)</div>
       <span class="v" data-metric="economy_revenue_growth_fy26">6–8% (FY26)</span>
-      <div class="card-footer"><span class="card-source">CRISIL Ratings · FY26</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Modern trade channel share of national FMCG sales (10–12%); reaches ~22.8% in top-8 metro cities per Kantar / NielsenIQ.">
       <div class="card-head">Modern Trade Share</div>
       <span class="v" data-metric="economy_modern_trade_share">10–12% (National)</span>
       <div class="card-sub">~22.8% in top-8 metros (Q1 2025)</div>
-      <div class="card-footer"><span class="card-source">Kantar / NielsenIQ · 2025</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card teal" data-cat="economy" title="FMCG quarterly volume growth rate in rural areas (8.4%) outpacing urban areas (4.6%) in Q2 2025 per NielsenIQ.">
       <div class="card-head">Rural Volume Growth (Q2 2025)</div>
       <span class="v" data-metric="economy_rural_volume_growth_q2_2025">8.4% vs urban 4.6%</span>
-      <div class="card-footer"><span class="card-source">NielsenIQ · Q2 2025</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Projected Indian FMCG market size by 2030 per FICCI &amp; NielsenIQ long-term market sizing.">
       <div class="card-head">Projected FMCG Market (2030)</div>
       <span class="v" data-metric="economy_projected_market_2030">~$643B (2030)</span>
-      <div class="card-footer"><span class="card-source">FICCI / NielsenIQ · 2030P</span><span class="card-type">Flow</span></div>
+      
     </div>
   </div>
 
@@ -1369,50 +1370,50 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
     <div class="card accent" data-cat="economy" title="Cumulative startups officially recognized under the Startup India initiative by DPIIT.">
       <div class="card-head">DPIIT-recognised Startups</div>
       <span class="v" data-metric="economy_dpiit_recognised_startups">164K+ (Jan 2026)</span>
-      <div class="card-footer"><span class="card-source">DPIIT Startup India · Jan 2026</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Active individual angel investors in India's startup ecosystem per Indian Angel Network / Inc42.">
       <div class="card-head">Angel Investors</div>
       <span class="v" data-metric="economy_angel_investors">10K+ (2024–25)</span>
       <div class="card-sub">Active individual angel investors</div>
-      <div class="card-footer"><span class="card-source">Indian Angel Network / Inc42</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Active registered venture capital and private equity investment funds operating in India per IVCA.">
       <div class="card-head">VC Funds</div>
       <span class="v" data-metric="economy_vc_funds">800+ (2024–25)</span>
       <div class="card-sub">Active registered VC/PE funds</div>
-      <div class="card-footer"><span class="card-source">IVCA · 2024–25</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Active startup incubators and accelerators supported by Atal Innovation Mission, DST, and private institutions.">
       <div class="card-head">Incubators</div>
       <span class="v" data-metric="economy_incubators">1,000+</span>
-      <div class="card-footer"><span class="card-source">Atal Innovation Mission · 2024–25</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card teal" data-cat="economy" title="Privately held startups valued at $1B+; 118 active unicorns located in India per Invest India, 132 total founded per Tracxn.">
       <div class="card-head">Unicorns</div>
       <span class="v" data-metric="economy_unicorns_2026">118 active (132 total)</span>
       <div class="card-sub">Startups valued at $1B+ (2025–26)</div>
-      <div class="card-footer"><span class="card-source">Invest India / Tracxn · 2025–26</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="High-growth startups with potential to reach unicorn valuation ($1B+) within 2–4 years per Tracxn / Inc42.">
       <div class="card-head">Soonicorns</div>
       <span class="v" data-metric="economy_soonicorns">100+ (2025)</span>
-      <div class="card-footer"><span class="card-source">Tracxn · 2025</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Total venture and growth capital raised by Indian startups during calendar year 2025 per Inc42 / PwC India.">
       <div class="card-head">Funding Raised (2025)</div>
       <span class="v" data-metric="economy_funding_raised_2025">$12B+ (2025)</span>
-      <div class="card-footer"><span class="card-source">Inc42 / PwC India · 2025</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Leading industry verticals by venture capital deal volume and value per IVCA &amp; Bain India VC Report.">
       <div class="card-head">Top Startup Sectors</div>
       <span class="v" data-metric="economy_top_sectors">FinTech, SaaS, HealthTech</span>
-      <div class="card-footer"><span class="card-source">IVCA / Bain · 2024–25</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Top Indian metropolitan hubs accounting for the majority of startup creation and venture capital investment.">
       <div class="card-head">Top Startup Hubs</div>
       <span class="v" data-metric="economy_top_startup_hubs">Bengaluru, Delhi, Mumbai</span>
-      <div class="card-footer"><span class="card-source">Startup India / Tracxn · 2025</span><span class="card-type">Stock</span></div>
+      
     </div>
   </div>
 
@@ -1421,43 +1422,43 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
     <div class="card accent" data-cat="economy" title="Total Indian media and entertainment sector revenue in 2025 per FICCI-EY.">
       <div class="card-head">M&amp;E Sector Size (2025)</div>
       <span class="v" data-metric="economy_sector_size_2025">~$30B (2025)</span>
-      <div class="card-footer"><span class="card-source">FICCI-EY M&amp;E Report · 2025</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Year-over-year revenue expansion rate of the Indian media &amp; entertainment industry per FICCI-EY.">
       <div class="card-head">Growth, YoY</div>
       <span class="v" data-metric="economy_growth_yoy">~9.1% (2024–25)</span>
-      <div class="card-footer"><span class="card-source">FICCI-EY · 2024–25</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Over-the-top (OTT) digital video streaming industry revenue in India for FY25 per FICCI-EY.">
       <div class="card-head">OTT Revenue (FY25)</div>
       <span class="v" data-metric="economy_ott_revenue_fy25">~Rs 10,000 Cr (FY25)</span>
-      <div class="card-footer"><span class="card-source">FICCI-EY · FY2024-25</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Total paid OTT video subscriptions across platforms in India per Ormax Media.">
       <div class="card-head">Paid Video Subscriptions</div>
       <span class="v" data-metric="economy_ott_subscribers">100M+ (2024)</span>
-      <div class="card-footer"><span class="card-source">Ormax Media · 2024</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Total television-owning households in India according to Broadcast Audience Research Council (BARC) universe estimate.">
       <div class="card-head">TV Households</div>
       <span class="v" data-metric="economy_tv_households">~210M (2024)</span>
-      <div class="card-footer"><span class="card-source">BARC India · 2024</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Total print newspaper readership in India according to Indian Readership Survey (IRS) / MRUC benchmarks.">
       <div class="card-head">Newspaper Readers</div>
       <span class="v" data-metric="economy_newspaper_readers">300M+</span>
-      <div class="card-footer"><span class="card-source">IRS / MRUC Benchmark</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Annual feature films certified and produced across all Indian languages per CBFC annual reports.">
       <div class="card-head">Films Produced/yr</div>
       <span class="v" data-metric="economy_bollywood_films_yr">1,500–2,000</span>
-      <div class="card-footer"><span class="card-source">CBFC · 2024</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Projected Indian media and entertainment sector size by 2030 (~₹4.3 lakh crore / ~$50B at ~10% CAGR) per FICCI-EY.">
       <div class="card-head">Projected M&amp;E Size, 2030</div>
       <span class="v" data-metric="economy_me_projected_sector_size_2030">~$50B (2030)</span>
       <div class="card-sub">FICCI-EY projection (~₹4.3L Cr at ~10% CAGR)</div>
-      <div class="card-footer"><span class="card-source">FICCI-EY · 2030P</span><span class="card-type">Flow</span></div>
+      
     </div>
   </div>
 
@@ -1466,49 +1467,49 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
     <div class="card accent" data-cat="economy" title="Estimated market value of India's real estate industry in 2025 per IBEF.">
       <div class="card-head">Real Estate Sector Size (2025)</div>
       <span class="v" data-metric="economy_sector_size_2025_1">~$200–300B (2025)</span>
-      <div class="card-footer"><span class="card-source">IBEF Real Estate Overview · 2025</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Direct contribution of real estate and construction to India's Gross Domestic Product per NITI Aayog / MoHUA.">
       <div class="card-head">Direct Share of GDP</div>
       <span class="v" data-metric="economy_direct_share_of_gdp">~7–8% (2024)</span>
-      <div class="card-footer"><span class="card-source">NITI Aayog / MoHUA · 2024</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Projected market size of India's real estate sector by 2030 according to CREDAI-Colliers Real Estate 2030 Vision.">
       <div class="card-head">Projected Sector Size, 2030</div>
       <span class="v" data-metric="economy_projected_sector_size_2030">~$1T (2030)</span>
       <div class="card-sub">CREDAI-Colliers Real Estate 2030 Vision</div>
-      <div class="card-footer"><span class="card-source">CREDAI-Colliers · 2030P</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Validated urban housing shortage in India assessed under MoHUA / PMAY-U demand survey (~10–11.2M units).">
       <div class="card-head">Urban Housing Shortfall</div>
       <span class="v" data-metric="economy_urban_housing_shortfall">~10M units (2024)</span>
       <div class="card-sub">Validated urban shortage under MoHUA / PMAY-U (~10–11.2M)</div>
-      <div class="card-footer"><span class="card-source">MoHUA / HUDCO · 2024</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Cumulative houses sanctioned and completed under Pradhan Mantri Awas Yojana (Urban + Gramin) per official portal.">
       <div class="card-head">PMAY Houses Built</div>
       <span class="v" data-metric="economy_pmay_houses_built">40M+ (Jan 2026)</span>
-      <div class="card-footer"><span class="card-source">PMAY Dashboard · Jan 2026</span><span class="card-type">Cumulative Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Total outstanding bank credit deployed to the residential housing sector per Reserve Bank of India (RBI).">
       <div class="card-head">Home Loan Book</div>
       <span class="v" data-metric="economy_home_loan_book">~Rs 28L Cr (FY25)</span>
-      <div class="card-footer"><span class="card-source">RBI Sectoral Credit · FY25</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Typical residential apartment pricing across top tier-1 Indian metropolitan markets per Knight Frank India.">
       <div class="card-head">Avg. Home Price, Metro</div>
       <span class="v" data-metric="economy_avg_home_price_metro">Rs 80L–2Cr (2024)</span>
-      <div class="card-footer"><span class="card-source">Knight Frank India · 2024</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Annual gross absorption of Grade A commercial office leasing space across top Indian cities per CBRE / Colliers.">
       <div class="card-head">Office Space Demand</div>
       <span class="v" data-metric="economy_office_space_demand">~60M sq ft/yr (2024)</span>
-      <div class="card-footer"><span class="card-source">CBRE / Colliers · 2024</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="economy" title="Largest real estate development companies in India by market capitalization and residential bookings.">
       <div class="card-head">Top Realty Players</div>
       <span class="v" data-metric="economy_top_players">DLF, Godrej, Lodha</span>
-      <div class="card-footer"><span class="card-source">BSE Realty Index · 2025</span><span class="card-type">Stock</span></div>
+      
     </div>
   </div>
 </section>
@@ -1540,32 +1541,32 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
     <div class="card" data-cat="global" title="United States total resident population per US Census Bureau and World Bank estimates.">
       <div class="card-head">US Population</div>
       <span class="v" data-metric="global_population">~342M (2025)</span>
-      <div class="card-footer"><span class="card-source">US Census / World Bank · 2025</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Total occupied housing units / households in the United States according to US Census Bureau CPS.">
       <div class="card-head">US Households</div>
       <span class="v" data-metric="global_households">~131M (2024–25)</span>
-      <div class="card-footer"><span class="card-source">US Census Bureau CPS · 2024–25</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="United States nominal Gross Domestic Product (GDP) projection per IMF October 2026 World Economic Outlook.">
       <div class="card-head">US GDP (Nominal)</div>
       <span class="v" data-metric="global_gdp">~$32.64T (2026)</span>
-      <div class="card-footer"><span class="card-source">IMF WEO, Oct 2026</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="United States real median household income reported by the US Census Bureau Current Population Survey (CPS ASEC).">
       <div class="card-head">Median Household Income</div>
       <span class="v" data-metric="global_median_household_income">~$80,610/yr (2023)</span>
-      <div class="card-footer"><span class="card-source">US Census Bureau (CPS ASEC)</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Percentage of population using the internet in the United States per ITU / World Bank.">
       <div class="card-head">Internet Penetration</div>
       <span class="v" data-metric="global_internet_penetration">~95% (2024–25)</span>
-      <div class="card-footer"><span class="card-source">ITU / World Bank · 2024–25</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Number of adults holding at least one credit card in the US per Federal Reserve Bank of New York Consumer Credit Panel.">
       <div class="card-head">Credit Card Users</div>
       <span class="v" data-metric="global_credit_card_users">190M+ (2024–25)</span>
-      <div class="card-footer"><span class="card-source">Federal Reserve Bank of NY · 2024–25</span><span class="card-type">Stock</span></div>
+      
     </div>
   </div>
 
@@ -1574,36 +1575,36 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
     <div class="card accent" data-cat="global" title="India's share of the global human population based on UN World Population Prospects 2024 (1.477B ÷ 8.3B).">
       <div class="card-head">Share of World Population</div>
       <span class="v" data-metric="global_india_s_share_of_world_population">~17.8% (2026)</span>
-      <div class="card-footer"><span class="card-source">UN Population Division · 2026</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="India's nominal GDP share of global GDP per IMF October 2026 World Economic Outlook ($4.06T ÷ $128T).">
       <div class="card-head">Share of World GDP</div>
       <span class="v" data-metric="global_india_s_share_of_world_gdp">~3.2% (2026)</span>
-      <div class="card-footer"><span class="card-source">IMF WEO, Oct 2026</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="India's share of global internet users: India's 1.03B internet users divided by ITU's ~6.3B global internet users in 2026.">
       <div class="card-head">Share of Global Internet Users</div>
       <span class="v" data-metric="global_india_s_share_of_global_internet_users">~16% (2026)</span>
       <div class="card-sub">India ~1.03B ÷ World ~6.3B users</div>
-      <div class="card-footer"><span class="card-source">ITU / DataReportal · 2026</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card teal" data-cat="global" title="India's rank in global real-time payment transactions driven by UPI, accounting for ~49% of global real-time volume per ACI Worldwide.">
       <div class="card-head">Global Rank, Real-Time Payments</div>
       <span class="v" data-metric="global_india_s_global_rank_upi_transaction_volume">#1 (UPI)</span>
       <div class="card-sub">~49% of global real-time payments</div>
-      <div class="card-footer"><span class="card-source">ACI Worldwide · 2025</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="India's share of global generic drug exports by volume according to the Department of Pharmaceuticals.">
       <div class="card-head">Generic Drug Exports by Volume</div>
       <span class="v" data-metric="global_share_of_global_pharma_exports_by_volume">~20% (Global share)</span>
       <div class="card-sub">Share of global generic supply by volume</div>
-      <div class="card-footer"><span class="card-source">Department of Pharmaceuticals</span><span class="card-type">Rate</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="India's market share in the global sourcing and IT-BPM delivery market per NASSCOM Strategic Review.">
       <div class="card-head">IT Services Offshoring Share</div>
       <span class="v" data-metric="global_share_of_global_it_services_offshoring">~55% (FY25)</span>
       <div class="card-sub">Global sourcing &amp; IT-BPM delivery market</div>
-      <div class="card-footer"><span class="card-source">NASSCOM Strategic Review · FY25</span><span class="card-type">Rate</span></div>
+      
     </div>
   </div>
 
@@ -1612,51 +1613,51 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
     <div class="card" data-cat="global" title="Estimated total human population worldwide projected for 2026 by UN World Population Prospects 2024.">
       <div class="card-head">World Population</div>
       <span class="v" data-metric="global_world_population">~8.3B (2026 projection)</span>
-      <div class="card-footer"><span class="card-source">UN Population Division · 2026</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Total global individuals using the internet according to ITU Facts and Figures 2026.">
       <div class="card-head">World Internet Users</div>
       <span class="v" data-metric="global_world_internet_users">~6.3B (2026)</span>
-      <div class="card-footer"><span class="card-source">ITU Facts and Figures 2026</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Estimated unique smartphone subscriptions active worldwide according to Ericsson Mobility Report.">
       <div class="card-head">World Smartphone Users</div>
       <span class="v" data-metric="global_world_smartphone_users">~7B+ (2025)</span>
-      <div class="card-footer"><span class="card-source">Ericsson Mobility Report · 2024–25</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Total nominal gross domestic product of the world economy projected for 2026 by the IMF World Economic Outlook (October 2026).">
       <div class="card-head">World GDP</div>
       <span class="v" data-metric="global_world_gdp">~$128T (2026)</span>
-      <div class="card-footer"><span class="card-source">IMF WEO, Oct 2026</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Total global retail e-commerce sales per eMarketer / Insider Intelligence sizing.">
       <div class="card-head">Global E-commerce Market</div>
       <span class="v" data-metric="global_global_e_commerce_market">~$6T (2024–25)</span>
       <div class="card-sub">Global retail e-commerce sales (eMarketer)</div>
-      <div class="card-footer"><span class="card-source">eMarketer · 2024–25</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Total registered motor vehicles in operation worldwide (cars, trucks, buses) per Hedges &amp; Company and OICA; distinct from passenger cars alone.">
       <div class="card-head">Motor Vehicles Worldwide</div>
       <span class="v" data-metric="global_cars_on_the_road_worldwide">~1.4B motor vehicles</span>
       <div class="card-sub">Total registered motor vehicles in operation</div>
-      <div class="card-footer"><span class="card-source">Hedges &amp; Company / OICA · 2024</span><span class="card-type">Stock</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Total scheduled airline passengers carried globally per IATA World Air Transport Statistics, surpassing pre-pandemic peaks.">
       <div class="card-head">Annual Flight Passengers</div>
       <span class="v" data-metric="global_annual_flight_passengers_worldwide">~4.96B (2024)</span>
       <div class="card-sub">Scheduled airline passengers (IATA)</div>
-      <div class="card-footer"><span class="card-source">IATA WATS · 2024</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Total global spending on medicine and pharmaceuticals per IQVIA Institute Global Use of Medicines Report.">
       <div class="card-head">Global Pharma Market</div>
       <span class="v" data-metric="global_global_pharma_market">~$1.6T (2024–25)</span>
-      <div class="card-footer"><span class="card-source">IQVIA Global Medicines Report · 2024</span><span class="card-type">Flow</span></div>
+      
     </div>
     <div class="card" data-cat="global" title="Total aggregate market capitalization of the 500 leading publicly traded companies in the S&amp;P 500 index.">
       <div class="card-head">S&amp;P 500 Market Cap</div>
       <span class="v" data-metric="global_s_p_500_market_cap">~$51.5T (Jan 2026)</span>
       <div class="card-sub">Total market cap of S&amp;P 500 index constituents</div>
-      <div class="card-footer"><span class="card-source">S&amp;P Dow Jones Indices · Jan 2026</span><span class="card-type">Stock</span></div>
+      
     </div>
   </div>
 </section>
@@ -1808,21 +1809,172 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
   <div class="sec-head"><span class="sec-num">14</span><h2>Bonus anchors</h2></div>
   <p class="sec-note">Not from the source cheat sheets — a few more general-knowledge numbers worth having on hand for the wider political, economic and demographic questions interviewers like to slip in. Treat these as rounder, softer estimates than the sourced ones above.</p>
   <div class="grid cols-3">
-    <div class="card" data-cat="bonus"><div class="card-head">Countries in the World</div><span class="v" data-metric="bonus_countries_in_the_world">~195</span><div class="card-footer"><span class="card-source">United Nations Member States · 2025</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="bonus"><div class="card-head">India's Land Area</div><span class="v" data-metric="bonus_india_s_land_area_7th_largest">~3.29M km²</span><div class="card-footer"><span class="card-source">Survey of India · Official Survey</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="bonus"><div class="card-head">Lok Sabha / Rajya Sabha Seats</div><span class="v" data-metric="bonus_lok_sabha_rajya_sabha_seats">543 / 245</span><div class="card-footer"><span class="card-source">Parliament of India · 18th Lok Sabha (2024)</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="bonus"><div class="card-head">Districts in India</div><span class="v" data-metric="bonus_districts_in_india">~800+</span><div class="card-footer"><span class="card-source">Local Government Directory · Jan 2026</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="bonus"><div class="card-head">Constitutionally Scheduled Languages</div><span class="v" data-metric="bonus_constitutionally_scheduled_languages">22</span><div class="card-footer"><span class="card-source">Constitution of India · Constitutional Eig...</span><span class="card-type">Stock</span></div></div>
-    <div class="card accent" data-cat="bonus"><div class="card-head">India Real GDP Growth, FY26</div><span class="v" data-metric="bonus_india_real_gdp_growth_fy26_rbi_est">~7.2%</span><div class="card-footer"><span class="card-source">Reserve Bank of India · FY2025-26</span><span class="card-type">Flow</span></div></div>
-    <div class="card" data-cat="bonus"><div class="card-head">RBI Repo Rate, 2026</div><span class="v" data-metric="bonus_rbi_repo_rate_2026">5.50%</span><div class="card-footer"><span class="card-source">Reserve Bank of India Monetary Policy Comm...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="bonus"><div class="card-head">India Forex Reserves, May 2026</div><span class="v" data-metric="bonus_india_forex_reserves_may_2026">~$682B</span><div class="card-footer"><span class="card-source">Reserve Bank of India Weekly Statistical S...</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="bonus"><div class="card-head">Life Expectancy</div><span class="v" data-metric="bonus_life_expectancy_at_birth">~72.2 yrs</span><div class="card-footer"><span class="card-source">SRS · 2024</span><span class="card-type">Stock</span></div></div>
-    <div class="card" data-cat="bonus"><div class="card-head">Sex Ratio</div><span class="v" data-metric="bonus_sex_ratio_females_per_1_000_males_2011_census">~943</span><div class="card-footer"><span class="card-source">Census of India · 2011 Census Benchmark</span><span class="card-type">Stock</span></div></div>
-    <div class="card teal" data-cat="bonus"><div class="card-head">India's Global Rank by Nominal GDP</div><span class="v" data-metric="bonus_india_s_global_rank_by_nominal_gdp">5th</span><div class="card-footer"><span class="card-source">International Monetary Fund · 2024-25</span><span class="card-type">Flow</span></div></div>
-    <div class="card" data-cat="bonus"><div class="card-head">Projected World Population, 2050</div><span class="v" data-metric="bonus_projected_world_population_2050">~9.7B</span><div class="card-footer"><span class="card-source">UN Department of Economic and Social Affai...</span><span class="card-type">Stock</span></div></div>
+    <div class="card" data-cat="bonus"><div class="card-head">Countries in the World</div><span class="v" data-metric="bonus_countries_in_the_world">~195</span></div>
+    <div class="card" data-cat="bonus"><div class="card-head">India's Land Area</div><span class="v" data-metric="bonus_india_s_land_area_7th_largest">~3.29M km²</span></div>
+    <div class="card" data-cat="bonus"><div class="card-head">Lok Sabha / Rajya Sabha Seats</div><span class="v" data-metric="bonus_lok_sabha_rajya_sabha_seats">543 / 245</span></div>
+    <div class="card" data-cat="bonus"><div class="card-head">Districts in India</div><span class="v" data-metric="bonus_districts_in_india">~800+</span></div>
+    <div class="card" data-cat="bonus"><div class="card-head">Constitutionally Scheduled Languages</div><span class="v" data-metric="bonus_constitutionally_scheduled_languages">22</span></div>
+    <div class="card accent" data-cat="bonus"><div class="card-head">India Real GDP Growth, FY26</div><span class="v" data-metric="bonus_india_real_gdp_growth_fy26_rbi_est">~7.2%</span></div>
+    <div class="card" data-cat="bonus"><div class="card-head">RBI Repo Rate, 2026</div><span class="v" data-metric="bonus_rbi_repo_rate_2026">5.50%</span></div>
+    <div class="card" data-cat="bonus"><div class="card-head">India Forex Reserves, May 2026</div><span class="v" data-metric="bonus_india_forex_reserves_may_2026">~$682B</span></div>
+    <div class="card" data-cat="bonus"><div class="card-head">Life Expectancy</div><span class="v" data-metric="bonus_life_expectancy_at_birth">~72.2 yrs</span></div>
+    <div class="card" data-cat="bonus"><div class="card-head">Sex Ratio</div><span class="v" data-metric="bonus_sex_ratio_females_per_1_000_males_2011_census">~943</span></div>
+    <div class="card teal" data-cat="bonus"><div class="card-head">India's Global Rank by Nominal GDP</div><span class="v" data-metric="bonus_india_s_global_rank_by_nominal_gdp">5th</span></div>
+    <div class="card" data-cat="bonus"><div class="card-head">Projected World Population, 2050</div><span class="v" data-metric="bonus_projected_world_population_2050">~9.7B</span></div>
   </div>
 </section>
 
+
+<!-- ============ 15 SOURCES & METHODOLOGY ============ -->
+<section class="sec" id="sources" data-cat="sources">
+  <div class="sec-head"><span class="sec-num">15</span><h2>Data sources &amp; methodology</h2></div>
+  <p class="sec-note">Authoritative primary datasets, official government publications, statutory bodies, and global benchmark reports referenced across all dashboard categories.</p>
+
+  <div class="grid cols-3">
+    <div class="card source-card">
+      <div class="card-head">01. Population &amp; Demographics</div>
+      <ul class="source-list">
+        <li><b>MoHFW:</b> Report on Population Projections for India and States 2011–2036 (Table 8 state projections to 2026)</li>
+        <li><b>UN DESA / Population Division:</b> UN World Population Prospects (WPP 2024 revision, 1 July estimates)</li>
+        <li><b>UNFPA:</b> State of World Population Report (2024–2025 demographics &amp; working-age shares)</li>
+        <li><b>World Bank:</b> World Development Indicators (Urban/rural split, gender ratios, global aggregates)</li>
+        <li><b>MoSPI / NFHS:</b> National Family Health Survey (NFHS-5) &amp; Household Projections</li>
+        <li><b>7th CPC:</b> Ministry of Finance / Dept. of Expenditure (X/Y/Z city tier classification)</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">02. Digital &amp; Internet</div>
+      <ul class="source-list">
+        <li><b>TRAI:</b> Telecom Regulatory Authority of India (Quarterly Performance Indicator Reports, wireless &amp; broadband subscribers)</li>
+        <li><b>IAMAI &amp; Kantar:</b> Internet in India Annual Reports (Active internet users, rural-urban penetration)</li>
+        <li><b>NPCI &amp; PIB:</b> National Payments Corporation of India (UPI monthly transaction volumes &amp; values)</li>
+        <li><b>Ericsson Mobility:</b> Ericsson Mobility Report (Data traffic per smartphone &amp; 5G adoption)</li>
+        <li><b>Counterpoint &amp; GSMA:</b> Smartphone installed base, feature phone transition, and unique mobile subscribers</li>
+        <li><b>DataReportal / Kepios:</b> Global Digital Insights &amp; Social Media User Benchmarks</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">03. Fintech &amp; Payments</div>
+      <ul class="source-list">
+        <li><b>Reserve Bank of India (RBI):</b> Monthly Bulletin, Payment Systems Indicators, Bankwise ATM/Card Statistics</li>
+        <li><b>NPCI:</b> Product Statistics (UPI, IMPS, NETC FASTag, AePS monthly metrics &amp; merchant volume)</li>
+        <li><b>AMFI:</b> Association of Mutual Funds in India (Monthly SIP inflows, mutual fund folios, AUM)</li>
+        <li><b>DFS / Ministry of Finance:</b> Pradhan Mantri Jan Dhan Yojana (PMJDY) portal &amp; banking inclusions</li>
+        <li><b>Redseer &amp; PwC:</b> India Fintech Strategy Reports &amp; Digital Lending Benchmarks</li>
+        <li><b>DPIIT / Tracxn:</b> Fintech venture funding &amp; valuation benchmarks</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">04. E-commerce &amp; Online Retail</div>
+      <ul class="source-list">
+        <li><b>Bain &amp; Company &amp; Flipkart:</b> <i>How India Shops Online</i> annual series (Annual e-retail GMV, shoppers, AOV)</li>
+        <li><b>IBEF:</b> India Brand Equity Foundation Retail &amp; E-Commerce Sectoral Reports</li>
+        <li><b>DGFT:</b> Directorate General of Foreign Trade (E-Commerce cross-border export benchmarks)</li>
+        <li><b>CAIT &amp; Kantar:</b> Total retail market size, organized vs. unorganized retail split</li>
+        <li><b>Kearney &amp; BCG:</b> India Retail Next &amp; omnichannel consumer behavior surveys</li>
+        <li><b>Redseer Strategy Consultants:</b> E-commerce festive sales &amp; category breakdowns</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">05. Quick Commerce (Q-Commerce)</div>
+      <ul class="source-list">
+        <li><b>Redseer Strategy Consultants:</b> Quick Commerce Market Updates, monthly GOV trackers &amp; cohort metrics</li>
+        <li><b>Bernstein &amp; HSBC Global Research:</b> India Quick Commerce Deep Dives &amp; unit economics models</li>
+        <li><b>Company Disclosures:</b> Blinkit (Zomato Ltd), Swiggy Instamart (Swiggy Ltd), Zepto financial filings</li>
+        <li><b>Knight Frank India:</b> Urban logistics, dark store footprints, and micro-fulfillment center audits</li>
+        <li><b>CAIT:</b> Impact surveys on traditional FMCG kirana distribution</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">06. Mobility &amp; Electric Vehicles</div>
+      <ul class="source-list">
+        <li><b>MoRTH / Vahan Dashboard:</b> Ministry of Road Transport and Highways (EV registrations by category, total vehicle stock)</li>
+        <li><b>JMK Research &amp; Analytics:</b> Monthly EV reports, electric 2W/3W/4W segment penetration</li>
+        <li><b>Bureau of Energy Efficiency (BEE) &amp; MoP:</b> National EV Public Charging Infrastructure Database</li>
+        <li><b>NITI Aayog &amp; MHI:</b> FAME II / PM E-DRIVE guidelines &amp; 2030 electrification targets</li>
+        <li><b>DGCA &amp; AAI:</b> Directorate General of Civil Aviation &amp; Airports Authority of India passenger traffic</li>
+        <li><b>MoHUA &amp; Indian Railways:</b> Metro rail daily ridership &amp; Indian Railways Year Book</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">07. EdTech &amp; Online Education</div>
+      <ul class="source-list">
+        <li><b>Ministry of Education:</b> UDISE+ Unified District Information System for Education (School enrolments &amp; institutions)</li>
+        <li><b>AISHE:</b> All India Survey on Higher Education (Colleges, universities &amp; student enrolments)</li>
+        <li><b>AICTE:</b> All India Council for Technical Education (Technical &amp; management intake capacity)</li>
+        <li><b>IMARC Group &amp; MarketsandMarkets:</b> India EdTech Market Revenue &amp; CAGR forecasts</li>
+        <li><b>MoSPI / NSO:</b> Household Social Consumption on Education Surveys</li>
+        <li><b>Public Corporate Filings:</b> BSE disclosures &amp; audited reports (e.g. Physics Wallah, Unacademy)</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">08. Healthcare</div>
+      <ul class="source-list">
+        <li><b>National Health Accounts (NHA):</b> System of Health Accounts (THE, GHE, Out-of-pocket expenditure shares)</li>
+        <li><b>MoHFW:</b> Rural Health Statistics, PM-JAY National Health Authority registry</li>
+        <li><b>RGI / SRS:</b> Sample Registration System (Infant Mortality Rate, Maternal Mortality Ratio, birth rates)</li>
+        <li><b>NMC &amp; INC:</b> National Medical Commission &amp; Indian Nursing Council (Registered doctors &amp; nurses)</li>
+        <li><b>ICMR-INDIAB &amp; Lancet:</b> Non-communicable diseases prevalence (Diabetes, hypertension)</li>
+        <li><b>AIOCD &amp; Invest India:</b> Retail pharmacy distribution &amp; Department of Pharmaceuticals data</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">09. Agriculture</div>
+      <ul class="source-list">
+        <li><b>Agriculture Census of India:</b> Ministry of Agriculture &amp; Farmers Welfare (Operational holdings &amp; farm size)</li>
+        <li><b>Directorate of Economics and Statistics (DES):</b> Agricultural statistics, crop production &amp; sown area</li>
+        <li><b>Department of Commerce &amp; PIB:</b> Agri-food export statistics &amp; APEDA benchmarks</li>
+        <li><b>PM-KISAN &amp; PMFBY Portals:</b> Beneficiary households &amp; crop insurance coverage</li>
+        <li><b>NABARD:</b> All India Rural Financial Inclusion Survey &amp; agricultural credit disbursement</li>
+        <li><b>NCCD &amp; MoFPI:</b> Cold storage capacity &amp; food processing market estimates</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">10. Economy — Sector Deep Dives</div>
+      <ul class="source-list">
+        <li><b>NielsenIQ (NIQ):</b> FMCG quarterly snapshots, rural vs. urban consumption value &amp; volume</li>
+        <li><b>DPIIT Startup India &amp; Tracxn / Inc42:</b> Recognized startups, active unicorns &amp; funding volumes</li>
+        <li><b>FICCI-EY:</b> Media &amp; Entertainment Industry Reports (Digital media, filmed entertainment, print, gaming)</li>
+        <li><b>BARC India &amp; Ormax Media:</b> TV penetration, active viewers, and theatrical box office receipts</li>
+        <li><b>CREDAI, Colliers, CBRE, Knight Frank:</b> Real estate market size, residential sales &amp; office absorption</li>
+        <li><b>MoHUA / PMAY:</b> Pradhan Mantri Awas Yojana urban &amp; gramin housing dashboards</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">11. Global Benchmarks</div>
+      <ul class="source-list">
+        <li><b>International Monetary Fund (IMF):</b> World Economic Outlook (WEO October 2026 database, GDP &amp; GDP per capita)</li>
+        <li><b>International Telecommunication Union (ITU):</b> Facts and Figures 2026 (Global internet &amp; mobile users)</li>
+        <li><b>United States Census Bureau:</b> Current Population Survey (CPS ASEC 2025, US population &amp; income)</li>
+        <li><b>IATA:</b> World Air Transport Statistics (Global scheduled passenger journeys)</li>
+        <li><b>OICA &amp; Hedges &amp; Company:</b> Worldwide motor vehicles in operation &amp; annual automotive sales</li>
+        <li><b>IQVIA:</b> Global Use of Medicines &amp; pharmaceutical market value benchmarks</li>
+      </ul>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-head">12. Bonus Anchors &amp; Governance</div>
+      <ul class="source-list">
+        <li><b>Constitution of India:</b> Official constitutional provisions &amp; Eighth Schedule recognized languages</li>
+        <li><b>Parliament of India:</b> Lok Sabha &amp; Rajya Sabha secretariats (Constituencies &amp; seat distributions)</li>
+        <li><b>Survey of India:</b> Official geographical area, land borders &amp; coastline measurements</li>
+        <li><b>Local Government Directory:</b> Ministry of Panchayati Raj (Districts, sub-districts, gram panchayats)</li>
+        <li><b>Reserve Bank of India:</b> Weekly Statistical Supplement (Foreign exchange reserves &amp; policy rates)</li>
+        <li><b>United Nations:</b> Official member states &amp; international territorial benchmarks</li>
+      </ul>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer>
