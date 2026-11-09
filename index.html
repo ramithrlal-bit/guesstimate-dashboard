@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20261110_sources">
+<link rel="stylesheet" href="css/styles.css?v=20261110_menu">
 <!-- Supabase JS Client -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="data/reference_data.js?v=20261030_v4"></script>
@@ -27,7 +27,17 @@
         <h1 class="title">The Guesstimate <em>Ledger</em></h1>
         <p class="dek">Every population, digital, fintech, e-commerce, EV and edtech anchor you need before a case round — built for MBA, consulting, product and VC interview prep.</p>
       </div>
-    </div>
+    
+      <div class="masthead-actions">
+        <button id="menuBtn" class="menu-btn" aria-label="Open categories menu" aria-haspopup="dialog" aria-expanded="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <span>Categories</span>
+        </button>
+      </div></div>
 
     <div class="ledger" id="heroLedger">
       <div class="cell"><span class="num" data-metric="global_world_population">~8.3B</span><span class="lbl">World population (2026 proj.)</span></div>
@@ -62,8 +72,16 @@
       <button class="chip" data-cat="interview">Interview</button>
       <button class="chip" data-cat="bonus">Bonus GK</button>
     
-      <button class="chip" data-cat="sources">Sources</button></div>
-  </div>
+      </div>
+  
+    <button id="controlMenuBtn" class="menu-btn menu-btn-sm" aria-label="Open categories menu" aria-haspopup="dialog" aria-expanded="false">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span>Categories</span>
+    </button></div>
 </div>
 
 <main id="main" class="wrap">
@@ -1988,7 +2006,106 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
 <div class="tooltip" id="mapTooltip"></div>
 
 
-<script src="js/main.js?v=20261030_v4"></script>
+<script src="js/main.js?v=20261110_menu"></script>
 
 
+
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+<div class="menu-drawer" id="menuDrawer" role="dialog" aria-modal="true" aria-labelledby="menuDrawerTitle" aria-hidden="true">
+  <div class="menu-drawer-header">
+    <div>
+      <span class="menu-drawer-kicker">Navigation</span>
+      <h3 id="menuDrawerTitle">Categories</h3>
+    </div>
+    <button class="menu-close-btn" id="menuCloseBtn" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <div class="menu-drawer-body">
+    <div class="menu-section-label">All Dashboard Sections</div>
+    <nav class="menu-nav">
+      <a href="#population" class="menu-nav-item" data-cat="population">
+        <span class="menu-nav-num">01</span>
+        <span class="menu-nav-label">Population &amp; Demographics</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#digital" class="menu-nav-item" data-cat="digital">
+        <span class="menu-nav-num">02</span>
+        <span class="menu-nav-label">Digital &amp; Internet</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#fintech" class="menu-nav-item" data-cat="fintech">
+        <span class="menu-nav-num">03</span>
+        <span class="menu-nav-label">Fintech &amp; Payments</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#ecommerce" class="menu-nav-item" data-cat="ecommerce">
+        <span class="menu-nav-num">04</span>
+        <span class="menu-nav-label">E-commerce &amp; Online Retail</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#quickcommerce" class="menu-nav-item" data-cat="quickcommerce">
+        <span class="menu-nav-num">05</span>
+        <span class="menu-nav-label">Quick Commerce (Q-Commerce)</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#ev" class="menu-nav-item" data-cat="ev">
+        <span class="menu-nav-num">06</span>
+        <span class="menu-nav-label">Mobility &amp; Electric Vehicles</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#edtech" class="menu-nav-item" data-cat="edtech">
+        <span class="menu-nav-num">07</span>
+        <span class="menu-nav-label">EdTech &amp; Online Education</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#healthcare" class="menu-nav-item" data-cat="healthcare">
+        <span class="menu-nav-num">08</span>
+        <span class="menu-nav-label">Healthcare</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#agriculture" class="menu-nav-item" data-cat="agriculture">
+        <span class="menu-nav-num">09</span>
+        <span class="menu-nav-label">Agriculture</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#economy" class="menu-nav-item" data-cat="economy">
+        <span class="menu-nav-num">10</span>
+        <span class="menu-nav-label">Economy — Sector Deep Dives</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#global" class="menu-nav-item" data-cat="global">
+        <span class="menu-nav-num">11</span>
+        <span class="menu-nav-label">Global Benchmarks</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#frameworks" class="menu-nav-item" data-cat="frameworks">
+        <span class="menu-nav-num">12</span>
+        <span class="menu-nav-label">Guesstimate Frameworks</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#interview" class="menu-nav-item" data-cat="interview">
+        <span class="menu-nav-num">13</span>
+        <span class="menu-nav-label">Interview Playbook</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+      <a href="#bonus" class="menu-nav-item" data-cat="bonus">
+        <span class="menu-nav-num">14</span>
+        <span class="menu-nav-label">Bonus Anchors</span>
+        <span class="menu-nav-arrow">→</span>
+      </a>
+
+      <div class="menu-nav-divider"></div>
+
+      <a href="#sources" class="menu-nav-item menu-nav-highlight" data-cat="sources">
+        <span class="menu-nav-num special">15</span>
+        <span class="menu-nav-label">Data Sources &amp; Methodology</span>
+        <span class="menu-nav-badge">Sources</span>
+      </a>
+    </nav>
+  </div>
+</div>
 </body></html>
