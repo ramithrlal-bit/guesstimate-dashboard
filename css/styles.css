@@ -1343,7 +1343,14 @@ ul.tier-list li {
   border-color: var(--accent);
   outline: none;
 }
-.state-list-controls button {
+.state-list-controls .sort-dropdown-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+.state-list-controls .sort-dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   background: var(--surface);
   border: 1.5px solid var(--line);
   color: var(--ink-dim);
@@ -1356,12 +1363,165 @@ ul.tier-list li {
   white-space: nowrap;
   flex-shrink: 0;
   transition: all .15s ease;
+  user-select: none;
 }
-.state-list-controls button:hover {
+.state-list-controls .sort-dropdown-btn:hover,
+.state-list-controls .sort-dropdown-btn[aria-expanded="true"] {
   border-color: var(--accent);
   color: var(--accent);
   background: var(--accent-soft);
 }
+.sort-chevron {
+  display: inline-block;
+  transition: transform .2s ease;
+  flex-shrink: 0;
+  margin-left: 2px;
+}
+.sort-dropdown-btn[aria-expanded="true"] .sort-chevron {
+  transform: rotate(180deg);
+}
+
+.sort-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 256px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(26, 29, 46, 0.12), 0 3px 8px rgba(26, 29, 46, 0.04);
+  padding: 6px;
+  z-index: 100;
+  animation: sortMenuFadeIn .15s ease-out;
+}
+.sort-menu[hidden] {
+  display: none !important;
+}
+.sort-menu.open {
+  display: block !important;
+}
+
+@keyframes sortMenuFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sort-menu-header {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  padding: 6px 10px 4px;
+  user-select: none;
+}
+
+.state-list-controls .sort-menu button.sort-menu-item {
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent !important;
+  border: none !important;
+  color: var(--ink) !important;
+  padding: 8px 10px !important;
+  font-size: 12.5px !important;
+  font-weight: 400 !important;
+  border-radius: var(--radius-sm) !important;
+  cursor: pointer;
+  text-align: left;
+  height: auto !important;
+  white-space: normal !important;
+  transition: background .12s ease, color .12s ease;
+}
+
+.state-list-controls .sort-menu button.sort-menu-item:hover,
+.state-list-controls .sort-menu button.sort-menu-item:focus {
+  background: var(--surface-hover) !important;
+  color: var(--accent) !important;
+  outline: none;
+}
+
+.state-list-controls .sort-menu button.sort-menu-item.active {
+  background: var(--accent-soft) !important;
+  color: var(--accent) !important;
+  font-weight: 600 !important;
+}
+
+.sort-item-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sort-check-icon {
+  display: inline-block;
+  width: 13px;
+  visibility: hidden;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.state-list-controls .sort-menu button.sort-menu-item.active .sort-check-icon {
+  visibility: visible;
+}
+
+.sort-item-dir {
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+}
+
+.state-list-controls .sort-menu button.sort-menu-item.active .sort-item-dir {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.sort-menu-divider {
+  height: 1px;
+  background: var(--line-soft);
+  margin: 4px 6px;
+}
+
+/* Sortable table headers */
+.table-wrap th.sortable-th {
+  cursor: pointer;
+  user-select: none;
+  transition: all .15s ease;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface-subtle);
+}
+.table-wrap th.sortable-th:hover {
+  color: var(--accent);
+  background: var(--surface-hover);
+}
+.table-wrap th.sortable-th .th-sort-icon {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 11px;
+  color: var(--muted);
+  opacity: 0.45;
+  transition: all .15s ease;
+}
+.table-wrap th.sortable-th:hover .th-sort-icon {
+  opacity: 0.9;
+  color: var(--accent);
+}
+.table-wrap th.sortable-th.active-sort {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.table-wrap th.sortable-th.active-sort .th-sort-icon {
+  opacity: 1;
+  color: var(--accent);
+  font-weight: 700;
+}
+
 #stateTableBody tr {
   cursor: pointer;
 }

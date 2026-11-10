@@ -405,11 +405,14 @@
     function hideTooltip(){ if (tooltip) tooltip.style.display = 'none'; }
 
     var byId = {};
-    states.forEach(function(s){ byId[s.id] = s; });
+    states.forEach(function(s){ byId[s.id] = s; byId[s.id.toUpperCase()] = s; });
+
+    var selectedStateId = 'up';
 
     function selectState(id, scroll){
-      var s = byId[id];
+      var s = byId[id] || byId[String(id).toLowerCase()];
       if(!s) return;
+      selectedStateId = s.id;
       if (svg) {
         svg.querySelectorAll('path.selected').forEach(function(p){ p.classList.remove('selected'); });
         var p = svg.querySelector('path[data-id="'+id+'"]');
@@ -478,11 +481,39 @@
 
     // Build state table
     var tbody = document.getElementById('stateTableBody');
-    var sortDesc = true;
+    var currentSort = { field: 'pop', dir: 'desc' };
+
+    function getRankNum(r) {
+      var s = String(r || '').trim();
+      if (s.startsWith('UT')) return 1000 + (parseInt(s.replace('UT', ''), 10) || 0);
+      var n = parseInt(s, 10);
+      return isNaN(n) ? 999 : n;
+    }
+
+    function sortStates(list) {
+      var f = currentSort.field;
+      var isDesc = currentSort.dir === 'desc';
+      return list.slice().sort(function(a, b) {
+        if (f === 'pop') {
+          return isDesc ? (b.pop - a.pop) : (a.pop - b.pop);
+        } else if (f === 'share') {
+          var diff = isDesc ? (b.share - a.share) : (a.share - b.share);
+          if (diff !== 0) return diff;
+          return isDesc ? (b.pop - a.pop) : (a.pop - b.pop);
+        } else if (f === 'rank') {
+          var ra = getRankNum(a.rank);
+          var rb = getRankNum(b.rank);
+          return isDesc ? (rb - ra) : (ra - rb);
+        } else if (f === 'name') {
+          return isDesc ? b.name.localeCompare(a.name) : a.name.localeCompare(b.name);
+        }
+        return isDesc ? (b.pop - a.pop) : (a.pop - b.pop);
+      });
+    }
+
     function renderTable(filterText){
       if (!tbody) return;
-      var list = states.slice();
-      list.sort(function(a,b){ return sortDesc ? b.pop - a.pop : a.pop - b.pop; });
+      var list = sortStates(states);
       if(filterText){
         var f = filterText.toLowerCase();
         list = list.filter(function(s){ return s.name.toLowerCase().indexOf(f) !== -1; });
@@ -491,15 +522,63 @@
       list.forEach(function(s){
         var tr = document.createElement('tr');
         tr.setAttribute('data-id', s.id);
+        if (selectedStateId && (s.id === selectedStateId || s.id === String(selectedStateId).toLowerCase())) {
+          tr.classList.add('selected');
+        }
         tr.innerHTML = '<td class="num">'+s.rank+'</td><td>'+s.name+'</td><td class="num">'+fmtFull(s.pop)+'</td><td class="num">'+s.share+'%</td>';
         tr.addEventListener('click', function(){ selectState(s.id, false); if (svg) svg.scrollIntoView({block:'center', behavior:'smooth'}); });
         tbody.appendChild(tr);
       });
     }
+
+    function setSort(field, dir) {
+      currentSort.field = field;
+      currentSort.dir = dir;
+
+      // Update button label
+      var btnText = document.getElementById('sortPopBtnText');
+      if (btnText) {
+        var label = 'Population';
+        var arrow = dir === 'desc' ? '↓' : '↑';
+        if (field === 'share') label = 'Share';
+        else if (field === 'rank') label = 'Rank';
+        else if (field === 'name') label = 'Name';
+        btnText.textContent = 'Sort: ' + label + ' ' + arrow;
+      }
+
+      // Update active state in sort menu
+      document.querySelectorAll('#sortMenu .sort-menu-item').forEach(function(item){
+        var itemField = item.getAttribute('data-field');
+        var itemDir = item.getAttribute('data-dir');
+        var isMatch = itemField === field && itemDir === dir;
+        item.classList.toggle('active', isMatch);
+        if (isMatch) item.setAttribute('aria-selected', 'true');
+        else item.removeAttribute('aria-selected');
+      });
+
+      // Update table headers
+      document.querySelectorAll('.sortable-th').forEach(function(th){
+        var thField = th.getAttribute('data-sort');
+        var icon = th.querySelector('.th-sort-icon');
+        if (thField === field) {
+          th.classList.add('active-sort');
+          th.classList.remove('asc', 'desc');
+          th.classList.add(dir);
+          if (icon) icon.textContent = dir === 'desc' ? '↓' : '↑';
+        } else {
+          th.classList.remove('active-sort', 'asc', 'desc');
+          if (icon) icon.textContent = '↕';
+        }
+      });
+
+      var stateSearch = document.getElementById('stateSearch');
+      renderTable(stateSearch ? stateSearch.value : '');
+    }
+
     renderTable('');
 
     // Pre-select Uttar Pradesh on initial load so panel is immediately visible
-    selectState('UP', false);
+    selectState('up', false);
 
     var stateSearch = document.getElementById('stateSearch');
     if (stateSearch) {
@@ -509,13 +588,79 @@
     }
 
     var sortPopBtn = document.getElementById('sortPopBtn');
+    var sortMenu = document.getElementById('sortMenu');
+    var sortDropdownWrap = document.getElementById('sortDropdownWrap');
+
+    function closeSortMenu(){
+      if (sortMenu && sortMenu.classList.contains('open')) {
+        sortMenu.classList.remove('open');
+        sortMenu.hidden = true;
+        if (sortPopBtn) sortPopBtn.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    function toggleSortMenu(){
+      if (!sortMenu) return;
+      var willOpen = !sortMenu.classList.contains('open');
+      if (willOpen) {
+        sortMenu.hidden = false;
+        sortMenu.classList.add('open');
+        if (sortPopBtn) sortPopBtn.setAttribute('aria-expanded', 'true');
+      } else {
+        closeSortMenu();
+      }
+    }
+
     if (sortPopBtn) {
       sortPopBtn.addEventListener('click', function(e){
-        sortDesc = !sortDesc;
-        e.target.textContent = 'Sort: population ' + (sortDesc ? '↓' : '↑');
-        renderTable(document.getElementById('stateSearch').value);
+        e.stopPropagation();
+        toggleSortMenu();
       });
     }
+
+    document.querySelectorAll('#sortMenu .sort-menu-item').forEach(function(item){
+      item.addEventListener('click', function(e){
+        e.stopPropagation();
+        var f = item.getAttribute('data-field');
+        var d = item.getAttribute('data-dir');
+        setSort(f, d);
+        closeSortMenu();
+      });
+    });
+
+    document.addEventListener('click', function(e){
+      if (sortDropdownWrap && !sortDropdownWrap.contains(e.target)) {
+        closeSortMenu();
+      }
+    });
+
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') {
+        closeSortMenu();
+      }
+    });
+
+    document.querySelectorAll('.sortable-th').forEach(function(th){
+      function handleHeaderSort(){
+        var field = th.getAttribute('data-sort');
+        if (!field) return;
+        var newDir = 'desc';
+        if (currentSort.field === field) {
+          newDir = currentSort.dir === 'desc' ? 'asc' : 'desc';
+        } else {
+          if (field === 'rank' || field === 'name') newDir = 'asc';
+          else newDir = 'desc';
+        }
+        setSort(field, newDir);
+      }
+      th.addEventListener('click', handleHeaderSort);
+      th.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleHeaderSort();
+        }
+      });
+    });
   }
 
   // ---- Chip + search filtering (global) ----
