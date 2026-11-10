@@ -35,27 +35,27 @@ window.REFERENCE_DATA = {
   },
   "population_urban_population": {
     "value": 522441248,
-    "display_value": "~36% · ~522M",
+    "display_value": "~522M · ~36%",
     "unit": "% / people",
     "source_name": "World Bank (SP.URB.TOTL.IN.ZS & SP.URB.TOTL)",
     "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.URB.TOTL.IN.ZS?format=json&mrnev=1",
     "reporting_period": "2025",
     "data_status": "Industry estimate",
-    "methodology_notes": "Estimate: World Bank 2025 estimate (~36% · ~522M) requires reconciliation with 2026 baseline. Based on published demographic projections."
+    "methodology_notes": "Estimate: World Bank 2025 estimate (~522M · ~36%) requires reconciliation with 2026 baseline. Based on published demographic projections."
   },
   "population_rural_population": {
     "value": 941424277,
-    "display_value": "~64% · ~941M",
+    "display_value": "~941M · ~64%",
     "unit": "% / people",
     "source_name": "World Bank (SP.RUR.TOTL.ZS & SP.RUR.TOTL)",
     "source_url": "https://api.worldbank.org/v2/country/IND/indicator/SP.RUR.TOTL?format=json&mrnev=1",
     "reporting_period": "2025",
     "data_status": "Industry estimate",
-    "methodology_notes": "Estimate: World Bank 2025 estimate (~64% · ~941M) requires reconciliation with 2026 baseline. Based on published demographic projections."
+    "methodology_notes": "Estimate: World Bank 2025 estimate (~941M · ~64%) requires reconciliation with 2026 baseline. Based on published demographic projections."
   },
   "population_working_age_15_64": {
     "value": 1004088000,
-    "display_value": "68% · ~1.004B",
+    "display_value": "~1.004B · 68%",
     "unit": "% / people",
     "source_name": "UNFPA State of World Population 2025 / UN WPP 2026",
     "source_url": "https://www.unfpa.org/data/world-population-dashboard",
@@ -181,7 +181,7 @@ window.REFERENCE_DATA = {
   },
   "population_india_under_25_years_old": {
     "value": 43,
-    "display_value": "~43% · ~630M",
+    "display_value": "~630M · ~43%",
     "unit": "%",
     "source_name": "MoHFW Population Projections / UNFPA India",
     "source_url": "https://india.unfpa.org/",
@@ -191,7 +191,7 @@ window.REFERENCE_DATA = {
   },
   "population_india_of_working_age_15_64": {
     "value": 1004088000,
-    "display_value": "68% · ~1.004B",
+    "display_value": "~1.004B · 68%",
     "unit": "% / people",
     "source_name": "UNFPA State of World Population 2025 / UN WPP 2026",
     "source_url": "https://www.unfpa.org/data/world-population-dashboard",

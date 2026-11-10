@@ -263,7 +263,16 @@
       // Dedicated check for audited Section 11 Global metrics where authoritative updates supersede stale observations
       const isGlobalAudited = key && key.startsWith('global_') && ref;
 
-      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited && !isQuickCommerceAudited && !isMobilityAudited && !isEdtechAudited && !isHealthcareAudited && !isEconomyAudited && !isGlobalAudited) {
+      // Dedicated check for audited Section 01 Population metrics where authoritative population-first format is enforced
+      const isPopAudited = (
+        key === 'population_urban_population' ||
+        key === 'population_rural_population' ||
+        key === 'population_working_age_15_64' ||
+        key === 'population_india_under_25_years_old' ||
+        key === 'population_india_of_working_age_15_64'
+      ) && ref;
+
+      if (obs && !isPop2026Proj && !isDigitalAudited && !isFintechAudited && !isEcommerceAudited && !isQuickCommerceAudited && !isMobilityAudited && !isEdtechAudited && !isHealthcareAudited && !isEconomyAudited && !isGlobalAudited && !isPopAudited) {
         // Priority 1: Verified Live Backend Observation (always overrides reference data)
         el.classList.remove('ref-metric');
         el.classList.add('verified-metric');
