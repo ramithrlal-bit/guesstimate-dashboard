@@ -668,12 +668,44 @@
   var sections = document.querySelectorAll('.sec');
   var activeCat = 'all';
 
+  function scrollToTargetSection(targetSec) {
+    if (!targetSec) return;
+    void targetSec.offsetHeight;
+
+    var controlbar = document.querySelector('.controlbar');
+    var barHeight = controlbar ? controlbar.getBoundingClientRect().height : 70;
+    var paddingGap = 16; // breathing space between sticky header and category heading
+    var totalOffset = barHeight + paddingGap;
+
+    var head = targetSec.querySelector('.sec-head') || targetSec;
+    var headTop = head.getBoundingClientRect().top + window.pageYOffset;
+    var targetY = Math.max(0, Math.round(headTop - totalOffset));
+
+    window.scrollTo({
+      top: targetY,
+      behavior: 'smooth'
+    });
+  }
+
   chips.forEach(function(chip){
     chip.addEventListener('click', function(){
       chips.forEach(function(c){ c.classList.remove('active'); });
       chip.classList.add('active');
       activeCat = chip.getAttribute('data-cat');
       applyFilter();
+
+      if (activeCat === 'all') {
+        requestAnimationFrame(function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      } else {
+        var targetSec = document.getElementById(activeCat) || document.querySelector('.sec[data-cat="' + activeCat + '"]');
+        if (targetSec) {
+          requestAnimationFrame(function() {
+            scrollToTargetSection(targetSec);
+          });
+        }
+      }
     });
   });
 
@@ -762,7 +794,7 @@
   });
 
   function goToSection(targetId) {
-    var targetSec = document.getElementById(targetId);
+    var targetSec = document.getElementById(targetId) || document.querySelector('.sec[data-cat="' + targetId + '"]');
     if (!targetSec) return;
 
     // Reset search
@@ -770,30 +802,25 @@
       searchInput.value = '';
     }
 
-    // Reset category filter if not 'all' so target section is visible
-    if (activeCat !== 'all') {
-      chips.forEach(function(c) { c.classList.remove('active'); });
+    // Set matching category chip as active if it exists, otherwise handle sources/all
+    chips.forEach(function(c) { c.classList.remove('active'); });
+    var matchingChip = document.querySelector('.chip[data-cat="' + targetId + '"]');
+    if (matchingChip) {
+      matchingChip.classList.add('active');
+      activeCat = targetId;
+    } else {
       var allChip = document.querySelector('.chip[data-cat="all"]');
       if (allChip) allChip.classList.add('active');
-      activeCat = 'all';
+      activeCat = targetId === 'sources' ? 'sources' : 'all';
     }
     applyFilter();
 
     // Close menu drawer immediately
     closeMenu();
 
-    // Calculate exact scroll target with sticky control bar dynamically accounted for
-    var controlbar = document.querySelector('.controlbar');
-    var barHeight = controlbar ? controlbar.getBoundingClientRect().height : 70;
-    var paddingGap = 16; // breathing space between sticky header and category starting point
-    var totalOffset = barHeight + paddingGap;
-
-    var secTop = targetSec.getBoundingClientRect().top + window.pageYOffset;
-    var targetY = Math.max(0, Math.round(secTop - totalOffset));
-
-    window.scrollTo({
-      top: targetY,
-      behavior: 'smooth'
+    // Scroll smoothly to start from the heading of the category
+    requestAnimationFrame(function() {
+      scrollToTargetSection(targetSec);
     });
 
     if (history && history.replaceState) {
