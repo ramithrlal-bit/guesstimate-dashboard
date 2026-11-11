@@ -739,19 +739,49 @@ table.mini-table tr:last-child td {
 /* =========================================================
    EXPANDABLE CITY-TIER CARDS
    ========================================================= */
-.tier-card {
-  cursor: pointer;
+#tierGrid {
+  align-items: start;
 }
-.tier-card summary {
+details.card.tier-card {
+  display: block !important;
+  height: auto !important;
+  min-height: 84px;
+  contain: paint layout;
+  isolation: isolate;
+  background: var(--surface) !important;
+  color: var(--ink);
+  transform: none !important;
+  cursor: pointer;
+  transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease !important;
+}
+details.card.tier-card:hover {
+  transform: none !important;
+  border-color: #cbd0e0;
+  box-shadow: var(--shadow-card-hover);
+}
+details.card.tier-card[open] {
+  background: var(--surface-subtle) !important;
+  border-color: var(--line-strong, #b0b8d0);
+  box-shadow: var(--shadow-sm);
+}
+details.card.tier-card summary {
   list-style: none;
   cursor: pointer;
   position: relative;
   padding-right: 28px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
-.tier-card summary::-webkit-details-marker {
+details.card.tier-card summary:focus,
+details.card.tier-card summary:focus-visible {
+  outline: none;
+}
+details.card.tier-card summary::-webkit-details-marker,
+details.card.tier-card summary::marker {
   display: none;
 }
-.tier-card summary .plus {
+details.card.tier-card summary .plus {
   position: absolute;
   top: 0;
   right: 0;
@@ -759,13 +789,13 @@ table.mini-table tr:last-child td {
   font-size: 20px;
   line-height: 1;
   font-weight: 500;
-  transition: transform .15s ease;
+  display: inline-block;
+  transform-origin: center center;
+  transition: transform .2s cubic-bezier(0.16, 1, 0.3, 1), color .15s ease;
 }
-.tier-card[open] summary .plus {
+details.card.tier-card[open] summary .plus {
   transform: rotate(45deg);
-}
-.tier-card[open] {
-  background: var(--surface-subtle);
+  color: var(--muted);
 }
 .tier-body {
   margin-top: 14px;
@@ -792,24 +822,32 @@ ul.tier-list li {
 /* =========================================================
    WORKED EXAMPLES & TEMPLATES
    ========================================================= */
-.ex {
+details.ex {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   margin-bottom: 12px;
   background: var(--surface);
   box-shadow: var(--shadow-xs);
-  transition: border-color .15s ease, box-shadow .15s ease;
+  transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
   min-width: 0;
   max-width: 100%;
+  display: block;
+  contain: paint layout;
+  isolation: isolate;
 }
-.ex:hover {
+details.ex:hover {
   border-color: #cbd0e0;
   box-shadow: var(--shadow-sm);
 }
-.ex.hide {
-  display: none;
+details.ex[open] {
+  border-color: var(--line-strong, #b0b8d0);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
 }
-.ex summary {
+details.ex.hide {
+  display: none !important;
+}
+details.ex summary {
   padding: 16px 20px;
   cursor: pointer;
   list-style: none;
@@ -820,21 +858,39 @@ ul.tier-list li {
   font-size: 14.5px;
   font-weight: 600;
   color: var(--ink);
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
-.ex summary::-webkit-details-marker {
+details.ex summary:focus,
+details.ex summary:focus-visible {
+  outline: none;
+}
+details.ex summary::-webkit-details-marker,
+details.ex summary::marker {
   display: none;
 }
-.ex summary .plus {
+details.ex summary .plus {
   color: var(--accent);
   font-size: 20px;
   line-height: 1;
   font-weight: 500;
-  transition: transform .15s ease;
+  display: inline-block;
+  transform-origin: center center;
+  transition: transform .2s cubic-bezier(0.16, 1, 0.3, 1), color .15s ease;
+  user-select: none;
 }
-.ex[open] summary .plus {
+details.ex[open] summary .plus {
   transform: rotate(45deg);
+  color: var(--muted);
 }
-.ex summary .res {
+details.ex summary .ex-summary-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+details.ex summary .res {
   color: var(--teal);
   background: var(--teal-soft);
   border: 1px solid var(--teal-border);
@@ -847,13 +903,13 @@ ul.tier-list li {
   -webkit-font-feature-settings: "tnum";
   font-feature-settings: "tnum";
 }
-.ex .body {
+details.ex .body {
   padding: 18px 22px 22px;
   color: var(--ink-dim);
   font-size: 14px;
   line-height: 1.65;
   border-top: 1px solid var(--line-soft);
-  background: #fdfdfc;
+  background: #fafbfd;
   border-bottom-left-radius: var(--radius-md);
   border-bottom-right-radius: var(--radius-md);
 }
@@ -879,9 +935,11 @@ ul.tier-list li {
   box-shadow: var(--shadow-xs);
   min-width: 0;
   max-width: 100%;
+  contain: paint layout;
+  isolation: isolate;
 }
 .prompt.hide {
-  display: none;
+  display: none !important;
 }
 .prompt p.q {
   margin: 0 0 10px;
@@ -890,11 +948,43 @@ ul.tier-list li {
   color: var(--ink);
   line-height: 1.45;
 }
+.prompt details {
+  display: block;
+}
 .prompt summary {
   cursor: pointer;
   color: var(--accent);
   font-weight: 600;
   font-size: 13px;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: color .15s ease;
+}
+.prompt summary:hover {
+  color: var(--accent-hover, #1d4ed8);
+}
+.prompt summary:focus,
+.prompt summary:focus-visible {
+  outline: none;
+}
+.prompt summary::-webkit-details-marker,
+.prompt summary::marker {
+  display: none;
+}
+.prompt summary::before {
+  content: "▸";
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1;
+  transition: transform .18s ease;
+}
+.prompt details[open] summary::before {
+  transform: rotate(90deg);
 }
 .prompt .hint {
   margin-top: 12px;
@@ -903,6 +993,7 @@ ul.tier-list li {
   color: var(--ink-dim);
   font-size: 13.5px;
   line-height: 1.6;
+  background: transparent;
 }
 
 /* Sector Flex Layout */

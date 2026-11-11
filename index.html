@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20261110_statesort">
+<link rel="stylesheet" href="css/styles.css?v=20261111_expandfix">
 <!-- Supabase JS Client -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="data/reference_data.js?v=20261110_pop"></script>
@@ -197,7 +197,7 @@
   <div class="sub-title">City tiers</div>
   <p class="sec-note" style="margin-top:0;">Tap any tier to see the individual cities inside it and their populations. <span style="color:#b98d2c; font-weight:500;">[Note: City tier aggregates, village populations, and individual city numbers are urban-agglomeration estimates pending official Census update]</span></p>
   <div class="grid cols-3" id="tierGrid">
-    <details class="card tier-card" data-cat="population">
+    <details class="card tier-card" name="city-tier" data-cat="population">
       <summary><div class="card-head">Tier 1 — the 8 Metros</div><span class="v" data-metric="population_tier_1_the_8_metros_x_class">~120M</span><span class="plus">+</span></summary>
       <div class="tier-body">
         <table class="mini-table">
@@ -216,7 +216,7 @@
       </div>
     </details>
 
-    <details class="card tier-card" data-cat="population">
+    <details class="card tier-card" name="city-tier" data-cat="population">
       <summary><div class="card-head">Tier 2 — Y-class Cities</div><span class="v" data-metric="population_tier_2_y_class_cities">~250M</span><span class="plus">+</span></summary>
       <div class="tier-body">
         <table class="mini-table">
@@ -246,7 +246,7 @@
       </div>
     </details>
 
-    <details class="card tier-card" data-cat="population">
+    <details class="card tier-card" name="city-tier" data-cat="population">
       <summary><div class="card-head">Tier 3 — Z-class + Towns</div><span class="v" data-metric="population_tier_3_z_class_towns">~400M</span><span class="plus">+</span></summary>
       <div class="tier-body">
         <ul class="tier-list">
@@ -259,7 +259,7 @@
       </div>
     </details>
 
-    <details class="card tier-card" data-cat="population">
+    <details class="card tier-card" name="city-tier" data-cat="population">
       <summary><div class="card-head">Villages</div><span class="v" data-metric="population_villages_rural">~694M+</span><span class="plus">+</span></summary>
       <div class="tier-body">
         <ul class="tier-list">
@@ -566,10 +566,10 @@ Type: Stock"><div class="card-head">Jan Dhan Beneficiaries</div><span class="v" 
   </div>
 
   <div class="ex-group-title">Worked examples</div>
-  <div class="ex" data-cat="fintech">
+  <details class="ex" data-cat="fintech">
     <summary><span>Estimate UPI transaction value per month</span><span class="plus">+</span></summary>
     <div class="body">UPI users (500M) × 8 txns/month × Rs 1,500 avg ≈ <b style="color:var(--teal)">Rs 6 Lakh Cr/month</b> (NPCI actual: ~Rs 22L Cr in Dec 2025 — the gap shows why sanity-checking against a real anchor matters).</div>
-  </div>
+  </details>
 </section>
 
 <!-- ============ E-COMMERCE ============ -->
@@ -710,14 +710,14 @@ Type: Flow"><div class="card-head">Cash on Delivery Share</div><span class="v" d
   </div>
 
   <div class="ex-group-title">Worked examples</div>
-  <div class="ex" data-cat="ecommerce">
+  <details class="ex" data-cat="ecommerce">
     <summary><span>Swiggy / Zomato monthly GMV</span><span class="plus">+</span></summary>
     <div class="body">Urban internet users (530M) × food-delivery users (20%) × 8 orders/month × Rs 300 avg order ≈ <b style="color:var(--teal)">Rs 2,544 Cr/month</b>.</div>
-  </div>
-  <div class="ex" data-cat="ecommerce">
+  </details>
+  <details class="ex" data-cat="ecommerce">
     <summary><span>India's online grocery market size</span><span class="plus">+</span></summary>
     <div class="body">Online shoppers (295M) × grocery buyers online (30%) × Rs 3,000/month × 12 ≈ <b style="color:var(--teal)">Rs 3.19 Lakh Cr/yr (~$38B) — illustrative practice estimate, not an official figure</b>.</div>
-  </div>
+  </details>
 </section>
 
 <!-- ============ QUICK COMMERCE ============ -->
@@ -867,14 +867,14 @@ Type: Flow"><div class="card-head">Delivery Cost per Order</div><span class="v" 
   </div>
 
   <div class="ex-group-title">Worked examples</div>
-  <div class="ex" data-cat="quickcommerce">
+  <details class="ex" data-cat="quickcommerce">
     <summary><span>Blinkit's daily order volume</span><span class="plus">+</span></summary>
     <div class="body">Dark stores (~2,000) × avg. orders/store/day (~1,800) ≈ <b style="color:var(--teal)">~3.6M orders/day</b>, consistent with Blinkit’s ~47% share of the ~7.8M total daily orders across India.</div>
-  </div>
-  <div class="ex" data-cat="quickcommerce">
+  </details>
+  <details class="ex" data-cat="quickcommerce">
     <summary><span>Total quick commerce GMV, India</span><span class="plus">+</span></summary>
     <div class="body">Daily orders (~7.8M) × 365 days × average order value (~₹500) ≈ <b style="color:var(--teal)">~₹1.42 Lakh Cr/yr (~$13.5B GMV)</b> — perfectly aligned with the Redseer and Bain–Flipkart FY2026 market sizing ($13–14B).</div>
-  </div>
+  </details>
 </section>
 
 <!-- ============ EV / MOBILITY ============ -->
@@ -1008,14 +1008,14 @@ Type: Flow"><div class="card-head">Domestic Air Passengers</div><span class="v" 
   </div>
 
   <div class="ex-group-title">Worked examples</div>
-  <div class="ex" data-cat="ev">
+  <details class="ex" data-cat="ev">
     <summary><span>EV two-wheeler market potential</span><span class="plus">+</span></summary>
     <div class="body">2-wheeler stock (250M) × annual replacement rate (10%) × EV consideration (30%) ≈ <b style="color:var(--teal)">~7.5M units/yr</b>.</div>
-  </div>
-  <div class="ex" data-cat="ev">
+  </details>
+  <details class="ex" data-cat="ev">
     <summary><span>Global EV sales per year</span><span class="plus">+</span></summary>
     <div class="body">Global car sales/yr (~90M) × EV share (~18–20%) ≈ <b style="color:var(--teal)">16–18M EV units/yr</b>.</div>
-  </div>
+  </details>
 </section>
 
 <!-- ============ EDTECH ============ -->
@@ -1141,10 +1141,10 @@ Type: Flow"><div class="card-head">Govt. Spend on Education</div><span class="v"
   </div>
 
   <div class="ex-group-title">Worked example</div>
-  <div class="ex" data-cat="edtech">
+  <details class="ex" data-cat="edtech">
     <summary><span>MBA white-collar jobs created per year</span><span class="plus">+</span></summary>
     <div class="body">MBA grads/yr (300K) × placed in corporate roles (70%) × into knowledge jobs (60%) ≈ <b style="color:var(--teal)">~126K roles/yr</b>.</div>
-  </div>
+  </details>
 </section>
 
 <!-- ============ HEALTHCARE ============ -->
@@ -1284,22 +1284,22 @@ Source: Ministry of Health &amp; Family Welfare / PIB
 Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="v" data-metric="healthcare_telemedicine_consultations">430M+ cumulative consultations (Dec 2025)</span><div class="card-sub">Cumulative since launch, not annual</div></div>
   </div>
   <div class="ex-group-title">Worked examples <span style="font-weight:400; color:var(--muted); text-transform:none; letter-spacing:0;">(illustrative Fermi practice — not sourced figures)</span></div>
-  <div class="ex" data-cat="healthcare">
+  <details class="ex" data-cat="healthcare">
     <summary><span>Diabetics needing insulin in India</span><span class="plus">+</span></summary>
     <div class="body">Diabetics (100M) × Type-1 + severe Type-2 (30%) × on insulin (60%) ≈ <b style="color:var(--teal)">~18M people</b> (a practice estimate — no official figure tracks this directly).</div>
-  </div>
-  <div class="ex" data-cat="healthcare">
+  </details>
+  <details class="ex" data-cat="healthcare">
     <summary><span>India's private healthcare market</span><span class="plus">+</span></summary>
     <div class="body">Population (1.48B) × Rs 5,000/yr avg spend ≈ Rs 7.4L Cr; private share ~65% ≈ <b style="color:var(--teal)">Rs 4.8L Cr/yr (~$58B)</b> — well below actual total health expenditure of &gt;$100B/yr, showing why the avg.-spend assumption needs revising upward.</div>
-  </div>
-  <div class="ex" data-cat="healthcare">
+  </details>
+  <details class="ex" data-cat="healthcare">
     <summary><span>Annual doctor consultations in India</span><span class="plus">+</span></summary>
     <div class="body">Population (1.48B) × 3 consults/yr avg ≈ <b style="color:var(--teal)">~4.4B consultations/yr (~12M/day)</b> (a practice estimate; no official annual consultation count exists at this scale — eSanjeevani teleconsultations, for comparison, are 430M+ cumulative, not billions per year).</div>
-  </div>
-  <div class="ex" data-cat="healthcare">
+  </details>
+  <details class="ex" data-cat="healthcare">
     <summary><span>Mental health app TAM</span><span class="plus">+</span></summary>
     <div class="body">Internet users (1B) × mental health need (20%) × willing to use app (15%) × paying (10%) × Rs 500/mo ≈ <b style="color:var(--teal)">~Rs 1,455 Cr/yr</b> (illustrative TAM sizing, not a market-research figure).</div>
-  </div>
+  </details>
 </section>
 <!-- ============ ECONOMY / SECTOR DEEP DIVES ============ -->
 <section class="sec" id="agriculture" data-cat="agriculture">
@@ -1737,76 +1737,76 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
   <p class="sec-note">The full worked chain for each estimate, in case you want to see the whole logic rather than just the answer.</p>
 
   <div class="ex-group-title">Consumer &amp; digital</div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Netflix subscribers in India</span><span class="res">~18M</span></summary>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Netflix subscribers in India</span><span class="ex-summary-right"><span class="res">~18M</span><span class="plus">+</span></span></summary>
     <div class="body">Internet users (970M) × can afford (15%) × OTT-interested (50%) × Netflix share (25%) ≈ ~18M subscribers.</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Swiggy / Zomato monthly GMV</span><span class="res">~Rs 2,544 Cr/mo</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Swiggy / Zomato monthly GMV</span><span class="ex-summary-right"><span class="res">~Rs 2,544 Cr/mo</span><span class="plus">+</span></span></summary>
     <div class="body">Urban internet (530M) × food delivery users (20%) × 8 orders/month × Rs 300 avg ≈ ~Rs 2,544 Cr/month.</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>India's online grocery market size</span><span class="res">~$32B/yr</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>India's online grocery market size</span><span class="ex-summary-right"><span class="res">~$32B/yr</span><span class="plus">+</span></span></summary>
     <div class="body">Online shoppers (250M) × grocery buyers online (30%) × Rs 3,000/month × 12 ≈ ~Rs 2.7 Lakh Cr/yr (~$32B).</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>UPI transaction value (monthly)</span><span class="res">~Rs 6L Cr/mo</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>UPI transaction value (monthly)</span><span class="ex-summary-right"><span class="res">~Rs 6L Cr/mo</span><span class="plus">+</span></span></summary>
     <div class="body">UPI users (500M) × 8 txns/month × Rs 1,500 avg ≈ ~Rs 6 Lakh Cr/month (NPCI actual: ~Rs 22L Cr, Dec 2025).</div>
-  </div>
+  </details>
 
   <div class="ex-group-title">Healthcare &amp; pharma</div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Diabetics needing insulin in India</span><span class="res">~18M</span></summary>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Diabetics needing insulin in India</span><span class="ex-summary-right"><span class="res">~18M</span><span class="plus">+</span></span></summary>
     <div class="body">Diabetics (100M) × Type-1 + severe Type-2 (30%) × on insulin (60%) ≈ ~18M people.</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>India's private healthcare market</span><span class="res">~$58B/yr</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>India's private healthcare market</span><span class="ex-summary-right"><span class="res">~$58B/yr</span><span class="plus">+</span></span></summary>
     <div class="body">Population (1.48B) × Rs 5,000/yr avg spend ≈ Rs 7.4L Cr; private share 65% ≈ Rs 4.8L Cr/yr (~$58B).</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Annual doctor consultations in India</span><span class="res">~4.4B/yr</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Annual doctor consultations in India</span><span class="ex-summary-right"><span class="res">~4.4B/yr</span><span class="plus">+</span></span></summary>
     <div class="body">Population (1.48B) × 3 consults/yr avg ≈ ~4.4B consultations/yr (~12M/day).</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Mental health app TAM</span><span class="res">~Rs 1,455 Cr/yr</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Mental health app TAM</span><span class="ex-summary-right"><span class="res">~Rs 1,455 Cr/yr</span><span class="plus">+</span></span></summary>
     <div class="body">Internet users (970M) × mental health need (20%) × willing to use app (15%) × paying (10%) × Rs 500/mo ≈ ~Rs 1,455 Cr/yr.</div>
-  </div>
+  </details>
 
   <div class="ex-group-title">Mobility, real estate &amp; B2B</div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>EV 2-wheeler market potential</span><span class="res">~7.5M units/yr</span></summary>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>EV 2-wheeler market potential</span><span class="ex-summary-right"><span class="res">~7.5M units/yr</span><span class="plus">+</span></span></summary>
     <div class="body">2-wheeler stock (250M) × annual replacement rate (10%) × EV consideration (30%) ≈ ~7.5M units/yr.</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Cab rides in Mumbai (daily)</span><span class="res">~1.1M/day</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Cab rides in Mumbai (daily)</span><span class="ex-summary-right"><span class="res">~1.1M/day</span><span class="plus">+</span></span></summary>
     <div class="body">Mumbai population (21M) × working adults (60%) × use cab 3×/week (20%) ÷ 7 ≈ ~1.1M cab rides/day.</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Urban housing demand (annual new units)</span><span class="res">~2.7M units/yr</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Urban housing demand (annual new units)</span><span class="ex-summary-right"><span class="res">~2.7M units/yr</span><span class="plus">+</span></span></summary>
     <div class="body">Urban households (108M) × new household formation (2%/yr) + replacement (0.5%) ≈ ~2.7M units/yr.</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Cloud SaaS TAM in India (B2B)</span><span class="res">~$16B</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Cloud SaaS TAM in India (B2B)</span><span class="ex-summary-right"><span class="res">~$16B</span><span class="plus">+</span></span></summary>
     <div class="body">DPIIT startups (164K) + SMEs (63M) × adoption rate (5%) × avg. spend $5K/yr ≈ ~$16B TAM.</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>MBA white-collar jobs created per year</span><span class="res">~126K/yr</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>MBA white-collar jobs created per year</span><span class="ex-summary-right"><span class="res">~126K/yr</span><span class="plus">+</span></span></summary>
     <div class="body">MBA grads/yr (300K) × placed in corporate roles (70%) × into knowledge jobs (60%) ≈ ~126K roles/yr.</div>
-  </div>
+  </details>
 
   <div class="ex-group-title">Global frameworks</div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Netflix subscribers globally</span><span class="res">~124M (actual ~300M)</span></summary>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Netflix subscribers globally</span><span class="ex-summary-right"><span class="res">~124M (actual ~300M)</span><span class="plus">+</span></span></summary>
     <div class="body">Global internet users (5.5B) × can afford (30%) × OTT-interested (50%) × Netflix share (15%) ≈ ~124M — the real number (~300M) means penetration assumptions should be pushed up for a mature global product.</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>Global EV sales per year</span><span class="res">16–18M units/yr</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>Global EV sales per year</span><span class="ex-summary-right"><span class="res">16–18M units/yr</span><span class="plus">+</span></span></summary>
     <div class="body">Global car sales/yr (~90M) × EV share (~18–20%) ≈ 16–18M EV units/yr.</div>
-  </div>
-  <div class="ex" data-cat="frameworks">
-    <summary><span>US coffee shop market</span><span class="res">~$39B/yr (actual ~$45B)</span></summary>
+  </details>
+  <details class="ex" data-cat="frameworks">
+    <summary><span>US coffee shop market</span><span class="ex-summary-right"><span class="res">~$39B/yr (actual ~$45B)</span><span class="plus">+</span></span></summary>
     <div class="body">US adults (260M) × daily coffee drinkers (65%) × cafe visits 3×/week (30%) × $5 avg × 52 weeks ≈ ~$39B/yr.</div>
-  </div>
+  </details>
 
   <div class="ex-group-title">Try before you scroll — practice prompts</div>
   <div class="prompt" data-cat="frameworks">
@@ -2057,7 +2057,7 @@ Type: Stock"><div class="card-head">eSanjeevani Consultations</div><span class="
 <div class="tooltip" id="mapTooltip"></div>
 
 
-<script src="js/main.js?v=20261110_statesort"></script>
+<script src="js/main.js?v=20261111_expandfix"></script>
 
 
 

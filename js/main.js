@@ -811,4 +811,53 @@
     });
   });
 
+  // ---- Expandable Components (City Tiers, Worked Examples, Hints) ----
+  function setupExpandables() {
+    // 1. City Tier Cards: Accordion coordination + blur focus on close
+    var tierCards = document.querySelectorAll('details.tier-card');
+    tierCards.forEach(function(card) {
+      card.addEventListener('toggle', function() {
+        if (this.open) {
+          tierCards.forEach(function(other) {
+            if (other !== card && other.open) {
+              other.open = false;
+            }
+          });
+        }
+      });
+
+      var summary = card.querySelector('summary');
+      if (summary) {
+        summary.addEventListener('click', function() {
+          if (card.open) {
+            requestAnimationFrame(function() {
+              if (document.activeElement && typeof document.activeElement.blur === 'function') {
+                document.activeElement.blur();
+              }
+            });
+          }
+        });
+      }
+    });
+
+    // 2. Worked Examples & Prompt details: Blur focus on close
+    var allDetails = document.querySelectorAll('details.ex, .prompt details');
+    allDetails.forEach(function(d) {
+      var summary = d.querySelector('summary');
+      if (summary) {
+        summary.addEventListener('click', function() {
+          if (d.open) {
+            requestAnimationFrame(function() {
+              if (document.activeElement && typeof document.activeElement.blur === 'function') {
+                document.activeElement.blur();
+              }
+            });
+          }
+        });
+      }
+    });
+  }
+
+  setupExpandables();
+
 })();
