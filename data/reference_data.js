@@ -1,6 +1,6 @@
 /**
  * Guesstimate Dashboard - Authoritative Reference Dataset
- * Generated: 2026-11-08T18:13:23.713Z
+ * Generated: 2026-11-12T13:06:45.064Z
  */
 window.REFERENCE_DATA = {
   "pop_households": {
@@ -211,7 +211,7 @@ window.REFERENCE_DATA = {
   },
   "digital_unique_mobile_subscribers": {
     "value": 1190000000,
-    "display_value": "1.19B active wireless subscribers",
+    "display_value": "1.19B",
     "unit": "subscriptions",
     "definition": "TRAI active wireless/mobile subscriptions",
     "source_name": "TRAI",
@@ -222,7 +222,7 @@ window.REFERENCE_DATA = {
   },
   "digital_smartphone_users": {
     "value": 740000000,
-    "display_value": "~740M active smartphones",
+    "display_value": "~740M",
     "unit": "devices",
     "definition": "Active smartphones in regular use",
     "source_name": "Counterpoint Research",
@@ -233,7 +233,7 @@ window.REFERENCE_DATA = {
   },
   "digital_feature_phone_users": {
     "value": 210000000,
-    "display_value": "~200M–220M feature phones",
+    "display_value": "~200M–220M",
     "unit": "devices",
     "definition": "Active 2G/4G feature phones in use",
     "source_name": "Counterpoint Research",
@@ -244,7 +244,7 @@ window.REFERENCE_DATA = {
   },
   "digital_5g_users": {
     "value": 430000000,
-    "display_value": "~394M–430M 5G subscriptions",
+    "display_value": "~394M–430M",
     "unit": "subscriptions",
     "definition": "Commercial 5G mobile subscriptions",
     "source_name": "Ericsson Mobility Report",
@@ -265,7 +265,7 @@ window.REFERENCE_DATA = {
   },
   "digital_upi_users": {
     "value": 500000000,
-    "display_value": "500M+ reported unique UPI users",
+    "display_value": "500M+",
     "unit": "users",
     "definition": "Reported unique UPI users in India",
     "source_name": "Secondary reporting; verify against NPCI before treating as official",
@@ -317,7 +317,7 @@ window.REFERENCE_DATA = {
   },
   "upi_vol_annual": {
     "value": 241616900000,
-    "display_value": "24,161.69 crore UPI transactions",
+    "display_value": "24,162 Cr",
     "unit": "transactions",
     "metric_type": "flow",
     "definition": "Approximately 241.6 billion transactions in the fiscal year.",
@@ -341,7 +341,7 @@ window.REFERENCE_DATA = {
   },
   "upi_vol_monthly": {
     "value": 24510000000,
-    "display_value": "24.51B UPI transactions",
+    "display_value": "24.51B",
     "unit": "transactions",
     "metric_type": "flow",
     "definition": "Monthly transaction count; excludes same-account debit/credit transactions.",
@@ -353,7 +353,7 @@ window.REFERENCE_DATA = {
   },
   "fintech_upi_unique_users": {
     "value": 554900000,
-    "display_value": "554.9M UPI users onboarded",
+    "display_value": "554.9M",
     "unit": "users",
     "metric_type": "stock",
     "definition": "Cumulative unique users onboarded onto UPI.",
@@ -365,7 +365,7 @@ window.REFERENCE_DATA = {
   },
   "fintech_daily_avg_upi_transactions": {
     "value": 790645161,
-    "display_value": "~791M UPI transactions/day",
+    "display_value": "~791M / day",
     "unit": "transactions",
     "metric_type": "flow",
     "definition": "Daily average transaction volume (calculated: 24.51B ÷ 31).",
@@ -467,7 +467,7 @@ window.REFERENCE_DATA = {
   },
   "fintech_credit_cards": {
     "value": 122860000,
-    "display_value": "122.86M credit cards outstanding",
+    "display_value": "122.86M",
     "unit": "cards",
     "metric_type": "stock",
     "definition": "Number of active credit cards in circulation.",
@@ -548,7 +548,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_market_size_2026_est": {
     "value": 159300000000,
-    "display_value": "$159.3B India e-commerce market size",
+    "display_value": "$159.3B",
     "unit": "market size",
     "metric_type": "market_size",
     "definition": "Market-size estimate; scope differs from e-retail GMV ($65–66B) and quick-commerce GOV. Do not use this number interchangeably with the $65–66B e-retail GMV card.",
@@ -560,7 +560,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_online_shoppers_2025": {
     "value": 295000000,
-    "display_value": "290–300M online shoppers",
+    "display_value": "290–300M",
     "unit": "shoppers",
     "metric_type": "stock",
     "definition": "People who shop online; distinct from annual transacting users.",
@@ -652,7 +652,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_e_commerce_share_of_total_retail": {
     "value": 8,
-    "display_value": "8% of total retail",
+    "display_value": "~8%",
     "unit": "share",
     "metric_type": "stock",
     "definition": "Online retail merchandise sales as a percentage of total merchandise retail ($1.1T). Projected 14% by 2028.",
@@ -775,7 +775,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_projected_gmv_2027_28": {
     "value": 19000000000,
-    "display_value": "~$18–20B projected GMV",
+    "display_value": "~$18–20B",
     "unit": "GMV",
     "source_name": "Bernstein / HSBC Quick Commerce Projections",
     "source_url": "https://www.bernsteinresearch.com",
@@ -787,7 +787,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_yoy_gmv_growth_2025": {
     "value": 100,
-    "display_value": "~100% YoY GMV growth",
+    "display_value": "~100%",
     "unit": "growth",
     "source_name": "Redseer, January 2026",
     "source_url": "https://redseer.com/reports/quick-commerce-growth-jan-2026",
@@ -799,7 +799,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_monthly_transacting_users": {
     "value": 60000000,
-    "display_value": "60M+ monthly users",
+    "display_value": "60M+",
     "unit": "users",
     "source_name": "Redseer, H1 2026",
     "source_url": "https://redseer.com/reports/quick-commerce-user-base-h1-2026",
@@ -835,7 +835,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_blinkit_market_share": {
     "value": 47,
-    "display_value": "~47% order share",
+    "display_value": "~47%",
     "unit": "share",
     "source_name": "Redseer / company disclosures, FY2026",
     "source_url": "https://redseer.com/reports/quick-commerce-market-share-fy26",
@@ -859,7 +859,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_zepto_market_share": {
     "value": 33,
-    "display_value": "~33% order share",
+    "display_value": "~33%",
     "unit": "share",
     "source_name": "Redseer / company disclosures, FY2026",
     "source_url": "https://redseer.com/reports/quick-commerce-market-share-fy26",
@@ -883,7 +883,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_instamart_market_share": {
     "value": 21,
-    "display_value": "~21% order share",
+    "display_value": "~21%",
     "unit": "share",
     "source_name": "Redseer / company disclosures, FY2026",
     "source_url": "https://redseer.com/reports/quick-commerce-market-share-fy26",
@@ -907,7 +907,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_average_order_value": {
     "value": 500,
-    "display_value": "₹450–550 average order value",
+    "display_value": "₹450–550",
     "unit": "AOV",
     "source_name": "Platform disclosures / Redseer, Q4 FY2026",
     "source_url": "https://redseer.com/reports/quick-commerce-basket-economics-q4-fy26",
@@ -991,7 +991,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_delivery_partners_top_platform_peak": {
     "value": 100000,
-    "display_value": "100,000+ active gig riders",
+    "display_value": "100,000+",
     "unit": "users",
     "source_name": "Company operational updates, 2026",
     "source_url": "https://redseer.com",
@@ -1051,7 +1051,7 @@ window.REFERENCE_DATA = {
   },
   "ev_e_2_wheelers_sales": {
     "value": 1400000,
-    "display_value": "~1.4M electric two-wheelers",
+    "display_value": "~1.4M",
     "unit": "vehicles",
     "source_name": "Vahan / JMK Research, FY2026",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
@@ -1085,7 +1085,7 @@ window.REFERENCE_DATA = {
   },
   "ev_e_car_share_of_car_sales_may_2026": {
     "value": 4.25,
-    "display_value": "~4.25% of passenger-vehicle sales",
+    "display_value": "~4.25%",
     "unit": "% of sales",
     "source_name": "Industry data / Vahan, FY2026",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
@@ -1118,7 +1118,7 @@ window.REFERENCE_DATA = {
   },
   "ev_public_charging_stations": {
     "value": 22753,
-    "display_value": "22,753 operational public charging stations",
+    "display_value": "22,753",
     "unit": "stations",
     "source_name": "Ministry of Power / Bureau of Energy Efficiency, Mar 2026",
     "source_url": "https://beeindia.gov.in",
@@ -1130,7 +1130,7 @@ window.REFERENCE_DATA = {
   },
   "ev_electric_buses_on_road": {
     "value": 11500,
-    "display_value": "~11,500 electric buses",
+    "display_value": "~11,500",
     "unit": "vehicles",
     "source_name": "Ministry of Heavy Industries / Vahan / NITI Aayog",
     "source_url": "https://heavyindustries.gov.in",
@@ -1175,7 +1175,7 @@ window.REFERENCE_DATA = {
   },
   "ev_evs_on_road_total": {
     "value": 8680000,
-    "display_value": "8.68M cumulative EV registrations",
+    "display_value": "8.68M",
     "unit": "registrations",
     "source_name": "Vahan / JMK Research, FY2026",
     "source_url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
@@ -1295,7 +1295,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_engineering_grads_yr": {
     "value": 1500000,
-    "display_value": "~1.5M engineering grads/yr",
+    "display_value": "~1.5M / yr",
     "unit": "graduates/year",
     "source_name": "AICTE Annual Data",
     "source_url": "https://www.aicte-india.org/",
@@ -1331,7 +1331,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_literacy_rate": {
     "value": 77.7,
-    "display_value": "~77.7% literacy rate",
+    "display_value": "~77.7%",
     "unit": "%",
     "source_name": "NSO / MoSPI Household Survey",
     "source_url": "https://mospi.gov.in/",
@@ -2181,7 +2181,7 @@ window.REFERENCE_DATA = {
   },
   "global_cars_on_the_road_worldwide": {
     "value": 1400000000,
-    "display_value": "~1.4B motor vehicles",
+    "display_value": "~1.4B",
     "unit": "motor vehicles",
     "source_name": "Hedges & Company / OICA",
     "source_url": "https://hedgescompany.com/",
@@ -2319,7 +2319,7 @@ window.REFERENCE_DATA = {
   },
   "digital_internet_users": {
     "value": 1030000000,
-    "display_value": "1.03B internet users",
+    "display_value": "1.03B",
     "unit": "people",
     "definition": "Unique people using the internet",
     "source_name": "DataReportal / Kepios",
@@ -2341,7 +2341,7 @@ window.REFERENCE_DATA = {
   },
   "digital_urban_internet_users": {
     "value": 410000000,
-    "display_value": "~410M urban internet users",
+    "display_value": "~410M",
     "unit": "people",
     "definition": "Active internet users residing in urban areas",
     "source_name": "IAMAI / Kantar",
@@ -2352,7 +2352,7 @@ window.REFERENCE_DATA = {
   },
   "digital_rural_internet_users": {
     "value": 548000000,
-    "display_value": "~548M rural internet users",
+    "display_value": "~548M",
     "unit": "people",
     "definition": "Active internet users residing in rural areas",
     "source_name": "IAMAI / Kantar",
@@ -2363,7 +2363,7 @@ window.REFERENCE_DATA = {
   },
   "trai_telephone_subscribers_total": {
     "value": 1368100000,
-    "display_value": "~1.368B telephone subscribers",
+    "display_value": "~1.368B",
     "unit": "subscriptions",
     "definition": "Gross wireline + wireless telephone subscriptions",
     "source_name": "TRAI",
@@ -2374,7 +2374,7 @@ window.REFERENCE_DATA = {
   },
   "digital_social_media_user_identities": {
     "value": 500000000,
-    "display_value": "500M social-media user identities",
+    "display_value": "500M",
     "unit": "user identities",
     "definition": "Active social-media user identities; may include multiple accounts per person",
     "source_name": "DataReportal / Kepios",
@@ -2465,7 +2465,7 @@ window.REFERENCE_DATA = {
   },
   "amfi_total_aum_cr": {
     "value": 81300000000000,
-    "display_value": "₹81.3 trillion mutual-fund AUM",
+    "display_value": "₹81.3T",
     "unit": "AUM",
     "metric_type": "stock",
     "definition": "Total assets under management in mutual funds.",
@@ -2657,7 +2657,7 @@ window.REFERENCE_DATA = {
   },
   "digital_internet_subscribers": {
     "value": 1110000000,
-    "display_value": "1.11B internet subscribers",
+    "display_value": "1.11B",
     "unit": "subscriptions",
     "definition": "Telecom subscriptions/connections, not unique people",
     "source_name": "TRAI",
@@ -2668,7 +2668,7 @@ window.REFERENCE_DATA = {
   },
   "digital_broadband_subscribers": {
     "value": 1090000000,
-    "display_value": "1.09B broadband subscribers",
+    "display_value": "1.09B",
     "unit": "subscriptions",
     "definition": "Broadband connections",
     "source_name": "TRAI",
@@ -2679,7 +2679,7 @@ window.REFERENCE_DATA = {
   },
   "digital_mobile_connections": {
     "value": 1060000000,
-    "display_value": "1.06B mobile connections",
+    "display_value": "1.06B",
     "unit": "connections",
     "definition": "Active cellular mobile connections/SIMs",
     "source_name": "GSMA Intelligence via DataReportal",
@@ -2690,7 +2690,7 @@ window.REFERENCE_DATA = {
   },
   "digital_upi_monthly_transactions": {
     "value": 24510000000,
-    "display_value": "24.51B UPI transactions",
+    "display_value": "24.51B",
     "unit": "transactions",
     "definition": "Monthly UPI transactions (Value: ₹29.82 lakh crore as of August 2026)",
     "source_name": "NPCI Product Statistics",
@@ -2701,7 +2701,7 @@ window.REFERENCE_DATA = {
   },
   "digital_upi_daily_transactions": {
     "value": 790645161,
-    "display_value": "~791M UPI transactions per day",
+    "display_value": "~791M / day",
     "unit": "transactions/day",
     "definition": "Daily average UPI transactions (August 2026 monthly volume ÷ 31)",
     "source_name": "Derived from NPCI Product Statistics",
@@ -2712,7 +2712,7 @@ window.REFERENCE_DATA = {
   },
   "digital_upi_annual_transactions": {
     "value": 241616900000,
-    "display_value": "24,161.69 crore UPI transactions",
+    "display_value": "24,162 Cr",
     "unit": "transactions",
     "definition": "Total annual UPI transactions for FY 2025–26 (Value: ₹314 lakh crore)",
     "source_name": "NPCI / PIB",
@@ -2735,7 +2735,7 @@ window.REFERENCE_DATA = {
   },
   "fintech_credit_card_monthly_spend": {
     "value": 2080000000000,
-    "display_value": "₹2.08 lakh crore monthly credit-card spend",
+    "display_value": "₹2.08L Cr",
     "unit": "₹ value",
     "metric_type": "flow",
     "definition": "Total monthly spending on credit cards.",
@@ -2747,7 +2747,7 @@ window.REFERENCE_DATA = {
   },
   "fintech_credit_card_annual_spend": {
     "value": 23620000000000,
-    "display_value": "₹23.62 lakh crore credit-card spend",
+    "display_value": "₹23.62L Cr",
     "unit": "₹ value",
     "metric_type": "flow",
     "definition": "Total annual spending on credit cards in the fiscal year.",
@@ -2759,7 +2759,7 @@ window.REFERENCE_DATA = {
   },
   "fintech_credit_card_transactions": {
     "value": 581000000,
-    "display_value": "58.1 crore credit-card transactions",
+    "display_value": "58.1 Cr",
     "unit": "transactions",
     "metric_type": "flow",
     "definition": "Total credit-card transaction volume in the month.",
@@ -2771,7 +2771,7 @@ window.REFERENCE_DATA = {
   },
   "fintech_digital_lending_sanctions": {
     "value": 2200000000000,
-    "display_value": "₹2.2 trillion digital-lending sanctions over five years",
+    "display_value": "₹2.2T (5 yrs)",
     "unit": "₹ value",
     "metric_type": "flow",
     "definition": "Cumulative sanctioned loan value via digital lending channels over past five years.",
@@ -2783,7 +2783,7 @@ window.REFERENCE_DATA = {
   },
   "fintech_india_market_size": {
     "value": 51300000000,
-    "display_value": "USD 51.3B India fintech market size",
+    "display_value": "$51.3B",
     "unit": "market size",
     "metric_type": "market_size",
     "definition": "Fintech industry annual revenue market size.",
@@ -2795,7 +2795,7 @@ window.REFERENCE_DATA = {
   },
   "fintech_qr_code_deployments": {
     "value": 734000000,
-    "display_value": "734M QR-code deployments",
+    "display_value": "734M",
     "unit": "deployments",
     "metric_type": "stock",
     "definition": "Total deployed merchant QR-code acceptance points across India.",
@@ -2831,7 +2831,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_annual_online_transacting_users": {
     "value": 330000000,
-    "display_value": "320–340M annual online transacting users",
+    "display_value": "320–340M",
     "unit": "users",
     "metric_type": "stock",
     "definition": "Users who transacted online during the year across commerce, payments, travel, and services; not identical to online shoppers.",
@@ -2843,7 +2843,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_quick_commerce_gov_fy25": {
     "value": 640000000000,
-    "display_value": "~₹64,000 crore quick-commerce GOV",
+    "display_value": "~₹64,000 Cr",
     "unit": "GOV",
     "metric_type": "flow",
     "definition": "Gross order value (GOV) across quick-commerce dark-store platforms (~$7.6B). GOV means gross order value; do not label as GMV unless source explicitly defines it as GMV.",
@@ -2855,7 +2855,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_quick_commerce_market_size": {
     "value": 5800000000,
-    "display_value": "$5.8B quick-commerce market size",
+    "display_value": "$5.8B",
     "unit": "market size",
     "metric_type": "market_size",
     "definition": "Market-size estimates vary by methodology; other published 2026 estimates range from $3.65B to ₹1.90 trillion. Not the same metric as quick-commerce GOV.",
@@ -2867,7 +2867,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_flipkart_market_share": {
     "value": 48,
-    "display_value": "~48% e-retail market share",
+    "display_value": "~48%",
     "unit": "marketplace share",
     "metric_type": "stock",
     "definition": "Market-share estimate is dated (FY2023); do not present as a current 2026 share.",
@@ -2879,7 +2879,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_amazon_market_share": {
     "value": 32.5,
-    "display_value": "~30–35% e-retail market share",
+    "display_value": "~30–35%",
     "unit": "marketplace share",
     "metric_type": "stock",
     "definition": "Market-share estimate is dated (FY2023); do not present as a current 2026 share.",
@@ -2891,7 +2891,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_mobile_share_of_b2c_value": {
     "value": 76.6,
-    "display_value": "76.6% of B2C transaction value via mobile",
+    "display_value": "76.6%",
     "unit": "share",
     "metric_type": "flow",
     "definition": "Refers to B2C transaction value, not the share of orders or users.",
@@ -2903,7 +2903,7 @@ window.REFERENCE_DATA = {
   },
   "ecommerce_active_stores_india": {
     "value": 600000,
-    "display_value": "~6 lakh active e-commerce stores",
+    "display_value": "~6 Lakh",
     "unit": "stores",
     "metric_type": "stock",
     "definition": "Store count is not the same as seller count; verify source before presenting as official. Estimate — source required.",
@@ -2927,7 +2927,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_share_of_online_retail": {
     "value": 17,
-    "display_value": "~17% of online retail",
+    "display_value": "~17%",
     "unit": "share",
     "metric_type": "stock",
     "definition": "Share of India’s online retail, not total offline-plus-online retail.",
@@ -2939,7 +2939,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_zepto_annual_transacting_users": {
     "value": 47970000,
-    "display_value": "47.97M annual transacting users",
+    "display_value": "47.97M",
     "unit": "users",
     "metric_type": "stock",
     "definition": "This is Zepto-specific and must not be shown as the total quick-commerce market.",
@@ -2975,7 +2975,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_total_dark_stores_2026": {
     "value": 5500,
-    "display_value": "5,500+ dark stores",
+    "display_value": "5,500+",
     "unit": "stores",
     "metric_type": "stock",
     "definition": "Market estimate includes quick-fulfilment warehouses and dark stores; company-reported count covers only the three major platforms.",
@@ -2987,7 +2987,7 @@ window.REFERENCE_DATA = {
   },
   "quickcommerce_yoy_gmv_growth_fy26": {
     "value": 100,
-    "display_value": "~100% YoY GMV growth",
+    "display_value": "~100%",
     "unit": "growth",
     "metric_type": "flow",
     "definition": "Monthly year-on-year GMV growth; distinct from FY2026 annual growth or CAGR.",
@@ -2999,7 +2999,7 @@ window.REFERENCE_DATA = {
   },
   "ev_public_charging_points": {
     "value": 88000,
-    "display_value": "88,000 public charging points",
+    "display_value": "88,000",
     "unit": "charging points",
     "metric_type": "stock",
     "definition": "Charging points/chargers are individual charging connectors; not the same as charging stations.",
@@ -3011,7 +3011,7 @@ window.REFERENCE_DATA = {
   },
   "ev_evs_per_public_charger": {
     "value": 30,
-    "display_value": "30 EVs per public charging point",
+    "display_value": "~30:1",
     "unit": "vehicles",
     "metric_type": "stock",
     "definition": "Denominator is public charging points/EVSE, not charging stations.",
@@ -3035,7 +3035,7 @@ window.REFERENCE_DATA = {
   },
   "ev_ride_hailing_rapido_mau": {
     "value": 73960000,
-    "display_value": "Rapido: 73.96M MAU",
+    "display_value": "73.96M",
     "unit": "MAU",
     "metric_type": "stock",
     "definition": "App monthly active users; one person may use multiple mobility apps, so do not add these to calculate unique riders.",
@@ -3047,7 +3047,7 @@ window.REFERENCE_DATA = {
   },
   "ev_ride_hailing_uber_mau": {
     "value": 39050000,
-    "display_value": "Uber: 39.05M MAU",
+    "display_value": "39.05M",
     "unit": "MAU",
     "metric_type": "stock",
     "definition": "App monthly active users; one person may use multiple mobility apps, so do not add these to calculate unique riders.",
@@ -3107,7 +3107,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_market_size_2026": {
     "value": 4.6,
-    "display_value": "$4.60B India EdTech market",
+    "display_value": "$4.60B",
     "unit": "USD B",
     "source_name": "IMARC Group, 2026",
     "source_url": "https://www.imarcgroup.com/india-edtech-market",
@@ -3125,7 +3125,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_k12_share": {
     "value": 43,
-    "display_value": "43% of EdTech market",
+    "display_value": "43%",
     "unit": "%",
     "source_name": "IMARC Group",
     "source_url": "https://www.imarcgroup.com/india-edtech-market",
@@ -3134,7 +3134,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_online_education_market_size": {
     "value": 4.48,
-    "display_value": "$4.48B online-education market",
+    "display_value": "$4.48B",
     "unit": "USD B",
     "source_name": "IMARC Group, 2026",
     "source_url": "https://www.imarcgroup.com/india-online-education-market",
@@ -3143,7 +3143,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_test_prep_market_size": {
     "value": 14.8,
-    "display_value": "$14.8B test-preparation market",
+    "display_value": "$14.8B",
     "unit": "USD B",
     "source_name": "Redseer, FY2026",
     "source_url": "https://redseer.com/",
@@ -3161,7 +3161,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_school_students": {
     "value": 247200000,
-    "display_value": "24.72 crore school students",
+    "display_value": "24.72 Cr",
     "unit": "students",
     "source_name": "UDISE+ 2025–26",
     "source_url": "https://udiseplus.gov.in/",
@@ -3170,7 +3170,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_schools": {
     "value": 1467000,
-    "display_value": "14.67 lakh schools",
+    "display_value": "14.67 Lakh",
     "unit": "schools",
     "source_name": "UDISE+ 2025–26",
     "source_url": "https://udiseplus.gov.in/",
@@ -3179,7 +3179,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_teachers": {
     "value": 10300000,
-    "display_value": "1.03 crore teachers",
+    "display_value": "1.03 Cr",
     "unit": "teachers",
     "source_name": "UDISE+ 2025–26",
     "source_url": "https://udiseplus.gov.in/",
@@ -3188,7 +3188,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_pupil_teacher_ratio": {
     "value": 24,
-    "display_value": "24:1 pupil–teacher ratio",
+    "display_value": "24:1",
     "unit": "ratio",
     "source_name": "UDISE+ 2025–26",
     "source_url": "https://udiseplus.gov.in/",
@@ -3197,7 +3197,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_schools_with_computers": {
     "value": 69.9,
-    "display_value": "69.9% of schools with computers",
+    "display_value": "69.9%",
     "unit": "%",
     "source_name": "UDISE+ 2025–26",
     "source_url": "https://udiseplus.gov.in/",
@@ -3206,7 +3206,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_schools_with_internet": {
     "value": 67.4,
-    "display_value": "67.4% of schools with internet",
+    "display_value": "67.4%",
     "unit": "%",
     "source_name": "UDISE+ 2025–26",
     "source_url": "https://udiseplus.gov.in/",
@@ -3215,7 +3215,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_pw_paid_users": {
     "value": 4460000,
-    "display_value": "4.46M paid users",
+    "display_value": "4.46M",
     "unit": "users",
     "source_name": "Physics Wallah / BSE, FY2025",
     "source_url": "https://www.bseindia.com/",
@@ -3224,7 +3224,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_pw_revenue_q3": {
     "value": 10820000000,
-    "display_value": "₹1,082 crore revenue",
+    "display_value": "₹1,082 Cr",
     "unit": "INR",
     "source_name": "Physics Wallah, Q3 FY2026",
     "source_url": "https://pw.live/",
@@ -3233,7 +3233,7 @@ window.REFERENCE_DATA = {
   },
   "edtech_funding_2024": {
     "value": 608000000,
-    "display_value": "$608M EdTech funding",
+    "display_value": "$608M",
     "unit": "USD",
     "source_name": "Nexdigm, 2024",
     "source_url": "https://www.nexdigm.com/",
