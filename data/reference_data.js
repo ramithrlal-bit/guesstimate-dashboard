@@ -1,6 +1,6 @@
 /**
  * Guesstimate Dashboard - Authoritative Reference Dataset
- * Generated: 2026-11-12T13:06:45.064Z
+ * Generated: 2026-11-12T16:21:43.666Z
  */
 window.REFERENCE_DATA = {
   "pop_households": {
@@ -3276,5 +3276,14 @@ window.REFERENCE_DATA = {
     "reporting_period": "2030P",
     "data_status": "Industry estimate",
     "notes": "FICCI-EY M&E 2030 projection (~₹4.3L Cr at ~10% CAGR)"
+  },
+  "digital_social_media_avg_daily_time": {
+    "value": 164,
+    "display_value": "~2 hr 44 min",
+    "unit": "time/day",
+    "definition": "Average daily time spent per user across all social media apps combined",
+    "source_name": "DataReportal / Kepios",
+    "reporting_period": "2025-26",
+    "data_status": "Industry estimate"
   }
 };

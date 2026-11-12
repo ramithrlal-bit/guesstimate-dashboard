@@ -82,6 +82,7 @@
         key === 'digital_upi_daily_transactions' ||
         key === 'digital_upi_annual_transactions' ||
         key === 'digital_avg_daily_video_watch_time_per_user_youtube' ||
+        key === 'digital_social_media_avg_daily_time' ||
         key === 'digital_whatsapp_users'
       ) && ref;
 
