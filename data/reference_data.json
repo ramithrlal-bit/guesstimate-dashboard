@@ -1964,7 +1964,7 @@
   },
   "economy_ott_revenue_fy25": {
     "value": 10000,
-    "display_value": "~Rs 10,000 Cr (FY25)",
+    "display_value": "~₹10,000 Cr",
     "unit": "Cr",
     "source_name": "FICCI-EY Digital Media & OTT Revenue Review",
     "source_url": "https://ficci.in/",
@@ -2441,13 +2441,14 @@
   },
   "digital_ott_subscribers": {
     "value": 216000000,
-    "display_value": "~216M",
-    "unit": "gross subscriptions",
-    "source_name": "FICCI-EY Media and Entertainment Report",
-    "source_url": "https://www.ey.com/en_in/media-entertainment",
-    "reporting_period": "2024-25",
+    "display_value": "~148M–216M",
+    "unit": "subscriptions",
+    "definition": "Total paid OTT video streaming subscriptions in India across all platforms",
+    "source_name": "Ormax Media / FICCI-EY",
+    "source_url": "https://www.ormaxmedia.com/",
+    "reporting_period": "2025",
     "data_status": "Industry estimate",
-    "methodology_notes": "216 million paid OTT video subscriptions across 143 million households (~71% bundled via telecom/aggregators)."
+    "methodology_notes": "148M active paid subscriptions (Ormax 2025) to 216M gross bundled subscriptions (FICCI-EY)."
   },
   "digital_mobile_gaming_users": {
     "value": 517000000,
@@ -3281,5 +3282,38 @@
     "source_name": "DataReportal / Kepios",
     "reporting_period": "2025-26",
     "data_status": "Industry estimate"
+  },
+  "digital_youtube_premium_subscribers": {
+    "value": 9000000,
+    "display_value": "~8M–10M",
+    "unit": "subscribers",
+    "definition": "YouTube Premium paid subscribers in India",
+    "source_name": "Industry estimates / MediaNama",
+    "source_url": "https://www.medianama.com/",
+    "reporting_period": "2024-25",
+    "data_status": "Industry estimate",
+    "methodology_notes": "Estimated 8M–10M paid individual and family plan subscribers in India."
+  },
+  "digital_ott_audience_total": {
+    "value": 601200000,
+    "display_value": "~601M",
+    "unit": "viewers",
+    "definition": "Total OTT video streaming audience in India (Free/AVOD + Paid/SVOD)",
+    "source_name": "The Ormax OTT Audience Report",
+    "source_url": "https://www.ormaxmedia.com/",
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "methodology_notes": "Total video streaming universe across AVOD and SVOD tiers; represents ~41% of India's population."
+  },
+  "digital_ott_paying_households": {
+    "value": 48000000,
+    "display_value": "~45M–50M",
+    "unit": "households",
+    "definition": "Unique households in India paying for at least one OTT streaming service",
+    "source_name": "Ormax Media / FICCI-EY",
+    "source_url": "https://www.ormaxmedia.com/",
+    "reporting_period": "2025",
+    "data_status": "Industry estimate",
+    "methodology_notes": "Estimated 45M–50M paying households, giving access to ~143M–150M individuals."
   }
 }

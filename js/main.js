@@ -83,6 +83,11 @@
         key === 'digital_upi_annual_transactions' ||
         key === 'digital_avg_daily_video_watch_time_per_user_youtube' ||
         key === 'digital_social_media_avg_daily_time' ||
+        key === 'digital_youtube_premium_subscribers' ||
+        key === 'digital_ott_audience_total' ||
+        key === 'digital_ott_subscribers' ||
+        key === 'digital_ott_paying_households' ||
+        key === 'economy_ott_revenue_fy25' ||
         key === 'digital_whatsapp_users'
       ) && ref;
 
