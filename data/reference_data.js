@@ -1,6 +1,6 @@
 /**
  * Guesstimate Dashboard - Authoritative Reference Dataset
- * Generated: 2026-11-12T16:40:45.332Z
+ * Generated: 2026-11-13T13:17:11.348Z
  */
 window.REFERENCE_DATA = {
   "pop_households": {
@@ -1349,7 +1349,7 @@ window.REFERENCE_DATA = {
   },
   "healthcare_market_size_projected": {
     "value": 638,
-    "display_value": "~$638B (2025)",
+    "display_value": "~$638B",
     "unit": "USD B",
     "source_name": "IBEF / Credence Research India healthcare market estimates",
     "source_url": "https://www.ibef.org/industry/healthcare-india",
@@ -1358,7 +1358,7 @@ window.REFERENCE_DATA = {
   },
   "healthcare_private_expenditure_share": {
     "value": 56.3,
-    "display_value": "~56% (2022–23)",
+    "display_value": "~56%",
     "unit": "%",
     "source_name": "Derived from National Health Accounts Estimates",
     "source_url": "https://nhsrcindia.org/national-health-accounts-records",
@@ -1367,7 +1367,7 @@ window.REFERENCE_DATA = {
   },
   "healthcare_per_capita_expenditure": {
     "value": 6602,
-    "display_value": "Rs 6,602 (2021–22)",
+    "display_value": "Rs 6,602",
     "unit": "Rs",
     "source_name": "National Health Accounts Estimates for India 2021–22",
     "source_url": "https://nhsrcindia.org/national-health-accounts-records",
@@ -1376,7 +1376,7 @@ window.REFERENCE_DATA = {
   },
   "healthcare_out_of_pocket_expenditure": {
     "value": 43.4,
-    "display_value": "43.4% (2022–23)",
+    "display_value": "43.4%",
     "unit": "%",
     "source_name": "National Health Accounts Estimates (MoHFW)",
     "source_url": "https://nhsrcindia.org/national-health-accounts-records",
@@ -2502,7 +2502,7 @@ window.REFERENCE_DATA = {
   },
   "healthcare_expenditure_pct_gdp": {
     "value": 3.8,
-    "display_value": "3.8% of GDP (2021–22)",
+    "display_value": "3.8% of GDP",
     "unit": "%",
     "source_name": "National Health Accounts Estimates for India 2021–22",
     "source_url": "https://nhsrcindia.org/national-health-accounts-records",
@@ -2511,7 +2511,7 @@ window.REFERENCE_DATA = {
   },
   "healthcare_govt_expenditure_share": {
     "value": 43.7,
-    "display_value": "43.7% (2022–23)",
+    "display_value": "43.7%",
     "unit": "%",
     "source_name": "National Health Accounts Estimates (MoHFW)",
     "source_url": "https://nhsrcindia.org/national-health-accounts-records",
@@ -3261,7 +3261,7 @@ window.REFERENCE_DATA = {
   },
   "healthcare_govt_health_expenditure_pct_gdp": {
     "value": 1.43,
-    "display_value": "1.43% of GDP (2022–23)",
+    "display_value": "1.43% of GDP",
     "unit": "%",
     "source_name": "National Health Accounts Estimates for India 2022–23 / 2021–22",
     "source_url": "https://nhsrcindia.org/national-health-accounts-records",
