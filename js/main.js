@@ -315,7 +315,7 @@
         if (key === 'global_world_population') {
           el.innerHTML = ref.display_value || formatWorldPopulation(ref.value);
         } else if (key === 'digital_internet_users' && el.classList.contains('num')) {
-          el.innerHTML = '~1.03B';
+          el.innerHTML = '~1.11B';
         } else {
           el.innerHTML = ref.display_value;
         }

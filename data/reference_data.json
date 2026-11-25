@@ -2119,13 +2119,13 @@
     "data_status": "Official"
   },
   "global_india_s_share_of_global_internet_users": {
-    "value": 16,
-    "display_value": "~16% (2026)",
+    "value": 17.6,
+    "display_value": "~17.6% (2026)",
     "unit": "%",
     "source_name": "ITU / DataReportal, 2026",
     "source_url": "https://www.itu.int/",
     "reporting_period": "2026",
-    "data_status": "Calculated: India (1.03B) / World (6.3B)"
+    "data_status": "Calculated: India (1.11B) / World (6.3B)"
   },
   "global_india_s_global_rank_upi_transaction_volume": {
     "value": 1,
@@ -2314,15 +2314,15 @@
     "methodology_notes": "Projected national population of 1,476,600,000 (~1.48B) as on 1 July 2026 from UN WPP 2024 Revision medium variant projection series."
   },
   "digital_internet_users": {
-    "value": 1030000000,
-    "display_value": "1.03B",
+    "value": 1110000000,
+    "display_value": "1.11B",
     "unit": "people",
     "definition": "Unique people using the internet",
     "source_name": "DataReportal / Kepios",
     "source_url": "https://datareportal.com/reports/digital-2026-india",
     "reporting_period": "Oct 2025",
     "data_status": "Benchmark",
-    "methodology_notes": "1.03 billion unique people using the internet in India, pushing internet penetration to 70.0% of total population (~1.47B). Not derived from TRAI subscriber counts."
+    "methodology_notes": "1.11 billion unique people using the internet in India, pushing internet penetration to ~75.0% of total population (~1.48B). Not derived from TRAI subscriber counts."
   },
   "digital_internet_penetration": {
     "value": 70,
@@ -2642,15 +2642,15 @@
     "data_status": "Official projection"
   },
   "hero_digital_internet_users": {
-    "value": 1030000000,
-    "display_value": "~1.03B",
+    "value": 1110000000,
+    "display_value": "~1.11B",
     "unit": "people",
     "definition": "Unique people using the internet",
     "source_name": "DataReportal / Kepios",
     "source_url": "https://datareportal.com/reports/digital-2026-india",
     "reporting_period": "Oct 2025",
     "data_status": "Benchmark",
-    "methodology_notes": "1.03 billion unique internet users in India (70.0% penetration)."
+    "methodology_notes": "1.11 billion unique internet users in India (~75.0% penetration)."
   },
   "digital_internet_subscribers": {
     "value": 1110000000,
@@ -2819,12 +2819,12 @@
     "display_value": "~30% of internet users",
     "unit": "penetration rate",
     "metric_type": "stock",
-    "definition": "Denominator is internet users (~1.03B), not India’s total population (~1.48B).",
+    "definition": "Denominator is internet users (~1.11B), not India’s total population (~1.48B).",
     "source_name": "Bain & Flipkart, How India Shops Online 2026",
     "source_url": "https://www.bain.com/insights/how-india-shops-online-2026/",
     "reporting_period": "2025",
     "data_status": "Benchmark",
-    "methodology_notes": "Online shoppers (290–300M) as a percentage of India's ~1.03B internet user base. Denominator is internet users."
+    "methodology_notes": "Online shoppers (290–300M) as a percentage of India's ~1.11B internet user base. Denominator is internet users."
   },
   "ecommerce_annual_online_transacting_users": {
     "value": 330000000,
