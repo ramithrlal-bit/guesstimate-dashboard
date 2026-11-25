@@ -1,6 +1,6 @@
 /**
  * Guesstimate Dashboard - Authoritative Reference Dataset
- * Generated: 2026-11-13T13:17:11.348Z
+ * Generated: 2026-11-25T13:29:21.974Z
  */
 window.REFERENCE_DATA = {
   "pop_households": {
@@ -2309,13 +2309,13 @@ window.REFERENCE_DATA = {
   },
   "pop_india_total": {
     "value": 1476600000,
-    "display_value": "~1.477B",
+    "display_value": "~1.48B",
     "unit": "people",
     "source_name": "UN World Population Prospects 2024, 1 July 2026 projection",
     "source_url": "https://population.un.org/wpp/",
     "reporting_period": "1 July 2026 Projection",
     "data_status": "Official projection",
-    "methodology_notes": "Projected national population of 1,476,600,000 (~1.477B) as on 1 July 2026 from UN WPP 2024 Revision medium variant projection series."
+    "methodology_notes": "Projected national population of 1,476,600,000 (~1.48B) as on 1 July 2026 from UN WPP 2024 Revision medium variant projection series."
   },
   "digital_internet_users": {
     "value": 1030000000,
@@ -2823,7 +2823,7 @@ window.REFERENCE_DATA = {
     "display_value": "~30% of internet users",
     "unit": "penetration rate",
     "metric_type": "stock",
-    "definition": "Denominator is internet users (~1.03B), not India’s total population (~1.477B).",
+    "definition": "Denominator is internet users (~1.03B), not India’s total population (~1.48B).",
     "source_name": "Bain & Flipkart, How India Shops Online 2026",
     "source_url": "https://www.bain.com/insights/how-india-shops-online-2026/",
     "reporting_period": "2025",
