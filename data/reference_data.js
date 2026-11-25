@@ -1,6 +1,6 @@
 /**
  * Guesstimate Dashboard - Authoritative Reference Dataset
- * Generated: 2026-11-25T13:55:49.895Z
+ * Generated: 2026-11-25T19:51:20.380Z
  */
 window.REFERENCE_DATA = {
   "pop_households": {
@@ -14,14 +14,14 @@ window.REFERENCE_DATA = {
     "methodology_notes": "Estimate: Projection estimate lacks primary source confirmation for exact household count. Based on published demographic projections."
   },
   "general_working_age_population": {
-    "value": 1004088000,
-    "display_value": "~1.004B",
+    "value": 1006400000,
+    "display_value": "~1.01B",
     "unit": "people",
-    "source_name": "68% of 1.4766B (UNFPA 2025 / UN WPP 2026)",
+    "source_name": "68% of ~1.48B (UNFPA 2025 / UN WPP 2026)",
     "source_url": "https://www.unfpa.org/data/world-population-dashboard",
     "reporting_period": "2026 Projection (Calculated)",
     "data_status": "Calculated projection",
-    "methodology_notes": "Working-age population (ages 15-64) calculated as 68.0% of 1,476,600,000 (1.4766B) = 1,004,088,000 (~1.004B)."
+    "methodology_notes": "Working-age population (ages 15-64) calculated as 68.0% of ~1.48B = ~1.01B."
   },
   "general_smartphone_users_india": {
     "value": 740000000,
@@ -54,14 +54,14 @@ window.REFERENCE_DATA = {
     "methodology_notes": "Estimate: World Bank 2025 estimate (~941M · ~64%) requires reconciliation with 2026 baseline. Based on published demographic projections."
   },
   "population_working_age_15_64": {
-    "value": 1004088000,
-    "display_value": "~1.004B · 68%",
+    "value": 1006400000,
+    "display_value": "~1.01B · 68%",
     "unit": "% / people",
     "source_name": "UNFPA State of World Population 2025 / UN WPP 2026",
     "source_url": "https://www.unfpa.org/data/world-population-dashboard",
     "reporting_period": "2025 Estimate / 2026 Proj.",
     "data_status": "Calculated projection",
-    "methodology_notes": "UNFPA 2025 estimate of 68% working-age share applied to 1.4766B UN WPP 2026 population baseline = ~1.004B people."
+    "methodology_notes": "UNFPA 2025 estimate of 68% working-age share applied to ~1.48B population baseline = ~1.01B people."
   },
   "population_median_age": {
     "value": 29.2,
@@ -190,14 +190,14 @@ window.REFERENCE_DATA = {
     "methodology_notes": "Estimate: Lacks primary source reconciliation against UNFPA 2025 / UN WPP 2026. Based on published demographic projections."
   },
   "population_india_of_working_age_15_64": {
-    "value": 1004088000,
-    "display_value": "~1.004B · 68%",
+    "value": 1006400000,
+    "display_value": "~1.01B · 68%",
     "unit": "% / people",
     "source_name": "UNFPA State of World Population 2025 / UN WPP 2026",
     "source_url": "https://www.unfpa.org/data/world-population-dashboard",
     "reporting_period": "2025 Estimate / 2026 Proj.",
     "data_status": "Calculated projection",
-    "methodology_notes": "UNFPA 2025 estimate of 68% working-age share applied to 1.4766B UN WPP 2026 population baseline = ~1.004B people."
+    "methodology_notes": "UNFPA 2025 estimate of 68% working-age share applied to ~1.48B population baseline = ~1.01B people."
   },
   "population_median_age_vs_china_39_us_38": {
     "value": 29.2,
